@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>可道云 on Example Site</title>
+        <link>https://example.com/tags/%E5%8F%AF%E9%81%93%E4%BA%91/</link>
+        <description>Recent content in 可道云 on Example Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>avadvdfvssv</copyright>
+        <lastBuildDate>Fri, 20 Mar 2020 17:09:00 +0800</lastBuildDate><atom:link href="https://example.com/tags/%E5%8F%AF%E9%81%93%E4%BA%91/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Centos 7 安装 Aira2配合 KodExplorer 实现离线 BT 下载</title>
+        <link>https://example.com/p/centos-7-%E5%AE%89%E8%A3%85-aira2-%E9%85%8D%E5%90%88-kodexplorer-%E5%AE%9E%E7%8E%B0%E7%A6%BB%E7%BA%BF-bt-%E4%B8%8B%E8%BD%BD/</link>
+        <pubDate>Fri, 20 Mar 2020 17:09:00 +0800</pubDate>
+        
+        <guid>https://example.com/p/centos-7-%E5%AE%89%E8%A3%85-aira2-%E9%85%8D%E5%90%88-kodexplorer-%E5%AE%9E%E7%8E%B0%E7%A6%BB%E7%BA%BF-bt-%E4%B8%8B%E8%BD%BD/</guid>
+        <description>&lt;p&gt;自从搭建了自己的服务器，总不忍让它吃灰，只放一个可道云太可惜了，于是想着搭建给可道云加一个支持bt的离线下载，网上找了很多教程，但是可能是自己主机的原因，直接卡死在安装Aria2这一步，不过还好这个教程可用。&lt;/p&gt;
+&lt;p&gt;##1、安装 Aria2
+yum install aria2
+##2、生成配置文件并编辑
+mkdir /etc/aria2/
+vi /etc/aria2/aria2.conf   #创建并编辑配置文件&lt;/p&gt;
+&lt;p&gt;直接粘贴后修改
+rpc-secret=设置你的秘钥
+#允许rpc
+enable-rpc=true
+#允许所有来源, web界面跨域权限需要
+rpc-allow-origin-all=true
+#允许外部访问，false的话只监听本地端口
+rpc-listen-all=true
+#RPC端口, 仅当默认端口被占用时修改
+rpc-listen-port=6800
+#最大同时下载数(任务数), 路由建议值: 3
+max-concurrent-downloads=5
+#断点续传
+continue=true
+#同服务器连接数
+max-connection-per-server=5
+#最小文件分片大小,
+下载线程数上限取决于能分出多少片, 对于小文件重要
+min-split-size=10M
+#单文件最大线程数, 路由建议值: 5
+split=10
+#下载速度限制
+max-overall-download-limit=0
+#单文件速度限制
+max-download-limit=0
+#上传速度限制
+max-overall-upload-limit=0
+#单文件速度限制
+max-upload-limit=0
+#断开速度过慢的连接
+#lowest-speed-limit=0
+#验证用，需要1.16.1之后的release版本
+#referer=*
+#文件保存路径, 默认为当前启动位置
+dir=你的可道云储存地址
+#文件缓存, 使用内置的文件缓存, 如果你不相信Linux内核文件缓存和磁盘内置缓存时使用
+#disk-cache=0
+#另一种Linux文件缓存方式
+#enable-mmap=true
+#文件预分配, 能有效降低文件碎片, 提高磁盘性能. 缺点是预分配时间较长
+file-allocation=prealloc
+file-allocation=prealloc
+# 禁用IPv6, 默认:false
+disable-ipv6=true
+说明：&lt;/p&gt;
+&lt;p&gt;1、默认情况下只需要更改第一项 rpc-secret=token 这个即可，将 token 改成自己设置的秘钥（相当于通信秘钥），后期安装 web 前端界面需要用。&lt;/p&gt;
+&lt;p&gt;2、参考链接：&lt;a href=&#34;http://aria2c.com/usage.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Aria2 &amp;amp; YAAW 使用说明&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;##3、启动 Aria2&lt;/p&gt;
+&lt;p&gt;先测试：
+aria2c &amp;ndash;conf-path=/etc/aria2/aria2.conf
+如无错误后直接启动
+aria2c &amp;ndash;conf-path=/etc/aria2/aria2.conf -D
+##4、安装 yaaw 前端控制界面&lt;/p&gt;
+&lt;p&gt;下载网页文件：&lt;a href=&#34;https://github.com/binux/yaaw&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/binux/yaaw&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/binux/yaaw&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;直接放到网站目录下，即可访问&lt;/p&gt;
+&lt;p&gt;点击设置按钮，设置rpc 信息&lt;/p&gt;
+&lt;p&gt;http://token:自己设置的秘钥@IP地址:6800/jsonrpc&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;ip那里动态域名解析的填你的解析域名&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;保存即可使用&lt;/p&gt;
+&lt;p&gt;转自：&lt;a href=&#34;https://www.dazhuanlan.com/2019/12/10/5deea16ee2a5f/?__cf_chl_jschl_tk__=12eb830b579d2c0ddba0be46bcfdfd381727adc4-1584693866-0-AY6ML28d7YIsjg1T3gCp1JBx0jwbPThoAMDnKNAzxUHhFl1Lzdl2aZuIqj4-EgH9jAGtG3VoeLuaiR838XbAqFIxvsPLuHla7Od8lK6VIpMA-TMVnYUP4m17MHOswE8XazBL8h296t9iiT54OGs4FcG35CkWrWUSdksrH_kk_AqO9i8rQHA65TBXaumPcgDlKBw2TwzScDkgZxpLowon84Yl_DOBPZbF8oQwA2WqQXK0k9gSSib8Yvs9LgAvL7OfBtM4fv8lHU2g3NO6W3E_aBo2zIiQ9045hi1s7bEBupr3TpDYROy-pSuu1cbjKhTr5g&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;大专栏&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>可道云添加新磁盘</title>
+        <link>https://example.com/p/%E5%8F%AF%E9%81%93%E4%BA%91%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%A3%81%E7%9B%98-%E5%AE%9D%E5%A1%94win%E9%9D%A2%E6%9D%BF/</link>
+        <pubDate>Fri, 13 Mar 2020 22:09:00 +0800</pubDate>
+        
+        <guid>https://example.com/p/%E5%8F%AF%E9%81%93%E4%BA%91%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%A3%81%E7%9B%98-%E5%AE%9D%E5%A1%94win%E9%9D%A2%E6%9D%BF/</guid>
+        <description>&lt;p&gt;[info]注意：这是基于windows宝塔面板操作[/info]&lt;/p&gt;
+&lt;p&gt;在宝塔中搜索php.ini文件打开&lt;/p&gt;
+&lt;p&gt;搜索
+;open_basedir =
+在后面加上你要加的添加的磁盘路径(windows系统为例)&lt;/p&gt;
+&lt;p&gt;如
+;open_basedir =;open_basedir = C:;E:&lt;br&gt;
+过个磁盘用;隔开&lt;/p&gt;
+&lt;p&gt;如果不管用试试取消防跨站攻击。参考&lt;a href=&#34;https://www.cnblogs.com/guohong-hu/p/9350076.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;evanwoo&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
