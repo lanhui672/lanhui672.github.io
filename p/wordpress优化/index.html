@@ -8,15 +8,15 @@
 $message .'>
 <title>WordPress优化-新安装的WordPress怎么优化？一篇文章告诉你所有步骤！</title>
 
-<link rel='canonical' href='./p/wordpress%E4%BC%98%E5%8C%96/'>
+<link rel='canonical' href='lanhui672.github.io/p/wordpress%E4%BC%98%E5%8C%96/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='WordPress优化-新安装的WordPress怎么优化？一篇文章告诉你所有步骤！'>
+<link rel="stylesheet" href="/lanhui672.github.io/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='WordPress优化-新安装的WordPress怎么优化？一篇文章告诉你所有步骤！'>
 <meta property='og:description' content='博客搭建已经快一年了，前几天换了服务器，所以在之前服务器优化重新来一遍顺便记录下！ ##一丶网站加速 网站后台打开慢就两个原因，WP 程序是由国外开发者开发，程序后台调用了谷歌的字体文件，当我们打开自己的网站后台时，程序会自动调用 google 字体，由于国内屏蔽 google 的服务器，这样就导致了网站调用不了 google 字体，从而网站打开很慢。
 第二个原因则是wp 程序的头像功能也是调用外站的，Gravatar 头像服务器在国内的 WordPress 中经常撞墙，这也是网站后台打开缓慢的重要原因之一
 我们只要禁用/替换谷歌字体，替换或者使用cdn加速头像。就能达到加速网站的效果！ ###1.使用插件加速 2.修改文件 方法一：wp-includes 目录后找到 script-loader.php 文件，打开后搜索 fonts.googleapis.com。把 fonts.googleapis.com改为fonts.useso.com就可以了！ 方法二：同上搜索fonts.useso.com，我们会看到这样的网址 https://fonts.googleapis.com/css?family=Open&#43;Sans:300italic,400italic,600italic,300,400,600&amp;subset=$subsets&amp;display=fallback&#34;; 在https中间加//，修改后保存就可以了。
 ##二丶自带编辑器不好用 这里推荐使用TinyMCE Advanced，编辑文章方面比wp的编辑器好用多了！ ##三丶wp无法发送邮件以及重置密码链接失效 国内主机上都不开放25端口，所以直接插件！使用WP Mail SMTP  ###密码失效问题 ####解决新用户注册时，点击邮件中的重置密码链接提示 “您的密码重设链接无效”： 打开 WP 安装目录下的 / wp-includes/pluggable.php，找到如下代码（2003行左右） $message .= &amp;lsquo;&amp;lt;&amp;rsquo; . network_site_url(&amp;ldquo;wp-login.php?action=rp&amp;amp;key=$key&amp;amp;login=&amp;rdquo; . rawurlencode($user-&amp;gt;user_login), &amp;lsquo;login&amp;rsquo;) . &amp;ldquo;&amp;gt;\r\n\r\n&amp;rdquo;; 修改为： $message .= network_site_url(&amp;ldquo;wp-login.php?action=rp&amp;amp;key=$key&amp;amp;login=&amp;rdquo; . rawurlencode($user-&amp;gt;user_login), &amp;lsquo;login&amp;rsquo;) . &amp;ldquo;\r\n\r\n&amp;rdquo;; ####解决找回密码时提示 “您的密码重设链接无效”： 打开 WP 根目录下的 wp-login.php，找到如下代码（374 行左右）：
 $message .'>
-<meta property='og:url' content='./p/wordpress%E4%BC%98%E5%8C%96/'>
+<meta property='og:url' content='lanhui672.github.io/p/wordpress%E4%BC%98%E5%8C%96/'>
 <meta property='og:site_name' content='蓝惠の小窝'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='wordpress' /><meta property='article:published_time' content='2020-02-26T14:03:00&#43;08:00'/><meta property='article:modified_time' content='2020-02-26T14:03:00&#43;08:00'/>
 <meta name="twitter:title" content="WordPress优化-新安装的WordPress怎么优化？一篇文章告诉你所有步骤！">
@@ -62,13 +62,13 @@ $message .">
         
             
             <figure class="site-avatar">
-                <a href="/./">
+                <a href="/lanhui672.github.io">
                 
                     
                     
                     
                         
-                        <img src="/img/avatar_hua293395a11fb6734a6c77ef3c9ef801d_20316_300x0_resize_box_3.png" width="300"
+                        <img src="/lanhui672.github.io/img/avatar_hua293395a11fb6734a6c77ef3c9ef801d_20316_300x0_resize_box_3.png" width="300"
                             height="354" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -81,7 +81,7 @@ $message .">
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/.">蓝惠の小窝</a></h1>
+            <h1 class="site-name"><a href="/lanhui672.github.io">蓝惠の小窝</a></h1>
             <h2 class="site-description">寻找大波斯菊需要的不是金钱，而是一颗去找寻的心♥.</h2>
         </div>
     </header><ol class="social-menu">
@@ -131,7 +131,7 @@ $message .">
         
         
         <li >
-            <a href='./' >
+            <a href='lanhui672.github.io/' >
                 
                 
                 
@@ -151,7 +151,7 @@ $message .">
         
         
         <li >
-            <a href='%E5%85%B3%E4%BA%8E/' >
+            <a href='lanhui672.github.io/%E5%85%B3%E4%BA%8E/' >
                 
                 
                 
@@ -170,7 +170,7 @@ $message .">
         
         
         <li >
-            <a href='archives/' >
+            <a href='lanhui672.github.io/archives/' >
                 
                 
                 
@@ -190,7 +190,7 @@ $message .">
         
         
         <li >
-            <a href='search/' >
+            <a href='lanhui672.github.io/search/' >
                 
                 
                 
@@ -209,7 +209,7 @@ $message .">
         
         
         <li >
-            <a href='links/' >
+            <a href='lanhui672.github.io/links/' >
                 
                 
                 
@@ -265,7 +265,7 @@ $message .">
     
     <header class="article-category">
         
-            <a href="categories/%E7%BD%91%E7%BB%9C/" style="background-color: #2a9d8f; color: #fff;">
+            <a href="lanhui672.github.io/categories/%E7%BD%91%E7%BB%9C/" style="background-color: #2a9d8f; color: #fff;">
                 网络
             </a>
         
@@ -274,7 +274,7 @@ $message .">
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="p/wordpress%E4%BC%98%E5%8C%96/">WordPress优化-新安装的WordPress怎么优化？一篇文章告诉你所有步骤！</a>
+            <a href="lanhui672.github.io/p/wordpress%E4%BC%98%E5%8C%96/">WordPress优化-新安装的WordPress怎么优化？一篇文章告诉你所有步骤！</a>
         </h2>
     
         
@@ -493,7 +493,7 @@ add_action(&lsquo;wp_print_scripts&rsquo;, &lsquo;disable_autosave&rsquo;);
     
     <section class="article-tags">
         
-            <a href="tags/wordpress/">wordpress</a>
+            <a href="lanhui672.github.io/tags/wordpress/">wordpress</a>
         
     </section>
 
@@ -527,7 +527,7 @@ add_action(&lsquo;wp_print_scripts&rsquo;, &lsquo;disable_autosave&rsquo;);
             
                 
 <article class="">
-    <a href="p/wordpress%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%AC%E5%88%B0%E6%8C%87%E5%AE%9Aurl%E7%BD%91%E5%9D%80/">
+    <a href="lanhui672.github.io/p/wordpress%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%AC%E5%88%B0%E6%8C%87%E5%AE%9Aurl%E7%BD%91%E5%9D%80/">
         
         
 
@@ -540,7 +540,7 @@ add_action(&lsquo;wp_print_scripts&rsquo;, &lsquo;disable_autosave&rsquo;);
             
                 
 <article class="">
-    <a href="p/wp%E5%BC%80%E5%8F%91/">
+    <a href="lanhui672.github.io/p/wp%E5%BC%80%E5%8F%91/">
         
         
 
@@ -553,7 +553,7 @@ add_action(&lsquo;wp_print_scripts&rsquo;, &lsquo;disable_autosave&rsquo;);
             
                 
 <article class="">
-    <a href="p/wordpress%E5%AE%89%E5%85%A8-%E9%98%B2%E6%AD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%81%B6%E6%84%8F%E6%B3%A8%E5%86%8C/">
+    <a href="lanhui672.github.io/p/wordpress%E5%AE%89%E5%85%A8-%E9%98%B2%E6%AD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%81%B6%E6%84%8F%E6%B3%A8%E5%86%8C/">
         
         
 
@@ -566,7 +566,7 @@ add_action(&lsquo;wp_print_scripts&rsquo;, &lsquo;disable_autosave&rsquo;);
             
                 
 <article class="">
-    <a href="p/wp-wordpress-%E5%A4%96%E9%93%BE%E5%B0%81%E8%A3%85-%E4%B8%89%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%93%BE-go-%E8%B7%B3%E8%BD%AC%E6%95%88%E6%9E%9C%E7%9A%84%E6%96%B9%E6%B3%95/">
+    <a href="lanhui672.github.io/p/wp-wordpress-%E5%A4%96%E9%93%BE%E5%B0%81%E8%A3%85-%E4%B8%89%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%93%BE-go-%E8%B7%B3%E8%BD%AC%E6%95%88%E6%9E%9C%E7%9A%84%E6%96%B9%E6%B3%95/">
         
         
 
@@ -579,7 +579,7 @@ add_action(&lsquo;wp_print_scripts&rsquo;, &lsquo;disable_autosave&rsquo;);
             
                 
 <article class="">
-    <a href="p/wordpress-%E6%A3%80%E4%BF%AE%E7%AC%94%E8%AE%B0/">
+    <a href="lanhui672.github.io/p/wordpress-%E6%A3%80%E4%BF%AE%E7%AC%94%E8%AE%B0/">
         
         
 
@@ -741,7 +741,7 @@ add_action(&lsquo;wp_print_scripts&rsquo;, &lsquo;disable_autosave&rsquo;);
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/lanhui672.github.io/ts/main.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

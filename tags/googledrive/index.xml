@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>googledrive on 蓝惠の小窝</title>
-        <link>./tags/googledrive/</link>
+        <link>lanhui672.github.io/tags/googledrive/</link>
         <description>Recent content in googledrive on 蓝惠の小窝</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蓝惠の小窝</copyright>
-        <lastBuildDate>Sun, 09 Feb 2020 15:47:00 +0800</lastBuildDate><atom:link href="./tags/googledrive/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 09 Feb 2020 15:47:00 +0800</lastBuildDate><atom:link href="lanhui672.github.io/tags/googledrive/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>申请谷歌无限网盘教程</title>
-        <link>./p/%E7%94%B3%E8%AF%B7%E8%B0%B7%E6%AD%8C%E6%97%A0%E9%99%90%E7%BD%91%E7%9B%98%E6%95%99%E7%A8%8B/</link>
+        <link>lanhui672.github.io/p/%E7%94%B3%E8%AF%B7%E8%B0%B7%E6%AD%8C%E6%97%A0%E9%99%90%E7%BD%91%E7%9B%98%E6%95%99%E7%A8%8B/</link>
         <pubDate>Sun, 09 Feb 2020 15:47:00 +0800</pubDate>
         
-        <guid>./p/%E7%94%B3%E8%AF%B7%E8%B0%B7%E6%AD%8C%E6%97%A0%E9%99%90%E7%BD%91%E7%9B%98%E6%95%99%E7%A8%8B/</guid>
+        <guid>lanhui672.github.io/p/%E7%94%B3%E8%AF%B7%E8%B0%B7%E6%AD%8C%E6%97%A0%E9%99%90%E7%BD%91%E7%9B%98%E6%95%99%E7%A8%8B/</guid>
         <description>&lt;p&gt;仅做记录，就不详细介绍了
 ##申请教程
 1.首先登录自己的谷歌网盘
@@ -42,10 +42,10 @@
         </item>
         <item>
         <title>自定义网址 | 大陆直连 google 谷歌网盘下载 | 不浪费你的国外流量</title>
-        <link>./p/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E5%9D%80%E5%A4%A7%E9%99%86%E7%9B%B4%E8%BF%9E-google-%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD%E4%B8%8D%E6%B5%AA%E8%B4%B9%E4%BD%A0%E7%9A%84/</link>
+        <link>lanhui672.github.io/p/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E5%9D%80%E5%A4%A7%E9%99%86%E7%9B%B4%E8%BF%9E-google-%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD%E4%B8%8D%E6%B5%AA%E8%B4%B9%E4%BD%A0%E7%9A%84/</link>
         <pubDate>Sun, 09 Feb 2020 15:47:00 +0800</pubDate>
         
-        <guid>./p/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E5%9D%80%E5%A4%A7%E9%99%86%E7%9B%B4%E8%BF%9E-google-%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD%E4%B8%8D%E6%B5%AA%E8%B4%B9%E4%BD%A0%E7%9A%84/</guid>
+        <guid>lanhui672.github.io/p/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E5%9D%80%E5%A4%A7%E9%99%86%E7%9B%B4%E8%BF%9E-google-%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD%E4%B8%8D%E6%B5%AA%E8%B4%B9%E4%BD%A0%E7%9A%84/</guid>
         <description>&lt;p&gt;###仅做记录
 1、先登录https://install.gd.workers.dev/进行key认证。
 点击获取认证登录谷歌网盘授权，获得key复制。

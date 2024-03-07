@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Typecho on 蓝惠の小窝</title>
-        <link>./tags/typecho/</link>
+        <link>lanhui672.github.io/tags/typecho/</link>
         <description>Recent content in Typecho on 蓝惠の小窝</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蓝惠の小窝</copyright>
-        <lastBuildDate>Sat, 25 Apr 2020 00:31:00 +0800</lastBuildDate><atom:link href="./tags/typecho/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 25 Apr 2020 00:31:00 +0800</lastBuildDate><atom:link href="lanhui672.github.io/tags/typecho/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>安装Typecho遇到的问题:连接不上数据库，只能用PHP5.x版本</title>
-        <link>./p/%E5%AE%89%E8%A3%85typecho%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A%E6%95%B0%E6%8D%AE%E5%BA%93-%E5%8F%AA%E8%83%BD%E7%94%A8php5-x%E7%89%88%E6%9C%AC/</link>
+        <link>lanhui672.github.io/p/%E5%AE%89%E8%A3%85typecho%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A%E6%95%B0%E6%8D%AE%E5%BA%93-%E5%8F%AA%E8%83%BD%E7%94%A8php5-x%E7%89%88%E6%9C%AC/</link>
         <pubDate>Sat, 25 Apr 2020 00:31:00 +0800</pubDate>
         
-        <guid>./p/%E5%AE%89%E8%A3%85typecho%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A%E6%95%B0%E6%8D%AE%E5%BA%93-%E5%8F%AA%E8%83%BD%E7%94%A8php5-x%E7%89%88%E6%9C%AC/</guid>
+        <guid>lanhui672.github.io/p/%E5%AE%89%E8%A3%85typecho%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A%E6%95%B0%E6%8D%AE%E5%BA%93-%E5%8F%AA%E8%83%BD%E7%94%A8php5-x%E7%89%88%E6%9C%AC/</guid>
         <description>&lt;p&gt;今天突然想搭建一个Typecho博客，随便记录一下平时的笔记。结果安装的时候无论怎样，数据库都连接不上！@(fanu)尝试过一下方法：&lt;/p&gt;
 &lt;p&gt;将localhost改为127.0.0.1&lt;/p&gt;
 &lt;p&gt;关闭SELinux（这个方法来自&lt;a title=&#34;github&#34; href=&#34;https://github.com/typecho/typecho/issues/861&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;github&lt;/a&gt;）&lt;/p&gt;
@@ -30,10 +30,10 @@ $db = new Typecho_Db(&amp;lsquo;Pdo_Mysql&amp;rsquo;, &amp;lsquo;typecho_&#39;);
         </item>
         <item>
         <title>给 WordPress/typecho 博客添加看板娘 -- 加藤惠</title>
-        <link>./p/%E7%BB%99-wordpress-%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98-%E5%8A%A0%E8%97%A4%E6%83%A0/</link>
+        <link>lanhui672.github.io/p/%E7%BB%99-wordpress-%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98-%E5%8A%A0%E8%97%A4%E6%83%A0/</link>
         <pubDate>Sun, 23 Feb 2020 15:54:00 +0800</pubDate>
         
-        <guid>./p/%E7%BB%99-wordpress-%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98-%E5%8A%A0%E8%97%A4%E6%83%A0/</guid>
+        <guid>lanhui672.github.io/p/%E7%BB%99-wordpress-%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98-%E5%8A%A0%E8%97%A4%E6%83%A0/</guid>
         <description>&lt;p&gt;####2023.7.31发现文章看板娘下载链接失效了，这个可以在网上搜搜，平替
 ####由于博主现在用的是typecho ，更新下typecho添加的方法&lt;/p&gt;
 &lt;ol&gt;
@@ -47,9 +47,9 @@ $db = new Typecho_Db(&amp;lsquo;Pdo_Mysql&amp;rsquo;, &amp;lsquo;typecho_&#39;);
 ##开始搭建
 1、首先先下载模型，模型在后面有，重命名为 live2d 后上传到网站的根目录（live2d 文件夹里应有好多文件夹和文件）&lt;/p&gt;
 &lt;p&gt;2、在网站的 header 中的 head 标签内加入如下代码
-&lt;link rel=&#34;stylesheet&#34; href=&#34;./live2d/css/live2d.css&#34; /&gt;&lt;/p&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;lanhui672.github.io/live2d/css/live2d.css&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Wordpress 直接修改wp后台的 header.php 即可
-&lt;img src=&#34;./images/2020/02/23/1.png&#34;
+&lt;img src=&#34;lanhui672.github.io/lanhui672.github.io/images/2020/02/23/1.png&#34;
 	
 	
 	
@@ -88,7 +88,7 @@ $db = new Typecho_Db(&amp;lsquo;Pdo_Mysql&amp;rsquo;, &amp;lsquo;typecho_&#39;);
 &amp;lt;div id=&amp;quot;open_live2d&amp;quot;&amp;gt; 召唤老婆 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt; &lt;/p&gt;
-&lt;img class=&#34;alignnone &#34; src=&#34;./images/2020/02/23/2.png&#34; width=&#34;723&#34; height=&#34;311&#34; /&gt;
+&lt;img class=&#34;alignnone &#34; src=&#34;lanhui672.github.io/images/2020/02/23/2.png&#34; width=&#34;723&#34; height=&#34;311&#34; /&gt;
 &lt;p&gt;4.加入图灵机器人接口 &amp;lt;/body&amp;gt; 标签结束前插入如下代码&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
 &amp;lt;script&amp;gt;

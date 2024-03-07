@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Aira2 on 蓝惠の小窝</title>
-        <link>./tags/aira2/</link>
+        <link>lanhui672.github.io/tags/aira2/</link>
         <description>Recent content in Aira2 on 蓝惠の小窝</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蓝惠の小窝</copyright>
-        <lastBuildDate>Sun, 12 Apr 2020 21:21:00 +0800</lastBuildDate><atom:link href="./tags/aira2/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 12 Apr 2020 21:21:00 +0800</lastBuildDate><atom:link href="lanhui672.github.io/tags/aira2/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>使用 Aira2 下载文件后上传到 OneDrive 网盘</title>
-        <link>./p/%E4%BD%BF%E7%94%A8-aira2-%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E5%90%8E%E4%B8%8A%E4%BC%A0%E5%88%B0-onedrive-%E7%BD%91%E7%9B%98/</link>
+        <link>lanhui672.github.io/p/%E4%BD%BF%E7%94%A8-aira2-%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E5%90%8E%E4%B8%8A%E4%BC%A0%E5%88%B0-onedrive-%E7%BD%91%E7%9B%98/</link>
         <pubDate>Sun, 12 Apr 2020 21:21:00 +0800</pubDate>
         
-        <guid>./p/%E4%BD%BF%E7%94%A8-aira2-%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E5%90%8E%E4%B8%8A%E4%BC%A0%E5%88%B0-onedrive-%E7%BD%91%E7%9B%98/</guid>
+        <guid>lanhui672.github.io/p/%E4%BD%BF%E7%94%A8-aira2-%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E5%90%8E%E4%B8%8A%E4%BC%A0%E5%88%B0-onedrive-%E7%BD%91%E7%9B%98/</guid>
         <description>&lt;p&gt;这里是 &lt;a class=&#34;link&#34; href=&#34;https://www.moerats.com/archives/700/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Rat&amp;rsquo;s Blog大佬&lt;/a&gt;使用教程的整合，因为大佬的教程要同时参考三篇文章，这里整合一下用法。使用到用命令上传是没问题的，后续操作没成功，不过还是搬过来组成完整教程。后面有空弄一下onelndex的上传&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;##安装 Aria2
@@ -35,11 +35,11 @@ wget &lt;a class=&#34;link&#34; href=&#34;https://www.moerats.com/usr/down/aria-
     &gt;https://www.moerats.com/usr/down/aria-ng-0.2.0.zip&lt;/a&gt; &amp;amp;&amp;amp; unzip aria-ng-0.2.0.zip&lt;/p&gt;
 &lt;p&gt;这时候我们就可以使用&lt;code&gt;IP&lt;/code&gt;访问&lt;code&gt;AriaNg&lt;/code&gt;界面了，或者&lt;code&gt;IP:端口&lt;/code&gt;，这取决于你添加域名的时候填的什么了。&lt;/p&gt;
 &lt;p&gt;刚开始登录会提示错误，需要虚入密码&lt;/p&gt;
-&lt;img class=&#34;aligncenter&#34; src=&#34;./images/2020/04/21/caa09f551a86740e55206337996ab646.md.png&#34; alt=&#34;&#34; width=&#34;500&#34; height=&#34;244&#34; /&gt;
+&lt;img class=&#34;aligncenter&#34; src=&#34;lanhui672.github.io/images/2020/04/21/caa09f551a86740e55206337996ab646.md.png&#34; alt=&#34;&#34; width=&#34;500&#34; height=&#34;244&#34; /&gt;
 &lt;p style=&#34;text-align: center;&#34;&gt;点击&lt;strong&gt;AriaNg设置—&amp;gt;全局的旁边RPC—&amp;gt;AriaNg RPC秘钥&lt;/strong&gt;&lt;/p&gt;
-&lt;img class=&#34;aligncenter&#34; src=&#34;./images/2020/04/21/2.md.png&#34; alt=&#34;&#34; width=&#34;500&#34; height=&#34;174&#34; /&gt;
+&lt;img class=&#34;aligncenter&#34; src=&#34;lanhui672.github.io/images/2020/04/21/2.md.png&#34; alt=&#34;&#34; width=&#34;500&#34; height=&#34;174&#34; /&gt;
 &lt;p style=&#34;text-align: center;&#34;&gt;&lt;strong&gt;—&amp;gt;输入你设置的AriaNg密码就登录成功了&lt;/strong&gt;&lt;/p&gt;
-&lt;img class=&#34;aligncenter&#34; src=&#34;./images/2020/04/21/3.md.png&#34; alt=&#34;&#34; width=&#34;500&#34; height=&#34;140&#34; /&gt;
+&lt;img class=&#34;aligncenter&#34; src=&#34;lanhui672.github.io/images/2020/04/21/3.md.png&#34; alt=&#34;&#34; width=&#34;500&#34; height=&#34;140&#34; /&gt;
 ##配置 Aria2 上传 
 ###1、授权认证
 点击右侧&lt;code&gt;URL&lt;/code&gt;登录并授权，授权地址→【&lt;a href=&#34;https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=78d4dc35-7e46-42c6-9023-2d39314433a5&amp;amp;response_type=code&amp;amp;redirect_uri=http://localhost/onedrive-login&amp;amp;response_mode=query&amp;amp;scope=offline_access%20User.Read%20Files.ReadWrite.All&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;国际版、个人版 (家庭版)&lt;/a&gt;】、【&lt;a href=&#34;https://login.chinacloudapi.cn/common/oauth2/v2.0/authorize?client_id=dfe36e60-6133-48cf-869f-4d15b8354769&amp;amp;response_type=code&amp;amp;redirect_uri=http://localhost/onedrive-login&amp;amp;response_mode=query&amp;amp;scope=offline_access%20User.Read%20Files.ReadWrite.All&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;中国版 (世纪互联)&lt;/a&gt;】。

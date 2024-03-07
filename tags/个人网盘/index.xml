@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>个人网盘 on 蓝惠の小窝</title>
-        <link>./tags/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%9B%98/</link>
+        <link>lanhui672.github.io/tags/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%9B%98/</link>
         <description>Recent content in 个人网盘 on 蓝惠の小窝</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蓝惠の小窝</copyright>
-        <lastBuildDate>Mon, 13 Jul 2020 10:05:00 +0800</lastBuildDate><atom:link href="./tags/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%9B%98/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 13 Jul 2020 10:05:00 +0800</lastBuildDate><atom:link href="lanhui672.github.io/tags/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%9B%98/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>比oneindex更好的onedrive挂载工具OneManager，搭建教程</title>
-        <link>./p/trashed/</link>
+        <link>lanhui672.github.io/p/trashed/</link>
         <pubDate>Mon, 13 Jul 2020 10:05:00 +0800</pubDate>
         
-        <guid>./p/trashed/</guid>
+        <guid>lanhui672.github.io/p/trashed/</guid>
         <description>&lt;p&gt;这次介绍的挂载程序为OneManager，OneManager继承了onelndex的所有功能，并且支持多盘挂载，sharepoint。并且支持一键复制所有下载链接，可以说是下载党的福音了。体验地址：&lt;a href=&#34;https://p.lanhui.co&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://p.lanhui.co&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://p.lanhui.co&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;本片文章介绍的为服务器搭建，当然也还有其他搭建方式，比如heroku、腾讯云SCF、阿里云FC。&lt;/p&gt;
 &lt;p&gt;准备材料：服务器/虚拟主机、源码、可选：域名&lt;/p&gt;
 &lt;p&gt;首先老样子，安装宝塔后部署环境。&lt;/p&gt;
 &lt;p&gt;添加网站，无需数据库。&lt;/p&gt;
-&lt;img src=&#34;./images/2020/07/13/image.png&#34; /&gt;
+&lt;img src=&#34;lanhui672.github.io/images/2020/07/13/image.png&#34; /&gt;
 &lt;p&gt;点击网站根目录，即可进入网站目录&lt;/p&gt;
-&lt;img src=&#34;./images/2020/07/13/imageba7b71930dbebe0c.png&#34; /&gt;
+&lt;img src=&#34;lanhui672.github.io/images/2020/07/13/imageba7b71930dbebe0c.png&#34; /&gt;
 &lt;p&gt;前往&lt;a href=&#34;https://github.com/qkqpttgf/OneManager-php&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.cxiazaom/qkqpttgf/OneManager-phpx&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.cxiazaom/qkqpttgf/OneManager-phpx&lt;/a&gt;&lt;/a&gt;下载最新源码，上传到这个根目录，解压。&lt;/p&gt;
-&lt;img src=&#34;./images/2020/07/13/image326a21f0e9d75a24.png&#34; /&gt;
+&lt;img src=&#34;lanhui672.github.io/images/2020/07/13/image326a21f0e9d75a24.png&#34; /&gt;
 &lt;p&gt; &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;./images/2020/07/13/imagecd47fbb5b5468009.png&#34; /&gt;得到一个文件夹，把里面的文件全部剪切到网站的根目录。&lt;/p&gt;
-&lt;img src=&#34;./images/2020/07/13/image32945f23245f21f6.png&#34; /&gt;
-&lt;img src=&#34;./images/2020/07/13/imagefcb924bf2c028726.png&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;lanhui672.github.io/images/2020/07/13/imagecd47fbb5b5468009.png&#34; /&gt;得到一个文件夹，把里面的文件全部剪切到网站的根目录。&lt;/p&gt;
+&lt;img src=&#34;lanhui672.github.io/images/2020/07/13/image32945f23245f21f6.png&#34; /&gt;
+&lt;img src=&#34;lanhui672.github.io/images/2020/07/13/imagefcb924bf2c028726.png&#34; /&gt;
 &lt;p&gt;到这里算完成一半了。接下来打开.htaccess文件（右键编辑按钮），可以看到以下内容。&lt;/p&gt;
-&lt;img src=&#34;./images/2020/07/13/image3a73a68862d4b91e.png&#34; /&gt;
+&lt;img src=&#34;lanhui672.github.io/images/2020/07/13/image3a73a68862d4b91e.png&#34; /&gt;
 &lt;p&gt;如果你用的是宝塔推荐的环境，就是第二个nginx，否则就看情况，看你安装的是哪个软件。&lt;/p&gt;
 &lt;p&gt;复制nginx下的代码&lt;/p&gt;
 &lt;div class=&#34;dp-highlighter&#34;&gt;
@@ -41,40 +41,40 @@
 &lt;/div&gt;
 &amp;nbsp;
 &lt;p&gt;然后关闭，回到网站页面，点击网站。按如图所示操作，最后保存。&lt;/p&gt;
-&lt;img src=&#34;./images/2020/07/13/image07370582f872b6ab.png&#34; /&gt;
+&lt;img src=&#34;lanhui672.github.io/images/2020/07/13/image07370582f872b6ab.png&#34; /&gt;
 &lt;p&gt;访问网站。开始安装程序。&lt;/p&gt;
-&lt;img src=&#34;./images/2020/07/13/imageab70d027a9fb6b7a.png&#34; /&gt;
+&lt;img src=&#34;lanhui672.github.io/images/2020/07/13/imageab70d027a9fb6b7a.png&#34; /&gt;
 &lt;p&gt;选择中文，设置管理员密码。&lt;/p&gt;
-&lt;img src=&#34;./images/2020/07/13/image5f44ad20ddf2f895.png&#34; /&gt;
+&lt;img src=&#34;lanhui672.github.io/images/2020/07/13/image5f44ad20ddf2f895.png&#34; /&gt;
 &lt;p&gt;设置完成后吓死如下界面就是安装成功了。&lt;/p&gt;
-&lt;img src=&#34;./images/2020/07/13/image1cf530a017580c68.png&#34; /&gt;
+&lt;img src=&#34;lanhui672.github.io/images/2020/07/13/image1cf530a017580c68.png&#34; /&gt;
 &lt;p&gt;点击登录即可登录后台。&lt;/p&gt;
-&lt;p&gt;后台如下图所示，可设置你想要的功能。&lt;img src=&#34;./images/2020/07/13/image3b207d079f54868e.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;后台如下图所示，可设置你想要的功能。&lt;img src=&#34;lanhui672.github.io/images/2020/07/13/image3b207d079f54868e.png&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;点击添加onedrive网盘即可开始绑定网盘挂载。&lt;/p&gt;
 &lt;p&gt;如何绑定就不多了，很简单。不会的话加交流群问问。&lt;/p&gt;
-&lt;img src=&#34;./images/2020/07/13/image4db7504e264eff04.png&#34; /&gt;
+&lt;img src=&#34;lanhui672.github.io/images/2020/07/13/image4db7504e264eff04.png&#34; /&gt;
 &lt;p&gt; &lt;/p&gt;
 </description>
         </item>
         <item>
         <title>卸载百度网盘后设备驱动器中的百度网盘标志怎么删除？</title>
-        <link>./p/%E5%8D%B8%E8%BD%BD%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%90%8E%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8%E5%99%A8%E4%B8%AD%E7%9A%84%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E6%A0%87%E5%BF%97%E6%80%8E%E4%B9%88/</link>
+        <link>lanhui672.github.io/p/%E5%8D%B8%E8%BD%BD%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%90%8E%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8%E5%99%A8%E4%B8%AD%E7%9A%84%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E6%A0%87%E5%BF%97%E6%80%8E%E4%B9%88/</link>
         <pubDate>Tue, 21 Apr 2020 10:30:01 +0800</pubDate>
         
-        <guid>./p/%E5%8D%B8%E8%BD%BD%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%90%8E%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8%E5%99%A8%E4%B8%AD%E7%9A%84%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E6%A0%87%E5%BF%97%E6%80%8E%E4%B9%88/</guid>
+        <guid>lanhui672.github.io/p/%E5%8D%B8%E8%BD%BD%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%90%8E%E8%AE%BE%E5%A4%87%E9%A9%B1%E5%8A%A8%E5%99%A8%E4%B8%AD%E7%9A%84%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E6%A0%87%E5%BF%97%E6%80%8E%E4%B9%88/</guid>
         <description>&lt;h2&gt;烦恼&lt;/h2&gt;
 每次卸载百度网盘后，设备驱动器中都有百度网盘标志。这就很烦了。虽然卸载前在基本选项窗口中我们取消勾选箭头所指的“在我的电脑中显示百度网盘。但是为了这个我还要再安装一次百度网盘吗？
 &lt;p&gt;NO！&lt;/p&gt;
 &lt;p&gt;看人家迅雷图标右键是可以删除的。百度的却不可以删除！这种行为不是能用流氓就能形容的。&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
-&lt;img class=&#34;aligncenter&#34; src=&#34;./images/2020/04/20/498d3e3f9588da1c077c67029f61402b.png&#34; alt=&#34;&#34; width=&#34;534&#34; height=&#34;355&#34; /&gt;
+&lt;img class=&#34;aligncenter&#34; src=&#34;lanhui672.github.io/images/2020/04/20/498d3e3f9588da1c077c67029f61402b.png&#34; alt=&#34;&#34; width=&#34;534&#34; height=&#34;355&#34; /&gt;
 &lt;h2&gt;行动！&lt;/h2&gt;
 运行 输入“regedit” 打开注册表，找到相应的值
 &lt;p&gt;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace\&lt;/p&gt;
 &lt;p&gt;由于百度的已经删除了，就用迅雷的记录下&lt;/p&gt;
-&lt;p&gt;[caption id=&amp;quot;&amp;quot; align=&amp;ldquo;alignnone&amp;rdquo; width=&amp;ldquo;547&amp;rdquo;]&lt;img src=&#34;./images/2020/04/20/158fe2d0f43752beecee4eff095b68ce.png&#34; alt=&#34;由于百度的已经删除了，就用迅雷的记录下&#34; width=&#34;547&#34; height=&#34;264&#34; /&gt; 由于百度的已经删除了，就用迅雷的记录下[/caption]&lt;/p&gt;
+&lt;p&gt;[caption id=&amp;quot;&amp;quot; align=&amp;ldquo;alignnone&amp;rdquo; width=&amp;ldquo;547&amp;rdquo;]&lt;img src=&#34;lanhui672.github.io/images/2020/04/20/158fe2d0f43752beecee4eff095b68ce.png&#34; alt=&#34;由于百度的已经删除了，就用迅雷的记录下&#34; width=&#34;547&#34; height=&#34;264&#34; /&gt; 由于百度的已经删除了，就用迅雷的记录下[/caption]&lt;/p&gt;
 &lt;p&gt;看到右侧的迅雷下载了吗，没错，直接把这个目录直接删除就可以了！&lt;/p&gt;
-&lt;img class=&#34;&#34; src=&#34;./images/2020/04/20/2.png&#34; alt=&#34;&#34; width=&#34;498&#34; height=&#34;295&#34; /&gt;
+&lt;img class=&#34;&#34; src=&#34;lanhui672.github.io/images/2020/04/20/2.png&#34; alt=&#34;&#34; width=&#34;498&#34; height=&#34;295&#34; /&gt;
 &lt;p&gt;记录下其他的&lt;/p&gt;
 &lt;p&gt;把 {679F137C-3162-45da-BE3C-2F9C3D093F64} 目录整个删掉即可去除我的电脑中的那个“百度云盘图标”。&lt;/p&gt;
 &lt;p&gt;把 {BA16CE0E-728C-4FC9-11E5-D0B35B384552} 目录整个删掉即可去除我的电脑中的那个“爱奇艺视频”。&lt;/p&gt;
