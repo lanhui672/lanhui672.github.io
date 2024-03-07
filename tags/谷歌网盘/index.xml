@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>谷歌网盘 on 蓝惠の小窝</title>
-        <link>./tags/%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98/</link>
+        <link>//lanhui672.github.io/tags/%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98/</link>
         <description>Recent content in 谷歌网盘 on 蓝惠の小窝</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蓝惠の小窝</copyright>
-        <lastBuildDate>Sun, 09 Feb 2020 15:47:00 +0800</lastBuildDate><atom:link href="./tags/%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 09 Feb 2020 15:47:00 +0800</lastBuildDate><atom:link href="//lanhui672.github.io/tags/%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>自定义网址 | 大陆直连 google 谷歌网盘下载 | 不浪费你的国外流量</title>
-        <link>./p/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E5%9D%80%E5%A4%A7%E9%99%86%E7%9B%B4%E8%BF%9E-google-%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD%E4%B8%8D%E6%B5%AA%E8%B4%B9%E4%BD%A0%E7%9A%84/</link>
+        <link>//lanhui672.github.io/p/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E5%9D%80%E5%A4%A7%E9%99%86%E7%9B%B4%E8%BF%9E-google-%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD%E4%B8%8D%E6%B5%AA%E8%B4%B9%E4%BD%A0%E7%9A%84/</link>
         <pubDate>Sun, 09 Feb 2020 15:47:00 +0800</pubDate>
         
-        <guid>./p/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E5%9D%80%E5%A4%A7%E9%99%86%E7%9B%B4%E8%BF%9E-google-%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD%E4%B8%8D%E6%B5%AA%E8%B4%B9%E4%BD%A0%E7%9A%84/</guid>
+        <guid>//lanhui672.github.io/p/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E5%9D%80%E5%A4%A7%E9%99%86%E7%9B%B4%E8%BF%9E-google-%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD%E4%B8%8D%E6%B5%AA%E8%B4%B9%E4%BD%A0%E7%9A%84/</guid>
         <description>&lt;p&gt;###仅做记录
 1、先登录https://install.gd.workers.dev/进行key认证。
 点击获取认证登录谷歌网盘授权，获得key复制。
