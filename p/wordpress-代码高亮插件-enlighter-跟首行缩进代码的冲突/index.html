@@ -9,16 +9,16 @@ p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-lang
 原文链接：https://www.iappi.cn/2019_05/2019690.html'>
 <title>WordPress 代码高亮插件 Enlighter 跟首行缩进代码的冲突</title>
 
-<link rel='canonical' href='lanhui672.github.io/p/wordpress-%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6-enlighter-%E8%B7%9F%E9%A6%96%E8%A1%8C%E7%BC%A9%E8%BF%9B%E4%BB%A3%E7%A0%81%E7%9A%84%E5%86%B2%E7%AA%81/'>
+<link rel='canonical' href='//lanhui672.github.io/p/wordpress-%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6-enlighter-%E8%B7%9F%E9%A6%96%E8%A1%8C%E7%BC%A9%E8%BF%9B%E4%BB%A3%E7%A0%81%E7%9A%84%E5%86%B2%E7%AA%81/'>
 
-<link rel="stylesheet" href="/lanhui672.github.io/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='WordPress 代码高亮插件 Enlighter 跟首行缩进代码的冲突'>
+<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='WordPress 代码高亮插件 Enlighter 跟首行缩进代码的冲突'>
 <meta property='og:description' content='##发现问题 安装Enlighter插件后，发现没有首行缩进。于是便加入了首行缩进代码。这一加不得了，代码全都变成了这种情况
 肯定是插件冲突了，然后从大佬博客程门立学得知：Enlighter 插件正常都是会创建一个 EnlighterJSRAW 的类，然后使用了如下的语句： 
 这种情况下就会正常调用相应的资源，正常将代码高亮。但不正常显示的情况下，代码是这样的：
 p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-language=”php  这代码一看就知道是 WP首行缩进 2 字符中的代码 $return = str_replace(&#39;&amp;lt;p&#39;, &amp;lsquo;&amp;lt;p style=&amp;ldquo;text-indent:2em;&amp;quot;&amp;rsquo;,$text);
 确保在文章中首行缩进2字符，但现在 enlighter 这个插件，也会在前端代码中插入 &amp;lt;pre&amp;gt;&amp;lt;/pre &amp;gt; 的代码，而刚好符合了 &amp;lt; pre &amp;gt; 的条件，自然就把它全部替换走了。那 enlighter 插件的代码就变成了 &amp;lt;p style=&amp;ldquo;text-indent:2em;” re class=&amp;ldquo;EnlighterJSRAW&amp;quot;data-enlighter-language=&amp;ldquo;php&amp;rdquo; 自然就没效果了。 ##解决方案 将首行缩进的代码 $return = str_replace(&#39;&amp;lt;p&#39;, &amp;lsquo;&amp;lt;p style=&amp;ldquo;text-indent:2em;&amp;quot;&amp;rsquo;,$text); 修改为 $return = str_replace(&#39;&#39;, &amp;lsquo;&amp;rsquo;,$text); 就可以了
 原文链接：https://www.iappi.cn/2019_05/2019690.html'>
-<meta property='og:url' content='lanhui672.github.io/p/wordpress-%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6-enlighter-%E8%B7%9F%E9%A6%96%E8%A1%8C%E7%BC%A9%E8%BF%9B%E4%BB%A3%E7%A0%81%E7%9A%84%E5%86%B2%E7%AA%81/'>
+<meta property='og:url' content='//lanhui672.github.io/p/wordpress-%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6-enlighter-%E8%B7%9F%E9%A6%96%E8%A1%8C%E7%BC%A9%E8%BF%9B%E4%BB%A3%E7%A0%81%E7%9A%84%E5%86%B2%E7%AA%81/'>
 <meta property='og:site_name' content='蓝惠の小窝'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='wordpress' /><meta property='article:published_time' content='2020-02-29T15:23:00&#43;08:00'/><meta property='article:modified_time' content='2020-02-29T15:23:00&#43;08:00'/>
 <meta name="twitter:title" content="WordPress 代码高亮插件 Enlighter 跟首行缩进代码的冲突">
@@ -65,13 +65,13 @@ p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-lang
         
             
             <figure class="site-avatar">
-                <a href="/lanhui672.github.io">
+                <a href="/">
                 
                     
                     
                     
                         
-                        <img src="/lanhui672.github.io/img/avatar_hua293395a11fb6734a6c77ef3c9ef801d_20316_300x0_resize_box_3.png" width="300"
+                        <img src="/img/avatar_hua293395a11fb6734a6c77ef3c9ef801d_20316_300x0_resize_box_3.png" width="300"
                             height="354" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -84,7 +84,7 @@ p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-lang
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/lanhui672.github.io">蓝惠の小窝</a></h1>
+            <h1 class="site-name"><a href="//lanhui672.github.io">蓝惠の小窝</a></h1>
             <h2 class="site-description">寻找大波斯菊需要的不是金钱，而是一颗去找寻的心♥.</h2>
         </div>
     </header><ol class="social-menu">
@@ -134,7 +134,7 @@ p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-lang
         
         
         <li >
-            <a href='lanhui672.github.io/' >
+            <a href='/' >
                 
                 
                 
@@ -154,7 +154,7 @@ p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-lang
         
         
         <li >
-            <a href='lanhui672.github.io/%E5%85%B3%E4%BA%8E/' >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
                 
                 
                 
@@ -173,7 +173,7 @@ p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-lang
         
         
         <li >
-            <a href='lanhui672.github.io/archives/' >
+            <a href='/archives/' >
                 
                 
                 
@@ -193,7 +193,7 @@ p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-lang
         
         
         <li >
-            <a href='lanhui672.github.io/search/' >
+            <a href='/search/' >
                 
                 
                 
@@ -212,7 +212,7 @@ p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-lang
         
         
         <li >
-            <a href='lanhui672.github.io/links/' >
+            <a href='/links/' >
                 
                 
                 
@@ -268,7 +268,7 @@ p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-lang
     
     <header class="article-category">
         
-            <a href="lanhui672.github.io/categories/%E7%BD%91%E7%BB%9C/" style="background-color: #2a9d8f; color: #fff;">
+            <a href="/categories/%E7%BD%91%E7%BB%9C/" style="background-color: #2a9d8f; color: #fff;">
                 网络
             </a>
         
@@ -277,7 +277,7 @@ p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-lang
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="lanhui672.github.io/p/wordpress-%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6-enlighter-%E8%B7%9F%E9%A6%96%E8%A1%8C%E7%BC%A9%E8%BF%9B%E4%BB%A3%E7%A0%81%E7%9A%84%E5%86%B2%E7%AA%81/">WordPress 代码高亮插件 Enlighter 跟首行缩进代码的冲突</a>
+            <a href="/p/wordpress-%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6-enlighter-%E8%B7%9F%E9%A6%96%E8%A1%8C%E7%BC%A9%E8%BF%9B%E4%BB%A3%E7%A0%81%E7%9A%84%E5%86%B2%E7%AA%81/">WordPress 代码高亮插件 Enlighter 跟首行缩进代码的冲突</a>
         </h2>
     
         
@@ -358,7 +358,7 @@ $return = str_replace('<p>', &lsquo;<p style="text-indent:2em;">&rsquo;,$text);
     
     <section class="article-tags">
         
-            <a href="lanhui672.github.io/tags/wordpress/">wordpress</a>
+            <a href="/tags/wordpress/">wordpress</a>
         
     </section>
 
@@ -392,7 +392,7 @@ $return = str_replace('<p>', &lsquo;<p style="text-indent:2em;">&rsquo;,$text);
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/wordpress%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%AC%E5%88%B0%E6%8C%87%E5%AE%9Aurl%E7%BD%91%E5%9D%80/">
+    <a href="/p/wordpress%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%AC%E5%88%B0%E6%8C%87%E5%AE%9Aurl%E7%BD%91%E5%9D%80/">
         
         
 
@@ -405,7 +405,7 @@ $return = str_replace('<p>', &lsquo;<p style="text-indent:2em;">&rsquo;,$text);
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/wp%E5%BC%80%E5%8F%91/">
+    <a href="/p/wp%E5%BC%80%E5%8F%91/">
         
         
 
@@ -418,7 +418,7 @@ $return = str_replace('<p>', &lsquo;<p style="text-indent:2em;">&rsquo;,$text);
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/wordpress%E5%AE%89%E5%85%A8-%E9%98%B2%E6%AD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%81%B6%E6%84%8F%E6%B3%A8%E5%86%8C/">
+    <a href="/p/wordpress%E5%AE%89%E5%85%A8-%E9%98%B2%E6%AD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%81%B6%E6%84%8F%E6%B3%A8%E5%86%8C/">
         
         
 
@@ -431,7 +431,7 @@ $return = str_replace('<p>', &lsquo;<p style="text-indent:2em;">&rsquo;,$text);
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/wp-wordpress-%E5%A4%96%E9%93%BE%E5%B0%81%E8%A3%85-%E4%B8%89%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%93%BE-go-%E8%B7%B3%E8%BD%AC%E6%95%88%E6%9E%9C%E7%9A%84%E6%96%B9%E6%B3%95/">
+    <a href="/p/wp-wordpress-%E5%A4%96%E9%93%BE%E5%B0%81%E8%A3%85-%E4%B8%89%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%93%BE-go-%E8%B7%B3%E8%BD%AC%E6%95%88%E6%9E%9C%E7%9A%84%E6%96%B9%E6%B3%95/">
         
         
 
@@ -444,7 +444,7 @@ $return = str_replace('<p>', &lsquo;<p style="text-indent:2em;">&rsquo;,$text);
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/wordpress-%E6%A3%80%E4%BF%AE%E7%AC%94%E8%AE%B0/">
+    <a href="/p/wordpress-%E6%A3%80%E4%BF%AE%E7%AC%94%E8%AE%B0/">
         
         
 
@@ -606,7 +606,7 @@ $return = str_replace('<p>', &lsquo;<p style="text-indent:2em;">&rsquo;,$text);
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/lanhui672.github.io/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

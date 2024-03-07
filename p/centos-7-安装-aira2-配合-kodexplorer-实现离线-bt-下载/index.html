@@ -6,13 +6,13 @@
 直接粘贴后修改 rpc-secret=设置你的秘钥 #允许rpc enable-rpc=true #允许所有来源, web界面跨域权限需要 rpc-allow-origin-all=true #允许外部访问，false的话只监听本地端口 rpc-listen-all=true #RPC端口, 仅当默认端口被占用时修改 rpc-listen-port=6800 #最大同时下载数(任务数), 路由建议值: 3 max-concurrent-downloads=5 #断点续传 continue=true #同服务器连接数 max-connection-per-server=5 #最小文件分片大小, 下载线程数上限取决于能分出多少片, 对于小文件重要 min-split-size=10M #单文件最大线程数, 路由建议值: 5 split=10 #下载速度限制 max-overall-download-limit=0 #单文件速度限制 max-download-limit=0 #上传速度限制 max-overall-upload-limit=0 #单文件速度限制 max-upload-limit=0 #断开速度过慢的连接 #lowest-speed-limit=0 #验证用，需要1.16.1之后的release版本 #referer=* #文件保存路径, 默认为当前启动位置 dir=你的可道云储存地址 #文件缓存, 使用内置的文件缓存, 如果你不相信Linux内核文件缓存和磁盘内置缓存时使用 #disk-cache=0 #另一种Linux文件缓存方式 #enable-mmap=true #文件预分配, 能有效降低文件碎片, 提高磁盘性能. 缺点是预分配时间较长 file-allocation=prealloc file-allocation=prealloc # 禁用IPv6, 默认:false disable-ipv6=true 说明：'>
 <title>Centos 7 安装 Aira2配合 KodExplorer 实现离线 BT 下载</title>
 
-<link rel='canonical' href='lanhui672.github.io/p/centos-7-%E5%AE%89%E8%A3%85-aira2-%E9%85%8D%E5%90%88-kodexplorer-%E5%AE%9E%E7%8E%B0%E7%A6%BB%E7%BA%BF-bt-%E4%B8%8B%E8%BD%BD/'>
+<link rel='canonical' href='//lanhui672.github.io/p/centos-7-%E5%AE%89%E8%A3%85-aira2-%E9%85%8D%E5%90%88-kodexplorer-%E5%AE%9E%E7%8E%B0%E7%A6%BB%E7%BA%BF-bt-%E4%B8%8B%E8%BD%BD/'>
 
-<link rel="stylesheet" href="/lanhui672.github.io/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='Centos 7 安装 Aira2配合 KodExplorer 实现离线 BT 下载'>
+<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='Centos 7 安装 Aira2配合 KodExplorer 实现离线 BT 下载'>
 <meta property='og:description' content='自从搭建了自己的服务器，总不忍让它吃灰，只放一个可道云太可惜了，于是想着搭建给可道云加一个支持bt的离线下载，网上找了很多教程，但是可能是自己主机的原因，直接卡死在安装Aria2这一步，不过还好这个教程可用。
 ##1、安装 Aria2 yum install aria2 ##2、生成配置文件并编辑 mkdir /etc/aria2/ vi /etc/aria2/aria2.conf #创建并编辑配置文件
 直接粘贴后修改 rpc-secret=设置你的秘钥 #允许rpc enable-rpc=true #允许所有来源, web界面跨域权限需要 rpc-allow-origin-all=true #允许外部访问，false的话只监听本地端口 rpc-listen-all=true #RPC端口, 仅当默认端口被占用时修改 rpc-listen-port=6800 #最大同时下载数(任务数), 路由建议值: 3 max-concurrent-downloads=5 #断点续传 continue=true #同服务器连接数 max-connection-per-server=5 #最小文件分片大小, 下载线程数上限取决于能分出多少片, 对于小文件重要 min-split-size=10M #单文件最大线程数, 路由建议值: 5 split=10 #下载速度限制 max-overall-download-limit=0 #单文件速度限制 max-download-limit=0 #上传速度限制 max-overall-upload-limit=0 #单文件速度限制 max-upload-limit=0 #断开速度过慢的连接 #lowest-speed-limit=0 #验证用，需要1.16.1之后的release版本 #referer=* #文件保存路径, 默认为当前启动位置 dir=你的可道云储存地址 #文件缓存, 使用内置的文件缓存, 如果你不相信Linux内核文件缓存和磁盘内置缓存时使用 #disk-cache=0 #另一种Linux文件缓存方式 #enable-mmap=true #文件预分配, 能有效降低文件碎片, 提高磁盘性能. 缺点是预分配时间较长 file-allocation=prealloc file-allocation=prealloc # 禁用IPv6, 默认:false disable-ipv6=true 说明：'>
-<meta property='og:url' content='lanhui672.github.io/p/centos-7-%E5%AE%89%E8%A3%85-aira2-%E9%85%8D%E5%90%88-kodexplorer-%E5%AE%9E%E7%8E%B0%E7%A6%BB%E7%BA%BF-bt-%E4%B8%8B%E8%BD%BD/'>
+<meta property='og:url' content='//lanhui672.github.io/p/centos-7-%E5%AE%89%E8%A3%85-aira2-%E9%85%8D%E5%90%88-kodexplorer-%E5%AE%9E%E7%8E%B0%E7%A6%BB%E7%BA%BF-bt-%E4%B8%8B%E8%BD%BD/'>
 <meta property='og:site_name' content='蓝惠の小窝'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='kodexplorer' /><meta property='article:tag' content='可道云' /><meta property='article:published_time' content='2020-03-20T17:09:00&#43;08:00'/><meta property='article:modified_time' content='2020-03-20T17:09:00&#43;08:00'/>
 <meta name="twitter:title" content="Centos 7 安装 Aira2配合 KodExplorer 实现离线 BT 下载">
@@ -56,13 +56,13 @@
         
             
             <figure class="site-avatar">
-                <a href="/lanhui672.github.io">
+                <a href="/">
                 
                     
                     
                     
                         
-                        <img src="/lanhui672.github.io/img/avatar_hua293395a11fb6734a6c77ef3c9ef801d_20316_300x0_resize_box_3.png" width="300"
+                        <img src="/img/avatar_hua293395a11fb6734a6c77ef3c9ef801d_20316_300x0_resize_box_3.png" width="300"
                             height="354" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -75,7 +75,7 @@
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/lanhui672.github.io">蓝惠の小窝</a></h1>
+            <h1 class="site-name"><a href="//lanhui672.github.io">蓝惠の小窝</a></h1>
             <h2 class="site-description">寻找大波斯菊需要的不是金钱，而是一颗去找寻的心♥.</h2>
         </div>
     </header><ol class="social-menu">
@@ -125,7 +125,7 @@
         
         
         <li >
-            <a href='lanhui672.github.io/' >
+            <a href='/' >
                 
                 
                 
@@ -145,7 +145,7 @@
         
         
         <li >
-            <a href='lanhui672.github.io/%E5%85%B3%E4%BA%8E/' >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
                 
                 
                 
@@ -164,7 +164,7 @@
         
         
         <li >
-            <a href='lanhui672.github.io/archives/' >
+            <a href='/archives/' >
                 
                 
                 
@@ -184,7 +184,7 @@
         
         
         <li >
-            <a href='lanhui672.github.io/search/' >
+            <a href='/search/' >
                 
                 
                 
@@ -203,7 +203,7 @@
         
         
         <li >
-            <a href='lanhui672.github.io/links/' >
+            <a href='/links/' >
                 
                 
                 
@@ -259,7 +259,7 @@
     
     <header class="article-category">
         
-            <a href="lanhui672.github.io/categories/%E7%BD%91%E7%BB%9C/" style="background-color: #2a9d8f; color: #fff;">
+            <a href="/categories/%E7%BD%91%E7%BB%9C/" style="background-color: #2a9d8f; color: #fff;">
                 网络
             </a>
         
@@ -268,7 +268,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="lanhui672.github.io/p/centos-7-%E5%AE%89%E8%A3%85-aira2-%E9%85%8D%E5%90%88-kodexplorer-%E5%AE%9E%E7%8E%B0%E7%A6%BB%E7%BA%BF-bt-%E4%B8%8B%E8%BD%BD/">Centos 7 安装 Aira2配合 KodExplorer 实现离线 BT 下载</a>
+            <a href="/p/centos-7-%E5%AE%89%E8%A3%85-aira2-%E9%85%8D%E5%90%88-kodexplorer-%E5%AE%9E%E7%8E%B0%E7%A6%BB%E7%BA%BF-bt-%E4%B8%8B%E8%BD%BD/">Centos 7 安装 Aira2配合 KodExplorer 实现离线 BT 下载</a>
         </h2>
     
         
@@ -395,9 +395,9 @@ aria2c &ndash;conf-path=/etc/aria2/aria2.conf -D
     
     <section class="article-tags">
         
-            <a href="lanhui672.github.io/tags/kodexplorer/">kodexplorer</a>
+            <a href="/tags/kodexplorer/">kodexplorer</a>
         
-            <a href="lanhui672.github.io/tags/%E5%8F%AF%E9%81%93%E4%BA%91/">可道云</a>
+            <a href="/tags/%E5%8F%AF%E9%81%93%E4%BA%91/">可道云</a>
         
     </section>
 
@@ -431,7 +431,7 @@ aria2c &ndash;conf-path=/etc/aria2/aria2.conf -D
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/%E5%8F%AF%E9%81%93%E4%BA%91%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%A3%81%E7%9B%98-%E5%AE%9D%E5%A1%94win%E9%9D%A2%E6%9D%BF/">
+    <a href="/p/%E5%8F%AF%E9%81%93%E4%BA%91%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%A3%81%E7%9B%98-%E5%AE%9D%E5%A1%94win%E9%9D%A2%E6%9D%BF/">
         
         
 
@@ -444,7 +444,7 @@ aria2c &ndash;conf-path=/etc/aria2/aria2.conf -D
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/3660/">
+    <a href="/p/3660/">
         
         
 
@@ -457,7 +457,7 @@ aria2c &ndash;conf-path=/etc/aria2/aria2.conf -D
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/3649/">
+    <a href="/p/3649/">
         
         
 
@@ -470,7 +470,7 @@ aria2c &ndash;conf-path=/etc/aria2/aria2.conf -D
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/3655/">
+    <a href="/p/3655/">
         
         
 
@@ -483,7 +483,7 @@ aria2c &ndash;conf-path=/etc/aria2/aria2.conf -D
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/3637/">
+    <a href="/p/3637/">
         
         
 
@@ -645,7 +645,7 @@ aria2c &ndash;conf-path=/etc/aria2/aria2.conf -D
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/lanhui672.github.io/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

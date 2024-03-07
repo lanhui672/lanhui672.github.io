@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>office365 on 蓝惠の小窝</title>
-        <link>lanhui672.github.io/tags/office365/</link>
+        <link>//lanhui672.github.io/tags/office365/</link>
         <description>Recent content in office365 on 蓝惠の小窝</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蓝惠の小窝</copyright>
-        <lastBuildDate>Mon, 04 May 2020 17:13:31 +0800</lastBuildDate><atom:link href="lanhui672.github.io/tags/office365/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 04 May 2020 17:13:31 +0800</lastBuildDate><atom:link href="//lanhui672.github.io/tags/office365/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>office365 a1升级A3方法/A1升级A3失败，以及申请地址总结onedrive</title>
-        <link>lanhui672.github.io/p/office365-a1%E5%8D%87%E7%BA%A7%E4%B8%BAa3%E6%96%B9%E6%B3%95/</link>
+        <link>//lanhui672.github.io/p/office365-a1%E5%8D%87%E7%BA%A7%E4%B8%BAa3%E6%96%B9%E6%B3%95/</link>
         <pubDate>Mon, 04 May 2020 17:13:31 +0800</pubDate>
         
-        <guid>lanhui672.github.io/p/office365-a1%E5%8D%87%E7%BA%A7%E4%B8%BAa3%E6%96%B9%E6%B3%95/</guid>
+        <guid>//lanhui672.github.io/p/office365-a1%E5%8D%87%E7%BA%A7%E4%B8%BAa3%E6%96%B9%E6%B3%95/</guid>
         <description>&lt;h2&gt;前言&lt;/h2&gt;
 最近跑出的A3订阅可谓闹得整个office羊毛界满城风雨，连我这种双耳不稳窗外事，一心只爱二次元的人，也被好友&lt;a href=&#34;https://www.skxlz.top/about/&#34;&gt;元燮&lt;/a&gt;叫过来薅微软的羊毛了。目前已成功上车，没翻车。
 &lt;p&gt;A3的出场，导致A1价格暴涨，A1P价格狂跌。E3 绝版账号也不像以前那么珍贵了。虽然A3翻车的大有人在。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;A3订阅包含&lt;/strong&gt;：Office 365 A3, Enterprise Mobility + Security E3, Windows 10 Education E3, and Minecraft: Education Edition. This per-user licensed suite of Education products offers users best-in-class productivity across devices while providing IT security and control.Office 365 A3，企业移动性和安全性E3，Windows 10教育版E3和Minecraft教育版。 此按用户许可的教育产品套件可为用户提供跨设备的一流生产力，同时提供IT安全性和控制力。(来自&lt;a href=&#34;https://www.skxlz.top/2020/05/05/21/&#34;&gt;元燮&lt;/a&gt;)，大概意思就是onedrive5T+桌面版office+win10企业版+我的世界教育版（反正我也不玩）。&lt;/p&gt;
-&lt;img class=&#34;alignnone &#34; src=&#34;lanhui672.github.io/images/2020/05/05/s5s.jpg&#34; alt=&#34;150W订阅截图&#34; width=&#34;622&#34; height=&#34;373&#34; /&gt;
+&lt;img class=&#34;alignnone &#34; src=&#34;//lanhui672.github.io/images/2020/05/05/s5s.jpg&#34; alt=&#34;150W订阅截图&#34; width=&#34;622&#34; height=&#34;373&#34; /&gt;
 &lt;h2&gt;申请&lt;/h2&gt;
 &lt;strong&gt;材料：&lt;/strong&gt;
 &lt;ul&gt;
@@ -27,11 +27,11 @@
 &amp;nbsp;
 &lt;p&gt;登录你的A1全局管理员，然后访问以下链接订阅。多少用户无所谓，我150W已经成功了，有大佬订阅1个亿暂时没翻车。&lt;/p&gt;
 &lt;p&gt;发票已经来了！&lt;/p&gt;
-&lt;img class=&#34;alignnone &#34; src=&#34;lanhui672.github.io/images/2020/05/05/fp.jpg&#34; width=&#34;967&#34; height=&#34;446&#34; /&gt;
+&lt;img class=&#34;alignnone &#34; src=&#34;//lanhui672.github.io/images/2020/05/05/fp.jpg&#34; width=&#34;967&#34; height=&#34;446&#34; /&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;申请失败：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;如果申请的时候，付款，到了这一步显示&lt;/p&gt;
-&lt;img class=&#34;alignnone &#34; src=&#34;lanhui672.github.io/images/2020/05/05/sb.jpg&#34; alt=&#34;申请失败截图&#34; width=&#34;827&#34; height=&#34;282&#34; /&gt;
+&lt;img class=&#34;alignnone &#34; src=&#34;//lanhui672.github.io/images/2020/05/05/sb.jpg&#34; alt=&#34;申请失败截图&#34; width=&#34;827&#34; height=&#34;282&#34; /&gt;
 &lt;p&gt;根据微软客服官方解释：“&lt;span style=&#34;text-decoration: underline; font-size: 14pt;&#34;&gt;里面只有一个air rights management for forty，它已经被provision掉了。&lt;/span&gt;”（客服原话，可能部分拼写错误）虽然没听太懂，大概意思就是，许可证期限过了，要重新激活一下才能用。出现这种情况基本上不管订阅什么，都会失败。当然你可以提交工单要求激活，不过博主已经失败，2333&amp;hellip; 目前来看，这个号没有任何异常，管理也没有死。&lt;/p&gt;
 &lt;p&gt;总结：截止到5月4号，上车的翻车率较低，到了4号晚上，有人3个A1翻2个，订阅超过50万就失败。总之且行且珍惜，按需订阅吧。&lt;/p&gt;
 &lt;p&gt;2020.5.10更新：在客服的视角，是看不到你有这个A1订阅的&lt;/p&gt;
@@ -51,30 +51,30 @@
         </item>
         <item>
         <title>申请 Office365 E5 开发者订阅，调用API 实现无限续期</title>
-        <link>lanhui672.github.io/p/%E7%94%B3%E8%AF%B7-office365-e5-%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%A2%E9%98%85-%E6%90%AD%E5%BB%BA-onelndex-%E5%AE%9E%E7%8E%B0%E6%97%A0%E9%99%90%E7%BB%AD%E6%9C%9F/</link>
+        <link>//lanhui672.github.io/p/%E7%94%B3%E8%AF%B7-office365-e5-%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%A2%E9%98%85-%E6%90%AD%E5%BB%BA-onelndex-%E5%AE%9E%E7%8E%B0%E6%97%A0%E9%99%90%E7%BB%AD%E6%9C%9F/</link>
         <pubDate>Mon, 16 Mar 2020 13:39:26 +0800</pubDate>
         
-        <guid>lanhui672.github.io/p/%E7%94%B3%E8%AF%B7-office365-e5-%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%A2%E9%98%85-%E6%90%AD%E5%BB%BA-onelndex-%E5%AE%9E%E7%8E%B0%E6%97%A0%E9%99%90%E7%BB%AD%E6%9C%9F/</guid>
+        <guid>//lanhui672.github.io/p/%E7%94%B3%E8%AF%B7-office365-e5-%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%A2%E9%98%85-%E6%90%AD%E5%BB%BA-onelndex-%E5%AE%9E%E7%8E%B0%E6%97%A0%E9%99%90%E7%BB%AD%E6%9C%9F/</guid>
         <description>&lt;p&gt;申请 Office 365 开发者计划，可以获得为期 3 个月的免费 Office 365 E5。Office 365 开发版 E5 是为开发人员提供的，微软官方活动，目前注册该试用版有效期为 90 天，90 天后需要证明是开发者才能续订，而微软判断是否为开发者的依据则为是否调用API，因此可以通过搭建onelndex调用API实现续订。&lt;/p&gt;
 &lt;p&gt;并且E5包含了25个桌面版的office365许可证，这也是获取office365的好机会！&lt;/p&gt;
 &lt;p&gt;浏览器推荐使用隐私模式！&lt;/p&gt;
 &lt;h2&gt;申请步骤&lt;/h2&gt;
 1、首先进入&lt;span class=&#34;external-link&#34;&gt;&lt;a href=&#34;https://developer.microsoft.com/zh-cn/office/dev-program&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;【Office 开发人员中心】&lt;/a&gt;&lt;/span&gt;登录微软帐号，点击立即加入
-&lt;img class=&#34;aligncenter&#34; src=&#34;lanhui672.github.io/images/2020/04/16/b73522fd9b348f50a1eec19910373976.png&#34; alt=&#34;&#34; width=&#34;928&#34; height=&#34;487&#34; /&gt;
+&lt;img class=&#34;aligncenter&#34; src=&#34;//lanhui672.github.io/images/2020/04/16/b73522fd9b348f50a1eec19910373976.png&#34; alt=&#34;&#34; width=&#34;928&#34; height=&#34;487&#34; /&gt;
 &lt;p&gt;2、开通 Office 开发者账号，并且完善个人信息&lt;/p&gt;
-&lt;img class=&#34;aligncenter&#34; src=&#34;lanhui672.github.io/images/2020/04/16/731e4c5da48bb9d9ab796415cd920876.png&#34; alt=&#34;&#34; width=&#34;690&#34; height=&#34;896&#34; /&gt;
+&lt;img class=&#34;aligncenter&#34; src=&#34;//lanhui672.github.io/images/2020/04/16/731e4c5da48bb9d9ab796415cd920876.png&#34; alt=&#34;&#34; width=&#34;690&#34; height=&#34;896&#34; /&gt;
 &lt;p&gt;3、进入个人中心，点击设置订阅&lt;/p&gt;
-&lt;img class=&#34;aligncenter&#34; src=&#34;lanhui672.github.io/images/2020/04/16/68ec860876ec89932e12ce81248306f3.png&#34; alt=&#34;&#34; /&gt;
+&lt;img class=&#34;aligncenter&#34; src=&#34;//lanhui672.github.io/images/2020/04/16/68ec860876ec89932e12ce81248306f3.png&#34; alt=&#34;&#34; /&gt;
 &lt;p&gt;4、填写设置开发者订阅相关的信息&lt;/p&gt;
-&lt;img class=&#34;aligncenter&#34; src=&#34;lanhui672.github.io/images/2020/04/16/24111ad996efab62ccd1aab8e739f992.png&#34; alt=&#34;&#34; width=&#34;450&#34; height=&#34;706&#34; /&gt;
+&lt;img class=&#34;aligncenter&#34; src=&#34;//lanhui672.github.io/images/2020/04/16/24111ad996efab62ccd1aab8e739f992.png&#34; alt=&#34;&#34; width=&#34;450&#34; height=&#34;706&#34; /&gt;
 &lt;p&gt;5、设置手机号验证（注意：需要 F/Q，否则可能无法发送验证码）&lt;/p&gt;
-&lt;img class=&#34;aligncenter&#34; src=&#34;lanhui672.github.io/images/2020/04/29/20fdd015eb55bc3b8ab91589f8824536.png&#34; alt=&#34;&#34; width=&#34;482&#34; height=&#34;514&#34; /&gt;
+&lt;img class=&#34;aligncenter&#34; src=&#34;//lanhui672.github.io/images/2020/04/29/20fdd015eb55bc3b8ab91589f8824536.png&#34; alt=&#34;&#34; width=&#34;482&#34; height=&#34;514&#34; /&gt;
 &lt;p&gt;6、验证成功后，自动开始设置订阅&lt;/p&gt;
-&lt;img class=&#34;aligncenter&#34; src=&#34;lanhui672.github.io/images/2020/04/16/7c2fdde2233ee2382a7020e74572fc27.png&#34; alt=&#34;&#34; width=&#34;875&#34; height=&#34;574&#34; /&gt;
+&lt;img class=&#34;aligncenter&#34; src=&#34;//lanhui672.github.io/images/2020/04/16/7c2fdde2233ee2382a7020e74572fc27.png&#34; alt=&#34;&#34; width=&#34;875&#34; height=&#34;574&#34; /&gt;
 &lt;p&gt;7、控制台管理地址：&lt;span class=&#34;external-link&#34;&gt;&lt;a href=&#34;https://portal.office.com/AdminPortal/Home&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://portal.office.com/AdminPortal/Home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://portal.office.com/AdminPortal/Home&lt;/a&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;注意：登录账号如要管理员账号，登录以后可以查看订阅，进行管理用户等功能！&lt;/p&gt;
-&lt;img class=&#34;aligncenter&#34; src=&#34;lanhui672.github.io/images/2020/04/16/2c0fccc83b420307afdead8330806ec5.png&#34; alt=&#34;&#34; width=&#34;1009&#34; height=&#34;520&#34; /&gt;
+&lt;img class=&#34;aligncenter&#34; src=&#34;//lanhui672.github.io/images/2020/04/16/2c0fccc83b420307afdead8330806ec5.png&#34; alt=&#34;&#34; width=&#34;1009&#34; height=&#34;520&#34; /&gt;
 &lt;h2&gt;续期&lt;/h2&gt;
 因为目前注册该试用版有效期为 90 天，90 天内需要证明是开发者才能自动续订。保持活跃方法，可尝试搭建 OneIndex等调用相关API程序，因为触及 API 相关信息为此可以证明是开发者并保持活跃自动更新。 安搭建难度排序，推荐使用全局管理员搭建！
 &lt;p&gt; &lt;/p&gt;

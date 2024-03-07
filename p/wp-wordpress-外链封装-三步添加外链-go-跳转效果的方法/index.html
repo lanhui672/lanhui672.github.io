@@ -10,9 +10,9 @@
 &amp;lt;?phpif(strlen($_SERVER[&#39;REQUEST_URI&#39;]) &amp;gt; 255 ||strpos($_SERVER[&#39;REQUEST_URI&#39;], &amp;quot;eval(&amp;quot;) ||strpos($_SERVER[&#39;REQUEST_URI&#39;], &amp;quot;base64&amp;quot;)) {@header(&amp;quot;HTTP/1.1 414 Request-URI Too Long&amp;quot;);@header(&amp;quot;Status: 414 Request-URI Too Long&amp;quot;);@header(&amp;quot;Connection: Close&amp;quot;);@exit;}//通过 QUERY_STRING 取得完整的传入数据，然后取得 url=之后的所有值，兼容性更好$t_url = preg_replace(&#39;/^url=(.*)$/i&#39;,&#39;$1&#39;,$_SERVER[&amp;quot;QUERY_STRING&amp;quot;]);//此处可以自定义一些特别的外链，不需要可以删除以下 5 行if($t_url==&amp;quot;lanhui.co&amp;quot; ) {$t_url=&amp;quot;http://www.lanhui.co&amp;quot;;} elseif($t_url==&amp;quot;baidu&amp;quot;) {$t_url=&amp;quot;https://www.baidu.com/&amp;quot;;}//数据处理if(!empty($t_url)) {//判断取值是否加密if ($t_url == base64_encode(base64_decode($t_url))) {$t_url = base64_decode($t_url);}//对取值进行网址校验和判断preg_match(&#39;/^(http|https|thunder|qqdl|ed2k|Flashget|qbrowser):\/\//i&#39;,$t_url,$matches);if($matches){$url=$t_url;$title=&#39;页面加载中,请稍候.'>
 <title>WordPress美化-给wp跳转外链中转-三步添加外链-go-跳转效果的方法</title>
 
-<link rel='canonical' href='lanhui672.github.io/p/wp-wordpress-%E5%A4%96%E9%93%BE%E5%B0%81%E8%A3%85-%E4%B8%89%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%93%BE-go-%E8%B7%B3%E8%BD%AC%E6%95%88%E6%9E%9C%E7%9A%84%E6%96%B9%E6%B3%95/'>
+<link rel='canonical' href='//lanhui672.github.io/p/wp-wordpress-%E5%A4%96%E9%93%BE%E5%B0%81%E8%A3%85-%E4%B8%89%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%93%BE-go-%E8%B7%B3%E8%BD%AC%E6%95%88%E6%9E%9C%E7%9A%84%E6%96%B9%E6%B3%95/'>
 
-<link rel="stylesheet" href="/lanhui672.github.io/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='WordPress美化-给wp跳转外链中转-三步添加外链-go-跳转效果的方法'>
+<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='WordPress美化-给wp跳转外链中转-三步添加外链-go-跳转效果的方法'>
 <meta property='og:description' content='这篇文章主要是记录一下，2020/3/25还是有效的。
 浏览别人博客文章时候，如果点击外链，地址栏内是自己的域名加 go 跳转（如：https://www.lanhui.live/go/?url=https://www.baidu.com），还在其中加入了广告！比如如有乐享。是不是觉得挺厉害的？其实说的高端点叫外链封装，明了点就是外链 go 跳转。这么做有两个好处，一个是逼格高！二是可以防止自己的域名权重转移。实现这种方法可以通过插件或者代码！但是wp成也插件，败也插件！插件装的越少越好！这篇文章教你通过代码三部实现跳转！
 第一步：创建外链跳转代码创建外链跳转代码必不可少，这一步我们可以通过两种方式实现：1、在WordPress站点的根目录下新建一个go.php文件。2、在WordPress站点根目录下新建一个go文件夹，然后在文件夹内新建index.php文件。
@@ -20,7 +20,7 @@
 外链跳转之旋转沙漏加载样式：https://www.yunqikan.cn/4511.html
 外链跳转之旋转倒计时样式：https://www.yunqikan.cn/4463.html
 &amp;lt;?phpif(strlen($_SERVER[&#39;REQUEST_URI&#39;]) &amp;gt; 255 ||strpos($_SERVER[&#39;REQUEST_URI&#39;], &amp;quot;eval(&amp;quot;) ||strpos($_SERVER[&#39;REQUEST_URI&#39;], &amp;quot;base64&amp;quot;)) {@header(&amp;quot;HTTP/1.1 414 Request-URI Too Long&amp;quot;);@header(&amp;quot;Status: 414 Request-URI Too Long&amp;quot;);@header(&amp;quot;Connection: Close&amp;quot;);@exit;}//通过 QUERY_STRING 取得完整的传入数据，然后取得 url=之后的所有值，兼容性更好$t_url = preg_replace(&#39;/^url=(.*)$/i&#39;,&#39;$1&#39;,$_SERVER[&amp;quot;QUERY_STRING&amp;quot;]);//此处可以自定义一些特别的外链，不需要可以删除以下 5 行if($t_url==&amp;quot;lanhui.co&amp;quot; ) {$t_url=&amp;quot;http://www.lanhui.co&amp;quot;;} elseif($t_url==&amp;quot;baidu&amp;quot;) {$t_url=&amp;quot;https://www.baidu.com/&amp;quot;;}//数据处理if(!empty($t_url)) {//判断取值是否加密if ($t_url == base64_encode(base64_decode($t_url))) {$t_url = base64_decode($t_url);}//对取值进行网址校验和判断preg_match(&#39;/^(http|https|thunder|qqdl|ed2k|Flashget|qbrowser):\/\//i&#39;,$t_url,$matches);if($matches){$url=$t_url;$title=&#39;页面加载中,请稍候.'>
-<meta property='og:url' content='lanhui672.github.io/p/wp-wordpress-%E5%A4%96%E9%93%BE%E5%B0%81%E8%A3%85-%E4%B8%89%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%93%BE-go-%E8%B7%B3%E8%BD%AC%E6%95%88%E6%9E%9C%E7%9A%84%E6%96%B9%E6%B3%95/'>
+<meta property='og:url' content='//lanhui672.github.io/p/wp-wordpress-%E5%A4%96%E9%93%BE%E5%B0%81%E8%A3%85-%E4%B8%89%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%93%BE-go-%E8%B7%B3%E8%BD%AC%E6%95%88%E6%9E%9C%E7%9A%84%E6%96%B9%E6%B3%95/'>
 <meta property='og:site_name' content='蓝惠の小窝'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='wordpress' /><meta property='article:published_time' content='2020-03-25T14:27:00&#43;08:00'/><meta property='article:modified_time' content='2020-03-25T14:27:00&#43;08:00'/>
 <meta name="twitter:title" content="WordPress美化-给wp跳转外链中转-三步添加外链-go-跳转效果的方法">
@@ -68,13 +68,13 @@
         
             
             <figure class="site-avatar">
-                <a href="/lanhui672.github.io">
+                <a href="/">
                 
                     
                     
                     
                         
-                        <img src="/lanhui672.github.io/img/avatar_hua293395a11fb6734a6c77ef3c9ef801d_20316_300x0_resize_box_3.png" width="300"
+                        <img src="/img/avatar_hua293395a11fb6734a6c77ef3c9ef801d_20316_300x0_resize_box_3.png" width="300"
                             height="354" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -87,7 +87,7 @@
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/lanhui672.github.io">蓝惠の小窝</a></h1>
+            <h1 class="site-name"><a href="//lanhui672.github.io">蓝惠の小窝</a></h1>
             <h2 class="site-description">寻找大波斯菊需要的不是金钱，而是一颗去找寻的心♥.</h2>
         </div>
     </header><ol class="social-menu">
@@ -137,7 +137,7 @@
         
         
         <li >
-            <a href='lanhui672.github.io/' >
+            <a href='/' >
                 
                 
                 
@@ -157,7 +157,7 @@
         
         
         <li >
-            <a href='lanhui672.github.io/%E5%85%B3%E4%BA%8E/' >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
                 
                 
                 
@@ -176,7 +176,7 @@
         
         
         <li >
-            <a href='lanhui672.github.io/archives/' >
+            <a href='/archives/' >
                 
                 
                 
@@ -196,7 +196,7 @@
         
         
         <li >
-            <a href='lanhui672.github.io/search/' >
+            <a href='/search/' >
                 
                 
                 
@@ -215,7 +215,7 @@
         
         
         <li >
-            <a href='lanhui672.github.io/links/' >
+            <a href='/links/' >
                 
                 
                 
@@ -271,7 +271,7 @@
     
     <header class="article-category">
         
-            <a href="lanhui672.github.io/categories/%E7%BD%91%E7%BB%9C/" style="background-color: #2a9d8f; color: #fff;">
+            <a href="/categories/%E7%BD%91%E7%BB%9C/" style="background-color: #2a9d8f; color: #fff;">
                 网络
             </a>
         
@@ -280,7 +280,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="lanhui672.github.io/p/wp-wordpress-%E5%A4%96%E9%93%BE%E5%B0%81%E8%A3%85-%E4%B8%89%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%93%BE-go-%E8%B7%B3%E8%BD%AC%E6%95%88%E6%9E%9C%E7%9A%84%E6%96%B9%E6%B3%95/">WordPress美化-给wp跳转外链中转-三步添加外链-go-跳转效果的方法</a>
+            <a href="/p/wp-wordpress-%E5%A4%96%E9%93%BE%E5%B0%81%E8%A3%85-%E4%B8%89%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%93%BE-go-%E8%B7%B3%E8%BD%AC%E6%95%88%E6%9E%9C%E7%9A%84%E6%96%B9%E6%B3%95/">WordPress美化-给wp跳转外链中转-三步添加外链-go-跳转效果的方法</a>
         </h2>
     
         
@@ -577,7 +577,7 @@ body{margin:0;padding:0;background:#E6EAEB;font-family:Arial,&lsquo;微软雅黑
     
     <section class="article-tags">
         
-            <a href="lanhui672.github.io/tags/wordpress/">wordpress</a>
+            <a href="/tags/wordpress/">wordpress</a>
         
     </section>
 
@@ -611,7 +611,7 @@ body{margin:0;padding:0;background:#E6EAEB;font-family:Arial,&lsquo;微软雅黑
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/wordpress%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%AC%E5%88%B0%E6%8C%87%E5%AE%9Aurl%E7%BD%91%E5%9D%80/">
+    <a href="/p/wordpress%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%AC%E5%88%B0%E6%8C%87%E5%AE%9Aurl%E7%BD%91%E5%9D%80/">
         
         
 
@@ -624,7 +624,7 @@ body{margin:0;padding:0;background:#E6EAEB;font-family:Arial,&lsquo;微软雅黑
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/wp%E5%BC%80%E5%8F%91/">
+    <a href="/p/wp%E5%BC%80%E5%8F%91/">
         
         
 
@@ -637,7 +637,7 @@ body{margin:0;padding:0;background:#E6EAEB;font-family:Arial,&lsquo;微软雅黑
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/wordpress%E5%AE%89%E5%85%A8-%E9%98%B2%E6%AD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%81%B6%E6%84%8F%E6%B3%A8%E5%86%8C/">
+    <a href="/p/wordpress%E5%AE%89%E5%85%A8-%E9%98%B2%E6%AD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%81%B6%E6%84%8F%E6%B3%A8%E5%86%8C/">
         
         
 
@@ -650,7 +650,7 @@ body{margin:0;padding:0;background:#E6EAEB;font-family:Arial,&lsquo;微软雅黑
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/wordpress-%E6%A3%80%E4%BF%AE%E7%AC%94%E8%AE%B0/">
+    <a href="/p/wordpress-%E6%A3%80%E4%BF%AE%E7%AC%94%E8%AE%B0/">
         
         
 
@@ -663,7 +663,7 @@ body{margin:0;padding:0;background:#E6EAEB;font-family:Arial,&lsquo;微软雅黑
             
                 
 <article class="">
-    <a href="lanhui672.github.io/p/wordpress-webstack-%E5%AF%BC%E8%88%AA%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9/">
+    <a href="/p/wordpress-webstack-%E5%AF%BC%E8%88%AA%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9/">
         
         
 
@@ -825,7 +825,7 @@ body{margin:0;padding:0;background:#E6EAEB;font-family:Arial,&lsquo;微软雅黑
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/lanhui672.github.io/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
