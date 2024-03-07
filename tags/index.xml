@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on 蓝惠の小窝</title>
-        <link>//lanhui672.github.io/tags/</link>
+        <link>./tags/</link>
         <description>Recent content in Tags on 蓝惠の小窝</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蓝惠の小窝</copyright>
-        <lastBuildDate>Tue, 03 Mar 2020 12:04:00 +0800</lastBuildDate><atom:link href="//lanhui672.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 03 Mar 2020 12:04:00 +0800</lastBuildDate><atom:link href="./tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>onedrive</title>
-        <link>//lanhui672.github.io/tags/onedrive/</link>
+        <link>./tags/onedrive/</link>
         <pubDate>Tue, 03 Mar 2020 12:04:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/tags/onedrive/</guid>
+        <guid>./tags/onedrive/</guid>
         <description></description>
         </item>
         <item>
         <title>googledrive</title>
-        <link>//lanhui672.github.io/tags/googledrive/</link>
+        <link>./tags/googledrive/</link>
         <pubDate>Sun, 09 Feb 2020 15:47:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/tags/googledrive/</guid>
+        <guid>./tags/googledrive/</guid>
         <description></description>
         </item>
         <item>
         <title>谷歌网盘</title>
-        <link>//lanhui672.github.io/tags/%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98/</link>
+        <link>./tags/%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98/</link>
         <pubDate>Sun, 09 Feb 2020 15:47:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/tags/%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98/</guid>
+        <guid>./tags/%E8%B0%B7%E6%AD%8C%E7%BD%91%E7%9B%98/</guid>
         <description></description>
         </item>
         <item>
         <title>图床</title>
-        <link>//lanhui672.github.io/tags/%E5%9B%BE%E5%BA%8A/</link>
+        <link>./tags/%E5%9B%BE%E5%BA%8A/</link>
         <pubDate>Thu, 16 May 2019 15:38:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/tags/%E5%9B%BE%E5%BA%8A/</guid>
+        <guid>./tags/%E5%9B%BE%E5%BA%8A/</guid>
         <description></description>
         </item>
         <item>
         <title>css</title>
-        <link>//lanhui672.github.io/tags/css/</link>
+        <link>./tags/css/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>//lanhui672.github.io/tags/css/</guid>
+        <guid>./tags/css/</guid>
         <description></description>
         </item>
         <item>
         <title>html</title>
-        <link>//lanhui672.github.io/tags/html/</link>
+        <link>./tags/html/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>//lanhui672.github.io/tags/html/</guid>
+        <guid>./tags/html/</guid>
         <description></description>
         </item>
         <item>
         <title>markdown</title>
-        <link>//lanhui672.github.io/tags/markdown/</link>
+        <link>./tags/markdown/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>//lanhui672.github.io/tags/markdown/</guid>
+        <guid>./tags/markdown/</guid>
         <description></description>
         </item>
         <item>
         <title>themes</title>
-        <link>//lanhui672.github.io/tags/themes/</link>
+        <link>./tags/themes/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>//lanhui672.github.io/tags/themes/</guid>
+        <guid>./tags/themes/</guid>
         <description></description>
         </item>
         <item>
         <title>emoji</title>
-        <link>//lanhui672.github.io/tags/emoji/</link>
+        <link>./tags/emoji/</link>
         <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>//lanhui672.github.io/tags/emoji/</guid>
+        <guid>./tags/emoji/</guid>
         <description></description>
         </item>
         
