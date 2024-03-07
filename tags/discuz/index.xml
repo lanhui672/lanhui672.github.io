@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Discuz on 蓝惠の小窝</title>
-        <link>//lanhui672.github.io/tags/discuz/</link>
+        <link>//www.lanhui.live/tags/discuz/</link>
         <description>Recent content in Discuz on 蓝惠の小窝</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蓝惠の小窝</copyright>
-        <lastBuildDate>Mon, 04 May 2020 09:15:00 +0800</lastBuildDate><atom:link href="//lanhui672.github.io/tags/discuz/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 04 May 2020 09:15:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/tags/discuz/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Discuz! X3.x搬家历程-更换域名-更换数据库名</title>
-        <link>//lanhui672.github.io/p/wp-seo%E4%BC%98%E5%8C%96-wordpress%E4%BC%98%E5%8C%96%E5%A6%82%E4%BD%95%E5%8E%BB%E6%8E%89category%E4%BC%98%E5%8C%96%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95url%E5%B1%82%E7%BA%A7/</link>
+        <link>//www.lanhui.live/p/wp-seo%E4%BC%98%E5%8C%96-wordpress%E4%BC%98%E5%8C%96%E5%A6%82%E4%BD%95%E5%8E%BB%E6%8E%89category%E4%BC%98%E5%8C%96%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95url%E5%B1%82%E7%BA%A7/</link>
         <pubDate>Mon, 04 May 2020 09:15:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/wp-seo%E4%BC%98%E5%8C%96-wordpress%E4%BC%98%E5%8C%96%E5%A6%82%E4%BD%95%E5%8E%BB%E6%8E%89category%E4%BC%98%E5%8C%96%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95url%E5%B1%82%E7%BA%A7/</guid>
+        <guid>//www.lanhui.live/p/wp-seo%E4%BC%98%E5%8C%96-wordpress%E4%BC%98%E5%8C%96%E5%A6%82%E4%BD%95%E5%8E%BB%E6%8E%89category%E4%BC%98%E5%8C%96%E5%88%86%E7%B1%BB%E7%9B%AE%E5%BD%95url%E5%B1%82%E7%BA%A7/</guid>
         <description>&lt;p&gt;今天把自己建的论坛搬家了，这一路搬过来，还是回到了最初的原点。&lt;/p&gt;
 &lt;p&gt;刚开始使用的就是bbs.lanhui.co这个域名,然后换成了国外主机，域名改成www.365vip.club，但是国外主机用的win系统，开了几个软件，网站运行起来很卡，无赖只能换回国内主机，用已经备案的域名（速度挺快的）。这个时候，不止要改域名，还要改宝塔默认取得数据库名（同时害的win数据库转到linux数据库）。但是，只在config_global.php 和 config_global_default.php 文件中修改对应名称，在进入uc后台的时候会报错&lt;/p&gt;
 &lt;p&gt;UCenter info: MySQL Query Error

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>kodexplorer on 蓝惠の小窝</title>
-        <link>//lanhui672.github.io/tags/kodexplorer/</link>
+        <link>//www.lanhui.live/tags/kodexplorer/</link>
         <description>Recent content in kodexplorer on 蓝惠の小窝</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蓝惠の小窝</copyright>
-        <lastBuildDate>Fri, 20 Mar 2020 17:09:00 +0800</lastBuildDate><atom:link href="//lanhui672.github.io/tags/kodexplorer/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 20 Mar 2020 17:09:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/tags/kodexplorer/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Centos 7 安装 Aira2配合 KodExplorer 实现离线 BT 下载</title>
-        <link>//lanhui672.github.io/p/centos-7-%E5%AE%89%E8%A3%85-aira2-%E9%85%8D%E5%90%88-kodexplorer-%E5%AE%9E%E7%8E%B0%E7%A6%BB%E7%BA%BF-bt-%E4%B8%8B%E8%BD%BD/</link>
+        <link>//www.lanhui.live/p/centos-7-%E5%AE%89%E8%A3%85-aira2-%E9%85%8D%E5%90%88-kodexplorer-%E5%AE%9E%E7%8E%B0%E7%A6%BB%E7%BA%BF-bt-%E4%B8%8B%E8%BD%BD/</link>
         <pubDate>Fri, 20 Mar 2020 17:09:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/centos-7-%E5%AE%89%E8%A3%85-aira2-%E9%85%8D%E5%90%88-kodexplorer-%E5%AE%9E%E7%8E%B0%E7%A6%BB%E7%BA%BF-bt-%E4%B8%8B%E8%BD%BD/</guid>
+        <guid>//www.lanhui.live/p/centos-7-%E5%AE%89%E8%A3%85-aira2-%E9%85%8D%E5%90%88-kodexplorer-%E5%AE%9E%E7%8E%B0%E7%A6%BB%E7%BA%BF-bt-%E4%B8%8B%E8%BD%BD/</guid>
         <description>&lt;p&gt;自从搭建了自己的服务器，总不忍让它吃灰，只放一个可道云太可惜了，于是想着搭建给可道云加一个支持bt的离线下载，网上找了很多教程，但是可能是自己主机的原因，直接卡死在安装Aria2这一步，不过还好这个教程可用。&lt;/p&gt;
 &lt;p&gt;##1、安装 Aria2
 yum install aria2
@@ -84,10 +84,10 @@ aria2c &amp;ndash;conf-path=/etc/aria2/aria2.conf -D
         </item>
         <item>
         <title>可道云添加新磁盘</title>
-        <link>//lanhui672.github.io/p/%E5%8F%AF%E9%81%93%E4%BA%91%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%A3%81%E7%9B%98-%E5%AE%9D%E5%A1%94win%E9%9D%A2%E6%9D%BF/</link>
+        <link>//www.lanhui.live/p/%E5%8F%AF%E9%81%93%E4%BA%91%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%A3%81%E7%9B%98-%E5%AE%9D%E5%A1%94win%E9%9D%A2%E6%9D%BF/</link>
         <pubDate>Fri, 13 Mar 2020 22:09:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/%E5%8F%AF%E9%81%93%E4%BA%91%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%A3%81%E7%9B%98-%E5%AE%9D%E5%A1%94win%E9%9D%A2%E6%9D%BF/</guid>
+        <guid>//www.lanhui.live/p/%E5%8F%AF%E9%81%93%E4%BA%91%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%A3%81%E7%9B%98-%E5%AE%9D%E5%A1%94win%E9%9D%A2%E6%9D%BF/</guid>
         <description>&lt;p&gt;[info]注意：这是基于windows宝塔面板操作[/info]&lt;/p&gt;
 &lt;p&gt;在宝塔中搜索php.ini文件打开&lt;/p&gt;
 &lt;p&gt;搜索

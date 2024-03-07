@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on 蓝惠の小窝</title>
-        <link>//lanhui672.github.io/page/</link>
+        <link>//www.lanhui.live/page/</link>
         <description>Recent content in Pages on 蓝惠の小窝</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蓝惠の小窝</copyright>
-        <lastBuildDate>Tue, 05 Dec 2023 00:57:00 +0800</lastBuildDate><atom:link href="//lanhui672.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 05 Dec 2023 00:57:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>支持</title>
-        <link>//lanhui672.github.io/3646/</link>
+        <link>//www.lanhui.live/3646/</link>
         <pubDate>Tue, 05 Dec 2023 00:57:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/3646/</guid>
+        <guid>//www.lanhui.live/3646/</guid>
         <description>&lt;h2 id=&#34;1-蓝惠小店1&#34;&gt;1. &lt;a class=&#34;link&#34; href=&#34;http://shop.lanhui.live&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;strong&gt;蓝惠小店&lt;/strong&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;##2.&lt;a class=&#34;link&#34; href=&#34;http://shop.lanhui.live/?mod=buy&amp;amp;cid=10&amp;amp;tid=25&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -21,10 +21,10 @@
         </item>
         <item>
         <title>工具</title>
-        <link>//lanhui672.github.io/tool/</link>
+        <link>//www.lanhui.live/tool/</link>
         <pubDate>Thu, 23 Apr 2020 15:20:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/tool/</guid>
+        <guid>//www.lanhui.live/tool/</guid>
         <description>&lt;p&gt;##个人文件分享
 &lt;a class=&#34;link&#34; href=&#34;https://lanhui.live/1/#s/9l6b3yXQ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;源码分享&lt;/a&gt;
@@ -47,18 +47,18 @@
         </item>
         <item>
         <title>归档</title>
-        <link>//lanhui672.github.io/archives/</link>
+        <link>//www.lanhui.live/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>//lanhui672.github.io/archives/</guid>
+        <guid>//www.lanhui.live/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>关于</title>
-        <link>//lanhui672.github.io/%E5%85%B3%E4%BA%8E/</link>
+        <link>//www.lanhui.live/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>//lanhui672.github.io/%E5%85%B3%E4%BA%8E/</guid>
+        <guid>//www.lanhui.live/%E5%85%B3%E4%BA%8E/</guid>
         <description>&lt;p&gt;生卒不详，湖南“常殺”人。&lt;/p&gt;
 &lt;p&gt;大学之前一直在浏阳老家生活，15年来到郴州上大学，18年怀化上大学。&lt;/p&gt;
 &lt;p&gt;兴趣爱好有很多，大学快结束才满满开发出自己的兴趣，喜欢游戏、动漫、摄影、PS等、搭建各种网站。&lt;/p&gt;
@@ -87,10 +87,10 @@
         </item>
         <item>
         <title>友链</title>
-        <link>//lanhui672.github.io/links/</link>
+        <link>//www.lanhui.live/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>//lanhui672.github.io/links/</guid>
+        <guid>//www.lanhui.live/links/</guid>
         <description>
 To use this feature, add `links` section to frontmatter.
 
@@ -109,10 +109,10 @@ links:
         </item>
         <item>
         <title>搜索</title>
-        <link>//lanhui672.github.io/search/</link>
+        <link>//www.lanhui.live/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>//lanhui672.github.io/search/</guid>
+        <guid>//www.lanhui.live/search/</guid>
         <description></description>
         </item>
         

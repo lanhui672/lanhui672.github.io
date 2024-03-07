@@ -9,7 +9,7 @@ p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-lang
 原文链接：https://www.iappi.cn/2019_05/2019690.html'>
 <title>WordPress 代码高亮插件 Enlighter 跟首行缩进代码的冲突</title>
 
-<link rel='canonical' href='//lanhui672.github.io/p/wordpress-%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6-enlighter-%E8%B7%9F%E9%A6%96%E8%A1%8C%E7%BC%A9%E8%BF%9B%E4%BB%A3%E7%A0%81%E7%9A%84%E5%86%B2%E7%AA%81/'>
+<link rel='canonical' href='//www.lanhui.live/p/wordpress-%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6-enlighter-%E8%B7%9F%E9%A6%96%E8%A1%8C%E7%BC%A9%E8%BF%9B%E4%BB%A3%E7%A0%81%E7%9A%84%E5%86%B2%E7%AA%81/'>
 
 <link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='WordPress 代码高亮插件 Enlighter 跟首行缩进代码的冲突'>
 <meta property='og:description' content='##发现问题 安装Enlighter插件后，发现没有首行缩进。于是便加入了首行缩进代码。这一加不得了，代码全都变成了这种情况
@@ -18,7 +18,7 @@ p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-lang
 p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-language=”php  这代码一看就知道是 WP首行缩进 2 字符中的代码 $return = str_replace(&#39;&amp;lt;p&#39;, &amp;lsquo;&amp;lt;p style=&amp;ldquo;text-indent:2em;&amp;quot;&amp;rsquo;,$text);
 确保在文章中首行缩进2字符，但现在 enlighter 这个插件，也会在前端代码中插入 &amp;lt;pre&amp;gt;&amp;lt;/pre &amp;gt; 的代码，而刚好符合了 &amp;lt; pre &amp;gt; 的条件，自然就把它全部替换走了。那 enlighter 插件的代码就变成了 &amp;lt;p style=&amp;ldquo;text-indent:2em;” re class=&amp;ldquo;EnlighterJSRAW&amp;quot;data-enlighter-language=&amp;ldquo;php&amp;rdquo; 自然就没效果了。 ##解决方案 将首行缩进的代码 $return = str_replace(&#39;&amp;lt;p&#39;, &amp;lsquo;&amp;lt;p style=&amp;ldquo;text-indent:2em;&amp;quot;&amp;rsquo;,$text); 修改为 $return = str_replace(&#39;&#39;, &amp;lsquo;&amp;rsquo;,$text); 就可以了
 原文链接：https://www.iappi.cn/2019_05/2019690.html'>
-<meta property='og:url' content='//lanhui672.github.io/p/wordpress-%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6-enlighter-%E8%B7%9F%E9%A6%96%E8%A1%8C%E7%BC%A9%E8%BF%9B%E4%BB%A3%E7%A0%81%E7%9A%84%E5%86%B2%E7%AA%81/'>
+<meta property='og:url' content='//www.lanhui.live/p/wordpress-%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%8F%92%E4%BB%B6-enlighter-%E8%B7%9F%E9%A6%96%E8%A1%8C%E7%BC%A9%E8%BF%9B%E4%BB%A3%E7%A0%81%E7%9A%84%E5%86%B2%E7%AA%81/'>
 <meta property='og:site_name' content='蓝惠の小窝'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='wordpress' /><meta property='article:published_time' content='2020-02-29T15:23:00&#43;08:00'/><meta property='article:modified_time' content='2020-02-29T15:23:00&#43;08:00'/>
 <meta name="twitter:title" content="WordPress 代码高亮插件 Enlighter 跟首行缩进代码的冲突">
@@ -84,7 +84,7 @@ p style=”text-indent:2em;” re class=”EnlighterJSRAW” data-enlighter-lang
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="//lanhui672.github.io">蓝惠の小窝</a></h1>
+            <h1 class="site-name"><a href="//www.lanhui.live">蓝惠の小窝</a></h1>
             <h2 class="site-description">寻找大波斯菊需要的不是金钱，而是一颗去找寻的心♥.</h2>
         </div>
     </header><ol class="social-menu">

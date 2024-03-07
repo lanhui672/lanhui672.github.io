@@ -10,7 +10,7 @@
 &amp;lt;?phpif(strlen($_SERVER[&#39;REQUEST_URI&#39;]) &amp;gt; 255 ||strpos($_SERVER[&#39;REQUEST_URI&#39;], &amp;quot;eval(&amp;quot;) ||strpos($_SERVER[&#39;REQUEST_URI&#39;], &amp;quot;base64&amp;quot;)) {@header(&amp;quot;HTTP/1.1 414 Request-URI Too Long&amp;quot;);@header(&amp;quot;Status: 414 Request-URI Too Long&amp;quot;);@header(&amp;quot;Connection: Close&amp;quot;);@exit;}//通过 QUERY_STRING 取得完整的传入数据，然后取得 url=之后的所有值，兼容性更好$t_url = preg_replace(&#39;/^url=(.*)$/i&#39;,&#39;$1&#39;,$_SERVER[&amp;quot;QUERY_STRING&amp;quot;]);//此处可以自定义一些特别的外链，不需要可以删除以下 5 行if($t_url==&amp;quot;lanhui.co&amp;quot; ) {$t_url=&amp;quot;http://www.lanhui.co&amp;quot;;} elseif($t_url==&amp;quot;baidu&amp;quot;) {$t_url=&amp;quot;https://www.baidu.com/&amp;quot;;}//数据处理if(!empty($t_url)) {//判断取值是否加密if ($t_url == base64_encode(base64_decode($t_url))) {$t_url = base64_decode($t_url);}//对取值进行网址校验和判断preg_match(&#39;/^(http|https|thunder|qqdl|ed2k|Flashget|qbrowser):\/\//i&#39;,$t_url,$matches);if($matches){$url=$t_url;$title=&#39;页面加载中,请稍候.'>
 <title>WordPress美化-给wp跳转外链中转-三步添加外链-go-跳转效果的方法</title>
 
-<link rel='canonical' href='//lanhui672.github.io/p/wp-wordpress-%E5%A4%96%E9%93%BE%E5%B0%81%E8%A3%85-%E4%B8%89%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%93%BE-go-%E8%B7%B3%E8%BD%AC%E6%95%88%E6%9E%9C%E7%9A%84%E6%96%B9%E6%B3%95/'>
+<link rel='canonical' href='//www.lanhui.live/p/wp-wordpress-%E5%A4%96%E9%93%BE%E5%B0%81%E8%A3%85-%E4%B8%89%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%93%BE-go-%E8%B7%B3%E8%BD%AC%E6%95%88%E6%9E%9C%E7%9A%84%E6%96%B9%E6%B3%95/'>
 
 <link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='WordPress美化-给wp跳转外链中转-三步添加外链-go-跳转效果的方法'>
 <meta property='og:description' content='这篇文章主要是记录一下，2020/3/25还是有效的。
@@ -20,7 +20,7 @@
 外链跳转之旋转沙漏加载样式：https://www.yunqikan.cn/4511.html
 外链跳转之旋转倒计时样式：https://www.yunqikan.cn/4463.html
 &amp;lt;?phpif(strlen($_SERVER[&#39;REQUEST_URI&#39;]) &amp;gt; 255 ||strpos($_SERVER[&#39;REQUEST_URI&#39;], &amp;quot;eval(&amp;quot;) ||strpos($_SERVER[&#39;REQUEST_URI&#39;], &amp;quot;base64&amp;quot;)) {@header(&amp;quot;HTTP/1.1 414 Request-URI Too Long&amp;quot;);@header(&amp;quot;Status: 414 Request-URI Too Long&amp;quot;);@header(&amp;quot;Connection: Close&amp;quot;);@exit;}//通过 QUERY_STRING 取得完整的传入数据，然后取得 url=之后的所有值，兼容性更好$t_url = preg_replace(&#39;/^url=(.*)$/i&#39;,&#39;$1&#39;,$_SERVER[&amp;quot;QUERY_STRING&amp;quot;]);//此处可以自定义一些特别的外链，不需要可以删除以下 5 行if($t_url==&amp;quot;lanhui.co&amp;quot; ) {$t_url=&amp;quot;http://www.lanhui.co&amp;quot;;} elseif($t_url==&amp;quot;baidu&amp;quot;) {$t_url=&amp;quot;https://www.baidu.com/&amp;quot;;}//数据处理if(!empty($t_url)) {//判断取值是否加密if ($t_url == base64_encode(base64_decode($t_url))) {$t_url = base64_decode($t_url);}//对取值进行网址校验和判断preg_match(&#39;/^(http|https|thunder|qqdl|ed2k|Flashget|qbrowser):\/\//i&#39;,$t_url,$matches);if($matches){$url=$t_url;$title=&#39;页面加载中,请稍候.'>
-<meta property='og:url' content='//lanhui672.github.io/p/wp-wordpress-%E5%A4%96%E9%93%BE%E5%B0%81%E8%A3%85-%E4%B8%89%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%93%BE-go-%E8%B7%B3%E8%BD%AC%E6%95%88%E6%9E%9C%E7%9A%84%E6%96%B9%E6%B3%95/'>
+<meta property='og:url' content='//www.lanhui.live/p/wp-wordpress-%E5%A4%96%E9%93%BE%E5%B0%81%E8%A3%85-%E4%B8%89%E6%AD%A5%E6%B7%BB%E5%8A%A0%E5%A4%96%E9%93%BE-go-%E8%B7%B3%E8%BD%AC%E6%95%88%E6%9E%9C%E7%9A%84%E6%96%B9%E6%B3%95/'>
 <meta property='og:site_name' content='蓝惠の小窝'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='wordpress' /><meta property='article:published_time' content='2020-03-25T14:27:00&#43;08:00'/><meta property='article:modified_time' content='2020-03-25T14:27:00&#43;08:00'/>
 <meta name="twitter:title" content="WordPress美化-给wp跳转外链中转-三步添加外链-go-跳转效果的方法">
@@ -87,7 +87,7 @@
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="//lanhui672.github.io">蓝惠の小窝</a></h1>
+            <h1 class="site-name"><a href="//www.lanhui.live">蓝惠の小窝</a></h1>
             <h2 class="site-description">寻找大波斯菊需要的不是金钱，而是一颗去找寻的心♥.</h2>
         </div>
     </header><ol class="social-menu">

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>说说 on 蓝惠の小窝</title>
-        <link>//lanhui672.github.io/categories/%E8%AF%B4%E8%AF%B4/</link>
+        <link>//www.lanhui.live/categories/%E8%AF%B4%E8%AF%B4/</link>
         <description>Recent content in 说说 on 蓝惠の小窝</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蓝惠の小窝</copyright>
-        <lastBuildDate>Sun, 10 Dec 2023 22:45:00 +0800</lastBuildDate><atom:link href="//lanhui672.github.io/categories/%E8%AF%B4%E8%AF%B4/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 10 Dec 2023 22:45:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/categories/%E8%AF%B4%E8%AF%B4/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>装机小插曲</title>
-        <link>//lanhui672.github.io/p/3650/</link>
+        <link>//www.lanhui.live/p/3650/</link>
         <pubDate>Sun, 10 Dec 2023 22:45:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/3650/</guid>
+        <guid>//www.lanhui.live/p/3650/</guid>
         <description>&lt;p&gt;闲置了一块AMD590得显卡，结果装在小主机上不工作。，只能通过核显输出视频。也找过华硕得技术支持，要么是显卡得问题，要么是主板PCIE接口得问题。
 于是乎，我在显卡插槽插了张m.2转pcie得扩展卡，能识别（前阵子也用了），显卡插在自己的主机机也没问题。才反应过来，可能主板不支持。
 配置
@@ -24,10 +24,10 @@ cpu i34170  内存8G SSD256
         </item>
         <item>
         <title>关于邮件功能失效，无法通知评论</title>
-        <link>//lanhui672.github.io/p/3641/</link>
+        <link>//www.lanhui.live/p/3641/</link>
         <pubDate>Tue, 05 Dec 2023 00:48:27 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/3641/</guid>
+        <guid>//www.lanhui.live/p/3641/</guid>
         <description>&lt;p&gt;邮件发送失败：SMTP connect() failed.
 好几个月前就出现这种情况了，在网上找了各种方法，也没解决。
 评论收到了我看到了会回复的，因为我也没邮件通知有人评论。各位朋友评论是记得附带真实邮箱，我会手动发送通知邮件的。
@@ -37,29 +37,29 @@ cpu i34170  内存8G SSD256
         </item>
         <item>
         <title>解放</title>
-        <link>//lanhui672.github.io/p/3640/</link>
+        <link>//www.lanhui.live/p/3640/</link>
         <pubDate>Thu, 30 Nov 2023 07:52:02 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/3640/</guid>
+        <guid>//www.lanhui.live/p/3640/</guid>
         <description>&lt;p&gt;终于退伍了！&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>自强不息德厚载物</title>
-        <link>//lanhui672.github.io/p/3635/</link>
+        <link>//www.lanhui.live/p/3635/</link>
         <pubDate>Mon, 02 Oct 2023 09:58:50 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/3635/</guid>
+        <guid>//www.lanhui.live/p/3635/</guid>
         <description>&lt;p&gt;这是清华大学的校训，源于老子《道德经》：天行健，君子以自强不息，地势坤，君以厚德载物。自强不息是对人的要求，厚德载物是人与事的关系。大多数人的痛苦，源于德不配位。&lt;/p&gt;
 &lt;p&gt;这是和一位朋友交流的部分内容，感觉讲的挺有道理。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>体制化</title>
-        <link>//lanhui672.github.io/p/3632/</link>
+        <link>//www.lanhui.live/p/3632/</link>
         <pubDate>Sat, 19 Aug 2023 16:14:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/3632/</guid>
+        <guid>//www.lanhui.live/p/3632/</guid>
         <description>&lt;p&gt;电影《肖申克的救赎》里有这样一句台词：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;这些围墙很奇怪，刚来的时候，你会恨它，慢慢你就会习惯它，日子久了，你会发现你离不开它，那就是被体制化了。&lt;/p&gt;
@@ -80,15 +80,15 @@ cpu i34170  内存8G SSD256
         </item>
         <item>
         <title>北京-烟台-威海一游</title>
-        <link>//lanhui672.github.io/p/3621/</link>
+        <link>//www.lanhui.live/p/3621/</link>
         <pubDate>Sun, 13 Aug 2023 06:00:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/3621/</guid>
+        <guid>//www.lanhui.live/p/3621/</guid>
         <description>&lt;p&gt;这次休假21天，第一个礼拜直接用来旅游了。&lt;/p&gt;
 &lt;p&gt;##24号
 休假舟山直飞北京大兴，晚上九点多到了北京一个城中村酒店。
 ##25号
-去了南苑湿地公园，挺大的，是以前皇帝狩猎的地方。不过我家是农村的，感觉不是很稀奇。&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/291b6a49401fbc9f2.jpg&#34;
+去了南苑湿地公园，挺大的，是以前皇帝狩猎的地方。不过我家是农村的，感觉不是很稀奇。&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/291b6a49401fbc9f2.jpg&#34;
 	
 	
 	
@@ -97,7 +97,7 @@ cpu i34170  内存8G SSD256
 		alt=&#34;园林&#34;
 	
 	
-&gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/1f8832235acd81efb.jpg&#34;
+&gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/1f8832235acd81efb.jpg&#34;
 	
 	
 	
@@ -106,7 +106,7 @@ cpu i34170  内存8G SSD256
 		alt=&#34;园林&#34;
 	
 	
-&gt;午饭上次去了朋友部队的旧址看了看。中午去紫光园吃了北京烤鸭，&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/2c1819e61953952e0.jpg&#34;
+&gt;午饭上次去了朋友部队的旧址看了看。中午去紫光园吃了北京烤鸭，&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/2c1819e61953952e0.jpg&#34;
 	
 	
 	
@@ -115,7 +115,7 @@ cpu i34170  内存8G SSD256
 		alt=&#34;烤鸭&#34;
 	
 	
-&gt;不得不说，北方的份量很足，2-3人餐已经够4个人吃了。不过要注意的是北方是吃馒头的，如果要吃米饭需要3元一碗。  下午休息然后去清华大学看了下&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/54a23dbed26a7cdb3.jpg&#34;
+&gt;不得不说，北方的份量很足，2-3人餐已经够4个人吃了。不过要注意的是北方是吃馒头的，如果要吃米饭需要3元一碗。  下午休息然后去清华大学看了下&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/54a23dbed26a7cdb3.jpg&#34;
 	
 	
 	
@@ -125,7 +125,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;，清华实在太大了，走路脚都走酸了，也才逛了三分之一不到。在这里交通工具至少要有辆自行车。
-&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/4b2091fb686ed1af0.jpg&#34;
+&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/4b2091fb686ed1af0.jpg&#34;
 	
 	
 	
@@ -134,7 +134,7 @@ cpu i34170  内存8G SSD256
 		alt=&#34;清华2&#34;
 	
 	
-&gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/QQ20230826135217.jpg&#34;
+&gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/QQ20230826135217.jpg&#34;
 	
 	
 	
@@ -145,7 +145,7 @@ cpu i34170  内存8G SSD256
 	
 &gt;
 ##26号
-去朋友的部队看看，出行时顺便在北京大学外面看了看，没有朋友进不去。&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/690fad0c8928c9f90.jpg&#34;
+去朋友的部队看看，出行时顺便在北京大学外面看了看，没有朋友进不去。&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/690fad0c8928c9f90.jpg&#34;
 	
 	
 	
@@ -154,7 +154,7 @@ cpu i34170  内存8G SSD256
 		alt=&#34;北大东门&#34;
 	
 	
-&gt;到达地点后预计12：30坐他们部队的班车回营区，不过因为时间改了15：30才出发，和他们一起进行了体能训练，晚上九点多才走。&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/7.jpg&#34;
+&gt;到达地点后预计12：30坐他们部队的班车回营区，不过因为时间改了15：30才出发，和他们一起进行了体能训练，晚上九点多才走。&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/7.jpg&#34;
 	
 	
 	
@@ -165,7 +165,7 @@ cpu i34170  内存8G SSD256
 	
 &gt;前往天通苑青旅，到达时已经一点多了。&lt;/p&gt;
 &lt;p&gt;##27号
-准备目睹下张雪峰口中上班点的天通苑地铁，普通人的北京。&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/8.jpg&#34;
+准备目睹下张雪峰口中上班点的天通苑地铁，普通人的北京。&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/8.jpg&#34;
 	
 	
 	
@@ -175,7 +175,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;一个小区三个地铁站，亚洲最大的小区。以及一千人挤一趟公交车，双脚离地不会倒的935公交。
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/osYO&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/9.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/osYO&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/9.jpg&#34;
 	
 	
 	
@@ -187,7 +187,7 @@ cpu i34170  内存8G SSD256
 &gt;&lt;/a&gt;
 很可惜因为前一天没休息好，九点才出发，已经过了上班高峰期（8：00-8：50），没见到。（不过我们发现。天通苑的地铁&lt;em&gt;&lt;strong&gt;30S&lt;/strong&gt;&lt;/em&gt;一班，）
 八王坟之行也取消了。很可惜，这是我来北京的重点。下午去玉渊潭公园，四点上了前往烟台的火车。
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/oFJG&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/13.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/oFJG&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/13.jpg&#34;
 	
 	
 	
@@ -197,7 +197,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/oOAs&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/11.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/oOAs&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/11.jpg&#34;
 	
 	
 	
@@ -207,7 +207,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/onRi&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/12.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/onRi&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/12.jpg&#34;
 	
 	
 	
@@ -218,7 +218,7 @@ cpu i34170  内存8G SSD256
 	
 &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;##28号
-和导游早上七点碰头，欣赏了烟台沿途海边的风景。&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/10.jpg&#34;
+和导游早上七点碰头，欣赏了烟台沿途海边的风景。&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/10.jpg&#34;
 	
 	
 	
@@ -228,7 +228,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;，第一站养马岛，海边都是礁石没有沙滩，和朋友骑了个小电动，逛了整个小岛，个人感觉景色一般。中午东炮台公园，这个是免票的。月亮湾，栈桥也应该去了，不过印象不深刻。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/oIbN&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/15.jpg&#34;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/oIbN&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/15.jpg&#34;
 	
 	
 	
@@ -238,7 +238,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/ohC1&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/16.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/ohC1&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/16.jpg&#34;
 	
 	
 	
@@ -248,7 +248,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/o4cR&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/18.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/o4cR&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/18.jpg&#34;
 	
 	
 	
@@ -259,7 +259,7 @@ cpu i34170  内存8G SSD256
 	
 &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;付费项目是鲸鲨水族馆以及游轮，水族馆里面没有空调比较热。
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/oxsX&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/20.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/oxsX&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/20.jpg&#34;
 	
 	
 	
@@ -269,7 +269,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/o8ey&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/19.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/o8ey&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/19.jpg&#34;
 	
 	
 	
@@ -280,7 +280,7 @@ cpu i34170  内存8G SSD256
 	
 &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;另外一个付费项目游轮，可以在游轮上欣赏烟台山，在游轮上喂海鸥，船长是个样貌有点海盗味儿的老头，很有意思。
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/o1Rf&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/17.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/o1Rf&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/17.jpg&#34;
 	
 	
 	
@@ -291,7 +291,7 @@ cpu i34170  内存8G SSD256
 	
 &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;最后一站是烟台山景区，也不用门票，不过有往返的观光车付费。&lt;/p&gt;
-&lt;p&gt;今天的导游非常不错，包括吃当地的特色菜，不用去有名的网红店吃，其实遍地都有，味道都一样。 晚上我们便去了晓东鲁菜馆，3-4人餐足够4-6人吃。这家的&lt;strong&gt;海鲜捞饭&lt;/strong&gt;非常不错，以及头菜炒虾，食材非常新鲜。（没照片。美团找的。这是四个菜中最好吃的两个）&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/o7lm&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/14.jpg&#34;
+&lt;p&gt;今天的导游非常不错，包括吃当地的特色菜，不用去有名的网红店吃，其实遍地都有，味道都一样。 晚上我们便去了晓东鲁菜馆，3-4人餐足够4-6人吃。这家的&lt;strong&gt;海鲜捞饭&lt;/strong&gt;非常不错，以及头菜炒虾，食材非常新鲜。（没照片。美团找的。这是四个菜中最好吃的两个）&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/o7lm&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/14.jpg&#34;
 	
 	
 	
@@ -302,7 +302,7 @@ cpu i34170  内存8G SSD256
 	
 &gt;&lt;/a&gt;
 ##29号
-继续烟台，换了个导游。重点是蓬莱阁景区，蓬莱阁是由白云宫三清殿、吕祖殿、苏公祠、天后宫、龙王宫、蓬莱阁主体建筑、弥陀寺等几组不同的祠庙殿堂、楼阁、亭坊组成的建筑体，统称为蓬莱阁。不过这些神话故事我不感兴趣，加上人特别多，体验很不好。付费项目是游轮，文城城堡内游，免费是只能在外面看看的。&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/oV0J&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/21.jpg&#34;
+继续烟台，换了个导游。重点是蓬莱阁景区，蓬莱阁是由白云宫三清殿、吕祖殿、苏公祠、天后宫、龙王宫、蓬莱阁主体建筑、弥陀寺等几组不同的祠庙殿堂、楼阁、亭坊组成的建筑体，统称为蓬莱阁。不过这些神话故事我不感兴趣，加上人特别多，体验很不好。付费项目是游轮，文城城堡内游，免费是只能在外面看看的。&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/oV0J&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/21.jpg&#34;
 	
 	
 	
@@ -313,7 +313,7 @@ cpu i34170  内存8G SSD256
 	
 &gt;&lt;/a&gt;
 游轮可以在海上看蓬莱阁，在蓬莱阁项目之前，船长卖火腿
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/oDKL&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/22.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/oDKL&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/22.jpg&#34;
 	
 	
 	
@@ -325,7 +325,7 @@ cpu i34170  内存8G SSD256
 &gt;&lt;/a&gt;
 文城城堡只可远观，近看必后悔。具体请看这里：&lt;a class=&#34;link&#34; href=&#34;https://www.lanhui.live/3623.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;em&gt;&lt;strong&gt;文成城堡避坑&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;
-&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/24.jpg&#34;
+&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/24.jpg&#34;
 	
 	
 	
@@ -335,7 +335,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;
-&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/25.jpg&#34;
+&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/25.jpg&#34;
 	
 	
 	
@@ -345,7 +345,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/og6T&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/26.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/og6T&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/26.jpg&#34;
 	
 	
 	
@@ -357,7 +357,7 @@ cpu i34170  内存8G SSD256
 &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;##30号
 威海的刘公岛景区，最后一站了。这次又换了一个导游。这个导游很不地道，额外付费项目排在套餐项目前面，所以我们上岛后就不能跟团了。去看了甲午中日战争陈念馆，水师学堂。其中水师学堂看了个寂寞。
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/ormC&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/27.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/ormC&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/27.jpg&#34;
 	
 	
 	
@@ -367,7 +367,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/oG0u&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/28.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/oG0u&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/28.jpg&#34;
 	
 	
 	
@@ -378,7 +378,7 @@ cpu i34170  内存8G SSD256
 	
 &gt;&lt;/a&gt;
 下午前往哈尔滨理工大学（威海）参观，学校也很大，特别是图书馆。
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/qCjW&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/29.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/qCjW&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/29.jpg&#34;
 	
 	
 	
@@ -388,7 +388,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/qpsU&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/30.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/qpsU&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/30.jpg&#34;
 	
 	
 	
@@ -398,7 +398,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/qjeg&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/31.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/qjeg&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/31.jpg&#34;
 	
 	
 	
@@ -411,7 +411,7 @@ cpu i34170  内存8G SSD256
 &lt;p&gt;至此旅行结束。
 晚上去青岛坐飞机回长沙，想尝一下青岛一厂二厂的鲜啤，机场没有。只有不怎么知名的四厂。
 对了。来了烟台威海，还可以尝尝鲅鱼饺子。
-&lt;a class=&#34;link&#34; href=&#34;//lanhui672.github.io/image/q3Zo&#34; &gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/23.jpg&#34;
+&lt;a class=&#34;link&#34; href=&#34;//www.lanhui.live/image/q3Zo&#34; &gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/23.jpg&#34;
 	
 	
 	
@@ -425,17 +425,17 @@ cpu i34170  内存8G SSD256
         </item>
         <item>
         <title>美团、文城城堡避坑</title>
-        <link>//lanhui672.github.io/p/3623/</link>
+        <link>//www.lanhui.live/p/3623/</link>
         <pubDate>Tue, 01 Aug 2023 07:14:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/3623/</guid>
+        <guid>//www.lanhui.live/p/3623/</guid>
         <description>&lt;p&gt;美团上的X天X夜游，并不是一个旅游团承包，而是好几个，每天换一个导游。这也导致第一天体验好，后续体验越来越差。
 ##第一天
 刘导，没有购物，付费项目和没有购买付费项目的游客可以安排好。游轮上船长不卖火腿（点赞）。
 ##第二天
 游轮体验差一些，船长卖火腿（不强制），住宿是住原来的地方，问了导游也不告诉我们。导致第二天全天背着个大书包四处逛。
 &lt;strong&gt;重点&lt;/strong&gt;
-文成城堡之行，远观确实很气派&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/25.jpg&#34;
+文成城堡之行，远观确实很气派&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/25.jpg&#34;
 	
 	
 	
@@ -444,7 +444,7 @@ cpu i34170  内存8G SSD256
 		alt=&#34;远观&#34;
 	
 	
-&gt;。进去看后，就很失望了。这是电影首富西虹市的拍摄地点，但是里面远没有那么豪华，园林没有养护，建筑物没有建完&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/3.jpg&#34;
+&gt;。进去看后，就很失望了。这是电影首富西虹市的拍摄地点，但是里面远没有那么豪华，园林没有养护，建筑物没有建完&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/3.jpg&#34;
 	
 	
 	
@@ -453,7 +453,7 @@ cpu i34170  内存8G SSD256
 		alt=&#34;未完成&#34;
 	
 	
-&gt;。建筑物的用料很差&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/5.jpg&#34;
+&gt;。建筑物的用料很差&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/5.jpg&#34;
 	
 	
 	
@@ -462,7 +462,7 @@ cpu i34170  内存8G SSD256
 		alt=&#34;y1&#34;
 	
 	
-&gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/6.jpg&#34;
+&gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/6.jpg&#34;
 	
 	
 	
@@ -471,7 +471,7 @@ cpu i34170  内存8G SSD256
 		alt=&#34;y2&#34;
 	
 	
-&gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/4.jpg&#34;
+&gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/4.jpg&#34;
 	
 	
 	
@@ -481,7 +481,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;，在风雨的侵蚀下已经腐蚀了很多。
-里面其实就是一个大酒店，但装修很差墙面不是瓷砖，是贴纸贴的，但凡用瓷砖。也会觉得高档点。&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/2.jpg&#34;
+里面其实就是一个大酒店，但装修很差墙面不是瓷砖，是贴纸贴的，但凡用瓷砖。也会觉得高档点。&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/2.jpg&#34;
 	
 	
 	
@@ -490,7 +490,7 @@ cpu i34170  内存8G SSD256
 		alt=&#34;瓷砖&#34;
 	
 	
-&gt;&lt;img src=&#34;//lanhui672.github.io/images/2023/08/26/1.jpg&#34;
+&gt;&lt;img src=&#34;//www.lanhui.live/images/2023/08/26/1.jpg&#34;
 	
 	
 	
@@ -506,20 +506,20 @@ cpu i34170  内存8G SSD256
         </item>
         <item>
         <title>休假</title>
-        <link>//lanhui672.github.io/p/3615/</link>
+        <link>//www.lanhui.live/p/3615/</link>
         <pubDate>Sat, 22 Jul 2023 07:17:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/3615/</guid>
+        <guid>//www.lanhui.live/p/3615/</guid>
         <description>&lt;p&gt;快休年假了，准备去北京，去张雪峰说过的八王坟，天通苑看看，那才是真实的北京，穷人的北京。最后再去烟台——威海——长沙。
 这次回家买了做包子的工具，准备给家人做牛肉包吃吃，毕竟我的手艺相比去年长进了很多。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>原神材料号</title>
-        <link>//lanhui672.github.io/p/3613/</link>
+        <link>//www.lanhui.live/p/3613/</link>
         <pubDate>Sat, 22 Jul 2023 07:14:03 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/3613/</guid>
+        <guid>//www.lanhui.live/p/3613/</guid>
         <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:su06y6p@163.com----xcx112211&#34; &gt;su06y6p@163.com----xcx112211&lt;/a&gt;
 &lt;a class=&#34;link&#34; href=&#34;mailto:idgs6ly@163.com----xcx112211&#34; &gt;idgs6ly@163.com----xcx112211&lt;/a&gt;
 &lt;a class=&#34;link&#34; href=&#34;mailto:zengmianmj62552@163.com----jun1453jun&#34; &gt;zengmianmj62552@163.com----jun1453jun&lt;/a&gt;
@@ -528,10 +528,10 @@ cpu i34170  内存8G SSD256
         </item>
         <item>
         <title>董宇辉演讲摘录</title>
-        <link>//lanhui672.github.io/p/3612/</link>
+        <link>//www.lanhui.live/p/3612/</link>
         <pubDate>Sun, 14 May 2023 08:31:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/3612/</guid>
+        <guid>//www.lanhui.live/p/3612/</guid>
         <description>&lt;p&gt;这两天看了董宇辉演讲的录播，感触很多，也有很多自己很认同的地方。但感触多和做到知行合一是两回事，我希望自己努力向他们靠拢。于是把这些在演讲中，觉得非常不错的道理记录下来。一方面是提醒自己，一方面是分享给大家。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;如果你默默无闻，但是你还持续专注。请你要不断地暗示自己，你做的是对的事情。这是一个人的定力，而且一个人的定力，最终决定他能走多远，跟聪明没有太大关系。特别聪明的人总是计算投入和产出比，一旦发现效率很低立马就撤了，所以你会发现，当一个人的成长过程中，或者一家公司、一个组织，但凡遇到困难的时候，跑的最早的都是聪明的。所以往往坚持到最后的，其实并不是聪明的人，聪明很多时候是智慧的天敌。&lt;/li&gt;
@@ -553,10 +553,10 @@ cpu i34170  内存8G SSD256
         </item>
         <item>
         <title>记一次感动的事情</title>
-        <link>//lanhui672.github.io/p/3616/</link>
+        <link>//www.lanhui.live/p/3616/</link>
         <pubDate>Sat, 29 Apr 2023 18:53:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/3616/</guid>
+        <guid>//www.lanhui.live/p/3616/</guid>
         <description>&lt;p&gt;这个月的月中，我们单位通知要求注销护照，当时我周日就要去住院了，负责这方面的人（称作a吧)催的很紧，如果不能在当地注销就要我请年假回去注销。
 我们单位有一个同事和我是一样需要注销，不同的是他家在这边，可以直接注销，同时认识办理注销的工作人员，帮我打了招呼，帮我发涵到长沙，要求长沙的出入境管理局注销。由于我不知道怎么写涵，他马上就帮我写了，还有委托书。
 在我住院期间，查到没有注销成功，按照a的要求，我家人携带户口本去窗口注销，也白跑一趟。他得知后帮我咨询，也给我留了咨询的电话，最后找到了可以不休假回家就能注销的方法。出院后的那天晚上，还加班加点的帮我弄好了涵和申请书，第二天成功注销了护照。
@@ -565,19 +565,19 @@ cpu i34170  内存8G SSD256
         </item>
         <item>
         <title>我还活着</title>
-        <link>//lanhui672.github.io/p/3610/</link>
+        <link>//www.lanhui.live/p/3610/</link>
         <pubDate>Thu, 06 Apr 2023 11:36:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/3610/</guid>
+        <guid>//www.lanhui.live/p/3610/</guid>
         <description>&lt;p&gt;从去年9月开始，由于不可抗因素，博客慢慢停止更新。中间断断续续有一两篇，但我个人也觉得比较水。2021年12月28至2022年7月，是我最为艰难的一段时光，身心饱受摧残，知识和技术没有进步，每天在煎熬中度过，后面慢慢好些了。一直在等解放，现在在做准备。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>旧物</title>
-        <link>//lanhui672.github.io/p/%E6%97%A7%E7%89%A9/</link>
+        <link>//www.lanhui.live/p/%E6%97%A7%E7%89%A9/</link>
         <pubDate>Tue, 12 May 2020 14:35:00 +0800</pubDate>
         
-        <guid>//lanhui672.github.io/p/%E6%97%A7%E7%89%A9/</guid>
+        <guid>//www.lanhui.live/p/%E6%97%A7%E7%89%A9/</guid>
         <description>&lt;p&gt;偶然间，翻到了我9年前的日记本。
 第一篇是从前言开始记事，
 记载了我在意的事
@@ -588,7 +588,7 @@ cpu i34170  内存8G SSD256
 9年光阴
 早已物是人非&amp;lt;
 唯有挚友依在
-&lt;img src=&#34;//lanhui672.github.io/images/2020/05/12/1.jpg&#34;
+&lt;img src=&#34;//www.lanhui.live/images/2020/05/12/1.jpg&#34;
 	
 	
 	
@@ -598,7 +598,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;
-&lt;img src=&#34;//lanhui672.github.io/images/2020/05/12/2.jpg&#34;
+&lt;img src=&#34;//www.lanhui.live/images/2020/05/12/2.jpg&#34;
 	
 	
 	
@@ -608,7 +608,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;
-&lt;img src=&#34;//lanhui672.github.io/images/2020/05/12/3.jpg&#34;
+&lt;img src=&#34;//www.lanhui.live/images/2020/05/12/3.jpg&#34;
 	
 	
 	
@@ -618,7 +618,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;
-&lt;img src=&#34;//lanhui672.github.io/images/2020/05/12/4.jpg&#34;
+&lt;img src=&#34;//www.lanhui.live/images/2020/05/12/4.jpg&#34;
 	
 	
 	
@@ -628,7 +628,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;
-&lt;img src=&#34;//lanhui672.github.io/images/2020/05/12/5.jpg&#34;
+&lt;img src=&#34;//www.lanhui.live/images/2020/05/12/5.jpg&#34;
 	
 	
 	
@@ -638,7 +638,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;
-&lt;img src=&#34;//lanhui672.github.io/images/2020/05/12/6.jpg&#34;
+&lt;img src=&#34;//www.lanhui.live/images/2020/05/12/6.jpg&#34;
 	
 	
 	
@@ -648,7 +648,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;
-&lt;img src=&#34;//lanhui672.github.io/images/2020/05/12/7.jpg&#34;
+&lt;img src=&#34;//www.lanhui.live/images/2020/05/12/7.jpg&#34;
 	
 	
 	
@@ -658,7 +658,7 @@ cpu i34170  内存8G SSD256
 	
 	
 &gt;
-&lt;img src=&#34;//lanhui672.github.io/images/2020/05/12/8.jpg&#34;
+&lt;img src=&#34;//www.lanhui.live/images/2020/05/12/8.jpg&#34;
 	
 	
 	
