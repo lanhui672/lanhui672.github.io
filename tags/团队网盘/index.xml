@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>团队网盘 on 蓝惠の小窝</title>
+        <link>//lanhui672.github.io/tags/%E5%9B%A2%E9%98%9F%E7%BD%91%E7%9B%98/</link>
+        <description>Recent content in 团队网盘 on 蓝惠の小窝</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>蓝惠の小窝</copyright>
+        <lastBuildDate>Thu, 21 May 2020 11:22:30 +0800</lastBuildDate><atom:link href="//lanhui672.github.io/tags/%E5%9B%A2%E9%98%9F%E7%BD%91%E7%9B%98/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>onedrive加入sharepoint团队盘后，如何使用？</title>
+        <link>//lanhui672.github.io/p/onedrive%E5%8A%A0%E5%85%A5sharepoint%E5%9B%A2%E9%98%9F%E7%9B%98%E5%90%8E-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/</link>
+        <pubDate>Thu, 21 May 2020 11:22:30 +0800</pubDate>
+        
+        <guid>//lanhui672.github.io/p/onedrive%E5%8A%A0%E5%85%A5sharepoint%E5%9B%A2%E9%98%9F%E7%9B%98%E5%90%8E-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8/</guid>
+        <description>&lt;p&gt;前言：onedrive教育版个人网盘的常规使用就不说了，今天说一下团队盘sharepoint的使用。本文讲解的是团队盘专用组的使用&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2&gt;登录&lt;/h2&gt;
+管理员创建好你账号后，通过网址 &lt;a href=&#34;https://www.office.com/&#34;&gt;https://www.office.com/&lt;/a&gt;   登录，此时会提示你绑定手机号和邮箱，这是你找回密码的凭证。
+&lt;p&gt;&lt;img class=&#34;alignnone size-medium&#34; src=&#34;https://img.lanhui.live/images/2020/05/21/1.jpg&#34; alt=&#34;绑定手机邮箱&#34; width=&#34;1380&#34; height=&#34;574&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;接着进入到这个页面，显示的是你可以使用的应用。我们只讲解sharepoint，其他的可以自己探索。&lt;/p&gt;
+&lt;p&gt;点击sharepoint&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;alignnone size-medium&#34; src=&#34;https://img.lanhui.live/images/2020/05/21/2.jpg&#34; alt=&#34;点击sharepoint&#34; width=&#34;1585&#34; height=&#34;836&#34; /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2&gt;查找自己加入的组&lt;/h2&gt;
+&lt;h3&gt;方法一&lt;/h3&gt;
+搜索管理员把你加入的组名称或者ID。名称可以改变，但是ID是固定的。 本次加入的专用组ID为群号（考研群那个）。选择站点，然后点击进去
+&lt;p&gt;&lt;img class=&#34;alignnone &#34; src=&#34;https://img.lanhui.live/images/2020/05/21/3.jpg&#34; width=&#34;659&#34; height=&#34;258&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;此处就是你的团队盘了，记得点击关注，方便查找&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;alignnone size-medium&#34; src=&#34;https://img.lanhui.live/images/2020/05/21/4.jpg&#34; width=&#34;1838&#34; height=&#34;930&#34; /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3&gt;查找方法2&lt;/h3&gt;
+登录www.office.com,点击outlook查看邮件
+&lt;p&gt;&lt;img class=&#34;alignnone &#34; src=&#34;https://img.lanhui.live/images/2020/05/21/5.jpg&#34; width=&#34;886&#34; height=&#34;534&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;可以看到已经有邮件通知你加入组了，点击查看组&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;alignnone &#34; src=&#34;https://img.lanhui.live/images/2020/05/21/6.jpg&#34; width=&#34;856&#34; height=&#34;559&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;转到组文件&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;alignnone size-medium&#34; src=&#34;https://img.lanhui.live/images/2020/05/21/7.jpg&#34; width=&#34;1414&#34; height=&#34;902&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;此处图已经讲解的很详细了，点击同步那里必须自己的电脑登录了onedrive账号，才能登录你的团队盘。&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;alignnone size-medium&#34; src=&#34;https://img.lanhui.live/images/2020/05/21/8.jpg&#34; width=&#34;1417&#34; height=&#34;938&#34; /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;跳转到自己的组后，如图所示位置，也有同步按钮，点击可以后PC端登录团推盘。&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;alignnone size-medium&#34; src=&#34;https://img.lanhui.live/images/2020/05/21/9.jpg&#34; width=&#34;1477&#34; height=&#34;538&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;提示打开，以及跳出的窗口&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#34;alignnone size-medium&#34; src=&#34;https://img.lanhui.live/images/2020/05/21/10.jpg&#34; width=&#34;1490&#34; height=&#34;389&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;在自己的右下角，点击更多-设置-账号，可以看到多出一个文件夹，&lt;strong&gt;这个就是团队盘的文件夹。团队中任何成员放入的资料都可以显示在这个网盘中，你也可以进行编辑。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.lanhui.live/images/2020/05/21/11.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;打开自己的onedrive文件夹保存位置，可以看到多了一个小房子图标的文件夹，这就是团队盘文件夹&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.lanhui.live/images/2020/05/21/12.jpg&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;如何把团队盘的文件保存到自己的文件夹？以及如何把自己的文件存入团队盘？&lt;/h2&gt;
+&lt;h3&gt;怎么保存到自己的文件夹&lt;/h3&gt;
+点击全部查看
+&lt;p&gt;&lt;img src=&#34;https://img.lanhui.live/images/2020/05/21/13.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;选择你要保存到自己私人网盘的文件夹，选&lt;strong&gt;择复制到，千万不要选择移动（这是剪切功能）&lt;/strong&gt;，这样对你我他都好。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.lanhui.live/images/2020/05/21/14.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;选择复制到的位置：你的onedrive&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.lanhui.live/images/2020/05/21/15.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;选择你要保存 的文件夹，如果都不是你想保存的文件夹，那就可以选择新建文件夹。点击复制，等复制完成就可以了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.lanhui.live/images/2020/05/21/16.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2&gt;那如何把自己的文件分享到团队盘呢？&lt;/h2&gt;
+首先第一种方法，&lt;strong&gt;直接把原文件放入团队盘，但是如果自己的磁盘没备份，团队盘的文件又被其他成员通过移动（剪切）功能拿走了，你就找不到了。不推荐。&lt;/strong&gt;
+&lt;p&gt;首先，你先把自己的文件同步到自己的私人网盘，然后在自己的私人网盘中，选择你要分享的文件夹。&lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;strong&gt;千万不要选择移动到&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.lanhui.live/images/2020/05/21/17.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;选择你要分享的站点，也就是团队盘&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.lanhui.live/images/2020/05/21/18.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.lanhui.live/images/2020/05/21/19.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;选择你要保存到团队盘的文件夹，也可以自己新建。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.lanhui.live/images/2020/05/21/20.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如图，等复制完就可以了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.lanhui.live/images/2020/05/21/21.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;复制完会文件就会显示，有时候可能会有一点点出错，少部分情况，注意关注。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.lanhui.live/images/2020/05/21/22.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;如有遗漏或者不懂请在这里留言。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
