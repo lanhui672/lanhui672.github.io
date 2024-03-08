@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on 蓝惠の小窝</title>
+        <link>//www.lanhui.live/categories/</link>
+        <description>Recent content in Categories on 蓝惠の小窝</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>蓝惠の小窝</copyright>
+        <lastBuildDate>Mon, 08 Jan 2024 20:50:57 +0800</lastBuildDate><atom:link href="//www.lanhui.live/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>网络</title>
+        <link>//www.lanhui.live/categories/%E7%BD%91%E7%BB%9C/</link>
+        <pubDate>Mon, 08 Jan 2024 20:50:57 +0800</pubDate>
+        
+        <guid>//www.lanhui.live/categories/%E7%BD%91%E7%BB%9C/</guid>
+        <description>&lt;img src="//www.lanhui.live/categories/%E7%BD%91%E7%BB%9C/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post 网络" /&gt;</description>
+        </item>
+        <item>
+        <title>说说</title>
+        <link>//www.lanhui.live/categories/%E8%AF%B4%E8%AF%B4/</link>
+        <pubDate>Thu, 30 Nov 2023 07:52:02 +0800</pubDate>
+        
+        <guid>//www.lanhui.live/categories/%E8%AF%B4%E8%AF%B4/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>游戏</title>
+        <link>//www.lanhui.live/categories/%E6%B8%B8%E6%88%8F/</link>
+        <pubDate>Sat, 22 Jul 2023 07:14:03 +0800</pubDate>
+        
+        <guid>//www.lanhui.live/categories/%E6%B8%B8%E6%88%8F/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>其他</title>
+        <link>//www.lanhui.live/categories/%E5%85%B6%E4%BB%96/</link>
+        <pubDate>Wed, 26 Oct 2022 21:15:00 +0800</pubDate>
+        
+        <guid>//www.lanhui.live/categories/%E5%85%B6%E4%BB%96/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>相册</title>
+        <link>//www.lanhui.live/categories/%E7%9B%B8%E5%86%8C/</link>
+        <pubDate>Sun, 23 Feb 2020 17:41:42 +0800</pubDate>
+        
+        <guid>//www.lanhui.live/categories/%E7%9B%B8%E5%86%8C/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Test</title>
+        <link>//www.lanhui.live/categories/test/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>//www.lanhui.live/categories/test/</guid>
+        <description>&lt;img src="//www.lanhui.live/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
