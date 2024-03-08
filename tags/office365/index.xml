@@ -9,10 +9,10 @@
         <copyright>蓝惠の小窝</copyright>
         <lastBuildDate>Mon, 04 May 2020 17:13:31 +0800</lastBuildDate><atom:link href="//www.lanhui.live/tags/office365/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>office365 a1升级A3方法/A1升级A3失败，以及申请地址总结onedrive</title>
-        <link>//www.lanhui.live/p/office365-a1%E5%8D%87%E7%BA%A7%E4%B8%BAa3%E6%96%B9%E6%B3%95/</link>
+        <link>//www.lanhui.live/p/1072/</link>
         <pubDate>Mon, 04 May 2020 17:13:31 +0800</pubDate>
         
-        <guid>//www.lanhui.live/p/office365-a1%E5%8D%87%E7%BA%A7%E4%B8%BAa3%E6%96%B9%E6%B3%95/</guid>
+        <guid>//www.lanhui.live/p/1072/</guid>
         <description>&lt;h2&gt;前言&lt;/h2&gt;
 最近跑出的A3订阅可谓闹得整个office羊毛界满城风雨，连我这种双耳不稳窗外事，一心只爱二次元的人，也被好友&lt;a href=&#34;https://www.skxlz.top/about/&#34;&gt;元燮&lt;/a&gt;叫过来薅微软的羊毛了。目前已成功上车，没翻车。
 &lt;p&gt;A3的出场，导致A1价格暴涨，A1P价格狂跌。E3 绝版账号也不像以前那么珍贵了。虽然A3翻车的大有人在。&lt;/p&gt;
@@ -51,10 +51,10 @@
         </item>
         <item>
         <title>申请 Office365 E5 开发者订阅，调用API 实现无限续期</title>
-        <link>//www.lanhui.live/p/%E7%94%B3%E8%AF%B7-office365-e5-%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%A2%E9%98%85-%E6%90%AD%E5%BB%BA-onelndex-%E5%AE%9E%E7%8E%B0%E6%97%A0%E9%99%90%E7%BB%AD%E6%9C%9F/</link>
+        <link>//www.lanhui.live/p/1047/</link>
         <pubDate>Mon, 16 Mar 2020 13:39:26 +0800</pubDate>
         
-        <guid>//www.lanhui.live/p/%E7%94%B3%E8%AF%B7-office365-e5-%E5%BC%80%E5%8F%91%E8%80%85%E8%AE%A2%E9%98%85-%E6%90%AD%E5%BB%BA-onelndex-%E5%AE%9E%E7%8E%B0%E6%97%A0%E9%99%90%E7%BB%AD%E6%9C%9F/</guid>
+        <guid>//www.lanhui.live/p/1047/</guid>
         <description>&lt;p&gt;申请 Office 365 开发者计划，可以获得为期 3 个月的免费 Office 365 E5。Office 365 开发版 E5 是为开发人员提供的，微软官方活动，目前注册该试用版有效期为 90 天，90 天后需要证明是开发者才能续订，而微软判断是否为开发者的依据则为是否调用API，因此可以通过搭建onelndex调用API实现续订。&lt;/p&gt;
 &lt;p&gt;并且E5包含了25个桌面版的office365许可证，这也是获取office365的好机会！&lt;/p&gt;
 &lt;p&gt;浏览器推荐使用隐私模式！&lt;/p&gt;

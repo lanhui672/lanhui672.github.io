@@ -9,10 +9,10 @@
         <copyright>蓝惠の小窝</copyright>
         <lastBuildDate>Sat, 25 Apr 2020 00:31:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/tags/typecho/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>安装Typecho遇到的问题:连接不上数据库，只能用PHP5.x版本</title>
-        <link>//www.lanhui.live/p/%E5%AE%89%E8%A3%85typecho%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A%E6%95%B0%E6%8D%AE%E5%BA%93-%E5%8F%AA%E8%83%BD%E7%94%A8php5-x%E7%89%88%E6%9C%AC/</link>
+        <link>//www.lanhui.live/p/1069/</link>
         <pubDate>Sat, 25 Apr 2020 00:31:00 +0800</pubDate>
         
-        <guid>//www.lanhui.live/p/%E5%AE%89%E8%A3%85typecho%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A%E6%95%B0%E6%8D%AE%E5%BA%93-%E5%8F%AA%E8%83%BD%E7%94%A8php5-x%E7%89%88%E6%9C%AC/</guid>
+        <guid>//www.lanhui.live/p/1069/</guid>
         <description>&lt;p&gt;今天突然想搭建一个Typecho博客，随便记录一下平时的笔记。结果安装的时候无论怎样，数据库都连接不上！@(fanu)尝试过一下方法：&lt;/p&gt;
 &lt;p&gt;将localhost改为127.0.0.1&lt;/p&gt;
 &lt;p&gt;关闭SELinux（这个方法来自&lt;a title=&#34;github&#34; href=&#34;https://github.com/typecho/typecho/issues/861&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;github&lt;/a&gt;）&lt;/p&gt;
@@ -30,10 +30,10 @@ $db = new Typecho_Db(&amp;lsquo;Pdo_Mysql&amp;rsquo;, &amp;lsquo;typecho_&#39;);
         </item>
         <item>
         <title>给 WordPress/typecho 博客添加看板娘 -- 加藤惠</title>
-        <link>//www.lanhui.live/p/%E7%BB%99-wordpress-%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98-%E5%8A%A0%E8%97%A4%E6%83%A0/</link>
+        <link>//www.lanhui.live/p/1066/</link>
         <pubDate>Sun, 23 Feb 2020 15:54:00 +0800</pubDate>
         
-        <guid>//www.lanhui.live/p/%E7%BB%99-wordpress-%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98-%E5%8A%A0%E8%97%A4%E6%83%A0/</guid>
+        <guid>//www.lanhui.live/p/1066/</guid>
         <description>&lt;p&gt;####2023.7.31发现文章看板娘下载链接失效了，这个可以在网上搜搜，平替
 ####由于博主现在用的是typecho ，更新下typecho添加的方法&lt;/p&gt;
 &lt;ol&gt;

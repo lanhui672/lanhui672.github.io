@@ -7,35 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蓝惠の小窝</copyright>
-        <lastBuildDate>Sun, 10 Dec 2023 22:45:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/categories/%E8%AF%B4%E8%AF%B4/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>装机小插曲</title>
-        <link>//www.lanhui.live/p/3650/</link>
-        <pubDate>Sun, 10 Dec 2023 22:45:00 +0800</pubDate>
-        
-        <guid>//www.lanhui.live/p/3650/</guid>
-        <description>&lt;p&gt;闲置了一块AMD590得显卡，结果装在小主机上不工作。，只能通过核显输出视频。也找过华硕得技术支持，要么是显卡得问题，要么是主板PCIE接口得问题。
-于是乎，我在显卡插槽插了张m.2转pcie得扩展卡，能识别（前阵子也用了），显卡插在自己的主机机也没问题。才反应过来，可能主板不支持。
-配置
-cpu i34170  内存8G SSD256
-根据百度华硕官方得回答，确实是不支持的。除非升级CPU和内存
-链接：&lt;a class=&#34;link&#34; href=&#34;https://zhidao.baidu.com/question/327059329237632605.html#:~:text=%E5%8D%8E%E7%A1%95b85%E4%B8%BB%E6%9D%BF%20cpu%E6%9C%80%E9%AB%98%E5%8F%AF%E4%BB%A5%E6%94%AF%E6%8C%81%E5%88%B0i7%204770k%EF%BC%8CPCI-E%203.0%2A16%E7%9A%84%E6%98%BE%E5%8D%A1%E6%8E%A5%E5%8F%A3%EF%BC%8C%E6%98%BE%E5%8D%A1%E6%9C%80%E9%AB%98980ti%EF%BC%8C%E7%9B%AE%E5%89%8D%E6%9D%A5%E8%AF%B4%E6%9C%80%E9%AB%98%E5%8F%AF%E4%BB%A5%E4%B8%8A%E5%88%B02080ti.,%E6%98%BE%E5%8D%A1%E9%85%8D%E7%BD%AE%E4%B8%80%E5%9D%97rx580%E6%88%96%E8%80%851660%E5%B0%B1%E5%8F%AF%E4%BB%A5%E4%BA%86%EF%BC%8C%E5%86%8D%E9%AB%98%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95%E6%84%8F%E4%B9%89%EF%BC%81%20%E5%86%85%E5%AD%98%E4%B9%9F%E5%BE%97%E8%87%B3%E5%B0%9116g%EF%BC%8Ccpu%E5%A6%82%E6%9E%9C%E4%BD%8E%E4%BA%8Ei7%204770%EF%BC%8C%E6%98%BE%E5%8D%A1%E4%B9%9F%E8%A6%81%E5%86%8D%E9%99%8D1060%201050ti%E6%88%96%E8%80%85rx570&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;百度知道&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>关于邮件功能失效，无法通知评论</title>
-        <link>//www.lanhui.live/p/3641/</link>
-        <pubDate>Tue, 05 Dec 2023 00:48:27 +0800</pubDate>
-        
-        <guid>//www.lanhui.live/p/3641/</guid>
-        <description>&lt;p&gt;邮件发送失败：SMTP connect() failed.
-好几个月前就出现这种情况了，在网上找了各种方法，也没解决。
-评论收到了我看到了会回复的，因为我也没邮件通知有人评论。各位朋友评论是记得附带真实邮箱，我会手动发送通知邮件的。
-如果在我的发卡网站（蓝惠小店&lt;a class=&#34;link&#34; href=&#34;http://shop.lanhui.live&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://shop.lanhui.live&lt;/a&gt;）买了卡密或者其他资源，没有保存好卡密，**可以通过购买时填写的信息查询。**也可以找我，我手动查询发给你。&lt;/p&gt;
-</description>
-        </item>
-        <item>
+        <lastBuildDate>Thu, 30 Nov 2023 07:52:02 +0800</lastBuildDate><atom:link href="//www.lanhui.live/categories/%E8%AF%B4%E8%AF%B4/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>解放</title>
         <link>//www.lanhui.live/p/3640/</link>
         <pubDate>Thu, 30 Nov 2023 07:52:02 +0800</pubDate>
@@ -515,18 +487,6 @@ cpu i34170  内存8G SSD256
 </description>
         </item>
         <item>
-        <title>原神材料号</title>
-        <link>//www.lanhui.live/p/3613/</link>
-        <pubDate>Sat, 22 Jul 2023 07:14:03 +0800</pubDate>
-        
-        <guid>//www.lanhui.live/p/3613/</guid>
-        <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:su06y6p@163.com----xcx112211&#34; &gt;su06y6p@163.com----xcx112211&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;mailto:idgs6ly@163.com----xcx112211&#34; &gt;idgs6ly@163.com----xcx112211&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;mailto:zengmianmj62552@163.com----jun1453jun&#34; &gt;zengmianmj62552@163.com----jun1453jun&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;mailto:csrohj9@163.com----xcx112211&#34; &gt;csrohj9@163.com----xcx112211&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
         <title>董宇辉演讲摘录</title>
         <link>//www.lanhui.live/p/3612/</link>
         <pubDate>Sun, 14 May 2023 08:31:00 +0800</pubDate>
@@ -557,27 +517,19 @@ cpu i34170  内存8G SSD256
         <pubDate>Sat, 29 Apr 2023 18:53:00 +0800</pubDate>
         
         <guid>//www.lanhui.live/p/3616/</guid>
-        <description>&lt;p&gt;这个月的月中，我们单位通知要求注销护照，当时我周日就要去住院了，负责这方面的人（称作a吧)催的很紧，如果不能在当地注销就要我请年假回去注销。
-我们单位有一个同事和我是一样需要注销，不同的是他家在这边，可以直接注销，同时认识办理注销的工作人员，帮我打了招呼，帮我发涵到长沙，要求长沙的出入境管理局注销。由于我不知道怎么写涵，他马上就帮我写了，还有委托书。
-在我住院期间，查到没有注销成功，按照a的要求，我家人携带户口本去窗口注销，也白跑一趟。他得知后帮我咨询，也给我留了咨询的电话，最后找到了可以不休假回家就能注销的方法。出院后的那天晚上，还加班加点的帮我弄好了涵和申请书，第二天成功注销了护照。
-这让我不得不感慨，有的人只在乎自己的事情，但有的人，真的是为他人着想。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>我还活着</title>
-        <link>//www.lanhui.live/p/3610/</link>
-        <pubDate>Thu, 06 Apr 2023 11:36:00 +0800</pubDate>
-        
-        <guid>//www.lanhui.live/p/3610/</guid>
-        <description>&lt;p&gt;从去年9月开始，由于不可抗因素，博客慢慢停止更新。中间断断续续有一两篇，但我个人也觉得比较水。2021年12月28至2022年7月，是我最为艰难的一段时光，身心饱受摧残，知识和技术没有进步，每天在煎熬中度过，后面慢慢好些了。一直在等解放，现在在做准备。&lt;/p&gt;
+        <description>&lt;p&gt;这个月的月中，我们单位通知要求注销护照，当时我周日就要去住院了，负责这方面的文职催的很紧，如果不能在当地注销就要我请年假回去注销。
+我们单位有一个同事和我是一样需要注销，不同的是他家在这边，可以直接注销，同时认识办理注销的工作人员，帮我打了招呼，给我发涵到长沙，要求长沙的出入境管理局注销。由于我不知道怎么写涵，他马上就帮我写了，还有委托书。
+在我住院期间，查到没有注销成功，按照文职的要求，需要我家人携带户口本去窗口注销，也白跑一趟。他得知后帮我咨询，也给我留了咨询的电话，最后找到了可以不休假回家就能注销的方法。出院后的那天晚上，还加班加点的帮我弄好了涵和申请书，第二天成功注销了护照。
+这让我不得不感慨，有的人只在乎自己的事情，但有的人，真的是为他人着想。真的非常感谢他！
+ps:帮我的这个人是单位的干部，同时也是一名党员。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>旧物</title>
-        <link>//www.lanhui.live/p/%E6%97%A7%E7%89%A9/</link>
+        <link>//www.lanhui.live/p/1060/</link>
         <pubDate>Tue, 12 May 2020 14:35:00 +0800</pubDate>
         
-        <guid>//www.lanhui.live/p/%E6%97%A7%E7%89%A9/</guid>
+        <guid>//www.lanhui.live/p/1060/</guid>
         <description>&lt;p&gt;偶然间，翻到了我9年前的日记本。
 第一篇是从前言开始记事，
 记载了我在意的事
