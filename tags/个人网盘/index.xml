@@ -14,7 +14,18 @@
         
         <guid>//www.lanhui.live/p/trashed/</guid>
         <description>&lt;p&gt;这次介绍的挂载程序为OneManager，OneManager继承了onelndex的所有功能，并且支持多盘挂载，sharepoint。并且支持一键复制所有下载链接，可以说是下载党的福音了。体验地址：&lt;a href=&#34;https://p.lanhui.co&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://p.lanhui.co&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://p.lanhui.co&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+    &gt;https://p.lanhui.co&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;本片文章介绍的为服务器搭建，当然也还有其他搭建方式，比如heroku、腾讯云SCF、阿里云FC。&lt;/p&gt;
 &lt;p&gt;准备材料：服务器/虚拟主机、源码、可选：域名&lt;/p&gt;
 &lt;p&gt;首先老样子，安装宝塔后部署环境。&lt;/p&gt;
@@ -23,7 +34,18 @@
 &lt;p&gt;点击网站根目录，即可进入网站目录&lt;/p&gt;
 &lt;img src=&#34;//www.lanhui.live/images/2020/07/13/imageba7b71930dbebe0c.png&#34; /&gt;
 &lt;p&gt;前往&lt;a href=&#34;https://github.com/qkqpttgf/OneManager-php&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.cxiazaom/qkqpttgf/OneManager-phpx&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.cxiazaom/qkqpttgf/OneManager-phpx&lt;/a&gt;&lt;/a&gt;下载最新源码，上传到这个根目录，解压。&lt;/p&gt;
+    &gt;https://github.cxiazaom/qkqpttgf/OneManager-phpx&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+&lt;/a&gt;下载最新源码，上传到这个根目录，解压。&lt;/p&gt;
 &lt;img src=&#34;//www.lanhui.live/images/2020/07/13/image326a21f0e9d75a24.png&#34; /&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;//www.lanhui.live/images/2020/07/13/imagecd47fbb5b5468009.png&#34; /&gt;得到一个文件夹，把里面的文件全部剪切到网站的根目录。&lt;/p&gt;

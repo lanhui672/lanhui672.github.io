@@ -14,14 +14,47 @@
         
         <guid>//www.lanhui.live/p/1045/</guid>
         <description>&lt;p&gt;这里是 &lt;a class=&#34;link&#34; href=&#34;https://www.moerats.com/archives/700/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Rat&amp;rsquo;s Blog大佬&lt;/a&gt;使用教程的整合，因为大佬的教程要同时参考三篇文章，这里整合一下用法。使用到用命令上传是没问题的，后续操作没成功，不过还是搬过来组成完整教程。后面有空弄一下onelndex的上传&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+    &gt;Rat&amp;rsquo;s Blog大佬&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+使用教程的整合，因为大佬的教程要同时参考三篇文章，这里整合一下用法。使用到用命令上传是没问题的，后续操作没成功，不过还是搬过来组成完整教程。后面有空弄一下onelndex的上传&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;##安装 Aria2
 这里用的逗比的脚本，使用命令：
 wget -N &amp;ndash;no-check-certificate &lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/aria2.sh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/aria2.sh&lt;/a&gt; &amp;amp;&amp;amp; chmod +x aria2.sh &amp;amp;&amp;amp; bash aria2.sh
+    &gt;https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/aria2.sh&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+ &amp;amp;&amp;amp; chmod +x aria2.sh &amp;amp;&amp;amp; bash aria2.sh
 #备用地址
 wget -N &amp;ndash;no-check-certificate &lt;a class=&#34;link&#34; href=&#34;https://www.moerats.com/usr/shell/Aria2/aria2.sh&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.moerats.com/usr/shell/Aria2/aria2.sh&lt;/a&gt; &amp;amp;&amp;amp; chmod +x aria2.sh &amp;amp;&amp;amp; bash aria2.sh
+    &gt;https://www.moerats.com/usr/shell/Aria2/aria2.sh&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+ &amp;amp;&amp;amp; chmod +x aria2.sh &amp;amp;&amp;amp; bash aria2.sh
 安装完成后，如果我们想修改密码、下载文件位置、端口的话，可以使用命令&lt;code&gt;bash aria2.sh&lt;/code&gt;，再选择修改配置即可，这里建议使用该脚本配置自动更新&lt;code&gt;BT-Tracker&lt;/code&gt;服务器，对下载&lt;code&gt;BT&lt;/code&gt;有加成。&lt;/p&gt;
 &lt;p&gt;##安装 AriaNg
 这一步和安装&lt;code&gt;OneIndex&lt;/code&gt;差不多，先添加一个域名，不想用域名的可以在添加域名那里填上&lt;code&gt;IP&lt;/code&gt;或者&lt;code&gt;IP:端口&lt;/code&gt;，然后将&lt;code&gt;AriaNg&lt;/code&gt;程序上传到对应的根目录，可以使用命令：
@@ -32,7 +65,18 @@ apt-get install unzip -y
 yum install unzip -y
 cd /www/wwwroot/11.22.33.44
 wget &lt;a class=&#34;link&#34; href=&#34;https://www.moerats.com/usr/down/aria-ng-0.2.0.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.moerats.com/usr/down/aria-ng-0.2.0.zip&lt;/a&gt; &amp;amp;&amp;amp; unzip aria-ng-0.2.0.zip&lt;/p&gt;
+    &gt;https://www.moerats.com/usr/down/aria-ng-0.2.0.zip&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+ &amp;amp;&amp;amp; unzip aria-ng-0.2.0.zip&lt;/p&gt;
 &lt;p&gt;这时候我们就可以使用&lt;code&gt;IP&lt;/code&gt;访问&lt;code&gt;AriaNg&lt;/code&gt;界面了，或者&lt;code&gt;IP:端口&lt;/code&gt;，这取决于你添加域名的时候填的什么了。&lt;/p&gt;
 &lt;p&gt;刚开始登录会提示错误，需要虚入密码&lt;/p&gt;
 &lt;img class=&#34;aligncenter&#34; src=&#34;//www.lanhui.live/images/2020/04/21/caa09f551a86740e55206337996ab646.md.png&#34; alt=&#34;&#34; width=&#34;500&#34; height=&#34;244&#34; /&gt;
@@ -47,13 +91,46 @@ wget &lt;a class=&#34;link&#34; href=&#34;https://www.moerats.com/usr/down/aria-
 &lt;p&gt;###安装 OneDriveUploader
 #64位系统下载
 wget &lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader&lt;/a&gt; -P /usr/local/bin/
+    &gt;https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+ -P /usr/local/bin/
 #32位系统下载
 wget &lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/i386/linux/OneDriveUploader&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/i386/linux/OneDriveUploader&lt;/a&gt; -P /usr/local/bin/
+    &gt;https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/i386/linux/OneDriveUploader&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+ -P /usr/local/bin/
 #arm架构下载
 wget &lt;a class=&#34;link&#34; href=&#34;https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/arm/linux/OneDriveUploader&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/arm/linux/OneDriveUploader&lt;/a&gt; -P /usr/local/bin/
+    &gt;https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/arm/linux/OneDriveUploader&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+ -P /usr/local/bin/
 #给予权限
 chmod +x /usr/local/bin/OneDriveUploader
 ###初始化配置

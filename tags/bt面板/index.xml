@@ -44,19 +44,74 @@
 &lt;p&gt;顺便贴上linux主机一键安装为win7/win8系统的代码，有萌咖大佬提供！&lt;/p&gt;
 &lt;p&gt;一键安装为win7 32位系统
 wget &amp;ndash;no-check-certificate -qO InstallNET.sh &amp;lsquo;&lt;a class=&#34;link&#34; href=&#34;https://moeclub.org/attachment/LinuxShell/InstallNET.sh%27&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://moeclub.org/attachment/LinuxShell/InstallNET.sh&#39;&lt;/a&gt; &amp;amp;&amp;amp; bash InstallNET.sh -dd &amp;lsquo;&lt;a class=&#34;link&#34; href=&#34;https://moeclub.org/onedrive/IMAGE/Windows/win7emb_x86.tar.gz%27&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://moeclub.org/attachment/LinuxShell/InstallNET.sh&#39;&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+ &amp;amp;&amp;amp; bash InstallNET.sh -dd &amp;lsquo;&lt;a class=&#34;link&#34; href=&#34;https://moeclub.org/onedrive/IMAGE/Windows/win7emb_x86.tar.gz%27&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://moeclub.org/onedrive/IMAGE/Windows/win7emb_x86.tar.gz&#39;&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
 一键安装为win8 64位系统！
 wget &amp;ndash;no-check-certificate -qO InstallNET.sh &amp;lsquo;&lt;a class=&#34;link&#34; href=&#34;https://moeclub.org/attachment/LinuxShell/InstallNET.sh%27&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://moeclub.org/attachment/LinuxShell/InstallNET.sh&#39;&lt;/a&gt; &amp;amp;&amp;amp; bash InstallNET.sh -dd &amp;lsquo;&lt;a class=&#34;link&#34; href=&#34;https://moeclub.org/onedrive/IMAGE/Windows/win8.1emb_x64.tar.gz%27&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://moeclub.org/attachment/LinuxShell/InstallNET.sh&#39;&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+ &amp;amp;&amp;amp; bash InstallNET.sh -dd &amp;lsquo;&lt;a class=&#34;link&#34; href=&#34;https://moeclub.org/onedrive/IMAGE/Windows/win8.1emb_x64.tar.gz%27&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://moeclub.org/onedrive/IMAGE/Windows/win8.1emb_x64.tar.gz&#39;&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+
 絮叨等一段时间，可以通过vnc查看进度！&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;安装成功后，们可以用桌面远程连接登录。用户名为: Administrator 密码为: Vicer&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;最后加上一个一键安装纯净版Linux系统
 wget &amp;ndash;no-check-certificate -qO InstallNET.sh &amp;lsquo;&lt;a class=&#34;link&#34; href=&#34;https://moeclub.org/attachment/LinuxShell/InstallNET.sh%27&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://moeclub.org/attachment/LinuxShell/InstallNET.sh&#39;&lt;/a&gt; &amp;amp;&amp;amp; chmod a+x InstallNET.sh&lt;/p&gt;
+    &gt;https://moeclub.org/attachment/LinuxShell/InstallNET.sh&#39;&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+ &amp;amp;&amp;amp; chmod a+x InstallNET.sh&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;bash InstallNET.sh -d 8 -v 64 -a
 &lt;/code&gt;&lt;/pre&gt;
 </description>

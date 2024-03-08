@@ -17,9 +17,31 @@
 ####由于博主现在用的是typecho ，更新下typecho添加的方法&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;在**&lt;a class=&#34;link&#34; href=&#34;https://github.com/Dreamer-Paul/Pio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GitHub&lt;/a&gt;下载pio插件**，上传到插件目录，重命名为pio&lt;/li&gt;
+    &gt;GitHub&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+下载pio插件**，上传到插件目录，重命名为pio&lt;/li&gt;
 &lt;li&gt;不喜欢默认模型可以在&lt;a class=&#34;link&#34; href=&#34;https://mx.paul.ren/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;strong&gt;梦象&lt;/strong&gt;&lt;/a&gt;下载&lt;/li&gt;
+    &gt;&lt;strong&gt;梦象&lt;/strong&gt;&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+下载&lt;/li&gt;
 &lt;li&gt;在插件设置里面选择自己下载的看板娘舅更换成功啦&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;在网络上看到了看板娘，爱不释手。隧熬夜到凌晨一直在学习，把喜欢的老婆放到博客上去~
@@ -111,7 +133,18 @@ $talkContent = &amp;lsquo;{&amp;ldquo;code&amp;rdquo;:&amp;ldquo;500&amp;rdquo;,
 }
 else{
 $talkContent = send_post(&amp;lsquo;&lt;a class=&#34;link&#34; href=&#34;http://www.tuling123.com/openapi/api%27,&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://www.tuling123.com/openapi/api&#39;,&lt;/a&gt; $post_data);
+    &gt;http://www.tuling123.com/openapi/api&#39;,&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+ $post_data);
 }
 header(&amp;lsquo;Content-type:text/json&amp;rsquo;);
 echo $talkContent;
@@ -121,7 +154,18 @@ echo $talkContent;
 ##模型下载
 整理了一些：加藤惠，纱雾，康纳，真白，伊斯特瓦尔，蕾姆等&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.cokemine.com/wp-content/themes/begin/go.php?url=aHR0cHM6Ly9vZHJpdmUuYXB0eC54aW4vTGl2ZTJEL0xpdmUyRC56aXA=&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://odrive.aptx.xin/Live2D/Live2D.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://odrive.aptx.xin/Live2D/Live2D.zip&lt;/a&gt;&lt;/a&gt;
+    &gt;https://odrive.aptx.xin/Live2D/Live2D.zip&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+&lt;/a&gt;
 #####填坑：
 注册后一定要实名认证，不然说几句话就会出错哟~&lt;/p&gt;
 &lt;p&gt;本文源自&lt;a href=&#34;https://www.cokemine.com/live2d1.html&#34;&gt;可乐博客&lt;/a&gt;改编&lt;/p&gt;

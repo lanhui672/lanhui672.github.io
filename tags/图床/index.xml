@@ -19,9 +19,31 @@
 &lt;p&gt;第一步：我们先去下载 chevereto 程序，这里我们介绍免费版给大家官网承诺永久免费版本&lt;/p&gt;
 &lt;img class=&#34;aligncenter&#34; src=&#34;//www.lanhui.live/images/2020/04/16/20160819171634.png&#34; alt=&#34;&#34; width=&#34;472&#34; height=&#34;293&#34; /&gt;
 &lt;p&gt;下载地址：&lt;a href=&#34;https://www.lucktang.com/wp-content/themes/begin/go.php?url=aHR0cHM6Ly9naXRodWIuY29tL0NoZXZlcmV0by9DaGV2ZXJldG8tRnJlZQ==&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Chevereto/Chevereto-Free&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/Chevereto/Chevereto-Free&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+    &gt;https://github.com/Chevereto/Chevereto-Free&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;官网下载：&lt;a href=&#34;https://chevereto.com/get-started&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://chevereto.com/get-started&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://chevereto.com/get-started&lt;/a&gt;&lt;/a&gt;  这里是一个installer.php文件（反正就是PHP文件）&lt;/p&gt;
+    &gt;https://chevereto.com/get-started&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+&lt;/a&gt;  这里是一个installer.php文件（反正就是PHP文件）&lt;/p&gt;
 &lt;p&gt;第二步：我们把压缩包的文件 FTP 上传到网站的根目录。环境面板不同根目录地址各不相同我就不介绍了。总之上传到网站根目录下。&lt;/p&gt;
 &lt;p&gt;第三部：访问你的域名/installer.php&lt;/p&gt;
 &lt;img class=&#34;aligncenter&#34; src=&#34;//www.lanhui.live/images/2020/04/16/chevereto.png&#34; alt=&#34;&#34; width=&#34;736&#34; height=&#34;470&#34; /&gt;

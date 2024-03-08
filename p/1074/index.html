@@ -25,7 +25,7 @@
 
 <link rel='canonical' href='//www.lanhui.live/p/1074/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='onedrive加入sharepoint团队盘后，如何使用？'>
+<link rel="stylesheet" href="/scss/style.min.07b3460ba230fb676086d9750fa7febc8b680de53b50ba311cce2971b4a9cf34.css"><meta property='og:title' content='onedrive加入sharepoint团队盘后，如何使用？'>
 <meta property='og:description' content='前言：onedrive教育版个人网盘的常规使用就不说了，今天说一下团队盘sharepoint的使用。本文讲解的是团队盘专用组的使用
  登录 管理员创建好你账号后，通过网址 https://www.office.com/ 登录，此时会提示你绑定手机号和邮箱，这是你找回密码的凭证。 接着进入到这个页面，显示的是你可以使用的应用。我们只讲解sharepoint，其他的可以自己探索。
 点击sharepoint
@@ -133,7 +133,7 @@
             
                 <li>
                     <a 
-                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        href='https://github.com/lanhui672'
                         target="_blank"
                         title="GitHub"
                         rel="me"
@@ -196,7 +196,7 @@
         
         
         <li >
-            <a href='/%E5%85%B3%E4%BA%8E/' >
+            <a href='/about/' >
                 
                 
                 
@@ -310,7 +310,7 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E7%BD%91%E7%BB%9C/" style="background-color: #2a9d8f; color: #fff;">
+            <a href="/categories/%E7%BD%91%E7%BB%9C/" style="background-color: #0047ab; color: #fff;">
                 网络
             </a>
         
@@ -458,6 +458,21 @@
         crossorigin="anonymous"
         async>
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     <section class="article-tags">
         
@@ -582,6 +597,173 @@
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.23.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
+ 
+
+    
+
+
+
+
+<section class="totalcount">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    发表了61篇文章 · 
+    总计2.79k字
+</section>
+
+
+
+
+
+
+
+
+   
+   <section class="running-time">
+    本博客已稳定运行
+    <span id="runningdays" class="running-days"></span>
+    </section>
+
+
+
+
+
+
+
 </footer>
 
 
@@ -680,6 +862,20 @@
 
         document.head.appendChild(customFont);
     }());
+</script>
+
+<script>
+    let s1 = '2019-4-1'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
 </script>
 
     </body>

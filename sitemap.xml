@@ -5,13 +5,13 @@
     <loc>//www.lanhui.live/</loc>
     <lastmod>2024-01-08T20:50:57+08:00</lastmod>
   </url><url>
-    <loc>//www.lanhui.live/categories/</loc>
-    <lastmod>2024-01-08T20:50:57+08:00</lastmod>
-  </url><url>
     <loc>//www.lanhui.live/post/</loc>
     <lastmod>2024-01-08T20:50:57+08:00</lastmod>
   </url><url>
     <loc>//www.lanhui.live/p/3660/</loc>
+    <lastmod>2024-01-08T20:50:57+08:00</lastmod>
+  </url><url>
+    <loc>//www.lanhui.live/categories/</loc>
     <lastmod>2024-01-08T20:50:57+08:00</lastmod>
   </url><url>
     <loc>//www.lanhui.live/categories/%E7%BD%91%E7%BB%9C/</loc>
@@ -344,9 +344,7 @@
     <loc>//www.lanhui.live/p/hello-world/</loc>
     <lastmod>2019-04-01T04:01:23+08:00</lastmod>
   </url><url>
-    <loc>//www.lanhui.live/categories/test/</loc>
-  </url><url>
-    <loc>//www.lanhui.live/%E5%85%B3%E4%BA%8E/</loc>
+    <loc>//www.lanhui.live/about/</loc>
   </url><url>
     <loc>//www.lanhui.live/links/</loc>
   </url><url>

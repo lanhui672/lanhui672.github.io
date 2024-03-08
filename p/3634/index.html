@@ -7,7 +7,7 @@
 
 <link rel='canonical' href='//www.lanhui.live/p/3634/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='三丰云-免费云主机虚拟主机的大坑'>
+<link rel="stylesheet" href="/scss/style.min.07b3460ba230fb676086d9750fa7febc8b680de53b50ba311cce2971b4a9cf34.css"><meta property='og:title' content='三丰云-免费云主机虚拟主机的大坑'>
 <meta property='og:description' content='突然想起以前用过免费云主机，三丰云的。但是不知道什么原因没用了。今天尝试了下。在激活云主机（1h1g10g空间实际7.7）时候，需要付款两元，以前是一元。支付成功后可以使用24小时。五六个小时侯可以免费续期，一次五天。心想虽然麻烦毕竟免费嘛！到时间后我去点续期，结果&amp;hellip;..需要写小作文 然后我去哔哩哔哩看了看人家的视频，没一个说不坑的。 照这种激活主机2元只能用24H的方式，比卖长期服务器还赚！ 并且装完linux后再装个宝塔面板，内存就满了。网站都搭建不了。虚拟主机倒是可以。 有更详细的踩坑记录。
  ##虚拟主机 虚拟主机不需要充钱，直接领。一个月后失效。十几天后可以续期。不知道是不是需要发广告.用来做做临时项目还是可以的。 空间为1G，50M数据库，月流量5G.'>
 <meta property='og:url' content='//www.lanhui.live/p/3634/'>
@@ -79,7 +79,7 @@
             
                 <li>
                     <a 
-                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        href='https://github.com/lanhui672'
                         target="_blank"
                         title="GitHub"
                         rel="me"
@@ -142,7 +142,7 @@
         
         
         <li >
-            <a href='/%E5%85%B3%E4%BA%8E/' >
+            <a href='/about/' >
                 
                 
                 
@@ -256,7 +256,7 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E7%BD%91%E7%BB%9C/" style="background-color: #2a9d8f; color: #fff;">
+            <a href="/categories/%E7%BD%91%E7%BB%9C/" style="background-color: #0047ab; color: #fff;">
                 网络
             </a>
         
@@ -366,6 +366,21 @@
         crossorigin="anonymous"
         async>
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
     
@@ -482,6 +497,173 @@
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.23.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
+ 
+
+    
+
+
+
+
+<section class="totalcount">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    发表了61篇文章 · 
+    总计2.79k字
+</section>
+
+
+
+
+
+
+
+
+   
+   <section class="running-time">
+    本博客已稳定运行
+    <span id="runningdays" class="running-days"></span>
+    </section>
+
+
+
+
+
+
+
 </footer>
 
 
@@ -580,6 +762,20 @@
 
         document.head.appendChild(customFont);
     }());
+</script>
+
+<script>
+    let s1 = '2019-4-1'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
 </script>
 
     </body>

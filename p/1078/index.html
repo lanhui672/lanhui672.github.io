@@ -9,7 +9,7 @@
 
 <link rel='canonical' href='//www.lanhui.live/p/1078/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='wordpress安全-防止机器人恶意注册'>
+<link rel="stylesheet" href="/scss/style.min.07b3460ba230fb676086d9750fa7febc8b680de53b50ba311cce2971b4a9cf34.css"><meta property='og:title' content='wordpress安全-防止机器人恶意注册'>
 <meta property='og:description' content='##前言： 很多时候总会有莫名其面的账号注册，对于这种僵尸用户，我们当然是不欢迎的，就必须采取方案限制注册！ ##方案： 那怎么办呢？给注册加上人机验证就可以了！把以下代码插入主题的functions.php文件的末尾就可实现了
 这里提供两断代码。 ###防止机器人恶意注册代码
 新用户注册随机数学验证码 //WordPress新用户注册随机数学验证码 function add_security_question_fields() { //获取两个随机数, 范围0~9 $num1=rand(1,9); $num2=rand(2,9); //最终网页中的具体内容 echo &amp;quot;&amp;lt;p&amp;gt;&amp;lt;label for=&#39;math&#39; class=&#39;small&#39;&amp;gt;验证码：$num1 &#43; $num2 = ? &amp;lt;/label&amp;gt;&amp;lt;input type=&#39;text&#39; name=&#39;sum&#39; class=&#39;input&#39; value=&#39;&#39; size=&#39;25&#39;&amp;gt;&amp;quot; .&amp;quot;&amp;lt;input type=&#39;hidden&#39; name=&#39;num1&#39; value=&#39;$num1&#39;&amp;gt;&amp;quot; .&amp;quot;&amp;lt;input type=&#39;hidden&#39; name=&#39;num2&#39; value=&#39;$num2&#39;&amp;gt;&amp;lt;/p&amp;gt;&amp;quot;;} add_action(&#39;register_form&#39;,&#39;add_security_question_fields&#39;); add_action( &#39;register_post&#39;, &#39;add_security_question_validate&#39;, 10, 3 ); function add_security_question_validate( $sanitized_user_login, $user_email, $errors) { $sum=$_POST[&#39;sum&#39;];//用户提交的计算结果 switch($sum){ //得到正确的计算结果则直接跳出 case $_POST[&#39;num1&#39;]&#43;$_POST[&#39;num2&#39;]:break; //未填写结果时的错误讯息 case null:wp_die(&#39;错误：请输入验证码！&#39;);break; //计算错误时的错误讯息 default:wp_die(&#39;错误：验证码错误,请重试！&#39;);}} add_action( &#39;add_security_question&#39;,&#39;register_form&#39; );  ####芝麻开门代码
@@ -85,7 +85,7 @@
             
                 <li>
                     <a 
-                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        href='https://github.com/lanhui672'
                         target="_blank"
                         title="GitHub"
                         rel="me"
@@ -148,7 +148,7 @@
         
         
         <li >
-            <a href='/%E5%85%B3%E4%BA%8E/' >
+            <a href='/about/' >
                 
                 
                 
@@ -301,7 +301,7 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E7%BD%91%E7%BB%9C/" style="background-color: #2a9d8f; color: #fff;">
+            <a href="/categories/%E7%BD%91%E7%BB%9C/" style="background-color: #0047ab; color: #fff;">
                 网络
             </a>
         
@@ -447,6 +447,21 @@ return $errors-&gt;add( 'prooffail', '&lt;strong&gt;错误&lt;/strong&gt;: 您�
         crossorigin="anonymous"
         async>
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     <section class="article-tags">
         
@@ -569,6 +584,173 @@ return $errors-&gt;add( 'prooffail', '&lt;strong&gt;错误&lt;/strong&gt;: 您�
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.23.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
+ 
+
+    
+
+
+
+
+<section class="totalcount">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    发表了61篇文章 · 
+    总计2.79k字
+</section>
+
+
+
+
+
+
+
+
+   
+   <section class="running-time">
+    本博客已稳定运行
+    <span id="runningdays" class="running-days"></span>
+    </section>
+
+
+
+
+
+
+
 </footer>
 
 
@@ -667,6 +849,20 @@ return $errors-&gt;add( 'prooffail', '&lt;strong&gt;错误&lt;/strong&gt;: 您�
 
         document.head.appendChild(customFont);
     }());
+</script>
+
+<script>
+    let s1 = '2019-4-1'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
 </script>
 
     </body>

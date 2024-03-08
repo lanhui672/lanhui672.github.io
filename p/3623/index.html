@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='//www.lanhui.live/p/3623/'>
 
-<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='美团、文城城堡避坑'>
+<link rel="stylesheet" href="/scss/style.min.07b3460ba230fb676086d9750fa7febc8b680de53b50ba311cce2971b4a9cf34.css"><meta property='og:title' content='美团、文城城堡避坑'>
 <meta property='og:description' content='美团上的X天X夜游，并不是一个旅游团承包，而是好几个，每天换一个导游。这也导致第一天体验好，后续体验越来越差。 ##第一天 刘导，没有购物，付费项目和没有购买付费项目的游客可以安排好。游轮上船长不卖火腿（点赞）。 ##第二天 游轮体验差一些，船长卖火腿（不强制），住宿是住原来的地方，问了导游也不告诉我们。导致第二天全天背着个大书包四处逛。 重点 文成城堡之行，远观确实很气派。进去看后，就很失望了。这是电影首富西虹市的拍摄地点，但是里面远没有那么豪华，园林没有养护，建筑物没有建完。建筑物的用料很差，在风雨的侵蚀下已经腐蚀了很多。 里面其实就是一个大酒店，但装修很差墙面不是瓷砖，是贴纸贴的，但凡用瓷砖。也会觉得高档点。##第三天 威海刘公岛之行，从烟台出发去威海。付费项目是环岛游，由于时间关系（下午干还要去哈工大）全车就我和我朋友没有参与付费项目。而导游上岛第一件事就是付费项目，套餐中的刘公岛参观放在最后面。全程就是我们自己参观。'>
 <meta property='og:url' content='//www.lanhui.live/p/3623/'>
 <meta property='og:site_name' content='蓝惠の小窝'>
@@ -76,7 +76,7 @@
             
                 <li>
                     <a 
-                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        href='https://github.com/lanhui672'
                         target="_blank"
                         title="GitHub"
                         rel="me"
@@ -139,7 +139,7 @@
         
         
         <li >
-            <a href='/%E5%85%B3%E4%BA%8E/' >
+            <a href='/about/' >
                 
                 
                 
@@ -253,7 +253,7 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E8%AF%B4%E8%AF%B4/" >
+            <a href="/categories/%E8%AF%B4%E8%AF%B4/" style="background-color: #2a9d8f; color: #fff;">
                 说说
             </a>
         
@@ -408,6 +408,21 @@
         crossorigin="anonymous"
         async>
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
     
@@ -524,6 +539,173 @@
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.23.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
+ 
+
+    
+
+
+
+
+<section class="totalcount">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    发表了61篇文章 · 
+    总计2.79k字
+</section>
+
+
+
+
+
+
+
+
+   
+   <section class="running-time">
+    本博客已稳定运行
+    <span id="runningdays" class="running-days"></span>
+    </section>
+
+
+
+
+
+
+
 </footer>
 
 
@@ -622,6 +804,20 @@
 
         document.head.appendChild(customFont);
     }());
+</script>
+
+<script>
+    let s1 = '2019-4-1'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
 </script>
 
     </body>
