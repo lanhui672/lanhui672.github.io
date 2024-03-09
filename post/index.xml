@@ -3733,7 +3733,7 @@ try_files $uri /admin/index.php?$args;
         <pubDate>Mon, 01 Apr 2019 04:01:23 +0800</pubDate>
         
         <guid>//www.lanhui.live/p/%E4%B8%96%E7%95%8C%E6%82%A8%E5%A5%BD/</guid>
-        <description>&lt;img src="//www.lanhui.live/images/url/%E4%B8%80%E5%AE%B6%E4%BA%BA.png" alt="Featured image of post 世界，您好！" /&gt;&lt;!-- wp:paragraph --&gt;
+        <description>&lt;img src="//www.lanhui.live/images/url/%E4%B8%80%E5%AE%B6%E4%BA%BA.jpg" alt="Featured image of post 世界，您好！" /&gt;&lt;!-- wp:paragraph --&gt;
 &lt;p&gt;欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！&lt;/p&gt;
 &lt;!-- /wp:paragraph --&gt;</description>
         </item>
