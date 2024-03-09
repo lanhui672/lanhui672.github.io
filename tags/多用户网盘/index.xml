@@ -13,11 +13,11 @@
         <pubDate>Wed, 24 Jun 2020 15:25:00 +0800</pubDate>
         
         <guid>//www.lanhui.live/p/1070/</guid>
-        <description>&lt;p&gt;##介绍
-Cloudreve能助您以最低的成本快速搭建公私兼备的网盘系统，简而言之就是想做一个像百度云一样的网盘系统！&lt;/p&gt;
-&lt;p&gt;改程序支持本机储存、七牛云、阿里云腾讯云oss等，还支持onedrive。前几种成本较高，但是onedrive成本低了，随手就能申请一个5T账号，别说还能升级25T了！这里教大家怎么搭建并且对接onedrive网盘。
-##支持的功能
-Cloudreve 新版V3特性：&lt;/p&gt;
+        <description>&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
+&lt;p&gt;Cloudreve能助您以最低的成本快速搭建公私兼备的网盘系统，简而言之就是想做一个像百度云一样的网盘系统！&lt;/p&gt;
+&lt;p&gt;改程序支持本机储存、七牛云、阿里云腾讯云oss等，还支持onedrive。前几种成本较高，但是onedrive成本低了，随手就能申请一个5T账号，别说还能升级25T了！这里教大家怎么搭建并且对接onedrive网盘。&lt;/p&gt;
+&lt;h2 id=&#34;支持的功能&#34;&gt;支持的功能&lt;/h2&gt;
+&lt;p&gt;Cloudreve 新版V3特性：&lt;/p&gt;
 &lt;ul&gt;
  	&lt;li&gt; 支持本机、从机、七牛、阿里云 OSS、腾讯云 COS、又拍云、OneDrive (包括世纪互联版) 作为存储端&lt;/li&gt;
  	&lt;li&gt;上传/下载 支持客户端直传，支持下载限速&lt;/li&gt;
@@ -40,7 +40,7 @@ Cloudreve 新版V3特性：&lt;/p&gt;
  	&lt;li&gt;安装文档：https://docs.cloudreve.org/getting-started/install&lt;/li&gt;
  	&lt;li&gt;演示：https://demo.cloudreve.org&lt;/li&gt;
 &lt;/ul&gt;
-##开工 
+## 开工 
 &lt;ul&gt;
  	&lt;li&gt;首先下载源码：https://github.com/cloudreve/Cloudreve/releases&lt;/li&gt;
  	&lt;li&gt;ssh自己的服务器，输入&lt;/li&gt;
@@ -67,7 +67,7 @@ cd /www/wwwroot/cloudreve.org(改为你自己的网站目录）&lt;/p&gt;
  	&lt;li&gt;带端口要去掉&lt;/li&gt;
  	&lt;li&gt;关闭SSH后，程序会停止运行&lt;/li&gt;
 &lt;/ol&gt;
-###SQLite改为mysql 
+### SQLite改为mysql 
 新建一个mysql数据库，将相关信息添加在目录下的conf.ini文件里，命令行（./cloudreve）重启进程，获得新账号密码
     [Database]
     ; 数据库类型，目前支持 sqlite | mysql
@@ -82,7 +82,7 @@ cd /www/wwwroot/cloudreve.org(改为你自己的网站目录）&lt;/p&gt;
     Name = cloudreve
     ; 数据表前缀
     TablePrefix = cd
-##去端口 
+## 去端口 
 这里只要反向代理就可以了
 &lt;img src=&#34;//www.lanhui.live/images/2020/06/24/9.jpg&#34; /&gt;
 &lt;h3&gt;关闭SSH程序会停止运行&lt;/h3&gt;

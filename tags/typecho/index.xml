@@ -34,8 +34,8 @@ $db = new Typecho_Db(&amp;lsquo;Pdo_Mysql&amp;rsquo;, &amp;lsquo;typecho_&#39;);
         <pubDate>Sun, 23 Feb 2020 15:54:00 +0800</pubDate>
         
         <guid>//www.lanhui.live/p/1066/</guid>
-        <description>&lt;p&gt;####2023.7.31发现文章看板娘下载链接失效了，这个可以在网上搜搜，平替
-####由于博主现在用的是typecho ，更新下typecho添加的方法&lt;/p&gt;
+        <description>&lt;p&gt;&amp;mdash; 2023.7.31发现文章看板娘下载链接失效了，这个可以在网上搜搜，平替&lt;/p&gt;
+&lt;p&gt;&amp;mdash;由于博主现在用的是typecho ，更新下typecho添加的方法&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;在**&lt;a class=&#34;link&#34; href=&#34;https://github.com/Dreamer-Paul/Pio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub&lt;/a&gt;
@@ -120,8 +120,8 @@ var message_Path = &#39;/live2d/&#39;;// 资源目录，如果目录不对请更
 &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;live2d/js/live2d.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
 &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;live2d/js/message.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;##加入图灵机器人
-1、为了让 live2d 能够聊天，我们可以借助&lt;a href=&#34;https://www.cokemine.com/wp-content/themes/begin/go.php?url=aHR0cDovL3d3dy50dWxpbmcxMjMuY29tLw==&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;图灵机器人&lt;/a&gt;，先去图灵机器人官网注册账号，新建机器人获取 apikey&lt;/p&gt;
+&lt;h2 id=&#34;加入图灵机器人&#34;&gt;加入图灵机器人&lt;/h2&gt;
+&lt;p&gt;1、为了让 live2d 能够聊天，我们可以借助&lt;a href=&#34;https://www.cokemine.com/wp-content/themes/begin/go.php?url=aHR0cDovL3d3dy50dWxpbmcxMjMuY29tLw==&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;图灵机器人&lt;/a&gt;，先去图灵机器人官网注册账号，新建机器人获取 apikey&lt;/p&gt;
 &lt;p&gt;2、新建一个 tlapi.php 文件，加入如下代码，注意添加自己的 apikey 到里面
 &amp;lt;?php
 // 获得聊天
@@ -186,9 +186,9 @@ echo $talkContent;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/a&gt;
-#####填坑：
-注册后一定要实名认证，不然说几句话就会出错哟~&lt;/p&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;填坑&#34;&gt;#填坑：&lt;/h4&gt;
+&lt;p&gt;注册后一定要实名认证，不然说几句话就会出错哟~&lt;/p&gt;
 &lt;p&gt;本文源自&lt;a href=&#34;https://www.cokemine.com/live2d1.html&#34;&gt;可乐博客&lt;/a&gt;改编&lt;/p&gt;
 </description>
         </item>

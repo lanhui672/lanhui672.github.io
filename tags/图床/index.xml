@@ -16,7 +16,7 @@
         <description>&lt;p&gt;自从搭建博客后，一直在寻找图床解决方案，从onedrive到sm图床到新浪图床（已添加了防盗外链），最后选择了Chevereto&lt;/p&gt;
 &lt;p&gt;Chevereto, 是一款采用 PHP 语言开发的网络相册脚本程序，支持多语言，提供中文语言包的下载的开源在线图片存储分享服务系统，支持本地上传和在线获取两种图像上传方式。&lt;/p&gt;
 &lt;p&gt;Chevereto 这套程序可以像WordPress 一样搭建在任何空间上。而它的功能除了一般图片空间单纯的从电脑上传图片外，也可以利用网址也可以上传。&lt;/p&gt;
-&lt;p&gt;第一步：我们先去下载 chevereto 程序，这里我们介绍免费版给大家官网承诺永久免费版本&lt;/p&gt;
+&lt;h2 id=&#34;第一步我们先去下载-chevereto-程序这里我们介绍免费版给大家官网承诺永久免费版本&#34;&gt;第一步：我们先去下载 chevereto 程序，这里我们介绍免费版给大家官网承诺永久免费版本&lt;/h2&gt;
 &lt;img class=&#34;aligncenter&#34; src=&#34;//www.lanhui.live/images/2020/04/16/20160819171634.png&#34; alt=&#34;&#34; width=&#34;472&#34; height=&#34;293&#34; /&gt;
 &lt;p&gt;下载地址：&lt;a href=&#34;https://www.lucktang.com/wp-content/themes/begin/go.php?url=aHR0cHM6Ly9naXRodWIuY29tL0NoZXZlcmV0by9DaGV2ZXJldG8tRnJlZQ==&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Chevereto/Chevereto-Free&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/Chevereto/Chevereto-Free&lt;/a&gt;
@@ -48,11 +48,11 @@
 &lt;p&gt;第三部：访问你的域名/installer.php&lt;/p&gt;
 &lt;img class=&#34;aligncenter&#34; src=&#34;//www.lanhui.live/images/2020/04/16/chevereto.png&#34; alt=&#34;&#34; width=&#34;736&#34; height=&#34;470&#34; /&gt;
 &lt;p&gt;许可证选择跳过&lt;/p&gt;
-&lt;p&gt;[caption id=&amp;quot;&amp;quot; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;726&amp;rdquo;]&lt;img src=&#34;//www.lanhui.live/images/2020/04/16/chevereto2.png&#34; alt=&#34;填写管理员账号密码&#34; width=&#34;726&#34; height=&#34;511&#34; /&gt; 填写管理员账号密码[/caption]&lt;/p&gt;
-&lt;p&gt;[caption id=&amp;quot;&amp;quot; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;727&amp;rdquo;]&lt;img src=&#34;//www.lanhui.live/images/2020/04/16/chevereto3.png&#34; alt=&#34;填写数据库信息&#34; width=&#34;727&#34; height=&#34;639&#34; /&gt; 填写数据库信息[/caption]&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//www.lanhui.live/images/2020/04/16/chevereto2.png&#34; alt=&#34;填写管理员账号密码&#34; width=&#34;726&#34; height=&#34;511&#34; /&gt; 填写管理员账号密码&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//www.lanhui.live/images/2020/04/16/chevereto3.png&#34; alt=&#34;填写数据库信息&#34; width=&#34;727&#34; height=&#34;639&#34; /&gt; 填写数据库信息&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;img class=&#34;aligncenter&#34; src=&#34;//www.lanhui.live/images/2020/04/16/chevereto4.png&#34; alt=&#34;&#34; width=&#34;768&#34; height=&#34;350&#34; /&gt;
-&lt;p&gt;[caption id=&amp;quot;&amp;quot; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;758&amp;rdquo;]&lt;img src=&#34;//www.lanhui.live/images/2020/04/16/chevereto5.png&#34; alt=&#34;&#34; width=&#34;758&#34; height=&#34;823&#34; /&gt; 安装完成[/caption]&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//www.lanhui.live/images/2020/04/16/chevereto5.png&#34; alt=&#34;&#34; width=&#34;758&#34; height=&#34;823&#34; /&gt; 安装完成&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;p&gt;出现404解决方法&lt;/p&gt;
 &lt;p&gt;1.首先在网站目录下把index.php（看你从官网下载的是什么名字）文件授权777
