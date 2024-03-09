@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Guide to emoji usage in Hugo'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='个人博客的最终归宿是静态网站，今天我的网站也托管到github了。由刚接触的时期，使用wordpress，再到后来的typecho，最后hugo。转移最重要的原因是因为，我的服务器被国内防火墙ban了，最然够两年的余额，也可以更换ip，但不想再这上面折腾了，索性一步到位。
+数据迁移 typecho转hugo文章迁移  。
+hugo安装 为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。
+下载和你操作系统匹配的 Hugo 版本； 压缩包解压到指定路径，例如 windows 系统的 C:\hugo_dir 打开命令行终端，进入安装目录，在路径栏目输入CMD回车 确认 Hugo 已经启动： 输入 hugo version 出现
+ #hugo v0.91.1 linux/amd64 BuildDate=2021-12-22T16:48:53Z
+ 就是成功启动 如果命令 hugo version 报错，你可能下载了错误的版本。当然，有很多种方法安装 Hugo，更多详细信息请查阅 官方文档。最稳妥的方法就是把 Hugo 可执行文件放在某个路径下，然后执行的时候带上路径名
+创建一个新的站点来作为你的博客，输入命令：hugo new site youblog 进入新创建的路径下: cd youblog
+恭喜你！你已经创建了自己的新博客。
+下载主题 根据终端的提示，前往 Hugo主题官网 找到自己喜欢的主题，然后点击下载会跳转到主题的github，
+把终端的路径调整到博客文件夹的themes目录下，输入
+ cd hemes
+  git clone https://github.com/CaiJimmy/hugo-theme-stack.git   也可以直接下载解压到themes文件夹 把主题中archetypes文件夹文件替换掉博客目录下的archetypes文件
+主题目录下exampleSite的config替换掉博客目录下的config（后缀可能不一样）
+主题目录下的content替换掉博客目录下的content
+在 youblog文件夹 下cmd 输入'>
 <title>博客转hugo</title>
 
 <link rel='canonical' href='//www.lanhui.live/p/%E5%8D%9A%E5%AE%A2%E8%BD%AChugo/'>
 
 <link rel="stylesheet" href="/scss/style.min.07b3460ba230fb676086d9750fa7febc8b680de53b50ba311cce2971b4a9cf34.css"><meta property='og:title' content='博客转hugo'>
-<meta property='og:description' content='Guide to emoji usage in Hugo'>
+<meta property='og:description' content='个人博客的最终归宿是静态网站，今天我的网站也托管到github了。由刚接触的时期，使用wordpress，再到后来的typecho，最后hugo。转移最重要的原因是因为，我的服务器被国内防火墙ban了，最然够两年的余额，也可以更换ip，但不想再这上面折腾了，索性一步到位。
+数据迁移 typecho转hugo文章迁移  。
+hugo安装 为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。
+下载和你操作系统匹配的 Hugo 版本； 压缩包解压到指定路径，例如 windows 系统的 C:\hugo_dir 打开命令行终端，进入安装目录，在路径栏目输入CMD回车 确认 Hugo 已经启动： 输入 hugo version 出现
+ #hugo v0.91.1 linux/amd64 BuildDate=2021-12-22T16:48:53Z
+ 就是成功启动 如果命令 hugo version 报错，你可能下载了错误的版本。当然，有很多种方法安装 Hugo，更多详细信息请查阅 官方文档。最稳妥的方法就是把 Hugo 可执行文件放在某个路径下，然后执行的时候带上路径名
+创建一个新的站点来作为你的博客，输入命令：hugo new site youblog 进入新创建的路径下: cd youblog
+恭喜你！你已经创建了自己的新博客。
+下载主题 根据终端的提示，前往 Hugo主题官网 找到自己喜欢的主题，然后点击下载会跳转到主题的github，
+把终端的路径调整到博客文件夹的themes目录下，输入
+ cd hemes
+  git clone https://github.com/CaiJimmy/hugo-theme-stack.git   也可以直接下载解压到themes文件夹 把主题中archetypes文件夹文件替换掉博客目录下的archetypes文件
+主题目录下exampleSite的config替换掉博客目录下的config（后缀可能不一样）
+主题目录下的content替换掉博客目录下的content
+在 youblog文件夹 下cmd 输入'>
 <meta property='og:url' content='//www.lanhui.live/p/%E5%8D%9A%E5%AE%A2%E8%BD%AChugo/'>
 <meta property='og:site_name' content='蓝惠の小窝'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='hugo' /><meta property='article:published_time' content='2024-03-07T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-03-07T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="博客转hugo">
-<meta name="twitter:description" content="Guide to emoji usage in Hugo">
+<meta name="twitter:description" content="个人博客的最终归宿是静态网站，今天我的网站也托管到github了。由刚接触的时期，使用wordpress，再到后来的typecho，最后hugo。转移最重要的原因是因为，我的服务器被国内防火墙ban了，最然够两年的余额，也可以更换ip，但不想再这上面折腾了，索性一步到位。
+数据迁移 typecho转hugo文章迁移  。
+hugo安装 为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。
+下载和你操作系统匹配的 Hugo 版本； 压缩包解压到指定路径，例如 windows 系统的 C:\hugo_dir 打开命令行终端，进入安装目录，在路径栏目输入CMD回车 确认 Hugo 已经启动： 输入 hugo version 出现
+ #hugo v0.91.1 linux/amd64 BuildDate=2021-12-22T16:48:53Z
+ 就是成功启动 如果命令 hugo version 报错，你可能下载了错误的版本。当然，有很多种方法安装 Hugo，更多详细信息请查阅 官方文档。最稳妥的方法就是把 Hugo 可执行文件放在某个路径下，然后执行的时候带上路径名
+创建一个新的站点来作为你的博客，输入命令：hugo new site youblog 进入新创建的路径下: cd youblog
+恭喜你！你已经创建了自己的新博客。
+下载主题 根据终端的提示，前往 Hugo主题官网 找到自己喜欢的主题，然后点击下载会跳转到主题的github，
+把终端的路径调整到博客文件夹的themes目录下，输入
+ cd hemes
+  git clone https://github.com/CaiJimmy/hugo-theme-stack.git   也可以直接下载解压到themes文件夹 把主题中archetypes文件夹文件替换掉博客目录下的archetypes文件
+主题目录下exampleSite的config替换掉博客目录下的config（后缀可能不一样）
+主题目录下的content替换掉博客目录下的content
+在 youblog文件夹 下cmd 输入">
     </head>
     <body class="
     article-page
@@ -299,10 +341,6 @@
             <a href="/p/%E5%8D%9A%E5%AE%A2%E8%BD%AChugo/">博客转hugo</a>
         </h2>
     
-        
-        <h3 class="article-subtitle">
-            Guide to emoji usage in Hugo
-        </h3>
         
     </div>
 
