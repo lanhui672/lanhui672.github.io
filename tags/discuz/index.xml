@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Discuz on 蓝惠の小窝</title>
+        <link>//www.lanhui.live/tags/discuz/</link>
+        <description>Recent content in Discuz on 蓝惠の小窝</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>蓝惠の小窝</copyright>
+        <lastBuildDate>Mon, 04 May 2020 09:15:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/tags/discuz/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Discuz! X3.x搬家历程-更换域名-更换数据库名</title>
+        <link>//www.lanhui.live/p/1071/</link>
+        <pubDate>Mon, 04 May 2020 09:15:00 +0800</pubDate>
+        
+        <guid>//www.lanhui.live/p/1071/</guid>
+        <description>&lt;p&gt;今天把自己建的论坛搬家了，这一路搬过来，还是回到了最初的原点。&lt;/p&gt;
+&lt;p&gt;刚开始使用的就是bbs.lanhui.co这个域名,然后换成了国外主机，域名改成www.365vip.club，但是国外主机用的win系统，开了几个软件，网站运行起来很卡，无赖只能换回国内主机，用已经备案的域名（速度挺快的）。这个时候，不止要改域名，还要改宝塔默认取得数据库名（同时害的win数据库转到linux数据库）。但是，只在config_global.php 和 config_global_default.php 文件中修改对应名称，在进入uc后台的时候会报错&lt;/p&gt;
+&lt;p&gt;UCenter info: MySQL Query Error
+SQL:SELECT value FROM [Table]vars WHERE name= &amp;lsquo;noteexists&amp;rsquo;
+Error:
+Errno:0&lt;/p&gt;
+&lt;p&gt;那肯定时有地方没改好了，以下是我修改域名和数据库的过程：&lt;/p&gt;
+&lt;p&gt;修改域名&lt;/p&gt;
+&lt;h3 id=&#34;修改discuz配置文件&#34;&gt;修改discuz配置文件&lt;/h3&gt;
+在网站目录/config文件夹中修改对应文件数据，&lt;strong&gt;数据库名字、密码也改为新的。&lt;/strong&gt;旧域名改为对应新域名，这里直接用替换，同时config/config_global.php也要改一下（反正看见旧域名就改为新的）
+&lt;pre&gt;&lt;code&gt;$_config[&#39;cookie&#39;][&#39;cookiedomain&#39;] = &#39;.new.com&#39;;
+$_config[&#39;admincp&#39;][&#39;runquery&#39;]                        = 1;                
+// 是否允许后台运行 SQL 语句 1=是 0=否[安全]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;登录论坛后台：&lt;/p&gt;
+&lt;p&gt;以下内容和数据库有重复，可在最后更新&lt;/p&gt;
+&lt;p&gt;1.后台==&amp;gt;全局==&amp;gt;站点信息==&amp;gt;网站url&lt;/p&gt;
+&lt;p&gt;2.后台==&amp;gt;全局==&amp;gt;域名设置==&amp;gt;应用域名==&amp;gt;论坛和根域名设置手机版访问设置：— 手机发帖来源自定义:&lt;/p&gt;
+&lt;p&gt;3.后台==&amp;gt;界面==&amp;gt;导航==&amp;gt;链接里面使用了绝对地址需要修改为新域名&lt;/p&gt;
+&lt;p&gt;4.后台==&amp;gt;运营==&amp;gt;关联连接，没有设置就不用修改，在这里主要涉及优化 （站点宣传广告、友情链接）&lt;/p&gt;
+&lt;p&gt;5.后台==&amp;gt;云平台==&amp;gt;同步站点信息 后台—工具—去平台诊断工具 （可能要手动设置IP）&lt;/p&gt;
+&lt;p&gt;6.后台==&amp;gt;站长==&amp;gt;ucernter设置==&amp;gt;ucenter访问地址[灰色无法修改，通过编辑&lt;code class=&#34;language-plaintext highlighter-rouge&#34;&gt;config/config_ucenter.php&lt;/code&gt;修改]&lt;/p&gt;
+&lt;p&gt;7.ucenter==&amp;gt;应用管理==&amp;gt;应用的主urlBBS导航—顶部、底部 （版规网址要更新），论坛格子广告，贴间广告，列表广告全部要更新。&lt;/p&gt;
+&lt;p&gt;改到这里就差不多了，参考文章：&lt;a href=&#34;https://cndaqiang.github.io/2017/10/12/discuz-change-domain/&#34;&gt;github.io&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这个时候由于数据库名字变了，所以是登录不进去uc后台的&lt;/p&gt;
+&lt;p&gt;需要修改uc_server/data/目录下的config.inc.php文件,更新数据库名称和密码就ok了，参考文章：&lt;a href=&#34;http://www.zongk.com/zongk/33.html&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.zongk.com/zongk/33.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.zongk.com/zongk/33.html&lt;/a&gt;
+
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
