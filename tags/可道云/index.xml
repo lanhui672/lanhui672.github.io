@@ -1,9 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>可道云 on 蓝惠の小窝</title><link>//www.lanhui.live/tags/%E5%8F%AF%E9%81%93%E4%BA%91/</link><description>Recent content in 可道云 on 蓝惠の小窝</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>蓝惠の小窝</copyright><lastBuildDate>Fri, 13 Mar 2020 22:09:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/tags/%E5%8F%AF%E9%81%93%E4%BA%91/index.xml" rel="self" type="application/rss+xml"/><item><title>可道云添加新磁盘</title><link>//www.lanhui.live/p/1050/</link><pubDate>Fri, 13 Mar 2020 22:09:00 +0800</pubDate><guid>//www.lanhui.live/p/1050/</guid><description>&lt;p>注意：这是基于windows宝塔面板操作&lt;/p>
-&lt;p>在宝塔中搜索php.ini文件打开&lt;/p>
-&lt;p>搜索
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>可道云 on 蓝惠の小窝</title>
+        <link>//www.lanhui.live/tags/%E5%8F%AF%E9%81%93%E4%BA%91/</link>
+        <description>Recent content in 可道云 on 蓝惠の小窝</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>蓝惠の小窝</copyright>
+        <lastBuildDate>Fri, 13 Mar 2020 22:09:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/tags/%E5%8F%AF%E9%81%93%E4%BA%91/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>可道云添加新磁盘</title>
+        <link>//www.lanhui.live/p/1050/</link>
+        <pubDate>Fri, 13 Mar 2020 22:09:00 +0800</pubDate>
+        
+        <guid>//www.lanhui.live/p/1050/</guid>
+        <description>&lt;p&gt;注意：这是基于windows宝塔面板操作&lt;/p&gt;
+&lt;p&gt;在宝塔中搜索php.ini文件打开&lt;/p&gt;
+&lt;p&gt;搜索
 ;open_basedir =
-在后面加上你要加的添加的磁盘路径(windows系统为例)&lt;/p>
-&lt;p>如
-;open_basedir =;open_basedir = C:;E:&lt;br>
-过个磁盘用;隔开&lt;/p>
-&lt;p>如果不管用试试取消防跨站攻击。参考&lt;a href="https://www.cnblogs.com/guohong-hu/p/9350076.html" target="_blank" rel="noopener noreferrer">evanwoo&lt;/a>&lt;/p></description></item></channel></rss>
+在后面加上你要加的添加的磁盘路径(windows系统为例)&lt;/p&gt;
+&lt;p&gt;如
+;open_basedir =;open_basedir = C:;E:&lt;br&gt;
+过个磁盘用;隔开&lt;/p&gt;
+&lt;p&gt;如果不管用试试取消防跨站攻击。参考&lt;a href=&#34;https://www.cnblogs.com/guohong-hu/p/9350076.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;evanwoo&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
