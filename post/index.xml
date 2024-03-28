@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
@@ -95,6 +96,8 @@
 &lt;p&gt;为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。&lt;/p&gt;
 &lt;p&gt;下载和你操作系统匹配的 Hugo 版本；
 =======
+=======
+>>>>>>> 9a41212724717f544157ce663cee4c65f4571d44
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 蓝惠の小窝</title><link>//www.lanhui.live/post/</link><description>Recent content in Posts on 蓝惠の小窝</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>蓝惠の小窝</copyright><lastBuildDate>Thu, 28 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="//www.lanhui.live/post/index.xml" rel="self" type="application/rss+xml"/><item><title>超好用的免费内网穿透-chmlfrp</title><link>//www.lanhui.live/p/240328/</link><pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate><guid>//www.lanhui.live/p/240328/</guid><description>&lt;h2 id="前言">前言&lt;/h2>
 &lt;p>最近想折腾一下内网穿透，毕竟现在除了电信，其他运营商都不给公网IP了。在网上搜了很多免费内网穿透的网站，都是有各种限制的，比如限制1G流量或者1M带宽。最后找到了chmlfrp这个网站&lt;/p>
 &lt;h2 id="为什么选用chmlfrp">为什么选用chmlfrp？&lt;/h2>
@@ -138,7 +141,10 @@ fill="currentColor">
 &lt;h2 id="hugo安装">hugo安装&lt;/h2>
 &lt;p>为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。&lt;/p>
 &lt;p>下载和你操作系统匹配的 Hugo 版本；
+<<<<<<< HEAD
 >>>>>>> 6b5370e05bb303f69dd97e4d35b83465b14154d3
+=======
+>>>>>>> 9a41212724717f544157ce663cee4c65f4571d44
 压缩包解压到指定路径，例如 windows 系统的 C:\hugo_dir
 打开命令行终端，进入安装目录，在路径栏目输入CMD回车
 确认 Hugo 已经启动：

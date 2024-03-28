@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
@@ -38,6 +39,9 @@
 =======
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 蓝惠の小窝</title><link>//www.lanhui.live/tags/hugo/</link><description>Recent content in Hugo on 蓝惠の小窝</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>蓝惠の小窝</copyright><lastBuildDate>Thu, 07 Mar 2024 16:06:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>博客转hugo</title><link>//www.lanhui.live/p/240307/</link><pubDate>Thu, 07 Mar 2024 16:06:00 +0800</pubDate><guid>//www.lanhui.live/p/240307/</guid><description>&lt;p>个人博客的最终归宿是静态网站，今天我的网站也托管到github了。由刚接触的时期，使用wordpress，再到后来的typecho，最后hugo。转移最重要的原因是因为，我的服务器被国内防火墙ban了，最然够两年的余额，也可以更换ip，但不想再这上面折腾了，索性一步到位。&lt;/p>
 >>>>>>> 9a41212724717f544157ce663cee4c65f4571d44
+=======
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 蓝惠の小窝</title><link>//www.lanhui.live/tags/hugo/</link><description>Recent content in Hugo on 蓝惠の小窝</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>蓝惠の小窝</copyright><lastBuildDate>Thu, 07 Mar 2024 16:06:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>博客转hugo</title><link>//www.lanhui.live/p/240307/</link><pubDate>Thu, 07 Mar 2024 16:06:00 +0800</pubDate><guid>//www.lanhui.live/p/240307/</guid><description>&lt;p>个人博客的最终归宿是静态网站，今天我的网站也托管到github了。由刚接触的时期，使用wordpress，再到后来的typecho，最后hugo。转移最重要的原因是因为，我的服务器被国内防火墙ban了，最然够两年的余额，也可以更换ip，但不想再这上面折腾了，索性一步到位。&lt;/p>
+>>>>>>> 9a41212724717f544157ce663cee4c65f4571d44
 &lt;h2 id="数据迁移">数据迁移&lt;/h2>
 &lt;p>&lt;a class="link" href="https://atpx.com/blog/typecho-to-hugo/" target="_blank" rel="noopener"
 >typecho转hugo文章迁移&lt;/a>
@@ -51,7 +55,10 @@ fill="currentColor">
 &lt;h2 id="hugo安装">hugo安装&lt;/h2>
 &lt;p>为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。&lt;/p>
 &lt;p>下载和你操作系统匹配的 Hugo 版本；
+<<<<<<< HEAD
 >>>>>>> 6b5370e05bb303f69dd97e4d35b83465b14154d3
+=======
+>>>>>>> 9a41212724717f544157ce663cee4c65f4571d44
 压缩包解压到指定路径，例如 windows 系统的 C:\hugo_dir
 打开命令行终端，进入安装目录，在路径栏目输入CMD回车
 确认 Hugo 已经启动：

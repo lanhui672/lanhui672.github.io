@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
@@ -34,6 +35,8 @@
 &lt;p&gt;为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。&lt;/p&gt;
 &lt;p&gt;下载和你操作系统匹配的 Hugo 版本；
 =======
+=======
+>>>>>>> 9a41212724717f544157ce663cee4c65f4571d44
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Typecho on 蓝惠の小窝</title><link>//www.lanhui.live/tags/typecho/</link><description>Recent content in Typecho on 蓝惠の小窝</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>蓝惠の小窝</copyright><lastBuildDate>Thu, 07 Mar 2024 16:06:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/tags/typecho/index.xml" rel="self" type="application/rss+xml"/><item><title>博客转hugo</title><link>//www.lanhui.live/p/240307/</link><pubDate>Thu, 07 Mar 2024 16:06:00 +0800</pubDate><guid>//www.lanhui.live/p/240307/</guid><description>&lt;p>个人博客的最终归宿是静态网站，今天我的网站也托管到github了。由刚接触的时期，使用wordpress，再到后来的typecho，最后hugo。转移最重要的原因是因为，我的服务器被国内防火墙ban了，最然够两年的余额，也可以更换ip，但不想再这上面折腾了，索性一步到位。&lt;/p>
 &lt;h2 id="数据迁移">数据迁移&lt;/h2>
 &lt;p>&lt;a class="link" href="https://atpx.com/blog/typecho-to-hugo/" target="_blank" rel="noopener"
@@ -48,12 +51,16 @@ fill="currentColor">
 &lt;h2 id="hugo安装">hugo安装&lt;/h2>
 &lt;p>为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。&lt;/p>
 &lt;p>下载和你操作系统匹配的 Hugo 版本；
+<<<<<<< HEAD
+>>>>>>> 9a41212724717f544157ce663cee4c65f4571d44
+=======
 >>>>>>> 9a41212724717f544157ce663cee4c65f4571d44
 压缩包解压到指定路径，例如 windows 系统的 C:\hugo_dir
 打开命令行终端，进入安装目录，在路径栏目输入CMD回车
 确认 Hugo 已经启动：
 输入
 hugo version
+<<<<<<< HEAD
 <<<<<<< HEAD
 出现&lt;/p&gt;
 &lt;blockquote&gt;
@@ -157,6 +164,8 @@ $db = new Typecho_Db(&amp;lsquo;Mysql&amp;rsquo;, &amp;lsquo;typecho_&#39;);
 =======
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Typecho on 蓝惠の小窝</title><link>//www.lanhui.live/tags/typecho/</link><description>Recent content in Typecho on 蓝惠の小窝</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>蓝惠の小窝</copyright><lastBuildDate>Sat, 25 Apr 2020 00:31:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/tags/typecho/index.xml" rel="self" type="application/rss+xml"/><item><title>安装Typecho遇到的问题:连接不上数据库，只能用PHP5.x版本</title><link>//www.lanhui.live/p/1069/</link><pubDate>Sat, 25 Apr 2020 00:31:00 +0800</pubDate><guid>//www.lanhui.live/p/1069/</guid><description>&lt;p>今天突然想搭建一个Typecho博客，随便记录一下平时的笔记。结果安装的时候无论怎样，数据库都连接不上！@(fanu)尝试过一下方法：&lt;/p>
 =======
+=======
+>>>>>>> 9a41212724717f544157ce663cee4c65f4571d44
 出现&lt;/p>
 &lt;blockquote>
 &lt;p>#hugo v0.91.1 linux/amd64 BuildDate=2021-12-22T16:48:53Z&lt;/p>
@@ -222,6 +231,9 @@ height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
 fill="currentColor">
 &lt;/svg>&lt;/span>
 。&lt;/p></description></item><item><title>安装Typecho遇到的问题:连接不上数据库，只能用PHP5.x版本</title><link>//www.lanhui.live/p/1069/</link><pubDate>Sat, 25 Apr 2020 00:31:00 +0800</pubDate><guid>//www.lanhui.live/p/1069/</guid><description>&lt;p>今天突然想搭建一个Typecho博客，随便记录一下平时的笔记。结果安装的时候无论怎样，数据库都连接不上！@(fanu)尝试过一下方法：&lt;/p>
+<<<<<<< HEAD
+>>>>>>> 9a41212724717f544157ce663cee4c65f4571d44
+=======
 >>>>>>> 9a41212724717f544157ce663cee4c65f4571d44
 &lt;p>将localhost改为127.0.0.1&lt;/p>
 &lt;p>关闭SELinux（这个方法来自&lt;a title="github" href="https://github.com/typecho/typecho/issues/861" target="_blank" rel="noopener noreferrer">github&lt;/a>）&lt;/p>
@@ -232,7 +244,10 @@ fill="currentColor">
 &lt;p>这里只需要改一下config.inc.php文件&lt;/p>
 &lt;p>在55行左右把
 $db = new Typecho_Db(&amp;lsquo;Mysql&amp;rsquo;, &amp;rsquo;typecho_&amp;rsquo;);
+<<<<<<< HEAD
 >>>>>>> 6b5370e05bb303f69dd97e4d35b83465b14154d3
+=======
+>>>>>>> 9a41212724717f544157ce663cee4c65f4571d44
 改为
 $db = new Typecho_Db(&amp;lsquo;Pdo_Mysql&amp;rsquo;, &amp;rsquo;typecho_&amp;rsquo;);
 就可以了&lt;/p></description></item><item><title>给 WordPress/typecho 博客添加看板娘 -- 加藤惠</title><link>//www.lanhui.live/p/1066/</link><pubDate>Sun, 23 Feb 2020 15:54:00 +0800</pubDate><guid>//www.lanhui.live/p/1066/</guid><description>&lt;p>&amp;mdash; 2023.7.31发现文章看板娘下载链接失效了，这个可以在网上搜搜，平替&lt;/p>
