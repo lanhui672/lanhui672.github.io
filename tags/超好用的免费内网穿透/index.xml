@@ -1,30 +1,74 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>超好用的免费内网穿透 on 蓝惠の小窝</title><link>//www.lanhui.live/tags/%E8%B6%85%E5%A5%BD%E7%94%A8%E7%9A%84%E5%85%8D%E8%B4%B9%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link><description>Recent content in 超好用的免费内网穿透 on 蓝惠の小窝</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>蓝惠の小窝</copyright><lastBuildDate>Thu, 28 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="//www.lanhui.live/tags/%E8%B6%85%E5%A5%BD%E7%94%A8%E7%9A%84%E5%85%8D%E8%B4%B9%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.xml" rel="self" type="application/rss+xml"/><item><title>超好用的免费内网穿透-chmlfrp</title><link>//www.lanhui.live/p/240328/</link><pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate><guid>//www.lanhui.live/p/240328/</guid><description>&lt;h2 id="前言">前言&lt;/h2>
-&lt;p>最近想折腾一下内网穿透，毕竟现在除了电信，其他运营商都不给公网IP了。在网上搜了很多免费内网穿透的网站，都是有各种限制的，比如限制1G流量或者1M带宽。最后找到了chmlfrp这个网站&lt;/p>
-&lt;h2 id="为什么选用chmlfrp">为什么选用chmlfrp？&lt;/h2>
-&lt;ul>
-&lt;li>不限制使用流量，免费，稳定&lt;/li>
-&lt;li>使用带宽高，白嫖用户就能享受8M（国内）32M（国外）带宽&lt;/li>
-&lt;li>软件面板易用&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>简洁无广告&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="//www.lanhui.live/images/url/frp/sy.png"
-loading="lazy"
-alt="首页"
->&lt;/p>
-&lt;p>&lt;strong>免费用户可创建四条隧道（不够用多创建几个号嘛）&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="//www.lanhui.live/images/url/frp/suidao.png"
-loading="lazy"
-alt="隧道"
->&lt;/p>
-&lt;p>&lt;strong>部分隧道可以去端口，这样域名访问就可以不带端口啦！&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="//www.lanhui.live/images/url/frp/duankou.png"
-loading="lazy"
-alt="端口"
->&lt;/p>
-&lt;p>最近有2.5周年活动，趁着这个时间，入手了永久VIP。官网价格是120（也有80/100的）。我去某宝查了下，内网穿透一个月的价格就要十块，相比之下这个价格太香了。
-免费和付费的用户对比如下图&lt;/p>
-&lt;p>最高规格的，国内带宽就有32M了&lt;/p>
-&lt;p>&lt;img src="//www.lanhui.live/images/url/frp/huiyuan.png"
-loading="lazy"
-alt="会员对比"
->&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>超好用的免费内网穿透 on 蓝惠の小窝</title>
+        <link>//www.lanhui.live/tags/%E8%B6%85%E5%A5%BD%E7%94%A8%E7%9A%84%E5%85%8D%E8%B4%B9%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+        <description>Recent content in 超好用的免费内网穿透 on 蓝惠の小窝</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>蓝惠の小窝</copyright>
+        <lastBuildDate>Thu, 28 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="//www.lanhui.live/tags/%E8%B6%85%E5%A5%BD%E7%94%A8%E7%9A%84%E5%85%8D%E8%B4%B9%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>超好用的免费内网穿透-chmlfrp</title>
+        <link>//www.lanhui.live/p/328/</link>
+        <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>//www.lanhui.live/p/328/</guid>
+        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;最近想折腾一下内网穿透，毕竟现在除了电信，其他运营商都不给公网IP了。在网上搜了很多免费内网穿透的网站，都是有各种限制的，比如限制1G流量或者1M带宽。最后找到了chmlfrp这个网站&lt;/p&gt;
+&lt;h2 id=&#34;为什么选用chmlfrp&#34;&gt;为什么选用chmlfrp？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;不限制使用流量，免费，稳定&lt;/li&gt;
+&lt;li&gt;使用带宽高，白嫖用户就能享受8M（国内）32M（国外）带宽&lt;/li&gt;
+&lt;li&gt;软件面板易用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;简洁无广告&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//www.lanhui.live/images/url/frp/sy.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;首页&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;免费用户可创建四条隧道（不够用多创建几个号嘛）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//www.lanhui.live/images/url/frp/suidao.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;隧道&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;部分隧道可以去端口，这样域名访问就可以不带端口啦！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//www.lanhui.live/images/url/frp/duankou.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;端口&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;最近有2.5周年活动，趁着这个时间，入手了永久VIP。官网价格是120（也有80/100的）。我去某宝查了下，内网穿透一个月的价格就要十块，相比之下这个价格太香了。
+免费和付费的用户对比如下图&lt;/p&gt;
+&lt;p&gt;最高规格的，国内带宽就有32M了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//www.lanhui.live/images/url/frp/huiyuan.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;会员对比&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

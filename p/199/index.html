@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='登录 https://portal.azure.com/  
-选择Azure Active Directory
-应用注册&amp;mdash;&amp;ndash;新注册
-设置相关信息
-在应用注册中 点击 拥有的应用程序，记录应用程序（客户端ID），然后点击证书和密码
- 添加客户端密码，期限随意
-箭头所示的值就是应用密码了
-把这两个值填入对应地方（如onelndex的应用程序机密），就可以了！'>
-<title>如何创建web应用程序/调用onedrive的api</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='个人博客的最终归宿是静态网站，今天我的网站也托管到github了。由刚接触的时期，使用wordpress，再到后来的typecho，最后hugo。转移最重要的原因是因为，我的服务器被国内防火墙ban了，最然够两年的余额，也可以更换ip，但不想再这上面折腾了，索性一步到位。
+数据迁移 typecho转hugo文章迁移  。
+hugo安装 为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。
+下载和你操作系统匹配的 Hugo 版本； 压缩包解压到指定路径，例如 windows 系统的 C:\hugo_dir 打开命令行终端，进入安装目录，在路径栏目输入CMD回车 确认 Hugo 已经启动： 输入 hugo version 出现
+ #hugo v0.91.1 linux/amd64 BuildDate=2021-12-22T16:48:53Z
+ 就是成功启动 如果命令 hugo version 报错，你可能下载了错误的版本。当然，有很多种方法安装 Hugo，更多详细信息请查阅 官方文档。最稳妥的方法就是把 Hugo 可执行文件放在某个路径下，然后执行的时候带上路径名
+创建一个新的站点来作为你的博客，输入命令：hugo new site youblog 进入新创建的路径下: cd youblog
+恭喜你！你已经创建了自己的新博客。
+下载主题 根据终端的提示，前往 Hugo主题官网 找到自己喜欢的主题，然后点击下载会跳转到主题的github，
+把终端的路径调整到博客文件夹的themes目录下，输入
+ cd hemes
+  git clone https://github.com/CaiJimmy/hugo-theme-stack.git   也可以直接下载解压到themes文件夹 把主题中archetypes文件夹文件替换掉博客目录下的archetypes文件
+主题目录下exampleSite的config替换掉博客目录下的config（后缀可能不一样）
+主题目录下的content替换掉博客目录下的content
+在 youblog文件夹 下cmd 输入'>
+<title>博客转hugo</title>
 
-<link rel='canonical' href='//www.lanhui.live/p/1048/'>
+<link rel='canonical' href='//www.lanhui.live/p/199/'>
 
-<link rel="stylesheet" href="/scss/style.min.07b3460ba230fb676086d9750fa7febc8b680de53b50ba311cce2971b4a9cf34.css"><meta property='og:title' content='如何创建web应用程序/调用onedrive的api'>
-<meta property='og:description' content='登录 https://portal.azure.com/  
-选择Azure Active Directory
-应用注册&amp;mdash;&amp;ndash;新注册
-设置相关信息
-在应用注册中 点击 拥有的应用程序，记录应用程序（客户端ID），然后点击证书和密码
- 添加客户端密码，期限随意
-箭头所示的值就是应用密码了
-把这两个值填入对应地方（如onelndex的应用程序机密），就可以了！'>
-<meta property='og:url' content='//www.lanhui.live/p/1048/'>
+<link rel="stylesheet" href="/scss/style.min.07b3460ba230fb676086d9750fa7febc8b680de53b50ba311cce2971b4a9cf34.css"><meta property='og:title' content='博客转hugo'>
+<meta property='og:description' content='个人博客的最终归宿是静态网站，今天我的网站也托管到github了。由刚接触的时期，使用wordpress，再到后来的typecho，最后hugo。转移最重要的原因是因为，我的服务器被国内防火墙ban了，最然够两年的余额，也可以更换ip，但不想再这上面折腾了，索性一步到位。
+数据迁移 typecho转hugo文章迁移  。
+hugo安装 为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。
+下载和你操作系统匹配的 Hugo 版本； 压缩包解压到指定路径，例如 windows 系统的 C:\hugo_dir 打开命令行终端，进入安装目录，在路径栏目输入CMD回车 确认 Hugo 已经启动： 输入 hugo version 出现
+ #hugo v0.91.1 linux/amd64 BuildDate=2021-12-22T16:48:53Z
+ 就是成功启动 如果命令 hugo version 报错，你可能下载了错误的版本。当然，有很多种方法安装 Hugo，更多详细信息请查阅 官方文档。最稳妥的方法就是把 Hugo 可执行文件放在某个路径下，然后执行的时候带上路径名
+创建一个新的站点来作为你的博客，输入命令：hugo new site youblog 进入新创建的路径下: cd youblog
+恭喜你！你已经创建了自己的新博客。
+下载主题 根据终端的提示，前往 Hugo主题官网 找到自己喜欢的主题，然后点击下载会跳转到主题的github，
+把终端的路径调整到博客文件夹的themes目录下，输入
+ cd hemes
+  git clone https://github.com/CaiJimmy/hugo-theme-stack.git   也可以直接下载解压到themes文件夹 把主题中archetypes文件夹文件替换掉博客目录下的archetypes文件
+主题目录下exampleSite的config替换掉博客目录下的config（后缀可能不一样）
+主题目录下的content替换掉博客目录下的content
+在 youblog文件夹 下cmd 输入'>
+<meta property='og:url' content='//www.lanhui.live/p/199/'>
 <meta property='og:site_name' content='蓝惠の小窝'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='onedrive' /><meta property='article:published_time' content='2020-04-25T10:38:37&#43;08:00'/><meta property='article:modified_time' content='2020-04-25T10:38:37&#43;08:00'/>
-<meta name="twitter:title" content="如何创建web应用程序/调用onedrive的api">
-<meta name="twitter:description" content="登录 https://portal.azure.com/  
-选择Azure Active Directory
-应用注册&amp;mdash;&amp;ndash;新注册
-设置相关信息
-在应用注册中 点击 拥有的应用程序，记录应用程序（客户端ID），然后点击证书和密码
- 添加客户端密码，期限随意
-箭头所示的值就是应用密码了
-把这两个值填入对应地方（如onelndex的应用程序机密），就可以了！">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='hugo' /><meta property='article:tag' content='typecho' /><meta property='article:tag' content='' /><meta property='article:tag' content='' /><meta property='article:published_time' content='2024-03-07T16:06:00&#43;08:00'/><meta property='article:modified_time' content='2024-03-07T16:06:00&#43;08:00'/>
+<meta name="twitter:title" content="博客转hugo">
+<meta name="twitter:description" content="个人博客的最终归宿是静态网站，今天我的网站也托管到github了。由刚接触的时期，使用wordpress，再到后来的typecho，最后hugo。转移最重要的原因是因为，我的服务器被国内防火墙ban了，最然够两年的余额，也可以更换ip，但不想再这上面折腾了，索性一步到位。
+数据迁移 typecho转hugo文章迁移  。
+hugo安装 为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。
+下载和你操作系统匹配的 Hugo 版本； 压缩包解压到指定路径，例如 windows 系统的 C:\hugo_dir 打开命令行终端，进入安装目录，在路径栏目输入CMD回车 确认 Hugo 已经启动： 输入 hugo version 出现
+ #hugo v0.91.1 linux/amd64 BuildDate=2021-12-22T16:48:53Z
+ 就是成功启动 如果命令 hugo version 报错，你可能下载了错误的版本。当然，有很多种方法安装 Hugo，更多详细信息请查阅 官方文档。最稳妥的方法就是把 Hugo 可执行文件放在某个路径下，然后执行的时候带上路径名
+创建一个新的站点来作为你的博客，输入命令：hugo new site youblog 进入新创建的路径下: cd youblog
+恭喜你！你已经创建了自己的新博客。
+下载主题 根据终端的提示，前往 Hugo主题官网 找到自己喜欢的主题，然后点击下载会跳转到主题的github，
+把终端的路径调整到博客文件夹的themes目录下，输入
+ cd hemes
+  git clone https://github.com/CaiJimmy/hugo-theme-stack.git   也可以直接下载解压到themes文件夹 把主题中archetypes文件夹文件替换掉博客目录下的archetypes文件
+主题目录下exampleSite的config替换掉博客目录下的config（后缀可能不一样）
+主题目录下的content替换掉博客目录下的content
+在 youblog文件夹 下cmd 输入">
     </head>
     <body class="
     article-page
@@ -264,7 +285,41 @@
     </div>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#数据迁移">数据迁移</a></li>
+    <li><a href="#hugo安装">hugo安装</a></li>
+    <li><a href="#下载主题">下载主题</a></li>
+    <li><a href="#hugo装修">hugo装修</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -296,7 +351,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/1048/">如何创建web应用程序/调用onedrive的api</a>
+            <a href="/p/199/">博客转hugo</a>
         </h2>
     
         
@@ -318,7 +373,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Apr 25, 2020</time>
+                <time class="article-time--published">Mar 07, 2024</time>
             </div>
         
 
@@ -348,8 +403,10 @@
     <section class="article-content">
     
     
-    <p>登录 <a href="https://portal.azure.com/" target="_blank" rel="noopener noreferrer"><a class="link" href="https://portal.azure.com/"  target="_blank" rel="noopener"
-    >https://portal.azure.com/</a>
+    <p>个人博客的最终归宿是静态网站，今天我的网站也托管到github了。由刚接触的时期，使用wordpress，再到后来的typecho，最后hugo。转移最重要的原因是因为，我的服务器被国内防火墙ban了，最然够两年的余额，也可以更换ip，但不想再这上面折腾了，索性一步到位。</p>
+<h2 id="数据迁移">数据迁移</h2>
+<p><a class="link" href="https://atpx.com/blog/typecho-to-hugo/"  target="_blank" rel="noopener"
+    >typecho转hugo文章迁移</a>
 
 
     
@@ -360,21 +417,96 @@
         fill="currentColor">
 </svg></span>
 
-</a></p>
-<p>选择Azure Active Directory</p>
-<img src="/images/2020/04/25/api.png" alt="" width="500" height="238" />
-<p>应用注册&mdash;&ndash;新注册</p>
-<img src="/images/2020/04/25/api2.png" alt="" width="500" height="251" />
-<p>设置相关信息</p>
-<img src="/images/2020/04/25/api3.png" alt="" width="500" height="259" />
-<p>在应用注册中  点击  拥有的应用程序，<strong>记录应用程序（客户端ID）</strong>，然后点击证书和密码</p>
-<img src="/images/2020/04/25/api4.png" alt="" width="500" height="239" />
-<p> </p>
-<p id="messagebox0-00b" class="fxs-messagebox-title msportalfx-tooltip-overflow" data-bind="&quot;text&quot;:data.title,&quot;visible&quot;:!data.hideTitle">添加客户端密码，期限随意</p>
-<img src="/images/2020/04/25/api5.png" alt="" width="500" height="249" />
-<p>箭头所示的值就是应用密码了</p>
-<img src="/images/2020/04/25/api6.png" alt="" width="500" height="242" />
-<p>把这两个值填入对应地方（如onelndex的应用程序机密），就可以了！</p>
+。</p>
+<h2 id="hugo安装">hugo安装</h2>
+<p>为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。</p>
+<p>下载和你操作系统匹配的 Hugo 版本；
+压缩包解压到指定路径，例如 windows 系统的 C:\hugo_dir
+打开命令行终端，进入安装目录，在路径栏目输入CMD回车
+确认 Hugo 已经启动：
+输入
+hugo version
+出现</p>
+<blockquote>
+<p>#hugo v0.91.1 linux/amd64 BuildDate=2021-12-22T16:48:53Z</p>
+</blockquote>
+<p>就是成功启动
+如果命令 hugo version 报错，你可能下载了错误的版本。当然，有很多种方法安装 Hugo，更多详细信息请查阅 官方文档。最稳妥的方法就是把 Hugo 可执行文件放在某个路径下，然后执行的时候带上路径名</p>
+<p>创建一个新的站点来作为你的博客，输入命令：hugo new site youblog
+进入新创建的路径下: cd youblog</p>
+<p>恭喜你！你已经创建了自己的新博客。</p>
+<h2 id="下载主题">下载主题</h2>
+<p>根据终端的提示，前往 Hugo主题官网 找到自己喜欢的主题，然后点击下载会跳转到主题的github，</p>
+<p>把终端的路径调整到博客文件夹的themes目录下，输入</p>
+<blockquote>
+<p>cd hemes</p>
+</blockquote>
+<blockquote>
+<p>git clone <a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack.git"  target="_blank" rel="noopener"
+    >https://github.com/CaiJimmy/hugo-theme-stack.git</a>
+
+
+    
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+</p>
+</blockquote>
+<p>也可以直接下载解压到themes文件夹
+把主题中archetypes文件夹文件替换掉博客目录下的archetypes文件</p>
+<p>主题目录下exampleSite的config替换掉博客目录下的config（后缀可能不一样）</p>
+<p>主题目录下的content替换掉博客目录下的content</p>
+<p>在 youblog文件夹 下cmd 输入</p>
+<blockquote>
+<p>hugo server -t stack &ndash;buildDrafts</p>
+</blockquote>
+<p>访问弹出来的信息 localhost:端口号
+没问题的话就修改 config 内容</p>
+<p>最后就可以写博客上传到github了</p>
+<h2 id="hugo装修">hugo装修</h2>
+<p><a class="link" href="https://thirdshire.com/hugo-stack-renovation/#&amp;gid=1&amp;pid=4"  target="_blank" rel="noopener"
+    >tHugo Stack主题装修笔记1</a>
+
+
+    
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+。
+<a class="link" href="https://thirdshire.com/hugo-stack-renovation-part-two/"  target="_blank" rel="noopener"
+    >Hugo Stack主题装修笔记Part 2</a>
+
+
+    
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+。
+<a class="link" href="https://ponder.lol/2023/custom-hugo-theme-stack/#%e8%bf%94%e5%9b%9e%e9%a1%b6%e9%83%a8%e6%8c%89%e9%92%ae"  target="_blank" rel="noopener"
+    >Hugo｜自定义 hugo-theme-Stack</a>
+
+
+    
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+。</p>
 
 </section>
 
@@ -414,7 +546,9 @@
     
     <section class="article-tags">
         
-            <a href="/tags/onedrive/">onedrive</a>
+            <a href="/tags/hugo/">hugo</a>
+        
+            <a href="/tags/typecho/">typecho</a>
         
     </section>
 
@@ -448,12 +582,12 @@
             
                 
 <article class="">
-    <a href="/p/1070/">
+    <a href="/p/328/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Cloudreve对接onedrive搭建属于自己的网盘系统</h2>
+            <h2 class="article-title">超好用的免费内网穿透-chmlfrp</h2>
         </div>
     </a>
 </article>
@@ -461,12 +595,12 @@
             
                 
 <article class="">
-    <a href="/p/1074/">
+    <a href="/p/3660/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">onedrive加入sharepoint团队盘后，如何使用？</h2>
+            <h2 class="article-title">华为HS8546V5光猫智能网关超级管理员密码</h2>
         </div>
     </a>
 </article>
@@ -474,12 +608,12 @@
             
                 
 <article class="">
-    <a href="/p/1077/">
+    <a href="/p/3649/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">OneDrive入门教程-onedrive如何使用？</h2>
+            <h2 class="article-title">Z840准系统踩坑：不值得买！</h2>
         </div>
     </a>
 </article>
@@ -487,12 +621,12 @@
             
                 
 <article class="">
-    <a href="/p/1076/">
+    <a href="/p/3655/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Onedrive容量更改指定用户的容量  1T升级为5T</h2>
+            <h2 class="article-title">esxi摸索（代完善）</h2>
         </div>
     </a>
 </article>
@@ -500,12 +634,12 @@
             
                 
 <article class="">
-    <a href="/p/1756/">
+    <a href="/p/3633/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">同域下onedrive之间互传/转存</h2>
+            <h2 class="article-title">手机控制电脑远程开机，手机控制电脑处理文件打游戏</h2>
         </div>
     </a>
 </article>

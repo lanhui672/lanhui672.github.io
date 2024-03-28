@@ -1,72 +1,854 @@
-<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content='Picture Share+onedrive　最好用最稳的图床工具！ 2019.6.25更新 重装系统后安装Picture Share，如果是登录原账号就不用重新设置，以前上传的图片都不会丢失链接。
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Picture Share&#43;onedrive　最好用最稳的图床工具！ 2019.6.25更新 重装系统后安装Picture Share，如果是登录原账号就不用重新设置，以前上传的图片都不会丢失链接。
 介绍 Picture Share是OneDrive图床工具，用于上传图片并获得图片链接。
 可用于博客写作等需要嵌入式图片的场景（即使卸载软件，链接仍然有效！）自本文开始图片都此方法。
 软件已开源，开源地址为https:/github.com/Richasy/lmg-Share
 准备 1.个人版onedrive账号一个 （在tb可扩容10G，一共15G）
 2.win10 uwp应用：Picture Share（可不用，但生成外链比较麻烦）
-下载软件 首先，在win10商店下载Picture Share，直接搜索“图床”即可找到
-成功下载后打开软件
+下载软件 首先，在win10商店下载Picture Share，直接搜索“图床”即可找到成功下载后打开软件
 登录账号 提示我们登陆自己的微软账号，然后授权
-这个时候提示我们输入 AuthKey（授权码）
-获取授权码 打开浏览器，登陆onedrive网站（可能需要翻墙，免费梯子点击这里）
+这个时候提示我们输入 AuthKey（授权码）获取授权码 打开浏览器，登陆onedrive网站（可能需要翻墙，免费梯子点击这里）
 在以下路径 OneDrive / 应用 / Picture Share/Image 找到我们的 Image 文件夹 (访问较慢，需要重试几次)
 选中Image文件夹，点击顶部的嵌入按钮
 找到右侧生成的代码，其中的 authkey 字段的值就是我们需要的分享密钥，将之复制出来，粘贴进软件的对话框即可。
-好了！，私人图床已经做好了！15GB空间，就算每张3MB，也足够存4万多张图片呢！
+  好了！，私人图床已经做好了！15GB空间，就算每张3MB，也足够存4万多张图片呢！
 &amp;nbsp;
-经过测试速度不是很理想，现在博主找到了更好的方法。Chevereto 图床搭建搭建，博客图床解决方案'><title>新浪图床挂了，有什么免费又稳定的图床？</title>
-<link rel=canonical href=//www.lanhui.live/p/1886/><link rel=stylesheet href=/scss/style.min.07b3460ba230fb676086d9750fa7febc8b680de53b50ba311cce2971b4a9cf34.css><meta property='og:title' content='新浪图床挂了，有什么免费又稳定的图床？'><meta property='og:description' content='Picture Share+onedrive　最好用最稳的图床工具！ 2019.6.25更新 重装系统后安装Picture Share，如果是登录原账号就不用重新设置，以前上传的图片都不会丢失链接。
+经过测试速度不是很理想，现在博主找到了更好的方法。Chevereto 图床搭建搭建，博客图床解决方案'>
+<title>新浪图床挂了，有什么免费又稳定的图床？</title>
+
+<link rel='canonical' href='//www.lanhui.live/p/1886/'>
+
+<link rel="stylesheet" href="/scss/style.min.07b3460ba230fb676086d9750fa7febc8b680de53b50ba311cce2971b4a9cf34.css"><meta property='og:title' content='新浪图床挂了，有什么免费又稳定的图床？'>
+<meta property='og:description' content='Picture Share&#43;onedrive　最好用最稳的图床工具！ 2019.6.25更新 重装系统后安装Picture Share，如果是登录原账号就不用重新设置，以前上传的图片都不会丢失链接。
 介绍 Picture Share是OneDrive图床工具，用于上传图片并获得图片链接。
 可用于博客写作等需要嵌入式图片的场景（即使卸载软件，链接仍然有效！）自本文开始图片都此方法。
 软件已开源，开源地址为https:/github.com/Richasy/lmg-Share
 准备 1.个人版onedrive账号一个 （在tb可扩容10G，一共15G）
 2.win10 uwp应用：Picture Share（可不用，但生成外链比较麻烦）
-下载软件 首先，在win10商店下载Picture Share，直接搜索“图床”即可找到
-成功下载后打开软件
+下载软件 首先，在win10商店下载Picture Share，直接搜索“图床”即可找到成功下载后打开软件
 登录账号 提示我们登陆自己的微软账号，然后授权
-这个时候提示我们输入 AuthKey（授权码）
-获取授权码 打开浏览器，登陆onedrive网站（可能需要翻墙，免费梯子点击这里）
+这个时候提示我们输入 AuthKey（授权码）获取授权码 打开浏览器，登陆onedrive网站（可能需要翻墙，免费梯子点击这里）
 在以下路径 OneDrive / 应用 / Picture Share/Image 找到我们的 Image 文件夹 (访问较慢，需要重试几次)
 选中Image文件夹，点击顶部的嵌入按钮
 找到右侧生成的代码，其中的 authkey 字段的值就是我们需要的分享密钥，将之复制出来，粘贴进软件的对话框即可。
-好了！，私人图床已经做好了！15GB空间，就算每张3MB，也足够存4万多张图片呢！
+  好了！，私人图床已经做好了！15GB空间，就算每张3MB，也足够存4万多张图片呢！
 &amp;nbsp;
-经过测试速度不是很理想，现在博主找到了更好的方法。Chevereto 图床搭建搭建，博客图床解决方案'><meta property='og:url' content='//www.lanhui.live/p/1886/'><meta property='og:site_name' content='蓝惠の小窝'><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='onedrive'><meta property='article:tag' content='图床'><meta property='article:published_time' content='2019-05-16T15:38:00+08:00'><meta property='article:modified_time' content='2019-05-16T15:38:00+08:00'><meta name=twitter:title content="新浪图床挂了，有什么免费又稳定的图床？"><meta name=twitter:description content="Picture Share+onedrive　最好用最稳的图床工具！ 2019.6.25更新 重装系统后安装Picture Share，如果是登录原账号就不用重新设置，以前上传的图片都不会丢失链接。
+经过测试速度不是很理想，现在博主找到了更好的方法。Chevereto 图床搭建搭建，博客图床解决方案'>
+<meta property='og:url' content='//www.lanhui.live/p/1886/'>
+<meta property='og:site_name' content='蓝惠の小窝'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='onedrive' /><meta property='article:tag' content='图床' /><meta property='article:published_time' content='2019-05-16T15:38:00&#43;08:00'/><meta property='article:modified_time' content='2019-05-16T15:38:00&#43;08:00'/>
+<meta name="twitter:title" content="新浪图床挂了，有什么免费又稳定的图床？">
+<meta name="twitter:description" content="Picture Share&#43;onedrive　最好用最稳的图床工具！ 2019.6.25更新 重装系统后安装Picture Share，如果是登录原账号就不用重新设置，以前上传的图片都不会丢失链接。
 介绍 Picture Share是OneDrive图床工具，用于上传图片并获得图片链接。
 可用于博客写作等需要嵌入式图片的场景（即使卸载软件，链接仍然有效！）自本文开始图片都此方法。
 软件已开源，开源地址为https:/github.com/Richasy/lmg-Share
 准备 1.个人版onedrive账号一个 （在tb可扩容10G，一共15G）
 2.win10 uwp应用：Picture Share（可不用，但生成外链比较麻烦）
-下载软件 首先，在win10商店下载Picture Share，直接搜索“图床”即可找到
-成功下载后打开软件
+下载软件 首先，在win10商店下载Picture Share，直接搜索“图床”即可找到成功下载后打开软件
 登录账号 提示我们登陆自己的微软账号，然后授权
-这个时候提示我们输入 AuthKey（授权码）
-获取授权码 打开浏览器，登陆onedrive网站（可能需要翻墙，免费梯子点击这里）
+这个时候提示我们输入 AuthKey（授权码）获取授权码 打开浏览器，登陆onedrive网站（可能需要翻墙，免费梯子点击这里）
 在以下路径 OneDrive / 应用 / Picture Share/Image 找到我们的 Image 文件夹 (访问较慢，需要重试几次)
 选中Image文件夹，点击顶部的嵌入按钮
 找到右侧生成的代码，其中的 authkey 字段的值就是我们需要的分享密钥，将之复制出来，粘贴进软件的对话框即可。
-好了！，私人图床已经做好了！15GB空间，就算每张3MB，也足够存4万多张图片呢！
+  好了！，私人图床已经做好了！15GB空间，就算每张3MB，也足够存4万多张图片呢！
 &amp;nbsp;
-经过测试速度不是很理想，现在博主找到了更好的方法。Chevereto 图床搭建搭建，博客图床解决方案"></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
-<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hua293395a11fb6734a6c77ef3c9ef801d_20316_300x0_resize_box_3.png width=300 height=354 class=site-logo loading=lazy alt=Avatar>
-</a><span class=emoji>🍥</span></figure><div class=site-meta><h1 class=site-name><a href=//www.lanhui.live/>蓝惠の小窝</a></h1><h2 class=site-description>寻找大波斯菊需要的不是金钱，而是一颗去找寻的心♥.</h2></div></header><ol class=social-menu><li><a href=https://github.com/lanhui672 target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://twitter.com target=_blank title=Twitter rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84.0 00.497-3.753C20.18 7.773 21.692 5.25 22 4.009z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
-<span>主页</span></a></li><li><a href=/about/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg>
-<span>关于</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
-<span>归档</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
-<span>搜索</span></a></li><li><a href=/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
-<span>友链</span></a></li></ol><div class=menu-bottom-section><ol class=menu><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
-<span>暗色模式</span></li></ol></div></aside><main class="main full-width"><article class=main-article><header class=article-header><script>var _hmt=_hmt||[];(function(){var e,t=document.createElement("script");t.src="https://hm.baidu.com/hm.js?a4b7a6edcda124d6163f11178ef56669",e=document.getElementsByTagName("script")[0],e.parentNode.insertBefore(t,e)})()</script><div class=article-details><header class=article-category><a href=/categories/%E7%BD%91%E7%BB%9C/ style=background-color:#0047ab;color:#fff>网络</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/1886/>新浪图床挂了，有什么免费又稳定的图床？</a></h2></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
-<time class=article-time--published>May 16, 2019</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
-<time class=article-time--reading>阅读时长: 1 分钟</time></div></footer></div></header><section class=article-content><h2>Picture Share+onedrive　最好用最稳的图床工具！</h2><h3>2019.6.25更新</h3><p>重装系统后安装Picture Share，如果是登录原账号就不用重新设置，以前上传的图片都不会丢失链接。</p><h3>介绍</h3><p style=text-align:left>Picture Share是OneDrive图床工具，用于上传图片并获得图片链接。<br>可用于博客写作等需要嵌入式图片的场景（<strong>即使卸载软件，链接仍然有效！</strong>）自本文开始图片都此方法。<br>软件已开源，开源地址为https:/github.com/Richasy/lmg-Share</p><h3>准备</h3><p>1.个人版onedrive账号一个 （在tb可扩容10G，一共15G）</p><p>2.win10 uwp应用：Picture Share（可不用，但生成外链比较麻烦）</p><h3>下载软件</h3><p>首先，在win10商店下载Picture Share，直接搜索“图床”即可找到<img src="https://storage.live.com/items/63A0A8E36AE5DD8B!187?authkey=ACc_om3gwNSxnJ4" alt></p><p>成功下载后打开软件</p><h3>登录账号</h3><p>提示我们登陆自己的微软账号，然后授权</p><p>这个时候提示我们输入 AuthKey（授权码）<img src="https://storage.live.com/items/63A0A8E36AE5DD8B!188?authkey=ACc_om3gwNSxnJ4" alt></p><h3>获取授权码</h3><p>打开浏览器，登陆<a href=https://onedrive.live.com/about/zh-cn/ target=_blank rel="noreferrer noopener" aria-label=onedrive网站（在新窗口打开）>onedrive网站</a>（可能需要翻墙，<a href=https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7 target=_blank rel="noreferrer noopener" aria-label=免费梯子点击这里（在新窗口打开）>免费梯子点击这里</a>）</p><p>在以下路径 OneDrive / 应用 / Picture Share/Image 找到我们的<strong> Image</strong> 文件夹 (访问较慢，需要重试几次)</p><p>选中<strong>Image</strong>文件夹，点击顶部的嵌入按钮</p><p><img src="https://storage.live.com/items/63A0A8E36AE5DD8B!189?authkey=ACc_om3gwNSxnJ4" alt></p><p>找到右侧生成的代码，其中的 authkey 字段的值就是我们需要的分享密钥，将之复制出来，粘贴进软件的对话框即可。</p><div class=wp-block-image><figure class=aligncenter><img src="https://storage.live.com/items/63A0A8E36AE5DD8B!190?authkey=ACc_om3gwNSxnJ4" alt></figure></div><p>好了！，私人图床已经做好了！15GB空间，就算每张3MB，也足够存4万多张图片呢！</p><p>&nbsp;</p><p>经过测试速度不是很理想，现在博主找到了更好的方法。<a title="Chevereto 图床搭建搭建，博客图床解决方案" href=https://www.lanhui.co/1429.html target=_blank rel="noopener noreferrer">Chevereto 图床搭建搭建，博客图床解决方案</a></p></section><footer class=article-footer><script src=https://giscus.app/client.js data-repo=lanhui672/lanhui672.Giscus data-repo-id=R_kgDOLdW0gA data-category=Announcements data-category-id=DIC_kwDOLdW0gM4Cdz6v data-mapping=url data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=noborder_light data-lang=zh-CN data-loading=lazy crossorigin=anonymous async></script><section class=article-tags><a href=/tags/onedrive/>Onedrive</a>
-<a href=/tags/%E5%9B%BE%E5%BA%8A/>图床</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
-<span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/p/1070/><div class=article-details><h2 class=article-title>Cloudreve对接onedrive搭建属于自己的网盘系统</h2></div></a></article><article><a href=/p/1074/><div class=article-details><h2 class=article-title>onedrive加入sharepoint团队盘后，如何使用？</h2></div></a></article><article><a href=/p/1077/><div class=article-details><h2 class=article-title>OneDrive入门教程-onedrive如何使用？</h2></div></a></article><article><a href=/p/1048/><div class=article-details><h2 class=article-title>如何创建web应用程序/调用onedrive的api</h2></div></a></article><article><a href=/p/1076/><div class=article-details><h2 class=article-title>Onedrive容量更改指定用户的容量 1T升级为5T</h2></div></a></article></div></div></aside><footer class=site-footer><section class=copyright>&copy;
-2019 -
-2024 蓝惠の小窝</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>主题 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.23.0>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计</section><section class=totalcount>发表了60篇文章 ·
-总计2.87k字</section><section class=running-time>本博客已稳定运行
-<span id=runningdays class=running-days></span></section><a href=https://beian.miit.gov.cn/ target=_blank>湘ICP备20000440号</a></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-<button class="pswp__button pswp__button--share" title=Share></button>
-<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-</button>
-<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script><script>let s1="2019-4-1";s1=new Date(s1.replace(/-/g,"/"));let s2=new Date,timeDifference=s2.getTime()-s1.getTime(),days=Math.floor(timeDifference/(1e3*60*60*24)),hours=Math.floor(timeDifference%(1e3*60*60*24)/(1e3*60*60)),minutes=Math.floor(timeDifference%(1e3*60*60)/(1e3*60)),result=days+"天"+hours+"小时"+minutes+"分钟";document.getElementById("runningdays").innerHTML=result</script></body></html>
+经过测试速度不是很理想，现在博主找到了更好的方法。Chevereto 图床搭建搭建，博客图床解决方案">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hua293395a11fb6734a6c77ef3c9ef801d_20316_300x0_resize_box_3.png" width="300"
+                            height="354" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="//www.lanhui.live">蓝惠の小窝</a></h1>
+            <h2 class="site-description">寻找大波斯菊需要的不是金钱，而是一颗去找寻的心♥.</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/lanhui672'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+    </ol>
+    <div class="menu-bottom-section">
+        <ol class="menu">
+
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </ol>
+    </div>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?a4b7a6edcda124d6163f11178ef56669";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%BD%91%E7%BB%9C/" style="background-color: #0047ab; color: #fff;">
+                网络
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/1886/">新浪图床挂了，有什么免费又稳定的图床？</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">May 16, 2019</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <!-- wp:heading -->
+<h2>Picture Share+onedrive　最好用最稳的图床工具！</h2>
+<!-- /wp:heading -->
+<!-- wp:heading {"level":3} -->
+<h3>2019.6.25更新</h3>
+<p>重装系统后安装Picture Share，如果是登录原账号就不用重新设置，以前上传的图片都不会丢失链接。</p>
+<h3>介绍</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"left"} -->
+<p style="text-align: left;">Picture Share是OneDrive图床工具，用于上传图片并获得图片链接。<br />可用于博客写作等需要嵌入式图片的场景（<strong>即使卸载软件，链接仍然有效！</strong>）自本文开始图片都此方法。<br />软件已开源，开源地址为https:/github.com/Richasy/lmg-Share</p>
+<h3>准备</h3>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>1.个人版onedrive账号一个 （在tb可扩容10G，一共15G）</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>2.win10 uwp应用：Picture Share（可不用，但生成外链比较麻烦）</p>
+<h3>下载软件</h3>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>首先，在win10商店下载Picture Share，直接搜索“图床”即可找到<img src="https://storage.live.com/items/63A0A8E36AE5DD8B!187?authkey=ACc_om3gwNSxnJ4" alt="" /></p>
+<!-- /wp:paragraph -->
+<!-- wp:image --><!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>成功下载后打开软件</p>
+<h3>登录账号</h3>
+<p>提示我们登陆自己的微软账号，然后授权</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>这个时候提示我们输入 AuthKey（授权码）<img src="https://storage.live.com/items/63A0A8E36AE5DD8B!188?authkey=ACc_om3gwNSxnJ4" alt="" /></p>
+<!-- /wp:paragraph -->
+<!-- wp:image --><!-- /wp:image -->
+<!-- wp:paragraph -->
+<h3>获取授权码</h3>
+<p>打开浏览器，登陆<a href="https://onedrive.live.com/about/zh-cn/" target="_blank" rel="noreferrer noopener" aria-label="onedrive网站（在新窗口打开）">onedrive网站</a>（可能需要翻墙，<a href="https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7" target="_blank" rel="noreferrer noopener" aria-label="免费梯子点击这里（在新窗口打开）">免费梯子点击这里</a>）</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>在以下路径 OneDrive / 应用 / Picture Share/Image 找到我们的<strong> Image</strong> 文件夹 (访问较慢，需要重试几次)</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>选中<strong>Image</strong>文件夹，点击顶部的嵌入按钮</p>
+<p><img src="https://storage.live.com/items/63A0A8E36AE5DD8B!189?authkey=ACc_om3gwNSxnJ4" alt="" /></p>
+<!-- /wp:paragraph -->
+<!-- wp:image --><!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>找到右侧生成的代码，其中的 authkey 字段的值就是我们需要的分享密钥，将之复制出来，粘贴进软件的对话框即可。</p>
+<!-- /wp:paragraph -->
+<!-- wp:image {"align":"center"} -->
+<div class="wp-block-image">
+<figure class="aligncenter"><img src="https://storage.live.com/items/63A0A8E36AE5DD8B!190?authkey=ACc_om3gwNSxnJ4" alt="" /></figure>
+</div>
+<!-- /wp:image -->
+<!-- wp:paragraph -->
+<p>好了！，私人图床已经做好了！15GB空间，就算每张3MB，也足够存4万多张图片呢！</p>
+<p>&nbsp;</p>
+<p>经过测试速度不是很理想，现在博主找到了更好的方法。<a title="Chevereto 图床搭建搭建，博客图床解决方案" href="https://www.lanhui.co/1429.html" target="_blank" rel="noopener noreferrer">Chevereto 图床搭建搭建，博客图床解决方案</a></p>
+<!-- /wp:paragraph -->
+</section>
+
+
+    <footer class="article-footer">
+    <script src="https://giscus.app/client.js"
+        data-repo="lanhui672/lanhui672.Giscus"
+        data-repo-id="R_kgDOLdW0gA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOLdW0gM4Cdz6v"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="noborder_light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <section class="article-tags">
+        
+            <a href="/tags/onedrive/">onedrive</a>
+        
+            <a href="/tags/%E5%9B%BE%E5%BA%8A/">图床</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/1070/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cloudreve对接onedrive搭建属于自己的网盘系统</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/1074/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">onedrive加入sharepoint团队盘后，如何使用？</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/1077/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">OneDrive入门教程-onedrive如何使用？</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/1048/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">如何创建web应用程序/调用onedrive的api</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/1076/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Onedrive容量更改指定用户的容量  1T升级为5T</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2019 - 
+        
+        2024 蓝惠の小窝
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.23.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+<section class="totalcount">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    发表了60篇文章 · 
+    总计2.86k字
+</section>
+   
+   <section class="running-time">
+    本博客已稳定运行
+    <span id="runningdays" class="running-days"></span>
+    </section>
+    <a href="https://beian.miit.gov.cn/" target="_blank">湘ICP备20000440号</a>
+    
+
+
+
+
+
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<script>
+    let s1 = '2019-4-1'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
+</script>
+
+    </body>
+</html>
