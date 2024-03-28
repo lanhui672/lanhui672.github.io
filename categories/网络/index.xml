@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网络 on 蓝惠の小窝</title><link>//www.lanhui.live/categories/%E7%BD%91%E7%BB%9C/</link><description>Recent content in 网络 on 蓝惠の小窝</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>蓝惠の小窝</copyright><lastBuildDate>Thu, 07 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="//www.lanhui.live/categories/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>博客转hugo</title><link>//www.lanhui.live/p/%E5%8D%9A%E5%AE%A2%E8%BD%AChugo/</link><pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate><guid>//www.lanhui.live/p/%E5%8D%9A%E5%AE%A2%E8%BD%AChugo/</guid><description>&lt;p>个人博客的最终归宿是静态网站，今天我的网站也托管到github了。由刚接触的时期，使用wordpress，再到后来的typecho，最后hugo。转移最重要的原因是因为，我的服务器被国内防火墙ban了，最然够两年的余额，也可以更换ip，但不想再这上面折腾了，索性一步到位。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网络 on 蓝惠の小窝</title><link>//www.lanhui.live/categories/%E7%BD%91%E7%BB%9C/</link><description>Recent content in 网络 on 蓝惠の小窝</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>蓝惠の小窝</copyright><lastBuildDate>Thu, 28 Mar 2024 10:55:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/categories/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>超好用的免费内网穿透-chmlfrp</title><link>//www.lanhui.live/p/3341/</link><pubDate>Thu, 28 Mar 2024 10:55:00 +0800</pubDate><guid>//www.lanhui.live/p/3341/</guid><description>&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>最近想折腾一下内网穿透，毕竟现在除了电信，其他运营商都不给公网IP了。在网上搜了很多免费内网穿透的网站，都是有各种限制的，比如限制1G流量或者1M带宽。最后找到了chmlfrp这个网站&lt;/p>
+&lt;h2 id="为什么选用chmlfrp">为什么选用chmlfrp？&lt;/h2>
+&lt;ul>
+&lt;li>不限制使用流量，免费，稳定&lt;/li>
+&lt;li>使用带宽高，白嫖用户就能享受8M（国内）32M（国外）带宽&lt;/li>
+&lt;li>软件面板易用&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>简洁无广告&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/url/frp/sy.png"
+loading="lazy"
+alt="首页"
+>&lt;/p>
+&lt;p>&lt;strong>免费用户可创建四条隧道（不够用多创建几个号嘛）&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/url/frp/suidao.png"
+loading="lazy"
+alt="隧道"
+>&lt;/p>
+&lt;p>&lt;strong>部分隧道可以去端口，这样域名访问就可以不带端口啦！&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/url/frp/duankou.png"
+loading="lazy"
+alt="端口"
+>&lt;/p>
+&lt;p>最近有2.5周年活动，趁着这个时间，入手了永久VIP。官网价格是120（也有80/100的）。我去某宝在了下，内网穿透一个月的价格就要十块，相比之下这个太香了。
+免费和付费的用户对比如下图&lt;/p>
+&lt;p>最高规格的，国内带宽就有32M了&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/url/frp/huiyuan.png"
+loading="lazy"
+alt="会员对比"
+>&lt;/p></description></item><item><title>博客转hugo</title><link>//www.lanhui.live/p/%E5%8D%9A%E5%AE%A2%E8%BD%AChugo/</link><pubDate>Thu, 07 Mar 2024 16:06:00 +0800</pubDate><guid>//www.lanhui.live/p/%E5%8D%9A%E5%AE%A2%E8%BD%AChugo/</guid><description>&lt;p>个人博客的最终归宿是静态网站，今天我的网站也托管到github了。由刚接触的时期，使用wordpress，再到后来的typecho，最后hugo。转移最重要的原因是因为，我的服务器被国内防火墙ban了，最然够两年的余额，也可以更换ip，但不想再这上面折腾了，索性一步到位。&lt;/p>
 &lt;h2 id="数据迁移">数据迁移&lt;/h2>
 &lt;p>&lt;a class="link" href="https://atpx.com/blog/typecho-to-hugo/" target="_blank" rel="noopener"
 >typecho转hugo文章迁移&lt;/a>
@@ -1397,7 +1426,58 @@ OneDriveUploader.exe -ms -a &amp;ldquo;url&amp;rdquo;
 OneDriveUploader.exe -cn -a &amp;ldquo;url&amp;rdquo;&lt;/p>
 &lt;p>然后上传命令和上面一样，只需要把&lt;code>OneDriveUploader&lt;/code>改成&lt;code>OneDriveUploader.exe&lt;/code>即可。&lt;/p>
 &lt;p>最后经测试，该版本的上传已经完全能应对各种稀奇古怪的字符问题，
-;&lt;/p></description></item><item><title>申请 Office365 E5 开发者订阅，调用API 实现无限续期</title><link>//www.lanhui.live/p/1047/</link><pubDate>Mon, 16 Mar 2020 13:39:26 +0800</pubDate><guid>//www.lanhui.live/p/1047/</guid><description>&lt;p>申请 Office 365 开发者计划，可以获得为期 3 个月的免费 Office 365 E5。Office 365 开发版 E5 是为开发人员提供的，微软官方活动，目前注册该试用版有效期为 90 天，90 天后需要证明是开发者才能续订，而微软判断是否为开发者的依据则为是否调用API，因此可以通过搭建onelndex调用API实现续订。&lt;/p>
+;&lt;/p></description></item><item><title>Chevereto-搭建你的私人图床！</title><link>//www.lanhui.live/p/1429/</link><pubDate>Sun, 22 Mar 2020 16:06:00 +0800</pubDate><guid>//www.lanhui.live/p/1429/</guid><description>&lt;p>自从搭建博客后，一直在寻找图床解决方案，从onedrive到sm图床到新浪图床（已添加了防盗外链），最后选择了Chevereto&lt;/p>
+&lt;p>Chevereto, 是一款采用 PHP 语言开发的网络相册脚本程序，支持多语言，提供中文语言包的下载的开源在线图片存储分享服务系统，支持本地上传和在线获取两种图像上传方式。&lt;/p>
+&lt;p>Chevereto 这套程序可以像WordPress 一样搭建在任何空间上。而它的功能除了一般图片空间单纯的从电脑上传图片外，也可以利用网址也可以上传。&lt;/p>
+&lt;h2 id="第一步我们先去下载-chevereto-程序这里我们介绍免费版给大家官网承诺永久免费版本">第一步：我们先去下载 chevereto 程序，这里我们介绍免费版给大家官网承诺永久免费版本&lt;/h2>
+&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/20160819171634.png" alt="" width="472" height="293" />
+&lt;p>下载地址：&lt;a href="https://www.lucktang.com/wp-content/themes/begin/go.php?url=aHR0cHM6Ly9naXRodWIuY29tL0NoZXZlcmV0by9DaGV2ZXJldG8tRnJlZQ==" target="_blank" rel="external nofollow noopener noreferrer">&lt;a class="link" href="https://github.com/Chevereto/Chevereto-Free" target="_blank" rel="noopener"
+>https://github.com/Chevereto/Chevereto-Free&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a>&lt;/p>
+&lt;p>官网下载：&lt;a href="https://chevereto.com/get-started" target="_blank" rel="noopener noreferrer">&lt;a class="link" href="https://chevereto.com/get-started" target="_blank" rel="noopener"
+>https://chevereto.com/get-started&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a>  这里是一个installer.php文件（反正就是PHP文件）&lt;/p>
+&lt;p>第二步：我们把压缩包的文件 FTP 上传到网站的根目录。环境面板不同根目录地址各不相同我就不介绍了。总之上传到网站根目录下。&lt;/p>
+&lt;p>第三部：访问你的域名/installer.php&lt;/p>
+&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/chevereto.png" alt="" width="736" height="470" />
+&lt;p>许可证选择跳过&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/2020/04/16/chevereto2.png" alt="填写管理员账号密码" width="726" height="511" /> 填写管理员账号密码&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/2020/04/16/chevereto3.png" alt="填写数据库信息" width="727" height="639" /> 填写数据库信息&lt;/p>
+&lt;p> &lt;/p>
+&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/chevereto4.png" alt="" width="768" height="350" />
+&lt;p>&lt;img src="//www.lanhui.live/images/2020/04/16/chevereto5.png" alt="" width="758" height="823" /> 安装完成&lt;/p>
+&lt;p> &lt;/p>
+&lt;p>出现404解决方法&lt;/p>
+&lt;p>1.首先在网站目录下把index.php（看你从官网下载的是什么名字）文件授权777
+2.然后，访问http://你的网站/index.php就能正常安装了&lt;/p>
+&lt;p>附上伪静态规则代码
+location / {
+if (-f $request_filename/index.html){
+rewrite (.&lt;em>) $1/index.html break;
+}
+if (-f $request_filename/index.php){
+rewrite (.&lt;/em>) $1/index.php;
+}
+if (!-f $request_filename){
+rewrite (.*) /index.php;
+}
+try_files $uri $uri/ /api.php;
+}
+location /admin {
+try_files $uri /admin/index.php?$args;
+}&lt;/p></description></item><item><title>申请 Office365 E5 开发者订阅，调用API 实现无限续期</title><link>//www.lanhui.live/p/1047/</link><pubDate>Mon, 16 Mar 2020 13:39:26 +0800</pubDate><guid>//www.lanhui.live/p/1047/</guid><description>&lt;p>申请 Office 365 开发者计划，可以获得为期 3 个月的免费 Office 365 E5。Office 365 开发版 E5 是为开发人员提供的，微软官方活动，目前注册该试用版有效期为 90 天，90 天后需要证明是开发者才能续订，而微软判断是否为开发者的依据则为是否调用API，因此可以通过搭建onelndex调用API实现续订。&lt;/p>
 &lt;p>并且E5包含了25个桌面版的office365许可证，这也是获取office365的好机会！&lt;/p>
 &lt;p>浏览器推荐使用隐私模式！&lt;/p>
 &lt;h2>申请步骤&lt;/h2>
@@ -1590,58 +1670,7 @@ fill="currentColor">
 &lt;/a>&lt;/p>
 &lt;h4 id="填坑">#填坑：&lt;/h4>
 &lt;p>注册后一定要实名认证，不然说几句话就会出错哟~&lt;/p>
-&lt;p>本文源自&lt;a href="https://www.cokemine.com/live2d1.html">可乐博客&lt;/a>改编&lt;/p></description></item><item><title>Chevereto-搭建你的私人图床！</title><link>//www.lanhui.live/p/1429/</link><pubDate>Sat, 22 Feb 2020 16:06:00 +0800</pubDate><guid>//www.lanhui.live/p/1429/</guid><description>&lt;p>自从搭建博客后，一直在寻找图床解决方案，从onedrive到sm图床到新浪图床（已添加了防盗外链），最后选择了Chevereto&lt;/p>
-&lt;p>Chevereto, 是一款采用 PHP 语言开发的网络相册脚本程序，支持多语言，提供中文语言包的下载的开源在线图片存储分享服务系统，支持本地上传和在线获取两种图像上传方式。&lt;/p>
-&lt;p>Chevereto 这套程序可以像WordPress 一样搭建在任何空间上。而它的功能除了一般图片空间单纯的从电脑上传图片外，也可以利用网址也可以上传。&lt;/p>
-&lt;h2 id="第一步我们先去下载-chevereto-程序这里我们介绍免费版给大家官网承诺永久免费版本">第一步：我们先去下载 chevereto 程序，这里我们介绍免费版给大家官网承诺永久免费版本&lt;/h2>
-&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/20160819171634.png" alt="" width="472" height="293" />
-&lt;p>下载地址：&lt;a href="https://www.lucktang.com/wp-content/themes/begin/go.php?url=aHR0cHM6Ly9naXRodWIuY29tL0NoZXZlcmV0by9DaGV2ZXJldG8tRnJlZQ==" target="_blank" rel="external nofollow noopener noreferrer">&lt;a class="link" href="https://github.com/Chevereto/Chevereto-Free" target="_blank" rel="noopener"
->https://github.com/Chevereto/Chevereto-Free&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/a>&lt;/p>
-&lt;p>官网下载：&lt;a href="https://chevereto.com/get-started" target="_blank" rel="noopener noreferrer">&lt;a class="link" href="https://chevereto.com/get-started" target="_blank" rel="noopener"
->https://chevereto.com/get-started&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/a>  这里是一个installer.php文件（反正就是PHP文件）&lt;/p>
-&lt;p>第二步：我们把压缩包的文件 FTP 上传到网站的根目录。环境面板不同根目录地址各不相同我就不介绍了。总之上传到网站根目录下。&lt;/p>
-&lt;p>第三部：访问你的域名/installer.php&lt;/p>
-&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/chevereto.png" alt="" width="736" height="470" />
-&lt;p>许可证选择跳过&lt;/p>
-&lt;p>&lt;img src="//www.lanhui.live/images/2020/04/16/chevereto2.png" alt="填写管理员账号密码" width="726" height="511" /> 填写管理员账号密码&lt;/p>
-&lt;p>&lt;img src="//www.lanhui.live/images/2020/04/16/chevereto3.png" alt="填写数据库信息" width="727" height="639" /> 填写数据库信息&lt;/p>
-&lt;p> &lt;/p>
-&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/chevereto4.png" alt="" width="768" height="350" />
-&lt;p>&lt;img src="//www.lanhui.live/images/2020/04/16/chevereto5.png" alt="" width="758" height="823" /> 安装完成&lt;/p>
-&lt;p> &lt;/p>
-&lt;p>出现404解决方法&lt;/p>
-&lt;p>1.首先在网站目录下把index.php（看你从官网下载的是什么名字）文件授权777
-2.然后，访问http://你的网站/index.php就能正常安装了&lt;/p>
-&lt;p>附上伪静态规则代码
-location / {
-if (-f $request_filename/index.html){
-rewrite (.&lt;em>) $1/index.html break;
-}
-if (-f $request_filename/index.php){
-rewrite (.&lt;/em>) $1/index.php;
-}
-if (!-f $request_filename){
-rewrite (.*) /index.php;
-}
-try_files $uri $uri/ /api.php;
-}
-location /admin {
-try_files $uri /admin/index.php?$args;
-}&lt;/p></description></item><item><title>office365全局管理员 教育版批量注册onedrive账户/子账号（简版）</title><link>//www.lanhui.live/p/1073/</link><pubDate>Thu, 13 Feb 2020 17:33:23 +0800</pubDate><guid>//www.lanhui.live/p/1073/</guid><description>&lt;p>主要是记录一下，其实还是挺简单的，如果有不会的可以留言。&lt;/p>
+&lt;p>本文源自&lt;a href="https://www.cokemine.com/live2d1.html">可乐博客&lt;/a>改编&lt;/p></description></item><item><title>office365全局管理员 教育版批量注册onedrive账户/子账号（简版）</title><link>//www.lanhui.live/p/1073/</link><pubDate>Thu, 13 Feb 2020 17:33:23 +0800</pubDate><guid>//www.lanhui.live/p/1073/</guid><description>&lt;p>主要是记录一下，其实还是挺简单的，如果有不会的可以留言。&lt;/p>
 &lt;p>通过excel批量注册的好处就是账号前缀比较规律&lt;/p>
 &lt;p>点击活动账户&lt;/p>
 &lt;p>选择批量注册&lt;/p>
