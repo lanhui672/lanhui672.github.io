@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
@@ -93,6 +94,51 @@
 &lt;h2 id=&#34;hugo安装&#34;&gt;hugo安装&lt;/h2&gt;
 &lt;p&gt;为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。&lt;/p&gt;
 &lt;p&gt;下载和你操作系统匹配的 Hugo 版本；
+=======
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>蓝惠の小窝</title><link>//www.lanhui.live/</link><description>Recent content on 蓝惠の小窝</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>蓝惠の小窝</copyright><lastBuildDate>Thu, 28 Mar 2024 10:55:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/index.xml" rel="self" type="application/rss+xml"/><item><title>超好用的免费内网穿透-chmlfrp</title><link>//www.lanhui.live/p/3341/</link><pubDate>Thu, 28 Mar 2024 10:55:00 +0800</pubDate><guid>//www.lanhui.live/p/3341/</guid><description>&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>最近想折腾一下内网穿透，毕竟现在除了电信，其他运营商都不给公网IP了。在网上搜了很多免费内网穿透的网站，都是有各种限制的，比如限制1G流量或者1M带宽。最后找到了chmlfrp这个网站&lt;/p>
+&lt;h2 id="为什么选用chmlfrp">为什么选用chmlfrp？&lt;/h2>
+&lt;ul>
+&lt;li>不限制使用流量，免费，稳定&lt;/li>
+&lt;li>使用带宽高，白嫖用户就能享受8M（国内）32M（国外）带宽&lt;/li>
+&lt;li>软件面板易用&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>简洁无广告&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/url/frp/sy.png"
+loading="lazy"
+alt="首页"
+>&lt;/p>
+&lt;p>&lt;strong>免费用户可创建四条隧道（不够用多创建几个号嘛）&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/url/frp/suidao.png"
+loading="lazy"
+alt="隧道"
+>&lt;/p>
+&lt;p>&lt;strong>部分隧道可以去端口，这样域名访问就可以不带端口啦！&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/url/frp/duankou.png"
+loading="lazy"
+alt="端口"
+>&lt;/p>
+&lt;p>最近有2.5周年活动，趁着这个时间，入手了永久VIP。官网价格是120（也有80/100的）。我去某宝在了下，内网穿透一个月的价格就要十块，相比之下这个太香了。
+免费和付费的用户对比如下图&lt;/p>
+&lt;p>最高规格的，国内带宽就有32M了&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/url/frp/huiyuan.png"
+loading="lazy"
+alt="会员对比"
+>&lt;/p></description></item><item><title>博客转hugo</title><link>//www.lanhui.live/p/%E5%8D%9A%E5%AE%A2%E8%BD%AChugo/</link><pubDate>Thu, 07 Mar 2024 16:06:00 +0800</pubDate><guid>//www.lanhui.live/p/%E5%8D%9A%E5%AE%A2%E8%BD%AChugo/</guid><description>&lt;p>个人博客的最终归宿是静态网站，今天我的网站也托管到github了。由刚接触的时期，使用wordpress，再到后来的typecho，最后hugo。转移最重要的原因是因为，我的服务器被国内防火墙ban了，最然够两年的余额，也可以更换ip，但不想再这上面折腾了，索性一步到位。&lt;/p>
+&lt;h2 id="数据迁移">数据迁移&lt;/h2>
+&lt;p>&lt;a class="link" href="https://atpx.com/blog/typecho-to-hugo/" target="_blank" rel="noopener"
+>typecho转hugo文章迁移&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+。&lt;/p>
+&lt;h2 id="hugo安装">hugo安装&lt;/h2>
+&lt;p>为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。&lt;/p>
+&lt;p>下载和你操作系统匹配的 Hugo 版本；
+>>>>>>> e8ceb6bfbf5b614726abeaea0c2575f28a704cb2
 压缩包解压到指定路径，例如 windows 系统的 C:\hugo_dir
 打开命令行终端，进入安装目录，在路径栏目输入CMD回车
 确认 Hugo 已经启动：
@@ -1239,6 +1285,7 @@ RackNerd各机房速度测试
 我们单位有一个同事和我是一样需要注销，不同的是他家在这边，可以直接注销，同时认识办理注销的工作人员，帮我打了招呼，给我发涵到长沙，要求长沙的出入境管理局注销。由于我不知道怎么写涵，他马上就帮我写了，还有委托书。
 在我住院期间，查到没有注销成功，按照文职的要求，需要我家人携带户口本去窗口注销，也白跑一趟。他得知后帮我咨询，也给我留了咨询的电话，最后找到了可以不休假回家就能注销的方法。出院后的那天晚上，还加班加点的帮我弄好了涵和申请书，第二天成功注销了护照。
 这让我不得不感慨，有的人只在乎自己的事情，但有的人，真的是为他人着想。真的非常感谢他！
+<<<<<<< HEAD
 ps:帮我的这个人是单位的干部，同时也是一名党员。&lt;/p&gt;
 </description>
         </item>
@@ -1470,6 +1517,148 @@ ps:帮我的这个人是单位的干部，同时也是一名党员。&lt;/p&gt;
 &lt;h1 id=&#34;案列&#34;&gt;案列&lt;/h1&gt;
 &lt;h2 id=&#34;某高校校园的公告栏贴满了招生代理广告记者孙辰实习生王玲丽摄&#34;&gt;【某高校校园的公告栏贴满了招生代理广告】记者孙辰实习生王玲丽摄&lt;/h2&gt;
 &lt;p&gt;我不想再骗人了，只有将招生骗局曝光，让考生家长不再上当受骗，我心里才会舒坦些”
+=======
+ps:帮我的这个人是单位的干部，同时也是一名党员。&lt;/p></description></item><item><title>挂忽悠高考生读自考本科的骗子</title><link>//www.lanhui.live/p/3603/</link><pubDate>Mon, 02 Aug 2021 22:00:00 +0800</pubDate><guid>//www.lanhui.live/p/3603/</guid><description>&lt;p>知乎
+&lt;a class="link" href="https://www.zhihu.com/people/tian-sheng-ao-gu-zen-neng-qu-fu-35" target="_blank" rel="noopener"
+>教育百晓生&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+视频链接https://www.zhihu.com/question/403868420/answer/1936812305&lt;/p></description></item><item><title>高考没考上本科到底怎么选择？</title><link>//www.lanhui.live/p/3600/</link><pubDate>Mon, 02 Aug 2021 21:26:00 +0800</pubDate><guid>//www.lanhui.live/p/3600/</guid><description>&lt;h1 id="前言">前言&lt;/h1>
+&lt;blockquote>
+&lt;p>-很多人没考上本科在纠结改怎么办，其实没考上本科只有两条路可以走，上统招专科或者复读。
+&lt;em>&lt;strong>但是现在很多机构为了赚钱搞了了第三条路————本科助学班&lt;/strong>&lt;/em>即所谓的自考本科+自考专科。在给你推荐全日制本科助学班时候（自考本科）会拿出相关的法律告诉你，这是国家承认的！
+&lt;a class="link" href="https://www.zhihu.com/question/472802740/answer/2034344682" target="_blank" rel="noopener"
+>&lt;img src="//www.lanhui.live/images/2021/08/02/image.png"
+loading="lazy"
+alt="头像"
+>&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://www.zhihu.com/question/472802740/answer/2034344682" target="_blank" rel="noopener"
+>&lt;img src="//www.lanhui.live/images/2021/08/02/image68649feaf7554a8c.png"
+loading="lazy"
+alt="头像"
+>&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+，&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>-但是他却不说找工作时候 人家企业的认可度。
+是的，自考本科国家承认，可以参加考研，考公务员。&lt;strong>但是如果你用它去找工作，你会撞的头破血流。如果你高考毕业就读这个，国家都不会承认你是大学生，没有相关的补助和优惠政策，你连大学生基本的火车高铁票都享受不到减免。&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="总结一下">总结一下&lt;/h2>
+&lt;h3 id="自考本科等非全日制学历">自考本科等非全日制学历：&lt;/h3>
+&lt;blockquote>
+&lt;p>-国家认可，可参加考研考公。社会认可度极低，你的第一学历为高中。 学习形式：自己学习自己报名参加考试。什么时候考完写完毕业设计论文什么时候毕业，没有年限要求，你十年毕业都行。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="统招专科">统招专科&lt;/h2>
+&lt;blockquote>
+&lt;p>-在校学习，专科三年毕业。含金量高。第一学历大专。&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="我考不上本科只能读专科想拿一个本科学历提高自己的竞争力怎么办">我考不上本科只能读专科想拿一个本科学历提高自己的竞争力怎么办？&lt;/h3>
+&lt;blockquote>
+&lt;p>-选统招专科，在大三时候进行专升本。这样拿到的学历就是统招本科学历啦。第一学历为本科。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="备用选择">备用选择&lt;/h2>
+&lt;blockquote>
+&lt;p>-统招专科，同时报名自考本科。考完13-17门课程，拿到专科毕业证后可以申请自考本科毕业。第一学历大专，第二学历本科。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="最烂的选择">最烂的选择&lt;/h2>
+&lt;blockquote>
+&lt;p>-读本科助学班/全日制自考本科，这都是一个东西，只是忽悠你的人取的名字不同。你的学历为非全日大专（谁知道专科给你搞什么学历呢）加自考本科。你连大学生身份都没有！ 第一学历为高中。&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a class="link" href="https://www.zhihu.com/zvideo/1395669111347687424" target="_blank" rel="noopener"
+>相关链接&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.lanhui.live/p/3546/" target="_blank" rel="noopener"
+>全日制本科骗局&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p></description></item><item><title>Wordpress转Typecho遇到的问题</title><link>//www.lanhui.live/p/1081/</link><pubDate>Mon, 10 May 2021 15:35:00 +0800</pubDate><guid>//www.lanhui.live/p/1081/</guid><description>&lt;p>今天心血来潮，想把网站换成Typecho，同时一些排版可能有那么一点点问题，暂时就不修改了。&lt;/p>
+&lt;p>改的过程中也出现了问题，转换数据库提示database query error&lt;/p>
+&lt;p>查询是因为数据库开了模式（文章链接：&lt;a href="https://notesail.com/posts/wordpress-to-typecho.html">&lt;a class="link" href="https://notesail.com" target="_blank" rel="noopener"
+>https://notesail.com&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a>）。&lt;/p>
+&lt;p>那如何取消严格模式呢&lt;/p>
+&lt;p>&lt;a href="http://www.linuxeye.com/database/2909.html">&lt;a class="link" href="http://www.linuxeye.com" target="_blank" rel="noopener"
+>http://www.linuxeye.com&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a>&lt;/p>
+&lt;p>如果安装了宝塔面板，可直接进入目录找到my.cnf修改&lt;/p>
+&lt;p>找到包含sql-mode的一行&lt;/p>
+&lt;p>改为sql-mode=NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTIO&lt;/p>
+&lt;p>重启重启MySQL就可以了。&lt;/p>
+&lt;img class="" src="//www.lanhui.live/images/2021/05/10/image.png" width="714" height="406" /></description></item><item><title>魔都打卡</title><link>//www.lanhui.live/p/1049/</link><pubDate>Tue, 22 Sep 2020 11:39:00 +0800</pubDate><guid>//www.lanhui.live/p/1049/</guid><description>&lt;p>2019.10迪美广场（天空漫境）&lt;/p>
+&lt;p>2019.10.31上海嘉定区＋南翔古镇（小笼包）/轰趴别墅管&lt;/p>
+&lt;p>2019.10外滩&lt;/p>
+&lt;p>2019.10浦江郊野公园&lt;/p>
+&lt;p>2020.7七宝老街&lt;/p>
+&lt;p>2020.8玛雅水上乐园&lt;/p>
+&lt;p>2020.9.20优幕影城&lt;/p>
+&lt;p>2020.10.18欢乐谷&lt;/p>
+&lt;p>2020.7.20上海世博馆&lt;/p>
+&lt;p>2020.11.22爱情海购物公园（韩友烤肉店 ）&lt;/p>
+&lt;p>2020.11.29蒙古烤羊腿（开在公交车里的宝藏小店）&lt;/p></description></item><item><title>高考志愿填报/全日制本科助学班骗局科普</title><link>//www.lanhui.live/p/3546/</link><pubDate>Tue, 28 Jul 2020 23:18:00 +0800</pubDate><guid>//www.lanhui.live/p/3546/</guid><description>&lt;p>又到一年一季的报志愿时间了，很多同学滑档后难免会急病乱投医，这个时候，一些招生贩子就会抓准这个机会，来赚一些伤天害理的钱。以前在知乎写过一篇很详细的文章，由于注销账号了，很难找到，好在贴吧也发过，虽然没那么详细，好在核心内容都保留下来了。文中一些解说案例来自贴吧的图，已经找不到作者了。
+知乎视解说:&lt;a class="link" href="https://www.zhihu.com/zvideo/1395669111347687424" target="_blank" rel="noopener"
+>这样的“本科”害了多少人&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+先说下博主的情况：&lt;/p>
+&lt;p>15 年高考落榜，17 年大三接触自考以及报名了学校组织的专升本。在自考期间，先报名了大自考，而后通过亲戚介绍，转成小自考。最终学校专升本成功，放弃自考读统招去了。所以，大自考 / 小自考 / 统招专升本都比较了解，同时也查阅过相关其他学历提升本方式，包括网络教育、函授、成人高考等。本篇文章讲解骗子说招的全日制自考 / 全日制本科助学班、并通过案列分析，带你深入了解自考。同时声明：我并不是黑自考，我只是看到很多无良老师为了金钱，去招高三毕业生读自考，致使很多人今后的人生更加艰难，很生气、愤怒。自考、函授、成人高考、网络教育等，都是给无法参加高考，全天在校学习来取得统招 / 全日制的社会人士提升学历的！&lt;/p>
+&lt;h1 id="一什么是全日制自考">一、什么是全日制自考？&lt;/h1>
+&lt;p>全日制自考即全日制自考助学班，是高等教育自学考试的重要组成部分，是高等教育自学考试与全日制大学正规教育有机结合的一种学历教育形式。熟称短线自考。国家教育部是这样定义的，但是 2008 年在湖南省由于短线自考的含金量太低和短线自考招生市场的混乱以及办学骗子的影响，予以取缔。也就是说现在的所谓的自考都是长线自考。&lt;/p>
+&lt;h1 id="二全日制自考本科学校环境差差差">二、全日制自考本科学校环境差！差！差！&lt;/h1>
+&lt;p>由于受传统的思想束缚，广大考生和家长都人为，上名牌大学才是出路，几乎每个高中毕业生都想进入理想的大学深造，可高考这道] 槛把许多人拒之门外，有一定名望的高等院校按照宽进严出 &amp;quot; 的原则，举办全日制自考，实现了许多人的名牌大学梦。但是这一点确被许许多多的办学骗子抓住，现在就湖南来说没有哪一个学校的自考本科是办在本部的，都是在原来的某个中专或者废弃的学校里重新装修或挂牌为某某大学自考本科教学站，比如 2007 年中南林业科技大学将自考本科教学站办在学校对门的，- - 个汽车修理厂内，而长沙理工大学的自考本科教学站是遍地开花，在长沙就有不下 20 个的教学站，比如长沙理工中远教学站是租的教育电视台和湖南公安高等专科学院的房子，长沙理工大学创慧教育教学站是挂创慧教育和长沙理工大学两快牌子，办在原来的中山外国语学院 (中专) 的院内。而湖南城市学院长沙城建教学部和中南林业科技大学自考教学部的学校地址都是长沙市芙蓉区东屯渡东岸西垅，联系电话都是一样，这是典型的一一个院子两个学校，基本。上所以的自考本科学校都是租个房子，搞张桌子，就成了学校，这种学校无论是硬件设施和软件设施都无法达到相应的办学条件，其中不乏打 - 枪换个地方的办学骗子，学生到校后失望透顶，以至于去年林业科技大学自考本科发生开学那天 300 多人集体退学的笑话。学校基本无固定的教学老师，大部分属于外聘，其他行政等管理人员都是在当年或着以前在为学校招生做出过贡献的人员。&lt;/p>
+&lt;h1 id="三全日制自考本科招生骗骗骗">三、全日制自考本科招生骗！骗！骗！&lt;/h1>
+&lt;p>在前几年由于交通和各种通讯工具不是很发达，广大学生和家长都不知道自考本科的含义，以至于许多的招生骗子利用家长和学生上名牌大学的心理，说什么有内部指标，和某某教授关系好等等，用自考本科充当统招本科来骗取钱财，考生和家长确蒙在鼓里，到了学校后才知道是读的自考本科或者所谓的 12 和 1 3 等非统招的就读方式。等醒悟以后已经钱财两空，招生骗子以不知去向。到了 2006 年左右，有部分考生和家长开始逐步了解自考本科的含义开始选择其他形式的学校，然而招生骗子确又出新招，将自考本科和统招的招生简章等宣传资料概念混淆，在招生的时候故意不说出是自考，在考生没有发现的情况下吹嘘为统招，如发现了就吹嘘为现在学校统招指标不够，这是计划外招生，到校后可以转为统招生等等诱骗考生和家长。所以出现 2006 年的南昌理工大学和江西蓝天等学校的自考本科招生骗局案，广大学生在交完学费后才知道自己是自考生，以为读的是统招的专科和本科，2007 年南昌理工大学被限制招生，2007 年 10 月南昌理工大学自考的学生联合当地 10 多所学校的学生暴动，砸课桌，床，教室，等各种公共设施，事态波及武汉，长沙等地。2008 年教育部下文停办江西蓝天学院，南昌理工大学等 28 所高校限制招生。&lt;/p>
+&lt;h1 id="四自考本科招生市场乱乱乱">四、自考本科招生市场乱！乱！乱！&lt;/h1>
+&lt;p>由于自考本科学校多，招生难度大，以至于学校为了保证生源，广发代理来完成招生任务，并给予高额代理费，少者 800 元以上，多者达到了 3000 员，代理们为了利润有广发代理，招生代理多是其他学校在校大学生和社会其他专招生人员，有的在第一线招生 的代理可能是第三，四级代理了，甚至出现应届高中毕业生署假为了赚钱在帮自考本科学校招大学生的闹剧。由于学校多，招生代理多，各区域各地方出现多方重叠，招生代理一般在自己所熟悉的区域招生，找个交通方便，大家熟知的招待所，宾馆之类的地方设个招生办，以至于在同一宾馆都会出现同 - - 学校不同代理的两个或两个以上的招生办，经统计在湖南的任何一个县城都有不少于 20 家的招生办，而且逐年增长，各代理为了自己的利益，各自为战，不择手段，使得招生市场 - - 片混乱，导致 - 些正规的学校和新诞生的学校在招生过程中受挫，也使广大考生和家长无从选择。&lt;/p>
+&lt;h1 id="五自考本科收费高高高">五、自考本科收费高！高！高！&lt;/h1>
+&lt;p>自高本科学校为了支付高昂的代理费和赢的办学利润，就必须提高学费，所谓羊毛出在样身上，一切得由学生承担，一般自考学校的学费在 6000&amp;ndash; 10000 之间， 比如长沙理工大学中远教学部的学费是 6580 元，如果遇到设计之类的专业更加高，如长沙理工大学创慧教育自考本科教学部的设计类专业的学费是 8800, 再加上军训费，住宿费等相关的费用，一年的费用就在 8000 一 12000 左右， 但是招生人员在招生的过程中辟重就轻，拿国家的相关政策做宣传资本，说到自己学校就读就可以获得 1000&amp;mdash;3000 元不等的助学金，而且每个人都有，简直在拿国家政策开玩笑。为了稳定生源，自考学校一般收取 200 到 1000 元不等的预录费 (教育部规定：任何学校和个人不得以任何形式向考生和家长收取预录费)，有的学生一冲动就交了费用，但是当学生想选择其他学校要求退费时，招生人员就千方百计阻扰，以各种理由不退还预录费，于是学生不的不被迫选择这所学校。&lt;/p>
+&lt;h1 id="六教学质量低低低">六、教学质量低！低！低！&lt;/h1>
+&lt;p>由于自考本身的局限性，以学生自学为主，开的专业多是些会计，工商管理，物流管理，等比较泛的专业，不要聘请什么专家教授，外聘几个教这方面的老师就可以了，管理人员基本都是由招生成绩好的代理担任，学校开课少，管理散，学生自控能力差，这是现在自考学校千篇一律的问题。招生人员在下面招生的时候吹嘘读自考的通过率达到了 85% 以上甚至达到了只要你读就没有通过不了的，然而在如此低的教学质量下学生如何通过？? ?? ? ? 所以大部分读自考的同学在读到第一学期就不耐烦了，放弃读别职业培训类学校，剩下的除个别的死撑之外，都是混日子得过且过。由于自考本科学校一般没有多少的技能专业，学校也没有提供专业实习的场地，所以 3 年后一无所有，要文凭没文凭，要技能没有技能。现在正是广大考生选择学校的时候，请广大考生和家长注意！&lt;/p>
+&lt;h1 id="案列">案列&lt;/h1>
+&lt;h2 id="某高校校园的公告栏贴满了招生代理广告记者孙辰实习生王玲丽摄">【某高校校园的公告栏贴满了招生代理广告】记者孙辰实习生王玲丽摄&lt;/h2>
+&lt;p>我不想再骗人了，只有将招生骗局曝光，让考生家长不再上当受骗，我心里才会舒坦些”
+>>>>>>> e8ceb6bfbf5b614726abeaea0c2575f28a704cb2
 昨日 (7 月 1 日) , 武汉 - - 独立学院大四女生孟颖 (化名) 因受不了内心的折磨，来到本报自曝
 去年做自考招生代理的内幕，因为那些骗局让她心里很愧疚。她说，只有通过媒体将招生骗
 局曝光，让考生和家长不再上当受骗，她的心里才会舒坦点。&lt;/p&gt;
@@ -3077,6 +3266,7 @@ OneDriveUploader.exe -a &amp;ldquo;url&amp;rdquo;
 http://loaclhost。
 OneDriveUploader.exe -ms -a &amp;ldquo;url&amp;rdquo;
 #中国版(世纪互联)初始化，将url换成你上面复制的授权地址，包括http://loaclhost。
+<<<<<<< HEAD
 OneDriveUploader.exe -cn -a &amp;ldquo;url&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;然后上传命令和上面一样，只需要把&lt;code&gt;OneDriveUploader&lt;/code&gt;改成&lt;code&gt;OneDriveUploader.exe&lt;/code&gt;即可。&lt;/p&gt;
 &lt;p&gt;最后经测试，该版本的上传已经完全能应对各种稀奇古怪的字符问题，
@@ -3140,6 +3330,54 @@ rewrite (.&lt;em&gt;) $1/index.html break;
 }
 if (-f $request_filename/index.php){
 rewrite (.&lt;/em&gt;) $1/index.php;
+=======
+OneDriveUploader.exe -cn -a &amp;ldquo;url&amp;rdquo;&lt;/p>
+&lt;p>然后上传命令和上面一样，只需要把&lt;code>OneDriveUploader&lt;/code>改成&lt;code>OneDriveUploader.exe&lt;/code>即可。&lt;/p>
+&lt;p>最后经测试，该版本的上传已经完全能应对各种稀奇古怪的字符问题，
+;&lt;/p></description></item><item><title>Chevereto-搭建你的私人图床！</title><link>//www.lanhui.live/p/1429/</link><pubDate>Sun, 22 Mar 2020 16:06:00 +0800</pubDate><guid>//www.lanhui.live/p/1429/</guid><description>&lt;p>自从搭建博客后，一直在寻找图床解决方案，从onedrive到sm图床到新浪图床（已添加了防盗外链），最后选择了Chevereto&lt;/p>
+&lt;p>Chevereto, 是一款采用 PHP 语言开发的网络相册脚本程序，支持多语言，提供中文语言包的下载的开源在线图片存储分享服务系统，支持本地上传和在线获取两种图像上传方式。&lt;/p>
+&lt;p>Chevereto 这套程序可以像WordPress 一样搭建在任何空间上。而它的功能除了一般图片空间单纯的从电脑上传图片外，也可以利用网址也可以上传。&lt;/p>
+&lt;h2 id="第一步我们先去下载-chevereto-程序这里我们介绍免费版给大家官网承诺永久免费版本">第一步：我们先去下载 chevereto 程序，这里我们介绍免费版给大家官网承诺永久免费版本&lt;/h2>
+&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/20160819171634.png" alt="" width="472" height="293" />
+&lt;p>下载地址：&lt;a href="https://www.lucktang.com/wp-content/themes/begin/go.php?url=aHR0cHM6Ly9naXRodWIuY29tL0NoZXZlcmV0by9DaGV2ZXJldG8tRnJlZQ==" target="_blank" rel="external nofollow noopener noreferrer">&lt;a class="link" href="https://github.com/Chevereto/Chevereto-Free" target="_blank" rel="noopener"
+>https://github.com/Chevereto/Chevereto-Free&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a>&lt;/p>
+&lt;p>官网下载：&lt;a href="https://chevereto.com/get-started" target="_blank" rel="noopener noreferrer">&lt;a class="link" href="https://chevereto.com/get-started" target="_blank" rel="noopener"
+>https://chevereto.com/get-started&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a>  这里是一个installer.php文件（反正就是PHP文件）&lt;/p>
+&lt;p>第二步：我们把压缩包的文件 FTP 上传到网站的根目录。环境面板不同根目录地址各不相同我就不介绍了。总之上传到网站根目录下。&lt;/p>
+&lt;p>第三部：访问你的域名/installer.php&lt;/p>
+&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/chevereto.png" alt="" width="736" height="470" />
+&lt;p>许可证选择跳过&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/2020/04/16/chevereto2.png" alt="填写管理员账号密码" width="726" height="511" /> 填写管理员账号密码&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/2020/04/16/chevereto3.png" alt="填写数据库信息" width="727" height="639" /> 填写数据库信息&lt;/p>
+&lt;p> &lt;/p>
+&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/chevereto4.png" alt="" width="768" height="350" />
+&lt;p>&lt;img src="//www.lanhui.live/images/2020/04/16/chevereto5.png" alt="" width="758" height="823" /> 安装完成&lt;/p>
+&lt;p> &lt;/p>
+&lt;p>出现404解决方法&lt;/p>
+&lt;p>1.首先在网站目录下把index.php（看你从官网下载的是什么名字）文件授权777
+2.然后，访问http://你的网站/index.php就能正常安装了&lt;/p>
+&lt;p>附上伪静态规则代码
+location / {
+if (-f $request_filename/index.html){
+rewrite (.&lt;em>) $1/index.html break;
+}
+if (-f $request_filename/index.php){
+rewrite (.&lt;/em>) $1/index.php;
+>>>>>>> e8ceb6bfbf5b614726abeaea0c2575f28a704cb2
 }
 if (!-f $request_filename){
 rewrite (.*) /index.php;
@@ -3148,6 +3386,7 @@ try_files $uri $uri/ /api.php;
 }
 location /admin {
 try_files $uri /admin/index.php?$args;
+<<<<<<< HEAD
 }&lt;/p&gt;
 </description>
         </item>
@@ -3189,6 +3428,36 @@ try_files $uri /admin/index.php?$args;
 &lt;p&gt;注意：登录账号如要管理员账号，登录以后可以查看订阅，进行管理用户等功能！&lt;/p&gt;
 &lt;img class=&#34;aligncenter&#34; src=&#34;//www.lanhui.live/images/2020/04/16/2c0fccc83b420307afdead8330806ec5.png&#34; alt=&#34;&#34; width=&#34;1009&#34; height=&#34;520&#34; /&gt;
 &lt;h2&gt;续期&lt;/h2&gt;
+=======
+}&lt;/p></description></item><item><title>申请 Office365 E5 开发者订阅，调用API 实现无限续期</title><link>//www.lanhui.live/p/1047/</link><pubDate>Mon, 16 Mar 2020 13:39:26 +0800</pubDate><guid>//www.lanhui.live/p/1047/</guid><description>&lt;p>申请 Office 365 开发者计划，可以获得为期 3 个月的免费 Office 365 E5。Office 365 开发版 E5 是为开发人员提供的，微软官方活动，目前注册该试用版有效期为 90 天，90 天后需要证明是开发者才能续订，而微软判断是否为开发者的依据则为是否调用API，因此可以通过搭建onelndex调用API实现续订。&lt;/p>
+&lt;p>并且E5包含了25个桌面版的office365许可证，这也是获取office365的好机会！&lt;/p>
+&lt;p>浏览器推荐使用隐私模式！&lt;/p>
+&lt;h2>申请步骤&lt;/h2>
+1、首先进入&lt;span class="external-link">&lt;a href="https://developer.microsoft.com/zh-cn/office/dev-program" target="_blank" rel="noopener noreferrer">【Office 开发人员中心】&lt;/a>&lt;/span>登录微软帐号，点击立即加入
+&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/b73522fd9b348f50a1eec19910373976.png" alt="" width="928" height="487" />
+&lt;p>2、开通 Office 开发者账号，并且完善个人信息&lt;/p>
+&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/731e4c5da48bb9d9ab796415cd920876.png" alt="" width="690" height="896" />
+&lt;p>3、进入个人中心，点击设置订阅&lt;/p>
+&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/68ec860876ec89932e12ce81248306f3.png" alt="" />
+&lt;p>4、填写设置开发者订阅相关的信息&lt;/p>
+&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/24111ad996efab62ccd1aab8e739f992.png" alt="" width="450" height="706" />
+&lt;p>5、设置手机号验证（注意：需要 F/Q，否则可能无法发送验证码）&lt;/p>
+&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/29/20fdd015eb55bc3b8ab91589f8824536.png" alt="" width="482" height="514" />
+&lt;p>6、验证成功后，自动开始设置订阅&lt;/p>
+&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/7c2fdde2233ee2382a7020e74572fc27.png" alt="" width="875" height="574" />
+&lt;p>7、控制台管理地址：&lt;span class="external-link">&lt;a href="https://portal.office.com/AdminPortal/Home" target="_blank" rel="noopener noreferrer">&lt;a class="link" href="https://portal.office.com/AdminPortal/Home" target="_blank" rel="noopener"
+>https://portal.office.com/AdminPortal/Home&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a>&lt;/span>&lt;/p>
+&lt;p>注意：登录账号如要管理员账号，登录以后可以查看订阅，进行管理用户等功能！&lt;/p>
+&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/2c0fccc83b420307afdead8330806ec5.png" alt="" width="1009" height="520" />
+&lt;h2>续期&lt;/h2>
+>>>>>>> e8ceb6bfbf5b614726abeaea0c2575f28a704cb2
 因为目前注册该试用版有效期为 90 天，90 天内需要证明是开发者才能自动续订。保持活跃方法，可尝试搭建 OneIndex等调用相关API程序，因为触及 API 相关信息为此可以证明是开发者并保持活跃自动更新。 安搭建难度排序，推荐使用全局管理员搭建！
 &lt;p&gt; &lt;/p&gt;
 &lt;ol&gt;
@@ -3408,6 +3677,7 @@ echo $talkContent;
 3、上传到网站根目录后，在 footer 中添加的那个代码把接口路径改为 ：网站域名 /tlapi.php  即可&lt;/p&gt;
 &lt;p&gt; 
 ##模型下载
+<<<<<<< HEAD
 整理了一些：加藤惠，纱雾，康纳，真白，伊斯特瓦尔，蕾姆等&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.cokemine.com/wp-content/themes/begin/go.php?url=aHR0cHM6Ly9vZHJpdmUuYXB0eC54aW4vTGl2ZTJEL0xpdmUyRC56aXA=&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://odrive.aptx.xin/Live2D/Live2D.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://odrive.aptx.xin/Live2D/Live2D.zip&lt;/a&gt;
@@ -3454,6 +3724,32 @@ echo $talkContent;
         
         <guid>//www.lanhui.live/p/1046/</guid>
         <description>&lt;p&gt;仅做记录，就不详细介绍了
+=======
+整理了一些：加藤惠，纱雾，康纳，真白，伊斯特瓦尔，蕾姆等&lt;/p>
+&lt;p>&lt;a href="https://www.cokemine.com/wp-content/themes/begin/go.php?url=aHR0cHM6Ly9vZHJpdmUuYXB0eC54aW4vTGl2ZTJEL0xpdmUyRC56aXA=" target="_blank" rel="external nofollow noopener noreferrer">&lt;a class="link" href="https://odrive.aptx.xin/Live2D/Live2D.zip" target="_blank" rel="noopener"
+>https://odrive.aptx.xin/Live2D/Live2D.zip&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/a>&lt;/p>
+&lt;h4 id="填坑">#填坑：&lt;/h4>
+&lt;p>注册后一定要实名认证，不然说几句话就会出错哟~&lt;/p>
+&lt;p>本文源自&lt;a href="https://www.cokemine.com/live2d1.html">可乐博客&lt;/a>改编&lt;/p></description></item><item><title>office365全局管理员 教育版批量注册onedrive账户/子账号（简版）</title><link>//www.lanhui.live/p/1073/</link><pubDate>Thu, 13 Feb 2020 17:33:23 +0800</pubDate><guid>//www.lanhui.live/p/1073/</guid><description>&lt;p>主要是记录一下，其实还是挺简单的，如果有不会的可以留言。&lt;/p>
+&lt;p>通过excel批量注册的好处就是账号前缀比较规律&lt;/p>
+&lt;p>点击活动账户&lt;/p>
+&lt;p>选择批量注册&lt;/p>
+&lt;p>下载csv文件，打开后编辑&lt;/p>
+&lt;p>选中第一列设置&lt;strong>文本格式（一定要选中这一列）&lt;/strong>&lt;/p>
+&lt;p>选择通用格式&lt;/p>
+&lt;p>输入@&amp;quot;@你的域名&amp;quot;，&lt;/p>
+&lt;p>这个时候不管你在这一列输入输入什么账号前缀，都会带@你的域名&lt;/p>
+&lt;p>其他地方按着系统的批量填就可以了。&lt;/p>
+&lt;p>然后一直往下拉，想注册多少个就拉多少行&lt;/p>
+&lt;p>然后另存为csv文件，选择源文件覆盖&lt;/p></description></item><item><title>申请谷歌无限网盘教程</title><link>//www.lanhui.live/p/1046/</link><pubDate>Sun, 09 Feb 2020 15:47:00 +0800</pubDate><guid>//www.lanhui.live/p/1046/</guid><description>&lt;p>仅做记录，就不详细介绍了
+>>>>>>> e8ceb6bfbf5b614726abeaea0c2575f28a704cb2
 ##申请教程
 1.首先登录自己的谷歌网盘
 2.打开下面的网址&lt;/p&gt;
@@ -3490,6 +3786,7 @@ echo $talkContent;
 【COS】 逆水寒东风芳信
 出镜:窃离落
 拍摄:蓝惠
+<<<<<<< HEAD
 后期:蓝惠&lt;/p&gt;
 &lt;p&gt;此次拍摄心得：摄影的设备，以及灯光很重要。要学会捕捉人物的最美的一瞬间。图一图二是我很满意的两张作品，虽然只是初修的水平。
 &lt;img src=&#34;//www.lanhui.live/images/2020/02/22/-2.jpg&#34;
@@ -4297,3 +4594,460 @@ echo $talkContent;
         
     </channel>
 </rss>
+=======
+后期:蓝惠&lt;/p>
+&lt;p>此次拍摄心得：摄影的设备，以及灯光很重要。要学会捕捉人物的最美的一瞬间。图一图二是我很满意的两张作品，虽然只是初修的水平。
+&lt;img src="//www.lanhui.live/images/2020/02/22/-2.jpg"
+loading="lazy"
+alt=" "
+>&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/2020/02/22/-3.jpg"
+loading="lazy"
+alt=" "
+>&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/2020/02/22/-1.jpg"
+loading="lazy"
+alt=" "
+>&lt;/p>
+&lt;p>&lt;img src="//www.lanhui.live/images/2020/02/22/-4.jpg"
+loading="lazy"
+alt=" "
+>&lt;/p></description></item><item><title>苏州 --- 街景</title><link>//www.lanhui.live/p/1434/</link><pubDate>Sat, 12 Oct 2019 11:10:03 +0800</pubDate><guid>//www.lanhui.live/p/1434/</guid><description>&lt;img class="" src="//www.lanhui.live/images/2020/02/22/406457542e7e2bddaf6b2131f907471d.jpg" alt="" width="556" height="278" />
+&lt;p>&lt;span style="font-size: 10px;">人生就是一次充满未知的旅行。&amp;ndash;临顿路&lt;/span>&lt;/p></description></item><item><title>苏州 - 夜景</title><link>//www.lanhui.live/p/1857/</link><pubDate>Sat, 12 Oct 2019 11:02:16 +0800</pubDate><guid>//www.lanhui.live/p/1857/</guid><description>&lt;p style="text-align: center;">&lt;img class="" src="//www.lanhui.live/images/2020/04/30/5e7fd4457fbf7b1de6588e0034907aa2.png" alt="" width="451" height="226" />&lt;/p>
+&lt;div class="wp-caption alignnone">
+&lt;p class="wp-caption-text">一个人最大的缺点不是自私、多情、野蛮、任性，而是偏执地爱一个不爱自己的人。&lt;/p>
+&lt;/div></description></item><item><title>怀化十三月动漫嘉年华 场照</title><link>//www.lanhui.live/p/667/</link><pubDate>Mon, 16 Sep 2019 19:33:00 +0800</pubDate><guid>//www.lanhui.live/p/667/</guid><description>&lt;p>9月13号在怀化综合体育馆用手机拍摄的，这是刚学完入门课程上手修的。
+&lt;img src="//www.lanhui.live/images/2020/02/22/1.jpg"
+loading="lazy"
+alt=" "
+>
+&lt;img src="//www.lanhui.live/images/2020/02/22/2.jpg"
+loading="lazy"
+alt=" "
+>
+&lt;img src="//www.lanhui.live/images/2020/02/22/3.jpg"
+loading="lazy"
+alt=" "
+>
+&lt;img src="//www.lanhui.live/images/2020/02/22/4.jpg"
+loading="lazy"
+alt=" "
+>
+&lt;img src="//www.lanhui.live/images/2020/02/22/7.jpg"
+loading="lazy"
+alt=" "
+>
+&lt;img src="//www.lanhui.live/images/2020/02/22/5.jpg"
+loading="lazy"
+alt=" "
+>
+&lt;img src="//www.lanhui.live/images/2020/02/22/6.jpg"
+loading="lazy"
+alt=" "
+>
+&lt;img src="//www.lanhui.live/images/2020/02/22/8.jpg"
+loading="lazy"
+alt=" "
+>
+&lt;img src="//www.lanhui.live/images/2020/02/22/9.jpg"
+loading="lazy"
+alt=" "
+>
+&lt;img src="//www.lanhui.live/images/2020/02/22/10.jpg"
+loading="lazy"
+alt=" "
+>
+&lt;img src="//www.lanhui.live/images/2020/02/22/15.jpg"
+loading="lazy"
+alt=" "
+>
+&lt;img src="//www.lanhui.live/images/2020/02/22/11.jpg"
+loading="lazy"
+alt=" "
+>&lt;/p></description></item><item><title>怀化 --- 夕阳</title><link>//www.lanhui.live/p/709/</link><pubDate>Sun, 15 Sep 2019 10:55:00 +0800</pubDate><guid>//www.lanhui.live/p/709/</guid><description>&lt;img class="" src="//www.lanhui.live/images/2020/02/22/-.jpg" alt="" width="478" height="239" />
+&lt;p>&lt;em>我的意中人是个盖世英雄，有一天他会踩着七色的云彩来娶我，我猜中了前头，可是我猜不着这结局。&lt;/em>&lt;/p></description></item><item><title>归档</title><link>//www.lanhui.live/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>//www.lanhui.live/archives/</guid><description/></item><item><title>新浪图床挂了，有什么免费又稳定的图床？</title><link>//www.lanhui.live/p/1886/</link><pubDate>Thu, 16 May 2019 15:38:00 +0800</pubDate><guid>//www.lanhui.live/p/1886/</guid><description>&lt;!-- wp:heading -->
+&lt;h2>Picture Share+onedrive　最好用最稳的图床工具！&lt;/h2>
+&lt;!-- /wp:heading -->
+&lt;!-- wp:heading {"level":3} -->
+&lt;h3>2019.6.25更新&lt;/h3>
+&lt;p>重装系统后安装Picture Share，如果是登录原账号就不用重新设置，以前上传的图片都不会丢失链接。&lt;/p>
+&lt;h3>介绍&lt;/h3>
+&lt;!-- /wp:heading -->
+&lt;!-- wp:paragraph {"align":"left"} -->
+&lt;p style="text-align: left;">Picture Share是OneDrive图床工具，用于上传图片并获得图片链接。&lt;br />可用于博客写作等需要嵌入式图片的场景（&lt;strong>即使卸载软件，链接仍然有效！&lt;/strong>）自本文开始图片都此方法。&lt;br />软件已开源，开源地址为https:/github.com/Richasy/lmg-Share&lt;/p>
+&lt;h3>准备&lt;/h3>
+&lt;!-- /wp:paragraph -->
+&lt;!-- wp:paragraph -->
+&lt;p>1.个人版onedrive账号一个 （在tb可扩容10G，一共15G）&lt;/p>
+&lt;!-- /wp:paragraph -->
+&lt;!-- wp:paragraph -->
+&lt;p>2.win10 uwp应用：Picture Share（可不用，但生成外链比较麻烦）&lt;/p>
+&lt;h3>下载软件&lt;/h3>
+&lt;!-- /wp:paragraph -->
+&lt;!-- wp:paragraph -->
+&lt;p>首先，在win10商店下载Picture Share，直接搜索“图床”即可找到&lt;img src="https://storage.live.com/items/63A0A8E36AE5DD8B!187?authkey=ACc_om3gwNSxnJ4" alt="" />&lt;/p>
+&lt;!-- /wp:paragraph -->
+&lt;!-- wp:image -->&lt;!-- /wp:image -->
+&lt;!-- wp:paragraph -->
+&lt;p>成功下载后打开软件&lt;/p>
+&lt;h3>登录账号&lt;/h3>
+&lt;p>提示我们登陆自己的微软账号，然后授权&lt;/p>
+&lt;!-- /wp:paragraph -->
+&lt;!-- wp:paragraph -->
+&lt;p>这个时候提示我们输入 AuthKey（授权码）&lt;img src="https://storage.live.com/items/63A0A8E36AE5DD8B!188?authkey=ACc_om3gwNSxnJ4" alt="" />&lt;/p>
+&lt;!-- /wp:paragraph -->
+&lt;!-- wp:image -->&lt;!-- /wp:image -->
+&lt;!-- wp:paragraph -->
+&lt;h3>获取授权码&lt;/h3>
+&lt;p>打开浏览器，登陆&lt;a href="https://onedrive.live.com/about/zh-cn/" target="_blank" rel="noreferrer noopener" aria-label="onedrive网站（在新窗口打开）">onedrive网站&lt;/a>（可能需要翻墙，&lt;a href="https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B4%A6%E5%8F%B7" target="_blank" rel="noreferrer noopener" aria-label="免费梯子点击这里（在新窗口打开）">免费梯子点击这里&lt;/a>）&lt;/p>
+&lt;!-- /wp:paragraph -->
+&lt;!-- wp:paragraph -->
+&lt;p>在以下路径 OneDrive / 应用 / Picture Share/Image 找到我们的&lt;strong> Image&lt;/strong> 文件夹 (访问较慢，需要重试几次)&lt;/p>
+&lt;!-- /wp:paragraph -->
+&lt;!-- wp:paragraph -->
+&lt;p>选中&lt;strong>Image&lt;/strong>文件夹，点击顶部的嵌入按钮&lt;/p>
+&lt;p>&lt;img src="https://storage.live.com/items/63A0A8E36AE5DD8B!189?authkey=ACc_om3gwNSxnJ4" alt="" />&lt;/p>
+&lt;!-- /wp:paragraph -->
+&lt;!-- wp:image -->&lt;!-- /wp:image -->
+&lt;!-- wp:paragraph -->
+&lt;p>找到右侧生成的代码，其中的 authkey 字段的值就是我们需要的分享密钥，将之复制出来，粘贴进软件的对话框即可。&lt;/p>
+&lt;!-- /wp:paragraph -->
+&lt;!-- wp:image {"align":"center"} -->
+&lt;div class="wp-block-image">
+&lt;figure class="aligncenter">&lt;img src="https://storage.live.com/items/63A0A8E36AE5DD8B!190?authkey=ACc_om3gwNSxnJ4" alt="" />&lt;/figure>
+&lt;/div>
+&lt;!-- /wp:image -->
+&lt;!-- wp:paragraph -->
+&lt;p>好了！，私人图床已经做好了！15GB空间，就算每张3MB，也足够存4万多张图片呢！&lt;/p>
+&lt;p>&amp;nbsp;&lt;/p>
+&lt;p>经过测试速度不是很理想，现在博主找到了更好的方法。&lt;a title="Chevereto 图床搭建搭建，博客图床解决方案" href="https://www.lanhui.co/1429.html" target="_blank" rel="noopener noreferrer">Chevereto 图床搭建搭建，博客图床解决方案&lt;/a>&lt;/p>
+&lt;!-- /wp:paragraph --></description></item><item><title>世界，您好！</title><link>//www.lanhui.live/p/%E4%B8%96%E7%95%8C%E6%82%A8%E5%A5%BD/</link><pubDate>Mon, 01 Apr 2019 04:01:23 +0800</pubDate><guid>//www.lanhui.live/p/%E4%B8%96%E7%95%8C%E6%82%A8%E5%A5%BD/</guid><description>&lt;img src="//www.lanhui.live/images/url/%E4%B8%80%E5%AE%B6%E4%BA%BA.jpg" alt="Featured image of post 世界，您好！" />&lt;!-- wp:paragraph -->
+&lt;p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！&lt;/p>
+&lt;!-- /wp:paragraph --></description></item><item><title>关于</title><link>//www.lanhui.live/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//www.lanhui.live/about/</guid><description>&lt;p>生卒不详，湖南“常殺”人。&lt;/p>
+&lt;p>大学之前一直在浏阳老家生活，15年来到郴州上大学，18年怀化上大学。&lt;/p>
+&lt;p>兴趣爱好有很多，大学快结束才满满开发出自己的兴趣，喜欢游戏、动漫、摄影、PS等、搭建各种网站。&lt;/p>
+&lt;p>英雄联盟最拿手的位置是ADC，最拿手的两个英雄是金克斯、德莱文。15年入坑，现在已经是全能系选手。&lt;/p>
+&lt;p>最喜欢的歌手是许嵩。&lt;/p>
+&lt;p>现在常玩原神，20年底从一个萌新到现在老咸鱼&lt;/p>
+&lt;h3 id="我认为个人博客的意义">我认为个人博客的意义&lt;/h3>
+&lt;p>保持个人思想与言论独立，在一个你发在知乎、公众账号、微博等平台的言论会莫名其妙消失的时代，一个独立的博客有免于恐惧的自由。&lt;/p>
+&lt;h3 id="网站历史">网站历史&lt;/h3>
+&lt;p>2019年4月左右使用腾讯云建站（之前买了学生机挂游戏来着）&lt;/p>
+&lt;p>2019.4-2019.9换了2-3次域名，期间屯域名上瘾。&lt;/p>
+&lt;p>2019.11入手了自己cn的域名lanhui.co&lt;/p>
+&lt;p>2020.17备案一切办妥，正式换域名为www.lanhui.co&lt;/p>
+&lt;p>2020.2购入美国主机转移博客&lt;/p>
+&lt;p>2020.2反代谷歌导致域名被红，目前win10浏览器还没解开&lt;/p>
+&lt;p>2020.4无法忍受美国主机的访问速度，转回国内使用阿里云主机。&lt;/p>
+&lt;p>2021.7.12左右。转用腾讯云无忧主机。新增域名lanhui.live 原域名linahui.co慢慢弃用（实在太贵了）&lt;/p>
+&lt;p>2021.8做了一个不不合适自己的选择，博客更新的少了&lt;/p>
+&lt;p>2022.10无忧主机更换为华为云。&lt;/p>
+&lt;p>寻找性价比更高的主机中……，还有五个月左右过期&lt;/p>
+&lt;p>2023.08.1更换主机&lt;a class="link" href="https://my.racknerd.com/aff.php?aff=501" target="_blank" rel="noopener"
+>&lt;strong>racknerd&lt;/strong>&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+，好用还便宜。像阿里腾讯只有新用户有优惠。比较推荐&lt;/p>
+&lt;p>等待中&amp;hellip;&amp;hellip;&lt;/p>
+&lt;p>2023.12.01退伍了！重新打理网站！&lt;/p>
+&lt;p>2024.3.7 博客由typecho转hugo 移除了部分文章
+2024.3.27博客 加入&lt;a class="link" href="https://www.foreverblog.cn/" target="_blank" rel="noopener"
+>十年之约&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+， &lt;a class="link" href="https://foreverblog.cn/go.html" target="_blank" rel="noopener"
+>十年之约虫洞传送门&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+。&lt;/p></description></item><item><title>搜索</title><link>//www.lanhui.live/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//www.lanhui.live/search/</guid><description/></item><item><title>引导</title><link>//www.lanhui.live/dh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//www.lanhui.live/dh/</guid><description>&lt;p>&lt;a class="link" href="https://cn.bing.com/?FORM=BEHPTB" target="_blank" rel="noopener"
+> 必应 &lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://www.baidu.com/" target="_blank" rel="noopener"
+>百度&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://www.sogou.com/" target="_blank" rel="noopener"
+> 搜狗&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://yandex.ee/" target="_blank" rel="noopener"
+> yandex &lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://www.google.com/" target="_blank" rel="noopener"
+> google &lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>&lt;a class="link" href="https://mail.163.com/#module=welcome.WelcomeModule%7C%7B%7D" target="_blank" rel="noopener"
+>163邮箱 &lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://mail.126.com/#return" target="_blank" rel="noopener"
+>126邮箱 &lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://mail.qq.com/" target="_blank" rel="noopener"
+>QQ邮箱 &lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://wx.qq.com/" target="_blank" rel="noopener"
+>网页微信&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>&lt;a class="link" href="https://v.qq.com/" target="_blank" rel="noopener"
+>腾讯视频&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://www.youtube.com/" target="_blank" rel="noopener"
+>youtube&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://vidhub.me" target="_blank" rel="noopener"
+>vidhub&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://www.acfun.cn/" target="_blank" rel="noopener"
+>A站&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://www.bilibili.com/" target="_blank" rel="noopener"
+>B站 &lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>&lt;a class="link" href="https://weibo.com/" target="_blank" rel="noopener"
+>微博&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://www.zhihu.com/" target="_blank" rel="noopener"
+>知乎&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://tieba.baidu.com/index.html" target="_blank" rel="noopener"
+>贴吧&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="ttps://static-web.ghzs.com/cspage_pro/yuanshenMap.html#/" >原&lt;/a>
+&lt;/p>
+&lt;p>&lt;a class="link" href="https://freeopen.github.io/mathjax/" target="_blank" rel="noopener"
+>Markdown 数学公式指导手册&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://nce.koolearn.com/" target="_blank" rel="noopener"
+>新东方新概念英语&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.namesilo.com/" target="_blank" rel="noopener"
+>namesilo&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://sm.ms/" target="_blank" rel="noopener"
+>sm图床&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://wwa.lanzoui.com/" target="_blank" rel="noopener"
+>蓝奏云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;br>
+&lt;a class="link" href="https://www.gebi1.com/plugin.php?id=k_misign:sign" target="_blank" rel="noopener"
+>隔壁网nas需签到&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://link3.cc/zyjj" target="_blank" rel="noopener"
+>照妖镜&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="http://so.tx32.cn/#" target="_blank" rel="noopener"
+>云盘搜索&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.423down.com/" target="_blank" rel="noopener"
+>432下载&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="http://www.9dmsgame.net/" target="_blank" rel="noopener"
+>9dm单机&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://home.gamer.com.tw/creation.php?owner=s6842LBJ" target="_blank" rel="noopener"
+>哈姆雷特fq&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://www.aliyun.com/activity/2024purchase/purchasing_v2/?utm_content=se_1016395526" target="_blank" rel="noopener"
+>阿里云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://cloud.tencent.com/" target="_blank" rel="noopener"
+>腾讯云&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://tongji.baidu.com/web5/welcome/login" target="_blank" rel="noopener"
+>百度统计&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;a class="link" href="https://my.racknerd.com/clientarea.php" target="_blank" rel="noopener"
+>racknerd&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>&lt;a class="link" href="" >&lt;/a>
+&lt;a class="link" href="" >&lt;/a>
+&lt;a class="link" href="" >&lt;/a>
+&lt;a class="link" href="" >&lt;/a>
+&lt;/p></description></item><item><title>友链</title><link>//www.lanhui.live/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//www.lanhui.live/links/</guid><description>&lt;p>博客信息&lt;/p>
+&lt;p>博客名称：蓝惠の小窝&lt;/p>
+&lt;p>联系邮箱：admin@lanhui.live&lt;/p>
+&lt;p>博客网址：https://www.lanhui.live/&lt;/p>
+&lt;p>博客头像：https://www.lanhui.live/images/url/avatar.jpg&lt;/p>
+&lt;p>博客介绍：寻找大波斯菊需要的不是金钱，而是一颗去找寻的心♥&lt;/p>
+&lt;p>友链条件&lt;/p>
+&lt;p>1.申请友链的同时，也请将本站添加到您的站点&lt;/p>
+&lt;p>2.此页面底部留言下您的网站信息我会为您添加&lt;/p>
+&lt;p>3.友链为饱和状态，暂时仅接受两年及以上的站点申请&lt;/p></description></item></channel></rss>
+>>>>>>> e8ceb6bfbf5b614726abeaea0c2575f28a704cb2

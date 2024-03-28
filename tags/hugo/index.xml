@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
@@ -31,6 +32,22 @@
 &lt;h2 id=&#34;hugo安装&#34;&gt;hugo安装&lt;/h2&gt;
 &lt;p&gt;为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。&lt;/p&gt;
 &lt;p&gt;下载和你操作系统匹配的 Hugo 版本；
+=======
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 蓝惠の小窝</title><link>//www.lanhui.live/tags/hugo/</link><description>Recent content in Hugo on 蓝惠の小窝</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>蓝惠の小窝</copyright><lastBuildDate>Thu, 07 Mar 2024 16:06:00 +0800</lastBuildDate><atom:link href="//www.lanhui.live/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>博客转hugo</title><link>//www.lanhui.live/p/%E5%8D%9A%E5%AE%A2%E8%BD%AChugo/</link><pubDate>Thu, 07 Mar 2024 16:06:00 +0800</pubDate><guid>//www.lanhui.live/p/%E5%8D%9A%E5%AE%A2%E8%BD%AChugo/</guid><description>&lt;p>个人博客的最终归宿是静态网站，今天我的网站也托管到github了。由刚接触的时期，使用wordpress，再到后来的typecho，最后hugo。转移最重要的原因是因为，我的服务器被国内防火墙ban了，最然够两年的余额，也可以更换ip，但不想再这上面折腾了，索性一步到位。&lt;/p>
+&lt;h2 id="数据迁移">数据迁移&lt;/h2>
+&lt;p>&lt;a class="link" href="https://atpx.com/blog/typecho-to-hugo/" target="_blank" rel="noopener"
+>typecho转hugo文章迁移&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+。&lt;/p>
+&lt;h2 id="hugo安装">hugo安装&lt;/h2>
+&lt;p>为了简化 Hugo 安装流程，这里直接使用 Hugo 可执行安装文件。&lt;/p>
+&lt;p>下载和你操作系统匹配的 Hugo 版本；
+>>>>>>> e8ceb6bfbf5b614726abeaea0c2575f28a704cb2
 压缩包解压到指定路径，例如 windows 系统的 C:\hugo_dir
 打开命令行终端，进入安装目录，在路径栏目输入CMD回车
 确认 Hugo 已经启动：
