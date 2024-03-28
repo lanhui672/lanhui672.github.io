@@ -102,7 +102,6 @@ return $errors-&amp;gt;add( &#39;proofempty&#39;, &#39;&amp;lt;strong&amp;gt;错
 } elseif ( strtolower( $_POST[ &#39;user_proof&#39; ] ) != $register_answers[$register_number] ) {
 return $errors-&amp;gt;add( &#39;prooffail&#39;, &#39;&amp;lt;strong&amp;gt;错误&amp;lt;/strong&amp;gt;: 您的回答不正确。&#39; );
 }
-<<<<<<< HEAD
 }&lt;/code&gt;&lt;/pre&gt;
 </description>
         </item>
@@ -163,51 +162,6 @@ rewrite (.&lt;em&gt;) $1/index.html break;
 }
 if (-f $request_filename/index.php){
 rewrite (.&lt;/em&gt;) $1/index.php;
-=======
-}&lt;/code>&lt;/pre></description></item><item><title>Chevereto-搭建你的私人图床！</title><link>//www.lanhui.live/p/1429/</link><pubDate>Sun, 22 Mar 2020 16:06:00 +0800</pubDate><guid>//www.lanhui.live/p/1429/</guid><description>&lt;p>自从搭建博客后，一直在寻找图床解决方案，从onedrive到sm图床到新浪图床（已添加了防盗外链），最后选择了Chevereto&lt;/p>
-&lt;p>Chevereto, 是一款采用 PHP 语言开发的网络相册脚本程序，支持多语言，提供中文语言包的下载的开源在线图片存储分享服务系统，支持本地上传和在线获取两种图像上传方式。&lt;/p>
-&lt;p>Chevereto 这套程序可以像WordPress 一样搭建在任何空间上。而它的功能除了一般图片空间单纯的从电脑上传图片外，也可以利用网址也可以上传。&lt;/p>
-&lt;h2 id="第一步我们先去下载-chevereto-程序这里我们介绍免费版给大家官网承诺永久免费版本">第一步：我们先去下载 chevereto 程序，这里我们介绍免费版给大家官网承诺永久免费版本&lt;/h2>
-&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/20160819171634.png" alt="" width="472" height="293" />
-&lt;p>下载地址：&lt;a href="https://www.lucktang.com/wp-content/themes/begin/go.php?url=aHR0cHM6Ly9naXRodWIuY29tL0NoZXZlcmV0by9DaGV2ZXJldG8tRnJlZQ==" target="_blank" rel="external nofollow noopener noreferrer">&lt;a class="link" href="https://github.com/Chevereto/Chevereto-Free" target="_blank" rel="noopener"
->https://github.com/Chevereto/Chevereto-Free&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/a>&lt;/p>
-&lt;p>官网下载：&lt;a href="https://chevereto.com/get-started" target="_blank" rel="noopener noreferrer">&lt;a class="link" href="https://chevereto.com/get-started" target="_blank" rel="noopener"
->https://chevereto.com/get-started&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/a>  这里是一个installer.php文件（反正就是PHP文件）&lt;/p>
-&lt;p>第二步：我们把压缩包的文件 FTP 上传到网站的根目录。环境面板不同根目录地址各不相同我就不介绍了。总之上传到网站根目录下。&lt;/p>
-&lt;p>第三部：访问你的域名/installer.php&lt;/p>
-&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/chevereto.png" alt="" width="736" height="470" />
-&lt;p>许可证选择跳过&lt;/p>
-&lt;p>&lt;img src="//www.lanhui.live/images/2020/04/16/chevereto2.png" alt="填写管理员账号密码" width="726" height="511" /> 填写管理员账号密码&lt;/p>
-&lt;p>&lt;img src="//www.lanhui.live/images/2020/04/16/chevereto3.png" alt="填写数据库信息" width="727" height="639" /> 填写数据库信息&lt;/p>
-&lt;p> &lt;/p>
-&lt;img class="aligncenter" src="//www.lanhui.live/images/2020/04/16/chevereto4.png" alt="" width="768" height="350" />
-&lt;p>&lt;img src="//www.lanhui.live/images/2020/04/16/chevereto5.png" alt="" width="758" height="823" /> 安装完成&lt;/p>
-&lt;p> &lt;/p>
-&lt;p>出现404解决方法&lt;/p>
-&lt;p>1.首先在网站目录下把index.php（看你从官网下载的是什么名字）文件授权777
-2.然后，访问http://你的网站/index.php就能正常安装了&lt;/p>
-&lt;p>附上伪静态规则代码
-location / {
-if (-f $request_filename/index.html){
-rewrite (.&lt;em>) $1/index.html break;
-}
-if (-f $request_filename/index.php){
-rewrite (.&lt;/em>) $1/index.php;
->>>>>>> e8ceb6bfbf5b614726abeaea0c2575f28a704cb2
 }
 if (!-f $request_filename){
 rewrite (.*) /index.php;
@@ -216,7 +170,6 @@ try_files $uri $uri/ /api.php;
 }
 location /admin {
 try_files $uri /admin/index.php?$args;
-<<<<<<< HEAD
 }&lt;/p&gt;
 </description>
         </item>
@@ -258,32 +211,6 @@ try_files $uri /admin/index.php?$args;
 &lt;li&gt;在插件设置里面选择自己下载的看板娘舅更换成功啦&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;在网络上看到了看板娘，爱不释手。隧熬夜到凌晨一直在学习，把喜欢的老婆放到博客上去~
-=======
-}&lt;/p></description></item><item><title>给 WordPress/typecho 博客添加看板娘 -- 加藤惠</title><link>//www.lanhui.live/p/1066/</link><pubDate>Sun, 23 Feb 2020 15:54:00 +0800</pubDate><guid>//www.lanhui.live/p/1066/</guid><description>&lt;p>&amp;mdash; 2023.7.31发现文章看板娘下载链接失效了，这个可以在网上搜搜，平替&lt;/p>
-&lt;p>&amp;mdash;由于博主现在用的是typecho ，更新下typecho添加的方法&lt;/p>
-&lt;ol>
-&lt;li>在**&lt;a class="link" href="https://github.com/Dreamer-Paul/Pio" target="_blank" rel="noopener"
->GitHub&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-下载pio插件**，上传到插件目录，重命名为pio&lt;/li>
-&lt;li>不喜欢默认模型可以在&lt;a class="link" href="https://mx.paul.ren/" target="_blank" rel="noopener"
->&lt;strong>梦象&lt;/strong>&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-下载&lt;/li>
-&lt;li>在插件设置里面选择自己下载的看板娘舅更换成功啦&lt;/li>
-&lt;/ol>
-&lt;p>在网络上看到了看板娘，爱不释手。隧熬夜到凌晨一直在学习，把喜欢的老婆放到博客上去~
->>>>>>> e8ceb6bfbf5b614726abeaea0c2575f28a704cb2
 ##开始搭建
 1、首先先下载模型，模型在后面有，重命名为 live2d 后上传到网站的根目录（live2d 文件夹里应有好多文件夹和文件）&lt;/p&gt;
 &lt;p&gt;2、在网站的 header 中的 head 标签内加入如下代码
@@ -391,7 +318,6 @@ echo $talkContent;
 3、上传到网站根目录后，在 footer 中添加的那个代码把接口路径改为 ：网站域名 /tlapi.php  即可&lt;/p&gt;
 &lt;p&gt; 
 ##模型下载
-<<<<<<< HEAD
 整理了一些：加藤惠，纱雾，康纳，真白，伊斯特瓦尔，蕾姆等&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.cokemine.com/wp-content/themes/begin/go.php?url=aHR0cHM6Ly9vZHJpdmUuYXB0eC54aW4vTGl2ZTJEL0xpdmUyRC56aXA=&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://odrive.aptx.xin/Live2D/Live2D.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://odrive.aptx.xin/Live2D/Live2D.zip&lt;/a&gt;
@@ -414,18 +340,3 @@ echo $talkContent;
         
     </channel>
 </rss>
-=======
-整理了一些：加藤惠，纱雾，康纳，真白，伊斯特瓦尔，蕾姆等&lt;/p>
-&lt;p>&lt;a href="https://www.cokemine.com/wp-content/themes/begin/go.php?url=aHR0cHM6Ly9vZHJpdmUuYXB0eC54aW4vTGl2ZTJEL0xpdmUyRC56aXA=" target="_blank" rel="external nofollow noopener noreferrer">&lt;a class="link" href="https://odrive.aptx.xin/Live2D/Live2D.zip" target="_blank" rel="noopener"
->https://odrive.aptx.xin/Live2D/Live2D.zip&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/a>&lt;/p>
-&lt;h4 id="填坑">#填坑：&lt;/h4>
-&lt;p>注册后一定要实名认证，不然说几句话就会出错哟~&lt;/p>
-&lt;p>本文源自&lt;a href="https://www.cokemine.com/live2d1.html">可乐博客&lt;/a>改编&lt;/p></description></item></channel></rss>
->>>>>>> e8ceb6bfbf5b614726abeaea0c2575f28a704cb2
