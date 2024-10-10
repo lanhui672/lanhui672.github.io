@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>【拒绝岁月史书】胖猫谭竹事件最全解析 存档记录 江卓尔</title><url>/post/2533/</url><categories><category>其他</category></categories><tags><tag>谭竹</tag><tag>胖猫</tag><tag>捞女</tag></tags><content type="html"> 目录 ➡
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>宝塔面板独角数码搭建</title><url>/post/241010/</url><categories><category>网络</category></categories><tags><tag>发卡系统</tag><tag>自动发卡</tag></tags><content type="html"><![CDATA[  之前一种用彩虹发卡，但是已经停更了。刚好需要重新搭建一个自动打卡系统，经过比对后，觉得独角数码非常不错。故再次更新我打搭建过程以及遇到的问题。
+我是通过内网搭建的发卡网站测试，在测试过程中，出现了支付成功，不发卡问题。后台显示待付款，点击已完成也不会发送卡密。
+一、搭建项目地址：点击传送官方教程地址：点击传送二、宝塔安装必装环境个人推荐Apache，不需要调试即可支持ipv6
+最好是编译安装哦，性能更好。但是时间很久，可以睡一觉了。
+HP环境确认一、 接下来我们按照步骤删除一下php的禁用函数（ps:宝塔默认会禁用一些php的函数，导致artisan命令无法正确运行）
+点击【软件商店】-&amp;gt;【PHP设置】-&amp;gt;【禁用函数列表】 将以下函数删除！！ putenv，proc_open，pcntl_signal，pcntl_alarm
+二、 我们再装一下必要的两个扩展点击【软件商店】-&amp;gt;【PHP设置】-&amp;gt;【安装扩展】 安装以下三个扩展： fileinfo、redis、opcache(可选安装，性能加强) ctrl+f 可以直接找到对应函数。后面的也是。 新建一个网站一、在宝塔里新建一个网站用于运行本项目二、上传我们的项目代码 独角数卡发行版本下载地址：独角数卡各发行版本三、设置项目伪静态和运行目录解压项目代码后，我们点击网站的设置 设置运行目录： 设置伪静态：
+location / { try_files $uri $uri/ /index.php$is_args$query_string; } 开始安装一、访问你的网站域名，进入安装流程二、按实际情况填写网站配置信息配置守护进程(重要)一、supervisor配置教程步骤：【软件商店】-&amp;gt;【Supervisor设置】-&amp;gt;【添加守护进程】 如图： 命令参考：
+/www/server/php/74/bin/php /www/wwwroot/shop.com/artisan queue:work 名称：随意填写 启动用户：选择www 运行目录：选择程序根目录 启动命令：/www/server/php/你的php版本/bin/php /www/wwwroot/你的网站根目录/artisan queue:work
+请注意你自己的php版本和网站根目录。不要瞎抄照着 …  ]]></content></entry><entry><title>【拒绝岁月史书】胖猫谭竹事件最全解析 存档记录 江卓尔</title><url>/post/2533/</url><categories><category>其他</category></categories><tags><tag>谭竹</tag><tag>胖猫</tag><tag>捞女</tag></tags><content type="html"> 目录 ➡
 一、你不可能永远欺骗所有人
 二、胖猫谭某经济往来一览图
 三、胖猫借贷担保事件
@@ -759,4 +768,4 @@ Picture Share是OneDrive图床工具，用于上传图片并获得图片链接�
 - name: 蓝惠の小窝 desc: 寻找大波斯菊需要的不是金钱，而是一颗去找寻的心♥ avatar: https://lanhui672.github.io/images/url/avatar.jpg link: https://lanhui672.github.io/ 友链条件
 1.申请友链的同时，也请将本站添加到您的站点
 2.此页面底部留言下您的网站信息我会为您添加
-3.邮箱见侧边，#替换成@。</content></entry></search>
+3.邮箱见侧边，#替换成@。</content></entry><entry><title/><url>/post/2410101125/</url><categories/><tags/><content type="html"></content></entry></search>
