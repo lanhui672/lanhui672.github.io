@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>宝塔面板独角数码搭建</title><url>/post/241010/</url><categories><category>网络</category></categories><tags><tag>发卡系统</tag><tag>自动发卡</tag></tags><content type="html"><![CDATA[  之前一种用彩虹发卡，但是已经停更了。刚好需要重新搭建一个自动打卡系统，经过比对后，觉得独角数码非常不错。故再次更新我打搭建过程以及遇到的问题。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>宝塔面板独角数卡发卡网站搭建</title><url>/post/241010/</url><categories><category>网络</category></categories><tags><tag>发卡系统</tag><tag>自动发卡</tag></tags><content type="html"><![CDATA[  之前一种用彩虹发卡，但是已经停更了。刚好需要重新搭建一个自动打卡系统，经过比对后，觉得独角数码非常不错。故再次更新我打搭建过程以及遇到的问题。
 我是通过内网搭建的发卡网站测试，在测试过程中，出现了支付成功，不发卡问题。后台显示待付款，点击已完成也不会发送卡密。
 一、搭建项目地址：点击传送官方教程地址：点击传送二、宝塔安装必装环境个人推荐Apache，不需要调试即可支持ipv6
 最好是编译安装哦，性能更好。但是时间很久，可以睡一觉了。
