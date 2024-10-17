@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>linux学习1.3</title><url>/post/linux03/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> Linux下的文件类型
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>linux学习1.4</title><url>/post/linux04/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  重定向和管道标准输入和输出程序：指令+数据
+读入数据：Input
+输出数据：Output
+打开的文件都有一个fd: file descriptor (文件描述符) Linux给程序提供三种 I/O 设备
+标准输入（STDIN） －0 默认接受来自终端窗口的输入 标准输出（STDOUT）－1 默认输出到终端窗口 标准错误（STDERR） －2 默认输出到终端窗口 I/O重定向redirecI/O重定向：将默认的输入，输出或错误对应的设备改变，指向新的目标
+标准输出和错误重新定向STDOUT和STDERR可以被重定向到指定文件,而非默认的当前终端
+格式：
+命令 操作符号 文件名 支持的操作符号包括：
+1&amp;gt; 或 &amp;gt; 把STDOUT重定向到文件 2&amp;gt; 把STDERR重定向到文件 &amp;amp;&amp;gt; 把标准输出和错误都重定向 &amp;gt;&amp;amp; 和上面功能一样，建议使用上面方式```` 以上如果文件已存在，文件内容会被覆盖
+追加
+&amp;gt;&amp;gt; 可以在原有内容基础上，追加内容把输出和错误重新定向追加到文件&amp;gt;&amp;gt; 追加标准输出重定向至文件2&amp;gt;&amp;gt; 追加标准错误重定向至文件标准输出和错误输出各自定向至不同位置
+COMMAND &amp;gt; /path/to/file.out 2&amp;gt; /path/to/error.out 合并标准输出和错误输出为同一个数据流进行重定向
+&amp;amp;&amp;gt; 覆盖重定向 &amp;amp;&amp;gt;&amp;gt; 追加重定向 COMMAND &amp;gt; /path/to/file.out 2&amp;gt;&amp;amp;1 （顺序很重要） COMMAND &amp;gt;&amp;gt; /path/to/file.out 2&amp;gt;&amp;amp;1 合并多个程序 (CMD1;CMD2&amp;hellip;&amp;hellip;) 或者{ CMD1;CMD2;&amp;hellip;.; }合并多个程序的STDOUT 范例： 分别重定向
+[root@rocky8] -l#ls anaconda-ks.cfg XXX &amp;gt;/data stdout.log 2&amp;gt; /data/stderr.log [rootarocky8] ~#cat /data/stdout.log anaconda-ks.cfg [root@rocky8] ~l#cat …  ]]></content></entry><entry><title>linux学习1.3</title><url>/post/linux03/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> Linux下的文件类型
 七种文件类型
 -普通文件 d 目录文件directory l 符号链接文件link b 块设备block c 字符设备character p 管道文件pipe s 套接字文件socket 文件操作命令
 显示当前工作目录
@@ -11,8 +24,8 @@ pwd命令: printing working directory
 基名：basename，只取文件名而不要路径
 目录名：dirname，只取路径，不要文件名
 范例:
-root@centos8 bin]#basename /etc/sysconfig/network network [root@centos8 bin]#dirname /etc/sysconfig/network /etc/sysconfig [root@centos8 ~]#dirname /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts [root@centos8 ~]#basename /etc/sysconfig/network-scripts/ifcfg-eth0 ifcfg-eth0 范例:
-root@ubuntu2004 ~]#basename http://nginx.org/download/nginx-1.18.0.tar.gz nginx-1.18.0.tar.gz [root@ubuntu2004 ~]#basename http://nginx.org/download/nginx-1.18.0.tar.gz .tar.gz nginx-1.18.0 [root@ubuntu2004 ~]#basename -s .tar.gz http://nginx.org/download/nginx- 1.18.0.tar.gz nginx-1.18.0 [root@ubuntu2004 …</content></entry><entry><title>linux学习1.2</title><url>/post/linux02/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 常见命令
+[root@centos8 bin]#basename /etc/sysconfig/network network [root@centos8 bin]#dirname /etc/sysconfig/network /etc/sysconfig [root@centos8 ~]#dirname /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts [root@centos8 ~]#basename /etc/sysconfig/network-scripts/ifcfg-eth0 ifcfg-eth0 范例:
+[root@ubuntu2004 ~]#basename http://nginx.org/download/nginx-1.18.0.tar.gz nginx-1.18.0.tar.gz [root@ubuntu2004 ~]#basename http://nginx.org/download/nginx-1.18.0.tar.gz .tar.gz nginx-1.18.0 [root@ubuntu2004 ~]#basename -s .tar.gz http://nginx.org/download/nginx- 1.18.0.tar.gz nginx-1.18.0 [root@ubuntu2004 …</content></entry><entry><title>linux学习1.2</title><url>/post/linux02/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 常见命令
 查看硬件信息
 查看 cpu
 lscpu命令可以查看cpu信息 cat /proc/cpuinfo也可看查看到 范例：
