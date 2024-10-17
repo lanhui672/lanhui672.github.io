@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>linux学习1.2</title><url>/post/linux02/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 常见命令
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>linux学习1.3</title><url>/post/linux03/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> Linux下的文件类型
+七种文件类型
+-普通文件 d 目录文件directory l 符号链接文件link b 块设备block c 字符设备character p 管道文件pipe s 套接字文件socket 文件操作命令
+显示当前工作目录
+pwd命令: printing working directory
+范例：
+[root@centos8 ~]#pwd /root 绝对和相对路径
+绝对路径 以正斜杠/ 即根目录开始 完整的文件的位置路径 可用于任何想指定一个文件名的时候 相对路径名 不以斜线开始 一般情况下，是指相对于当前工作目录的路径，特殊场景下，是相对于某目录的位置 可以作为一个简短的形式指定一个文件 ../ 从上一级开始
+./ 当前路径
+工具
+基名：basename，只取文件名而不要路径
+目录名：dirname，只取路径，不要文件名
+范例:
+root@centos8 bin]#basename /etc/sysconfig/network network [root@centos8 bin]#dirname /etc/sysconfig/network /etc/sysconfig [root@centos8 ~]#dirname /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts [root@centos8 ~]#basename /etc/sysconfig/network-scripts/ifcfg-eth0 ifcfg-eth0 范例:
+root@ubuntu2004 ~]#basename http://nginx.org/download/nginx-1.18.0.tar.gz nginx-1.18.0.tar.gz [root@ubuntu2004 ~]#basename http://nginx.org/download/nginx-1.18.0.tar.gz .tar.gz nginx-1.18.0 [root@ubuntu2004 ~]#basename -s .tar.gz http://nginx.org/download/nginx- 1.18.0.tar.gz nginx-1.18.0 [root@ubuntu2004 …</content></entry><entry><title>linux学习1.2</title><url>/post/linux02/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 常见命令
 查看硬件信息
 查看 cpu
 lscpu命令可以查看cpu信息 cat /proc/cpuinfo也可看查看到 范例：
