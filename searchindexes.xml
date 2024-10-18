@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>linux学习1.4</title><url>/post/linux04/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  重定向和管道标准输入和输出程序：指令+数据
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>linux学习4.1</title><url>/post/linux05/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 新建文件和目录的默认权限
+umask 的值可以用来保留在创建文件权限
+实现方式:
+新建文件的默认权限: 666-umask，如果所得结果某位存在执行（奇数）权限，则将其权限+1,偶 数不变 新建目录的默认权限: 777-umask
+非特权用户umask默认是 002
+root的umask 默认是 022 为什么root的umask要大一些?
+umask越大意味着什么?权限就越小,意味着越安全! 相对root的文件更重要,所以权限要越小一些
+查看umask
+umask #模式方式显示 umask –S #输出可被调用 umask –p 修改umask
+umask 范例：
+umask 002 umask u=rw,g=r,o= 持久保存umask
+全局设置： /etc/bashrc 影响所有用户 用户设置：~/.bashrc 只影响当前用户 范例： [root@centos8 ~]#umask 0022 [root@centos8 ~]#umask -S u=rwx,g=rx,o=rx [root@centos8 ~]#umask -p umask 0022 范例：
+[root@centos8 ~]#umask 0022 [root@centos8 ~]#( umask 666; touch /data/f1.txt ) （一次性生效） [root@centos8 ~]#umask 0022 [root@centos8 ~]#ll /data/f1.txt ---------- 1 root root 0 Mar 27 14:55 /data/f1.txt 其他方法： 只实现临时性的文件权限为000 1 touch a.txt ;chmod 000 a.txt 2umask 777 ;touch a.txt;umask 022; 练习
+当用户docker对/testdir 目录无执行权限时，意味着无法做哪些操作？ 当用户mongodb对/testdir 目录无读权限时，意味着无法做哪些操作？ 当用户redis 对/testdir 目录无写权限时，该目录下的只读文件file1是否可修改和删除？ 当用户zabbix对/testdir 目录有写和执行权限时，该目录下的只读文件file1是否可修改和删除？ 复制/etc/fstab文件到/var/tmp下，设置文件所有者 …</content></entry><entry><title>linux学习文件管理3.2</title><url>/post/linux04/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  重定向和管道标准输入和输出程序：指令+数据
 读入数据：Input
 输出数据：Output
 打开的文件都有一个fd: file descriptor (文件描述符) Linux给程序提供三种 I/O 设备
@@ -8,32 +21,30 @@
 命令 操作符号 文件名 支持的操作符号包括：
 1&amp;gt; 或 &amp;gt; 把STDOUT重定向到文件 2&amp;gt; 把STDERR重定向到文件 &amp;amp;&amp;gt; 把标准输出和错误都重定向 &amp;gt;&amp;amp; 和上面功能一样，建议使用上面方式```` 以上如果文件已存在，文件内容会被覆盖
 追加
-&amp;gt;&amp;gt; 可以在原有内容基础上，追加内容把输出和错误重新定向追加到文件&amp;gt;&amp;gt; 追加标准输出重定向至文件2&amp;gt;&amp;gt; 追加标准错误重定向至文件标准输出和错误输出各自定向至不同位置
+&amp;gt;&amp;gt; 可以在原有内容基础上，追加内容 把输出和错误重新定向追加到文件 &amp;gt;&amp;gt; 追加标准输出重定向至文件 2&amp;gt;&amp;gt; 追加标准错误重定向至文件 标准输出和错误输出各自定向至不同位置
 COMMAND &amp;gt; /path/to/file.out 2&amp;gt; /path/to/error.out 合并标准输出和错误输出为同一个数据流进行重定向
 &amp;amp;&amp;gt; 覆盖重定向 &amp;amp;&amp;gt;&amp;gt; 追加重定向 COMMAND &amp;gt; /path/to/file.out 2&amp;gt;&amp;amp;1 （顺序很重要） COMMAND &amp;gt;&amp;gt; /path/to/file.out 2&amp;gt;&amp;amp;1 合并多个程序 (CMD1;CMD2&amp;hellip;&amp;hellip;) 或者{ CMD1;CMD2;&amp;hellip;.; }合并多个程序的STDOUT 范例： 分别重定向
-[root@rocky8] -l#ls anaconda-ks.cfg XXX &amp;gt;/data stdout.log 2&amp;gt; /data/stderr.log [rootarocky8] ~#cat /data/stdout.log anaconda-ks.cfg [root@rocky8] ~l#cat …  ]]></content></entry><entry><title>linux学习1.3</title><url>/post/linux03/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> Linux下的文件类型
+[root@rocky8] -l#ls anaconda-ks.cfg XXX &amp;gt;/data stdout.log 2&amp;gt; /data/stderr.log [rootarocky8] ~#cat /data/stdout.log anaconda-ks.cfg [root@rocky8] ~l#cat …  ]]></content></entry><entry><title>linux学习文件管理3.1</title><url>/post/linux03/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> Linux下的文件类型
 七种文件类型
 -普通文件 d 目录文件directory l 符号链接文件link b 块设备block c 字符设备character p 管道文件pipe s 套接字文件socket 文件操作命令
 显示当前工作目录
 pwd命令: printing working directory
 范例：
 [root@centos8 ~]#pwd /root 绝对和相对路径
-绝对路径 以正斜杠/ 即根目录开始 完整的文件的位置路径 可用于任何想指定一个文件名的时候 相对路径名 不以斜线开始 一般情况下，是指相对于当前工作目录的路径，特殊场景下，是相对于某目录的位置 可以作为一个简短的形式指定一个文件 ../ 从上一级开始
-./ 当前路径
-工具
+绝对路径 以正斜杠/ 即根目录开始 完整的文件的位置路径 可用于任何想指定一个文件名的时候 相对路径名 不以斜线开始 一般情况下，是指相对于当前工作目录的路径，特殊场景下，是相对于某目录的位置 可以作为一个简短的形式指定一个文件
+../ 从上一级开始
+./ 当前路径 工具
 基名：basename，只取文件名而不要路径
 目录名：dirname，只取路径，不要文件名
 范例:
 [root@centos8 bin]#basename /etc/sysconfig/network network [root@centos8 bin]#dirname /etc/sysconfig/network /etc/sysconfig [root@centos8 ~]#dirname /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts [root@centos8 ~]#basename /etc/sysconfig/network-scripts/ifcfg-eth0 ifcfg-eth0 范例:
-[root@ubuntu2004 ~]#basename http://nginx.org/download/nginx-1.18.0.tar.gz nginx-1.18.0.tar.gz [root@ubuntu2004 ~]#basename http://nginx.org/download/nginx-1.18.0.tar.gz .tar.gz nginx-1.18.0 [root@ubuntu2004 ~]#basename -s .tar.gz http://nginx.org/download/nginx- 1.18.0.tar.gz nginx-1.18.0 [root@ubuntu2004 …</content></entry><entry><title>linux学习1.2</title><url>/post/linux02/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 常见命令
+[root@ubuntu2004 ~]#basename http://nginx.org/download/nginx-1.18.0.tar.gz nginx-1.18.0.tar.gz [root@ubuntu2004 ~]#basename http://nginx.org/download/nginx-1.18.0.tar.gz .tar.gz nginx-1.18.0 [root@ubuntu2004 ~]#basename -s .tar.gz http://nginx.org/download/nginx- 1.18.0.tar.gz nginx-1.18.0 [root@ubuntu2004 …</content></entry><entry><title>linux学习Linux基础入门2.2</title><url>/post/linux02/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 常见命令
 查看硬件信息
 查看 cpu
 lscpu命令可以查看cpu信息 cat /proc/cpuinfo也可看查看到 范例：
 [root@centos8 ~]# lscpu Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CPU(s): 8 On-line CPU(s) list: 0-7 Thread(s) per core: 1 #每个core 有几个线程 Core(s) per socket: 4 #每个槽位有4个core Socket(s): 2 #服务器面板上有2个cpu 槽位 NUMA node(s): 2 #nodes的数量 Vendor ID: GenuineIntel CPU family: 6 Model: 44 Stepping: 2 CPU MHz: 2128.025 BogoMIPS: 4256.03 Virtualization: VT-x L1d cache: 32K L1i cache: 32K L2 cache: 256K L3 cache: 8192K NUMA node0 CPU(s): 0,2,4,6 #对应的core NUMA node1 CPU(s): 1,3,5,7 查看内存大小
-[root@centos8 ~]#free -h (加h显示G)
-[root@centos8 ~]#cat /proc/meminfo
-root@ubuntu2004:~# free total used free shared buff/cache available Mem: 3981632 267128 2979480 1540 735024 3466564 Swap: 3994620 0 3994620 查看硬盘和分区情况
-[root@centos8 ~]#lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT sda 8:0 0 200G 0 disk ├─sda1 8:1 0 1G 0 part /boot ├─sda2 8:2 0 100G 0 part / ├─sda3 8:3 0 50G 0 part /data ├─sda4 8:4 0 1K 0 part └─sda5 8:5 0 …</content></entry><entry><title>linux学习1.1</title><url>/post/linux01/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 2^0=1=1b
+[root@centos8 ~]#free -h (加h显示G) [root@centos8 ~]#cat /proc/meminfo root@ubuntu2004:~# free total used free shared buff/cache available Mem: 3981632 267128 2979480 1540 735024 3466564 Swap: 3994620 0 3994620 查看硬盘和分区情况
+[root@centos8 ~]#lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT sda 8:0 0 200G 0 disk ├─sda1 8:1 0 1G 0 part /boot ├─sda2 8:2 0 100G 0 part / ├─sda3 8:3 0 50G 0 part /data ├─sda4 8:4 0 1K 0 part └─sda5 8:5 0 …</content></entry><entry><title>linux学习Linux基础入门2.1</title><url>/post/linux01/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 2^0=1=1b
 2^1=2=10b
 2^3=8=1000b
 2^4=16=10000b
@@ -45,24 +56,25 @@ root@ubuntu2004:~# free total used free shared buff/cache available Mem: 3981632
 2^10=1024=10000000000b
 2^11=2048=100000000000b
 2^12=4096=1000000000000b
-常用命令 passwd 修改密码 sudo -i 切换管理员 ip a 查看Ip 关机： halt
-poweroff
-重启： reboot
+常用命令
+passwd 修改密码
+sudo -i 切换管理员
+ip a 查看Ip
+halt poweroff 关机
+reboot重启
 -f: 强制，不调用shutdown
 -p: 切断电源
-ctrl+alt+delete 三个键 关机或重启：shutdown
+ctrl+alt+delete 三个键
+关机或重启：shutdown
 shutdown [OPTION]... [TIME] [MESSAGE] -r: reboot -h: halt -c：cancel TIME：无指定，默认相当于+1（CentOS7） now: 立刻,相当于+0 +#: 相对时间表示法，几分钟之后；例如 +3 hh:mm: 绝对时间表示，指明具体时间 关机命令
-shutdown -h now：立即关机。这个命令会立即将系统关闭，所有的运行中的程序和服务都会被停止。
-shutdown -r now：立即重启系统。这个命令会立即将系统重启，所有的运行中的程序和服务都会被停止然后重新启动。
-shutdown -h +10：在10分钟后关机。这个命令会在当前时间的10分钟后将系统关闭。
-shutdown -r +1 “系统将在1分钟后重启，请保存正在进行的工作”：在1分钟后重启系统，并显示一条自定义的关机提示。这个命令会在1分钟后将系统重启，并在关机之前显示一个自定义的提示信息。
+shutdown -h now：立即关机。这个命令会立即将系统关闭，所有的运行中的程序和服务都会被停止。 shutdown -r now：立即重启系统。这个命令会立即将系统重启，所有的运行中的程序和服务都会被停止然后重新启动。 shutdown -h +10：在10分钟后关机。这个命令会在当前时间的10分钟后将系统关闭。 shutdown -r +1 “系统将在1分钟后重启，请保存正在进行的工作”：在1分钟后重启系统，并显示一条自定义的关机提示。这个命令会在1分钟后将系统重启，并在关机之前显示一个自定义的提示信息。
 除了上述常用的参数外，shutdown命令还支持其他一些参数，例如：
 -: 关闭所有用户的终端登录
 -k: 发送警告消息，但不关机
 -F: 强制关机，不执行服务的停止
 -c: 取消已经创建的关机任务
 总结一下，关机命令shutdown是Linux系统中非常常用的命令，可以使用不同的参数来实现不同的关机操作，如立即关机、定时关机和重启等。在使用shutdwon命令时，需要注意使用root权限执行，并根据实际需求选择适当的参数。
-Linux的shutdown命令是一个用来关闭系统的命 …</content></entry><entry><title>宝塔面板独角数卡发卡网站搭建</title><url>/post/241010/</url><categories><category>网络</category></categories><tags><tag>发卡系统</tag><tag>自动发卡</tag></tags><content type="html"><![CDATA[  之前一种用彩虹发卡，但是已经停更了。刚好需要重新搭建一个自动打卡系统，经过比对后，觉得独角数码非常不错。故再次更新我打搭建过程以及遇到的问题。
+Linux的shutdown命令是一个用来关闭系统的命令，它可 …</content></entry><entry><title>宝塔面板独角数卡发卡网站搭建</title><url>/post/241010/</url><categories><category>网络</category></categories><tags><tag>发卡系统</tag><tag>自动发卡</tag></tags><content type="html"><![CDATA[  之前一种用彩虹发卡，但是已经停更了。刚好需要重新搭建一个自动打卡系统，经过比对后，觉得独角数码非常不错。故再次更新我打搭建过程以及遇到的问题。
 我是通过内网搭建的发卡网站测试，在测试过程中，出现了支付成功，不发卡问题。后台显示待付款，点击已完成也不会发送卡密。
 一、搭建项目地址：点击传送官方教程地址：点击传送二、宝塔安装必装环境个人推荐Apache，不需要调试即可支持ipv6
 最好是编译安装哦，性能更好。但是时间很久，可以睡一觉了。
