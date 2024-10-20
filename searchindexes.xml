@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>linux学习4.1</title><url>/post/linux05/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 新建文件和目录的默认权限
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>linux学习4.3命令模式、可视化模式</title><url>/post/linux07/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 命令模式
+命令模式，又称为Normal模式，功能强大，只是此模式输入指令并在屏幕上显示，所以需要记忆大量 的快捷按键才能更好的使用
+退出VIM
+易造成误操作，小心。
+ZZ 保存退出 ZQ 不保存退出 光标跳转
+字符间跳转：
+h: 左 L: 右 j: 下 k: 上 #COMMAND：跳转由#指定的个数的字符 单词间跳转：
+w：下一个单词的词首 e：当前或下一单词的词尾 b：当前或前一个单词的词首 #COMMAND：由#指定一次跳转的单词数 当前页跳转：
+H：页首 M：页中间行 L：页底 zt：将光标所在当前行移到屏幕顶端 zz：将光标所在当前行移到屏幕中间 zb：将光标所在当前行移到屏幕底端 行首行尾跳转：
+^ 跳转至行首的第一个非空白字符 0 跳转至行首 $ 跳转至行尾 行间移动：
+#G 或者扩展命令模式下 (数字+G) :# 跳转至由第#行，在EX模式下 G 最后一行 1G, gg 第一行 句间移动：
+) 下一句 ( 上一句 段落间移动：
+} 下一段 { 上一段 命令模式翻屏操作
+Ctrl+f 向文件尾部翻一屏,相当于Pagedown Ctrl+b 向文件首部翻一屏,相当于Pageup Ctrl+d 向文件尾部翻半屏 Ctrl+u 向文件首部翻半屏 字符编辑
+x 剪切光标处的字符 #x 剪切光标处起始的#个字符 xp 交换光标所在处的字符及其后面字符的位置 ~ 转换大小写 J 删除当前行后的换行符 替换命令(replace)*
+r 只替换光标所在处的一个字符 R 切换成REPLACE模式（在末行出现-- REPLACE -- 提示）,按ESC回到命令模式 删除命令(delete)
+d 删除命令，可结合光标跳转字符，实现范围删除 d$ 删除到行尾 d^ 删除到非空行首 d0 删除到行首 dw de db #COMMAND dd： 剪切光标所在的行 #dd 多行删除(2dd) D：从当前光标位置一直删除到行尾，等同于d$ 复制命令(yank)
+y 复制，行为相似于d命令 y$ y0 y^ ye yw yb #COMMAND yy：复制行 #yy 复制多行 Y：复制整行 粘贴命令(paste)
+小p 缓冲区存的如果为整行，则粘贴当前光标所在行的下方；否则，则粘贴至当前光标所在处的后面 大P 缓冲区存的如果为整行，则粘贴当前光标所在行的上方；否则，则粘贴至当前光标所在处的 …</content></entry><entry><title>linux学习4.2</title><url>/post/linux06/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  地址定界格式地址定界格式# #具体第#行，例如2表示第2行 #,# #从左侧#表示起始行，到右侧#表示结尾行 #,+# #从左侧#表示的起始行，加上右侧#表示的行数，范例：2,+3 表示2到5行 . #当前行 $ #最后一行 .,$-1 #当前行到倒数第二行 % #全文, 相当于1,$ /pattern/ #从当前行向下查找，直到匹配pattern的第一行,即:正则表达式 /pat1/,/pat2/ #从第一次被pat1模式匹配到的行开始，一直到第一次被pat2匹配到的行结束 #,/pat/ #从指定行开始，一直找到第一个匹配pattern的行结束 /pat/,$ #向下找到第一个匹配patttern的行到整个文件的结尾的所有行 地址定界后跟一个编辑命令d #删除 y #复制 w file #将范围内的行另存至指定文件中 r file #在指定位置插入指定文件中的所有内容 t#行号 将前面指定的行复制到#行后 m#行号 将前面指定的行移动到#行后 范例： 3-6行删除
+：3,6d 粘贴：P键
+查找并替换格式
+s/要查找的内容/替换为的内容/修饰符 修饰符：
+i #忽略大小写 g #全局替换，默认情况下，每一行只替换第一次出现(懒惰模式) gc #全局替换，每次替换前询问（贪婪模式） *查找替换中的分隔符/可替换为其它字符，如：#,@,*
+范例：
+s@/etc@/var@g s#/boot#/#i 定制vim的工作特性etc/vimrc #全局 ~/.vimrc #个人 行号显示：set number，简写 set nu 取消显示：set nonumber, 简写 set nonu 忽略字符的大小写启用：set ignorecase，简写 set ic 不忽略：set noic 自动缩进启用：set autoindent，简写 set ai 禁用：set noa 复制保留格式启用：set paste 禁用：set nopaste 显示Tab ^I和换行符 和$显示启用：set list 禁用：set nolist 高亮搜索启用：set hlsearch 禁用：set nohlsearch 简写：nohl 语法高亮启用：syntax on 禁用：syntax off 文件格式启用windows格式：set fileformat=dos 启用unix格式：set fileformat=unix 简写 set ff=dos|unix Tab 用空格代替启用：set expandtab 默认为8个空格代替Tab 禁用：set noexpandtab 简写：set et tab用指定空格的个数代替启用：set tabstop=# 指定#个空格代替Tab 简写：set ts=4 设置缩进宽度#向右缩进 命令模式&gt;&gt; #向左缩进 命令模式&lt;&lt; #默缩进8个，可以设置缩进为4个字符 set shiftwidth=4 设置文本宽度set textwidth=65 (vim only) #从左向右计数 set wrapmargin=15 #从右到左计数 设置光标所在行的标识线启用：set cursorline，简写 set cul 禁用：set nocursorline 加密启用： set key=password 禁用： set key= 了解更多set 帮助
+:help option-list :set or :set all   ]]></content></entry><entry><title>linux学习4.1</title><url>/post/linux05/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 新建文件和目录的默认权限
 umask 的值可以用来保留在创建文件权限
 实现方式:
 新建文件的默认权限: 666-umask，如果所得结果某位存在执行（奇数）权限，则将其权限+1,偶 数不变 新建目录的默认权限: 777-umask

@@ -1,0 +1,180 @@
+<!doctype html><html lang=zh-CN data-theme=light><head><meta charset=UTF-8><meta name=viewport content="width=device-width"><meta name=theme-color content="#19b8eb" media="(prefers-color-scheme: light)"><meta name=generator content="Hugo 0.126.1"><link rel="shortcut icon" type=image/x-icon href=/imgs/icons/favicon.ico><link rel=icon type=image/x-icon href=/imgs/icons/favicon.ico><link rel=icon type=image/png sizes=16x16 href=/imgs/icons/favicon_16x16_next.png><link rel=icon type=image/png sizes=32x32 href=/imgs/icons/favicon_32_32_next.png><link rel=apple-touch-icon sizes=180x180 href=/imgs/icons/apple_touch_icon_next.png><meta itemprop=name content="linux学习4.3命令模式、可视化模式"><meta itemprop=description content="admin#lanhui.live"><meta itemprop=datePublished zgotmplz><meta itemprop=dateModified zgotmplz><meta itemprop=image content="https://www.lanhui.live/imgs/hugo_next_avatar.png"><meta itemprop=keywords content="linux"><meta property="og:type" content="article"><meta property="og:title" content="linux学习4.3命令模式、可视化模式"><meta property="og:description" content="admin#lanhui.live"><meta property="og:image" content="/imgs/hugo_next_avatar.png"><meta property="og:image:width" content="312"><meta property="og:image:height" content="312"><meta property="og:image:type" content="image/jpeg/png/svg/jpg"><meta property="og:url" content="https://www.lanhui.live/post/linux07/"><meta property="og:site_name" content="蓝惠の小窝"><meta property="og:locale" content="zh-CN"><meta property="article:author" content="蓝惠の小窝"><meta property="article:published_time" content="2024-10-19 10:06:00 +0800 CST"><meta property="article:modified_time" content="2024-10-19 10:06:00 +0800 CST"><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/font-awesome/6.1.2/css/all.min.css><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/animate.css/3.1.1/animate.min.css><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/viewerjs/1.11.0/viewer.min.css><link rel=stylesheet href=/css/main.min.89002406547f1cea16a5ae81687e451f88fa6fc9e470d8a2dccb6dbcd0ab6db8.css><script type=text/javascript>(function(){localDB={set:function(e,t,n){if(n===0)return;const s=new Date,o=n*864e5,i={value:t,expiry:s.getTime()+o};localStorage.setItem(e,JSON.stringify(i))},get:function(e){const t=localStorage.getItem(e);if(!t)return void 0;const n=JSON.parse(t),s=new Date;return s.getTime()>n.expiry?(localStorage.removeItem(e),void 0):n.value}},theme={active:function(){const e=localDB.get("theme");if(e==null)return;theme.toggle(e),window.matchMedia("(prefers-color-scheme: dark)").addListener(function(e){theme.toggle(e.matches?"dark":"light")})},toggle:function(e){document.documentElement.setAttribute("data-theme",e),localDB.set("theme",e,2);const t=document.querySelector("iframe.giscus-frame");if(t){const n={setConfig:{theme:e}};t.contentWindow.postMessage({giscus:n},"https://giscus.app")}}},theme.active()})(window)</script><script class=next-config data-name=page type=application/json>{"comments":true,"isHome":false,"isPage":true,"path":"linux07","permalink":"https://www.lanhui.live/post/linux07/","title":"linux学习4.3命令模式、可视化模式","waline":{"js":[{"alias":"waline","alias_name":"@waline/client","file":"dist/pageview.js","name":"pageview","version":"2.13.0"},{"alias":"waline","alias_name":"@waline/client","file":"dist/comment.js","name":"comment","version":"2.13.0"}]}}</script><script type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{var e=document.createElement("script");e.charset="UTF-8",e.src="https://hm.baidu.com/hm.js?",e.async="true",document.head.appendChild(e)})</script><script type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{var e=document.createElement("script");e.charset="UTF-8",e.src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js",e.async=!1,e.defer=!0,document.head.appendChild(e),e.onload=function(){NexT.utils.fmtBusuanzi()}})</script><title>linux学习4.3命令模式、可视化模式 - 蓝惠の小窝</title><noscript><link rel=stylesheet href=/css/noscript.css></noscript></head><body itemscope itemtype=http://schema.org/WebPage class=use-motion><div class=headband></div><main class=main><header class=header itemscope itemtype=http://schema.org/WPHeader><div class=header-inner><div class=site-brand-container><div class=site-nav-toggle><div class=toggle aria-label role=button><span class=toggle-line></span>
+<span class=toggle-line></span>
+<span class=toggle-line></span></div></div><div class=site-meta><a href=/ class=brand rel=start><i class=logo-line></i><h1 class=site-title>蓝惠の小窝</h1><i class=logo-line></i></a><p class=site-subtitle itemprop=description>寻找大波斯菊需要的不是金钱，而是一颗去找寻的心♥.</p></div><div class=site-nav-right><div class="toggle popup-trigger"><i class="fa fa-search fa-fw fa-lg"></i></div></div></div><nav class=site-nav><ul class="main-menu menu"><li class="menu-item menu-item-home"><a href=/ class=hvr-icon-pulse rel=section><i class="fa fa-home hvr-icon"></i>首页</a></li><li class="menu-item menu-item-about"><a href=/about.html class=hvr-icon-pulse rel=section><i class="fa fa-user hvr-icon"></i>关于</a></li><li class="menu-item menu-item-flinks"><a href=/flinks.html class=hvr-icon-pulse rel=section><i class="fa fa-thumbs-up hvr-icon"></i>友链</a></li><li class="menu-item menu-item-archives"><a href=/archives/ class=hvr-icon-pulse rel=section><i class="fa fa-archive hvr-icon"></i>归档
+<span class=badge>76</span></a></li><li class="menu-item menu-item-search"><a role=button class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索</a></li></ul></nav><div class=search-pop-overlay><div class="popup search-popup"><div class=search-header><span class=search-icon><i class="fa fa-search"></i></span><div class=search-input-container><input autocomplete=off autocapitalize=off maxlength=80 placeholder=搜索... spellcheck=false type=search class=search-input></div><span class=popup-btn-close role=button><i class="fa fa-times-circle"></i></span></div><div class="search-result-container no-result"><div class=search-result-icon><i class="fa fa-spinner fa-pulse fa-5x"></i></div></div></div></div></div><div class="toggle sidebar-toggle" role=button><span class=toggle-line></span>
+<span class=toggle-line></span>
+<span class=toggle-line></span></div><aside class=sidebar><div class="sidebar-inner sidebar-nav-active sidebar-toc-active"><ul class=sidebar-nav><li class=sidebar-nav-toc>文章目录</li><li class=sidebar-nav-overview>站点概览</li></ul><div class=sidebar-panel-container><div class="post-toc-wrap sidebar-panel"><div class="post-toc animated"><nav id=TableOfContents><ul><li><a href=#退出vim>退出VIM</a></li><li><a href=#光标跳转>光标跳转</a></li><li><a href=#字符编辑>字符编辑</a></li><li><a href=#替换命令replace>替换命令(replace)*</a></li><li><a href=#删除命令delete>删除命令(delete)</a></li><li><a href=#复制命令yank>复制命令(yank)</a></li><li><a href=#粘贴命令paste>粘贴命令(paste)</a></li><li><a href=#改变命令change>改变命令(change)</a></li><li><a href=#查找>查找</a></li><li><a href=#撤消更改>撤消更改</a></li><li><a href=#高级用法>高级用法</a></li></ul><ul><li><a href=#多文件模式>多文件模式</a></li><li><a href=#多窗口模式>多窗口模式</a><ul><li><a href=#多文件分割>多文件分割</a></li><li><a href=#单文件窗口分割>单文件窗口分割</a></li></ul></li><li><a href=#帮助>帮助</a></li><li><a href=#vim-总结图>vim 总结图</a></li></ul></nav></div></div><div class="site-overview-wrap sidebar-panel"><div class="site-author site-overview-item animated" itemprop=author itemscope itemtype=http://schema.org/Person><img class=site-author-image itemprop=image alt=蓝惠の小窝 src=/imgs/img-lazy-loading.gif data-src=/imgs/hugo_next_avatar.png><p class=site-author-name itemprop=name>蓝惠の小窝</p><div class=site-description itemprop=description>admin#lanhui.live</div></div><div class="site-state-wrap site-overview-item animated"><nav class=site-state><div class="site-state-item site-state-posts"><a href=/archives/><span class=site-state-item-count>76</span>
+<span class=site-state-item-name>日志</span></a></div><div class="site-state-item site-state-categories"><a href=/categories/><span class=site-state-item-count>7</span>
+<span class=site-state-item-name>分类</span></a></div><div class="site-state-item site-state-tags"><a href=/tags/><span class=site-state-item-count>51</span>
+<span class=site-state-item-name>标签</span></a></div></nav></div><div class="links-of-social site-overview-item animated"><span class=links-of-social-item><a href=https://github.com/lanhui672 title="Github → https://github.com/lanhui672" rel=noopener class=hvr-icon-pulse target=_blank><i class="fab fa-github fa-fw hvr-icon"></i>
+Github</a></span></div><div class="links-of-blogroll site-overview-item animated"><div class=links-of-blogroll-title></div><ul class=links-of-blogroll-list><li class=links-of-blogroll-item><a href=http://lanhui.live title=http://lanhui.live target=_blank>短域密语</a></li><li class=links-of-blogroll-item><a href=http://lan-hui.com title=http://lan-hui.com target=_blank>引导页</a></li></ul></div></div></div></div><div id=siteinfo-card-widget class=sidebar-card-widget><div class=item-headline><i class="fas fa-chart-line"></i>
+<span>网站资讯</span></div><div class=siteinfo><div class=siteinfo-item><div class=item-name><i class="fa-solid fa-calendar-check"></i>已运行：</div><div class=item-count id=runTimes data-publishdate=0001-01-01T00:00:00+00:00></div></div><div class=siteinfo-item><div class=item-name><i class="fas fa fa-user"></i>总访客数：</div><div class=item-count id=busuanzi_value_site_uv><i class="fa fa-sync fa-spin"></i></div></div><div class=siteinfo-item><div class=item-name><i class="fas fa fa-eye"></i>页面浏览：</div><div class=item-count id=busuanzi_value_site_pv><i class="fa fa-sync fa-spin"></i></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-font"></i>总字数：</div><div class=item-count id=wordsCount data-count=69027></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-mug-hot"></i>阅读约：</div><div class=item-count id=readTimes data-times=180></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-clock-rotate-left"></i>最后更新于：</div><div class=item-count id=last-push-date data-lastpushdate=2024-10-19T10:06:00+08:00></div></div></div></div></aside><div class=sidebar-dimmer></div></header><div class=tool-buttons><div id=goto-comments class="button goto-comments" title=直达评论><i class="fas fa-comments"></i></div><div id=goto-gtranslate class=button title=多语言翻译><i class="fas fa-globe"></i></div><div id=toggle-theme class=button title=深浅模式切换><i class="fas fa-adjust"></i></div><div class=back-to-top role=button title=返回顶部><i class="fa fa-arrow-up"></i>
+<span>0%</span></div></div><div class=reading-progress-bar></div><a role=button class="book-mark-link book-mark-link-fixed"></a><a href=https://github.com/lanhui672/lanhui672.github.io/wiki rel="noopener external nofollow noreferrer" target=_blank title="Follow me on GitHub" class="exturl github-corner"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0 0 115 115h15l12 27L250 250V0z"/><path d="M128.3 109C113.8 99.7 119 89.6 119 89.6 122 82.7 120.5 78.6 120.5 78.6 119.2 72 123.4 76.3 123.4 76.3 127.3 80.9 125.5 87.3 125.5 87.3 122.9 97.6 130.6 101.9 134.4 103.2" fill="currentcolor" style="transform-origin:130px 106px" class="octo-arm"/><path d="M115 115C114.9 115.1 118.7 116.5 119.8 115.4l13.9-13.8C136.9 99.2 139.9 98.4 142.2 98.6 133.8 88 127.5 74.4 143.8 58 148.5 53.4 154 51.2 159.7 51 160.3 49.4 163.2 43.6 171.4 40.1 171.4 40.1 176.1 42.5 178.8 56.2 183.1 58.6 187.2 61.8 190.9 65.4 194.5 69 197.7 73.2 200.1 77.6 213.8 80.2 216.3 84.9 216.3 84.9 212.7 93.1 206.9 96 205.4 96.6 205.1 102.4 203 107.8 198.3 112.5 181.9 128.9 168.3 122.5 157.7 114.1 157.9 116.9 156.7 120.9 152.7 124.9L141 136.5C139.8 137.7 141.6 141.9 141.8 141.8z" fill="currentcolor" class="octo-body"/></svg>
+</a><script type=text/javascript src=//sidecar.gitter.im/dist/sidecar.v1.js async></script><script type=text/javascript>((window.gitter={}).chat={}).options={room:"hugo-next/community"}</script><noscript><div class=noscript-warning>Theme NexT works best with JavaScript enabled</div></noscript><div class="main-inner post posts-expand"><div class=post-block><article itemscope itemtype=http://schema.org/Article class=post-content lang><link itemprop=mainEntityOfPage href=https://www.lanhui.live/post/linux07/><span hidden itemprop=author itemscope itemtype=http://schema.org/Person><meta itemprop=image content="/imgs/hugo_next_avatar.png"><meta itemprop=name content="蓝惠の小窝"></span><span hidden itemprop=publisher itemscope itemtype=http://schema.org/Organization><meta itemprop=name content="蓝惠の小窝"><meta itemprop=description content="admin#lanhui.live"></span><span hidden itemprop=post itemscope itemtype=http://schema.org/CreativeWork><meta itemprop=name content="linux学习4.3命令模式、可视化模式"><meta itemprop=description content="命令模式 命令模式，又称为Normal模式，功能强大，只是此模式输入指令并在屏幕上显示，所以需要记忆大量 的快捷按键才能更好的使用 退出VIM 易造"></span><header class=post-header><h1 class=post-title itemprop="name headline">linux学习4.3命令模式、可视化模式</h1><div class=post-meta-container><div class=post-meta-items><span class=post-meta-item><span class=post-meta-item-icon><i class="far fa-calendar"></i>
+</span><span class=post-meta-item-text title=发表于>发表于：
+</span><time title="创建时间：2024-10-19 10:06:00 +0800 CST" itemprop="dateCreated datePublished" datetime="2024-10-19 10:06:00 +0800 CST">2024-10-19
+</time></span><span class=post-meta-item><span class=post-meta-item-icon><i class="far fa-folder-open"></i>
+</span><span class=post-meta-item-text title=分类于>分类于：
+</span><span itemprop=about itemscope itemtype=http://schema.org/Thing><a href=/categories/linux itemprop=url rel=index><span itemprop=name>linux</span></a></span></span></div><div class=post-meta-items></div></div><meta name=baidu-site-verification content="codeva-CvrLlzui8a"><script>var _hmt=_hmt||[];(function(){var e,t=document.createElement("script");t.src="https://hm.baidu.com/hm.js?289d43bfba112a047eccf686e7551557",e=document.getElementsByTagName("script")[0],e.parentNode.insertBefore(t,e)})()</script></header><div class="post-body autonumber" itemprop=articleBody><h1 id=命令模式>命令模式
+<a class=header-anchor href=#%e5%91%bd%e4%bb%a4%e6%a8%a1%e5%bc%8f></a></h1><p>命令模式，又称为Normal模式，功能强大，只是此模式输入指令并在屏幕上显示，所以需要记忆大量
+的快捷按键才能更好的使用</p><h2 id=退出vim>退出VIM
+<a class=header-anchor href=#%e9%80%80%e5%87%bavim></a></h2><p>易造成误操作，小心。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>ZZ 保存退出
+</span></span><span style=display:flex><span>ZQ 不保存退出
+</span></span></code></pre></div><h2 id=光标跳转>光标跳转
+<a class=header-anchor href=#%e5%85%89%e6%a0%87%e8%b7%b3%e8%bd%ac></a></h2><p><strong>字符间跳转：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>h: 左
+</span></span><span style=display:flex><span>L: 右
+</span></span><span style=display:flex><span>j: 下
+</span></span><span style=display:flex><span>k: 上
+</span></span><span style=display:flex><span>#COMMAND：跳转由#指定的个数的字符
+</span></span></code></pre></div><p><strong>单词间跳转：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>w：下一个单词的词首
+</span></span><span style=display:flex><span>e：当前或下一单词的词尾
+</span></span><span style=display:flex><span>b：当前或前一个单词的词首
+</span></span><span style=display:flex><span>#COMMAND：由#指定一次跳转的单词数
+</span></span></code></pre></div><p><strong>当前页跳转：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>H：页首
+</span></span><span style=display:flex><span>M：页中间行
+</span></span><span style=display:flex><span>L：页底
+</span></span><span style=display:flex><span>zt：将光标所在当前行移到屏幕顶端
+</span></span><span style=display:flex><span>zz：将光标所在当前行移到屏幕中间
+</span></span><span style=display:flex><span>zb：将光标所在当前行移到屏幕底端
+</span></span></code></pre></div><p><strong>行首行尾跳转：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>^ 跳转至行首的第一个非空白字符
+</span></span><span style=display:flex><span>0 跳转至行首
+</span></span><span style=display:flex><span>$ 跳转至行尾
+</span></span></code></pre></div><p><strong>行间移动：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#G 或者扩展命令模式下 (数字+G)
+</span></span><span style=display:flex><span>:# 跳转至由第#行，在EX模式下
+</span></span><span style=display:flex><span>G 最后一行
+</span></span><span style=display:flex><span>1G, gg 第一行
+</span></span></code></pre></div><p><strong>句间移动：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>) 下一句
+</span></span><span style=display:flex><span>( 上一句
+</span></span></code></pre></div><p><strong>段落间移动：</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>} 下一段
+</span></span><span style=display:flex><span>{ 上一段
+</span></span></code></pre></div><p><strong>命令模式翻屏操作</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>Ctrl+f 向文件尾部翻一屏,相当于Pagedown
+</span></span><span style=display:flex><span>Ctrl+b 向文件首部翻一屏,相当于Pageup
+</span></span><span style=display:flex><span>Ctrl+d 向文件尾部翻半屏
+</span></span><span style=display:flex><span>Ctrl+u 向文件首部翻半屏
+</span></span></code></pre></div><h2 id=字符编辑>字符编辑
+<a class=header-anchor href=#%e5%ad%97%e7%ac%a6%e7%bc%96%e8%be%91></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>x 剪切光标处的字符
+</span></span><span style=display:flex><span>#x 剪切光标处起始的#个字符
+</span></span><span style=display:flex><span>xp 交换光标所在处的字符及其后面字符的位置
+</span></span><span style=display:flex><span>~ 转换大小写
+</span></span><span style=display:flex><span>J 删除当前行后的换行符
+</span></span></code></pre></div><h2 id=替换命令replace>替换命令(replace)*
+<a class=header-anchor href=#%e6%9b%bf%e6%8d%a2%e5%91%bd%e4%bb%a4replace></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>r 只替换光标所在处的一个字符
+</span></span><span style=display:flex><span>R 切换成REPLACE模式（在末行出现-- REPLACE -- 提示）,按ESC回到命令模式
+</span></span></code></pre></div><h2 id=删除命令delete>删除命令(delete)
+<a class=header-anchor href=#%e5%88%a0%e9%99%a4%e5%91%bd%e4%bb%a4delete></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>d 删除命令，可结合光标跳转字符，实现范围删除
+</span></span><span style=display:flex><span>d$ 删除到行尾
+</span></span><span style=display:flex><span>d^ 删除到非空行首
+</span></span><span style=display:flex><span>d0 删除到行首
+</span></span><span style=display:flex><span>dw
+</span></span><span style=display:flex><span>de
+</span></span><span style=display:flex><span>db
+</span></span><span style=display:flex><span>#COMMAND
+</span></span><span style=display:flex><span>dd： 剪切光标所在的行
+</span></span><span style=display:flex><span>#dd 多行删除(2dd)
+</span></span><span style=display:flex><span>D：从当前光标位置一直删除到行尾，等同于d$
+</span></span></code></pre></div><h2 id=复制命令yank>复制命令(yank)
+<a class=header-anchor href=#%e5%a4%8d%e5%88%b6%e5%91%bd%e4%bb%a4yank></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>y 复制，行为相似于d命令
+</span></span><span style=display:flex><span>y$
+</span></span><span style=display:flex><span>y0
+</span></span><span style=display:flex><span>y^
+</span></span><span style=display:flex><span>ye
+</span></span><span style=display:flex><span>yw
+</span></span><span style=display:flex><span>yb
+</span></span><span style=display:flex><span>#COMMAND
+</span></span><span style=display:flex><span>yy：复制行
+</span></span><span style=display:flex><span>#yy 复制多行
+</span></span><span style=display:flex><span>Y：复制整行
+</span></span></code></pre></div><h2 id=粘贴命令paste>粘贴命令(paste)
+<a class=header-anchor href=#%e7%b2%98%e8%b4%b4%e5%91%bd%e4%bb%a4paste></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>小p 缓冲区存的如果为整行，则粘贴当前光标所在行的下方；否则，则粘贴至当前光标所在处的后面
+</span></span><span style=display:flex><span>大P 缓冲区存的如果为整行，则粘贴当前光标所在行的上方；否则，则粘贴至当前光标所在处的前面
+</span></span></code></pre></div><h2 id=改变命令change>改变命令(change)
+<a class=header-anchor href=#%e6%94%b9%e5%8f%98%e5%91%bd%e4%bb%a4change></a></h2><p>命令 c 删除后切换成插入模式</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>c$
+</span></span><span style=display:flex><span>c^
+</span></span><span style=display:flex><span>c0
+</span></span><span style=display:flex><span>cb
+</span></span><span style=display:flex><span>ce
+</span></span><span style=display:flex><span>cw
+</span></span><span style=display:flex><span>#COMMAND
+</span></span><span style=display:flex><span>cc #删除当前行并输入新内容，相当于S
+</span></span><span style=display:flex><span>#cc
+</span></span><span style=display:flex><span>C #删除当前光标到行尾，并切换成插入模式,相当于c$
+</span></span></code></pre></div><p><strong>命令模式操作文本总结</strong></p><table><thead><tr><th></th><th>Change (replace)</th><th>Delete (cut)</th><th>Yank (copy)</th></tr></thead><tbody><tr><td>Line</td><td>cc</td><td>dd</td><td>yy</td></tr><tr><td>Letter</td><td>cl</td><td>dl</td><td>yl</td></tr><tr><td>Word</td><td>cw</td><td>dw</td><td>yw</td></tr><tr><td>Sentence ahead</td><td>c)</td><td>d)</td><td>y)</td></tr><tr><td>Sentence behind</td><td>c(</td><td>d(</td><td>y(</td></tr><tr><td>Paragraph above</td><td>c{</td><td>d{</td><td>y{</td></tr><tr><td>Paragraph below</td><td>c}</td><td>d}</td><td>y}</td></tr></tbody></table><h2 id=查找>查找
+<a class=header-anchor href=#%e6%9f%a5%e6%89%be></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>/PATTERN：从当前光标所在处向文件尾部查找
+</span></span><span style=display:flex><span>?PATTERN：从当前光标所在处向文件首部查找
+</span></span><span style=display:flex><span>n：与命令同方向  
+</span></span><span style=display:flex><span>N：与命令反方向  
+</span></span></code></pre></div><h2 id=撤消更改>撤消更改
+<a class=header-anchor href=#%e6%92%a4%e6%b6%88%e6%9b%b4%e6%94%b9></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>u 撤销最近的更改，相当于windows中ctrl+z
+</span></span><span style=display:flex><span>#u 撤销之前多次更改
+</span></span><span style=display:flex><span>U 撤消光标落在这行后所有此行的更改
+</span></span><span style=display:flex><span>Ctrl-r 重做最后的“撤消”更改，相当于windows中crtl+y
+</span></span><span style=display:flex><span>. 重复前一个操作
+</span></span><span style=display:flex><span>#. 重复前一个操作#次
+</span></span></code></pre></div><h2 id=高级用法>高级用法
+<a class=header-anchor href=#%e9%ab%98%e7%ba%a7%e7%94%a8%e6%b3%95></a></h2><p><start position><command><end position>(起始位置+命令+结束位置)
+常见Command：y 复制、d 删除、gU 变大写、gu 变小写<br>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>0y$ 命令
+</span></span><span style=display:flex><span>0 → 先到行头
+</span></span><span style=display:flex><span>y → 从这里开始拷贝
+</span></span><span style=display:flex><span>$ → 拷贝到本行最后一个字符
+</span></span></code></pre></div><p>范例：粘贴“wang”100次</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>100iwang [ESC]
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>di&#34; 光标在” “之间，则删除” “之间的内容(其他符号也可)
+</span></span><span style=display:flex><span>yi( 光标在()之间，则复制()之间的内容
+</span></span><span style=display:flex><span>vi[ 光标在[]之间，则选中[]之间的内容
+</span></span><span style=display:flex><span>dtx 删除字符直到遇见光标之后的第一个 x 字符
+</span></span><span style=display:flex><span>ytx 复制字符直到遇见光标之后的第一个 x 字符
+</span></span></code></pre></div><h1 id=可视化模式>可视化模式
+<a class=header-anchor href=#%e5%8f%af%e8%a7%86%e5%8c%96%e6%a8%a1%e5%bc%8f></a></h1><p>在末行有”&ndash; VISUAL &ndash; “指示，表示在可视化模式<br>允许选择的文本块<br>v 面向字符，&ndash; VISUAL &ndash;<br>V 面向整行，&ndash; VISUAL LINE &ndash;<br>ctrl-v 面向块，&ndash; VISUAL BLOCK &ndash;<br>可视化键可用于与移动键结合使用<br>w ) } 箭头等<br>突出显示的文字可被删除，复制，变更，过滤，搜索，替换等<br>范例：在文件指定行的行首插入#</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>1、先将光标移动到指定的第一行的行首
+</span></span><span style=display:flex><span>2、输入ctrl+v 进入可视化模式
+</span></span><span style=display:flex><span>3、向下移动光标，选中希望操作的每一行的第一个字符
+</span></span><span style=display:flex><span>4、输入大写字母 I 切换至插入模式
+</span></span><span style=display:flex><span>5、输入 #
+</span></span><span style=display:flex><span>6、按 ESC 键
+</span></span></code></pre></div><p>范例：在指定的块位置插入相同的内容</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>1、光标定位到要操作的地方
+</span></span><span style=display:flex><span>2、CTRL+v 进入“可视块”模式，选取这一列操作多少行
+</span></span><span style=display:flex><span>3、SHIFT+i(I)
+</span></span><span style=display:flex><span>4、输入要插入的内容
+</span></span><span style=display:flex><span>5、按 ESC 键
+</span></span></code></pre></div><h2 id=多文件模式>多文件模式
+<a class=header-anchor href=#%e5%a4%9a%e6%96%87%e4%bb%b6%e6%a8%a1%e5%bc%8f></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>vim FILE1 FILE2 FILE3 ...
+</span></span><span style=display:flex><span>:next 下一个
+</span></span><span style=display:flex><span>:prev 前一个
+</span></span><span style=display:flex><span>:first 第一个
+</span></span><span style=display:flex><span>:last 最后一个
+</span></span><span style=display:flex><span>:wall 保存所有
+</span></span><span style=display:flex><span>:qall 不保存退出所有
+</span></span><span style=display:flex><span>:wqall保存退出所有
+</span></span></code></pre></div><h2 id=多窗口模式>多窗口模式
+<a class=header-anchor href=#%e5%a4%9a%e7%aa%97%e5%8f%a3%e6%a8%a1%e5%bc%8f></a></h2><h3 id=多文件分割>多文件分割
+<a class=header-anchor href=#%e5%a4%9a%e6%96%87%e4%bb%b6%e5%88%86%e5%89%b2></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>vim -o|-O FILE1 FILE2 ...
+</span></span><span style=display:flex><span>-o: 水平或上下分割
+</span></span><span style=display:flex><span>-O: 垂直或左右分割（vim only）
+</span></span><span style=display:flex><span>在窗口间切换：Ctrl+w, Arrow
+</span></span></code></pre></div><h3 id=单文件窗口分割>单文件窗口分割
+<a class=header-anchor href=#%e5%8d%95%e6%96%87%e4%bb%b6%e7%aa%97%e5%8f%a3%e5%88%86%e5%89%b2></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>Ctrl+w,s：split, 水平分割，上下分屏
+</span></span><span style=display:flex><span>Ctrl+w,v：vertical, 垂直分割，左右分屏
+</span></span><span style=display:flex><span>ctrl+w,q：取消相邻窗口
+</span></span><span style=display:flex><span>ctrl+w,o：取消全部窗口
+</span></span><span style=display:flex><span>:wqall 退出
+</span></span></code></pre></div><h2 id=帮助>帮助
+<a class=header-anchor href=#%e5%b8%ae%e5%8a%a9></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>:help
+</span></span><span style=display:flex><span>:help topic
+</span></span><span style=display:flex><span>Use :q to exit help
+</span></span><span style=display:flex><span>#vimtutor
+</span></span></code></pre></div><h2 id=vim-总结图>vim 总结图
+<a class=header-anchor href=#vim-%e6%80%bb%e7%bb%93%e5%9b%be></a></h2><p><img src=/imgs/img-lazy-loading.gif data-src=/images/url/linux/linux07/02.png alt=1>
+<img src=/imgs/img-lazy-loading.gif data-src=/images/url/linux/linux07/03.png alt=1>
+<img src=/imgs/img-lazy-loading.gif data-src=/images/url/linux/linux07/04.png alt=1></p></div><footer class=post-footer><div class=post-tags><a href=/tags/linux>linux</a></div><div class=addthis_inline_share_toolbox style=text-align:center></div><hr><div class=reward-container><div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div><button>
+赞赏</button><div class=post-reward><div class=post-reward-item><img src=/imgs/img-lazy-loading.gif data-src=/imgs/_ali-pay.png alt="蓝惠の小窝 - 支付宝">
+<span>支付宝</span></div><div class=post-reward-item><img src=/imgs/img-lazy-loading.gif data-src=/imgs/_wechat-pay.png alt="蓝惠の小窝 - 微信">
+<span>微信</span></div></div></div><div class=followme><span>欢迎关注我的其它发布渠道</span><div class=social-list><div class=social-item><a target=_blank class=social-link href=/images/wechat_channel.jpg><span class=icon><i class="fab fa-weixin"></i>
+</span><span class=label>WeChat</span></a></div><div class=social-item><a target=_blank class=social-link href=/rss.xml><span class=icon><i class="fa fa-rss"></i>
+</span><span class=label>RSS</span></a></div></div></div><div class=post-nav><div class="post-nav-next post-nav-item"></div><div class="post-nav-prev post-nav-item"><a href=/post/linux06/ rel=prev title=linux学习4.2>linux学习4.2
+<i class="fa fa-chevron-right"></i></a></div></div></footer></article></div><div id=comments class=post-comments><div class=comment-head><div class=comment-headline><i class="fas fa-comments fa-fw"></i>
+<span>评论交流</span></div></div><div class=comment-wrap><div><div class=comment-loading><i class="fa fa-sync fa-spin"></i></div><div class=giscus-container></div></div></div></div></div></main><footer class=footer><div class=footer-inner><div id=gtranslate class=google-translate><i class="fa fa-language"></i><div id=google_translate_element></div></div><div class=copyright>&copy;
+<span itemprop=copyrightYear>2019 - 2024
+</span><span class=with-love><i class="fa fa-heart"></i>
+</span><span class=author itemprop=copyrightHolder>蓝惠の小窝</span></div><div class=powered-by>由 <a href=https://gohugo.io title=0.126.1 target=_blank>Hugo</a> & <a href=https://github.com/hugo-next/hugo-theme-next title=4.5.3 target=_blank>Hugo NexT.Gemini</a> 强力驱动</div><div class=beian><a href=https://beian.miit.gov.cn target=_blank>湘ICP备20000440号</a>
+<img src=/imgs/gongan.png alt=湘公网安备>
+<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011402019770" target=_blank>湘公网安备 31011402019770 号</a></div><div class=vendors-list><a target=_blank href title><img src=/imgs/img-lazy-loading.gif data-src alt>
+</a><a target=_blank href title><img src=/imgs/img-lazy-loading.gif data-src alt>
+</a><a target=_blank href title></a><span></span></div></div></footer><script type=text/javascript src=https://cdn.staticfile.org/animejs/3.2.1/anime.min.js defer></script><script type=text/javascript src=https://cdn.staticfile.org/viewerjs/1.11.0/viewer.min.js defer></script><script class=next-config data-name=main type=application/json>{"bookmark":{"color":"#0cd2f8","enable":true,"save":"manual"},"copybtn":true,"darkmode":false,"giscus":{"cfg":{"category":"Announcements","categoryid":"DIC_kwDOL_1gUs4Cfkpa","emit":"url","inputposition":"top","mapping":"top","reactions":true,"repo":"lanhui672/lanhui672.Giscus","repoid":"R_kgDOL_1gUg","theme":"cobalt\n\nlang=\"zh-CN\""},"js":"https://giscus.app/client.js"},"hostname":"https://www.lanhui.live/","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小时前","ds_hours":" 小时 ","ds_just":"刚刚","ds_min":" 分钟前","ds_mins":" 分钟","ds_month":" 个月前","ds_years":" 年 ","empty":"没有找到任何搜索结果：${query}","hits":"找到 ${hits} 个搜索结果","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","placeholder":"搜索..."},"lang":"zh-CN","lazyload":false,"localSearch":{"enable":true,"limit":1e3,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"postmeta":{"comments":{"enable":false,"plugin":"waline"},"views":{"enable":false,"plugin":"busuanzi"}},"root":"/","scheme":"Gemini","sidebar":{"display":"post","offset":12,"padding":18,"position":"right","width":256},"vendor":{"plugins":"qiniu","router":"https://cdn.staticfile.org"},"version":"4.5.3"}</script><script type=text/javascript src=/js/main.min.78a19d71f814f465713a5053077de10bda06a8790a23f2b3c5ac2241d0c135d3.js defer></script></body></html>
