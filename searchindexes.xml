@@ -51,7 +51,7 @@ umask 范例：
 umask 002 umask u=rw,g=r,o= 持久保存umask
 全局设置： /etc/bashrc 影响所有用户 用户设置：~/.bashrc 只影响当前用户 范例： [root@centos8 ~]#umask 0022 [root@centos8 ~]#umask -S u=rwx,g=rx,o=rx [root@centos8 ~]#umask -p umask 0022 范例：
 [root@centos8 ~]#umask 0022 [root@centos8 ~]#( umask 666; touch /data/f1.txt ) （一次性生效） [root@centos8 ~]#umask 0022 [root@centos8 ~]#ll /data/f1.txt ---------- 1 root root 0 Mar 27 14:55 /data/f1.txt 其他方法： 只实现临时性的文件权限为000 1 touch a.txt ;chmod 000 a.txt 2umask 777 ;touch a.txt;umask 022; 练习
-当用户docker对/testdir 目录无执行权限时，意味着无法做哪些操作？ 当用户mongodb对/testdir 目录无读权限时，意味着无法做哪些操作？ 当用户redis 对/testdir 目录无写权限时，该目录下的只读文件file1是否可修改和删除？ 当用户zabbix对/testdir 目录有写和执行权限时，该目录下的只读文件file1是否可修改和删除？ 复制/etc/fstab文件到/var/tmp下，设置文件所有者 …</content></entry><entry><title>linux学习文件管理3.2</title><url>/post/linux04/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  重定向和管道标准输入和输出程序：指令+数据
+当用户docker对/testdir 目录无执行权限时，意味着无法做哪些操作？ 当用户mongodb对/testdir 目录无读权限时，意味着无法做哪些操作？ 当用户redis 对/testdir 目录无写权限时，该目录下的只读文件file1是否可修改和删除？ 当用户zabbix对/testdir 目录有写和执行权限时，该目录下的只读文件file1是否可修改和删除？ 复制/etc/fstab文件到/var/tmp下，设置文件所有者 …</content></entry><entry><title>linux学习文件管理3.2（6.1）</title><url>/post/linux04/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  重定向和管道标准输入和输出程序：指令+数据
 读入数据：Input
 输出数据：Output
 打开的文件都有一个fd: file descriptor (文件描述符) Linux给程序提供三种 I/O 设备
