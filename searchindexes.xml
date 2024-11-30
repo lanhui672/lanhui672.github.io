@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>linux权限管理及文本编辑工具4.4（文本处理工具）</title><url>/post/linux08/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 文本常见处理工具
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>文本各种处理工具详解8.3</title><url>/post/linux08/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 文本常见处理工具
 文件内容查看命令
 查看文本文件内容
 cat
@@ -13,45 +13,54 @@ cat [OPTION]... [FILE]... 常见选项
 将同一行的内容逆向显示
 [root@centos8 ~]#cat /data/fa.txt 1 2 3 4 5 a b c [root@centos8 ~]#tac /data/fa.txt a b c 1 2 3 4 5 [root@centos8 ~]#rev /data/fa.txt 5 4 3 2 1 c b a [root@centos8 ~]#rev abcdef fedcba [root@centos8 ~]#echo {1..10} |rev 01 9 8 7 6 5 4 3 2 1 查看非文本文件内容
 范例：hexdump
-hexdump -C -n 512 /dev/sda 00000000 eb 63 90 10 8e d0 bc 00 b0 b8 00 00 8e d8 8e c0 |.c..............| echo {a..z} | tr -d &amp;amp;#39; &amp;amp;#39;|hexdump -C 00000000 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 |abcdefghijklmnop| 00000010 71 72 73 74 75 76 …</content></entry><entry><title>linux权限管理及文本编辑工具4.3命令模式、可视化模式</title><url>/post/linux07/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 命令模式
+hexdump -C -n 512 /dev/sda 00000000 eb 63 90 10 8e d0 bc 00 b0 b8 00 00 8e d8 8e c0 |.c..............| echo {a..z} | tr -d &amp;amp;#39; &amp;amp;#39;|hexdump -C 00000000 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 |abcdefghijklmnop| 00000010 71 72 73 74 75 76 …</content></entry><entry><title>文本编译工具VIM详解8.2（文本处理工具）</title><url>/post/linux07/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 命令模式
 命令模式，又称为Normal模式，功能强大，只是此模式输入指令并在屏幕上显示，所以需要记忆大量 的快捷按键才能更好的使用
 退出VIM
-易造成误操作，小心。
 ZZ 保存退出 ZQ 不保存退出 光标跳转
 字符间跳转：
 h: 左 L: 右 j: 下 k: 上 #COMMAND：跳转由#指定的个数的字符 单词间跳转：
 w：下一个单词的词首 e：当前或下一单词的词尾 b：当前或前一个单词的词首 #COMMAND：由#指定一次跳转的单词数 当前页跳转：
 H：页首 M：页中间行 L：页底 zt：将光标所在当前行移到屏幕顶端 zz：将光标所在当前行移到屏幕中间 zb：将光标所在当前行移到屏幕底端 行首行尾跳转：
 ^ 跳转至行首的第一个非空白字符 0 跳转至行首 $ 跳转至行尾 行间移动：
-#G 或者扩展命令模式下 (数字+G) :# 跳转至由第#行，在EX模式下 G 最后一行 1G, gg 第一行 句间移动：
+#G 或者扩展命令模式下 :# 跳转至由第#行 G 最后一行 1G, gg 第一行 句间移动：
 ) 下一句 ( 上一句 段落间移动：
 } 下一段 { 上一段 命令模式翻屏操作
 Ctrl+f 向文件尾部翻一屏,相当于Pagedown Ctrl+b 向文件首部翻一屏,相当于Pageup Ctrl+d 向文件尾部翻半屏 Ctrl+u 向文件首部翻半屏 字符编辑
-x 剪切光标处的字符 #x 剪切光标处起始的#个字符 xp 交换光标所在处的字符及其后面字符的位置 ~ 转换大小写 J 删除当前行后的换行符 替换命令(replace)*
+x 剪切光标处的字符 #x 剪切光标处起始的#个字符 xp 交换光标所在处的字符及其后面字符的位置 ~ 转换大小写 J 删除当前行后的换行符 替换命令(replace)
 r 只替换光标所在处的一个字符 R 切换成REPLACE模式（在末行出现-- REPLACE -- 提示）,按ESC回到命令模式 删除命令(delete)
-d 删除命令，可结合光标跳转字符，实现范围删除 d$ 删除到行尾 d^ 删除到非空行首 d0 删除到行首 dw de db #COMMAND dd： 剪切光标所在的行 #dd 多行删除(2dd) D：从当前光标位置一直删除到行尾，等同于d$ 复制命令(yank)
+准确说是剪切，可p粘贴。 d 删除命令，可结合光标跳转字符，实现范围删除 d$ 删除到行尾 d^ 删除到非空行首 d0 删除到行首 dw 删除到下一个单词的词首 de 删除到下一个单词的词尾 db 删除到当前或前一个单词的词首 #COMMAND dd： 剪切光标所在的行 #dd 多行删除 D：从当前光标位置一直删除到行尾，等同于d$ 复制命令(yank)
 y 复制，行为相似于d命令 y$ y0 y^ ye yw yb #COMMAND yy：复制行 #yy 复制多行 Y：复制整行 粘贴命令(paste)
-小p 缓冲区存的如果为整行，则粘贴当前光标所在行的下方；否则，则粘贴至当前光标所在处的后面 大P 缓冲区存的如果为整行，则粘贴当前光标所在行的上方；否则，则粘贴至当前光标所在处的 …</content></entry><entry><title>linux权限管理及文本编辑工具4.2</title><url>/post/linux06/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  地址定界格式地址定界格式# #具体第#行，例如2表示第2行 #,# #从左侧#表示起始行，到右侧#表示结尾行 #,+# #从左侧#表示的起始行，加上右侧#表示的行数，范例：2,+3 表示2到5行 . #当前行 $ #最后一行 .,$-1 #当前行到倒数第二行 % #全文, 相当于1,$ /pattern/ #从当前行向下查找，直到匹配pattern的第一行,即:正则表达式 /pat1/,/pat2/ #从第一次被pat1模式匹配到的行开始，一直到第一次被pat2匹配到的行结束 #,/pat/ #从指定行开始，一直找到第一个匹配pattern的行结束 /pat/,$ #向下找到第一个匹配patttern的行到整个文件的结尾的所有行 地址定界后跟一个编辑命令d #删除 y #复制 w file #将范围内的行另存至指定文件中 r file #在指定位置插入指定文件中的所有内容 t#行号 将前面指定的行复制到#行后 m#行号 将前面指定的行移动到#行后 范例： 3-6行删除
-：3,6d 粘贴：P键
-查找并替换格式
-s/要查找的内容/替换为的内容/修饰符 修饰符：
-i #忽略大小写 g #全局替换，默认情况下，每一行只替换第一次出现(懒惰模式) gc #全局替换，每次替换前询问（贪婪模式） *查找替换中的分隔符/可替换为其它字符，如：#,@,*
-范例：
-s@/etc@/var@g s#/boot#/#i 定制vim的工作特性etc/vimrc #全局 ~/.vimrc #个人 行号显示：set number，简写 set nu 取消显示：set nonumber, 简写 set nonu 忽略字符的大小写启用：set ignorecase，简写 set ic 不忽略：set noic 自动缩进启用：set autoindent，简写 set ai 禁用：set noa 复制保留格式启用：set paste 禁用：set nopaste 显示Tab ^I和换行符 和$显示启用：set list 禁用：set nolist 高亮搜索启用：set hlsearch 禁用：set nohlsearch 简写：nohl 语法高亮启用：syntax on 禁用：syntax off 文件格式启用windows格式：set fileformat=dos 启用unix格式：set fileformat=unix 简写 set ff=dos|unix Tab 用空格代替启用：set expandtab 默认为8个空格代替Tab 禁用：set noexpandtab 简写：set et tab用指定空格的个数代替启用：set tabstop=# 指定#个空格代替Tab 简写：set ts=4 设置缩进宽度#向右缩进 命令模式&gt;&gt; #向左缩进 命令模式&lt;&lt; #默缩进8个，可以设置缩进为4个字符 set shiftwidth=4 设置文本宽度set textwidth=65 (vim only) #从左向右计数 set wrapmargin=15 #从右到左计数 设置光标所在行的标识线启用：set cursorline，简写 set cul 禁用：set nocursorline 加密启用： set key=password 禁用： set key= 了解更多set 帮助
-:help option-list :set or :set all   ]]></content></entry><entry><title>linux权限管理及文本编辑工具4.1</title><url>/post/linux05/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 新建文件和目录的默认权限
-umask 的值可以用来保留在创建文件权限
-实现方式:
-新建文件的默认权限: 666-umask，如果所得结果某位存在执行（奇数）权限，则将其权限+1,偶 数不变 新建目录的默认权限: 777-umask
-非特权用户umask默认是 002
-root的umask 默认是 022 为什么root的umask要大一些?
-umask越大意味着什么?权限就越小,意味着越安全! 相对root的文件更重要,所以权限要越小一些
-查看umask
-umask #模式方式显示 umask –S #输出可被调用 umask –p 修改umask
-umask 范例：
-umask 002 umask u=rw,g=r,o= 持久保存umask
-全局设置： /etc/bashrc 影响所有用户 用户设置：~/.bashrc 只影响当前用户 范例： [root@centos8 ~]#umask 0022 [root@centos8 ~]#umask -S u=rwx,g=rx,o=rx [root@centos8 ~]#umask -p umask 0022 范例：
-[root@centos8 ~]#umask 0022 [root@centos8 ~]#( umask 666; touch /data/f1.txt ) （一次性生效） [root@centos8 ~]#umask 0022 [root@centos8 ~]#ll /data/f1.txt ---------- 1 root root 0 Mar 27 14:55 /data/f1.txt 其他方法： 只实现临时性的文件权限为000 1 touch a.txt ;chmod 000 a.txt 2umask 777 ;touch a.txt;umask 022; 练习
-当用户docker对/testdir 目录无执行权限时，意味着无法做哪些操作？ 当用户mongodb对/testdir 目录无读权限时，意味着无法做哪些操作？ 当用户redis 对/testdir 目录无写权限时，该目录下的只读文件file1是否可修改和删除？ 当用户zabbix对/testdir 目录有写和执行权限时，该目录下的只读文件file1是否可修改和删除？ 复制/etc/fstab文件到/var/tmp下，设置文件所有者 …</content></entry><entry><title>linux学习文件管理3.2（6.1）</title><url>/post/linux04/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  重定向和管道标准输入和输出程序：指令+数据
+小p 缓冲区存的如果为整行，则粘贴当前光标所在行的下方；否则，则**粘贴至当前光标所在处的后面** 大P 缓冲区存的如果为整行，则粘贴当 …</content></entry><entry><title>文本编译工具VIM详解8.1</title><url>/post/linux06/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  文本处理工具和正则表达式内容概述
+文本编辑工具VIM
+各种文本工具
+基本正则表达式和扩展正则表达式
+文本处理三剑客之grep
+文本处理三剑客之sed
+文本处理三剑客之awk
+文本编辑工具之神VIMvi和vim简介文本编辑种类：
+全屏编辑器：nano（字符工具）, gedit(图形化工具)，vi,vim 行编辑器：sed vi
+Visual editor，文本编辑器，是 Linux 必备工具之一，功能强大，学习曲线较陡峭，学习难度大
+vim
+VIsual editor iMproved ，和 vi 使用方法一致，但功能更为强大，不是必备软件官网：www.vim.org其他相关编辑器：gvim 一个Vim编辑器的图形版本
+vi小抄参考教程使用 vim 初步vim 命令格式vim [OPTION]... FILE... 常用选项
++# 打开文件后，让光标处于第#行的行首，+默认行尾 +/PATTERN 让光标处于第一个被PATTERN匹配到的行行首 -b file 二进制方式打开文件 -d file1 file2… 比较多个文件，相当于 vimdiff -m file 只读打开文件 -e file 直接进入ex模式，相当于执行ex file -y file Easy mode (like &amp;#34;evim&amp;#34;, modeless)，直接可以操作文件，ctrl+o:wq|q! 保存和不 保存退出 说明：
+如果该文件存在，文件被打开并显示内容 如果该文件不存在，当编辑后第一次存盘时创建它 三种主要模式和转换vim 是 一个模式编辑器，击键行为是依赖于 vim的 的“模式”
+三种常见模式： 命令或普通(Normal)模式：默认模式，可以实现移动光标，剪切/粘贴文本
+插入(Insert)或编辑模式：用于修改文本
+扩展命令(extended command )或命令(末)行模式：保存，退出等
+模式转换
+命令模式 &amp;ndash;&amp;gt; 插入模式 i insert, 在光标所在处输入 I 在当前光标所在行的行首输入 a append, 在光标所在处后面输入 A 在当前光标所在行的行尾输入 o 在当前光标所在行的下方打开一个新行 O 在当前光标所在行的上方打开一个新行 插入模式 &amp;mdash; ESC&amp;mdash;&amp;ndash;&amp;gt; …  ]]></content></entry><entry><title>Linux中文件权限控制7.1</title><url>/post/linux05/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 文件权限
+文件的权限主要针对三类对象进行定义
+owner 属主, u group 属组, g other 其他, o 注意：
+用户的最终权限，是从左向右进行顺序匹配，即，所有者，所属组，其他人，一旦匹配权限立即生效，不再向 右查看其权限 r和w权限对root 用户无效 只要所有者,所属组或other三者之一有x权限,root就可以执行 每个文件针对每类访问者都定义了三种常用权限
+每个文件针对每类访问者都定义了三种权限
+r Readable 4 w Writable 2 x eXcutable 1 对文件的权限：
+r 可使用文件查看类工具，比如：cat，可以获取其内容 w 可修改其内容,文件的是否被删除和文件的权限无关 x 可以把此文件提请内核启动为一个进程，即可以执行（运行）此文件（此文件的内容必须是可执行） 文件权限常见组合 X 只给目录x权限，不给无执行权限的文件x全歼。 --- 0 无任何权限 r 4 r-x 5 rw 6 rwx 7 对目录的权限：
+r 可以使用ls查看此目录中文件名列表,但无法看到文件的属性meta信息,包括inode号,不能查看文件的 内容 w 可在此目录中创建文件，也可删除此目录中的文件，而和此被删除的文件的权限无关 x 可以cd进入此目录，可以使用ls -l file或stat file 查看此目录中指定文件的元数据，当预先知 道文件名称时,也可以查看文件的内容,属于目录的可访问的最小权限 X 分配给目录或有部分x权限的文件的x权限，对无任意x权限的文件则不会分配x权限 目录权限常见组合 - 不能访问目录 r-x 只读目录 rwx 可读也可写目录 面试题： Linux中的目录和文件的权限区别？分别说明读，写和执行权限的区别
+修改文件权限chmod
+格式
+chmod [OPTION]... MODE[,MODE]... FILE... chmod [OPTION]... OCTAL-MODE FILE... #参考RFILE文件的权限，将FILE的修改为同RFILE chmod [OPTION]... --reference=RFILE FILE... 说明： 模式法格式
+模式法 chmod who opt per file who:u,g,o,a 所有者/组/其他人/所有人 opt:+,-,= per:r,w,x 修改指定一类用户的所 …</content></entry><entry><title>Linux中重定向和用户组管理6.1</title><url>/post/linux04/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  重定向和管道标准输入和输出程序：指令+数据
 读入数据：Input
 输出数据：Output
 打开的文件都有一个fd: file descriptor (文件描述符) Linux给程序提供三种 I/O 设备
@@ -64,26 +73,15 @@ umask 002 umask u=rw,g=r,o= 持久保存umask
 &amp;gt;&amp;gt; 可以在原有内容基础上，追加内容 把输出和错误重新定向追加到文件 &amp;gt;&amp;gt; 追加标准输出重定向至文件 2&amp;gt;&amp;gt; 追加标准错误重定向至文件 标准输出和错误输出各自定向至不同位置
 COMMAND &amp;gt; /path/to/file.out 2&amp;gt; /path/to/error.out 合并标准输出和错误输出为同一个数据流进行重定向
 &amp;amp;&amp;gt; 覆盖重定向 &amp;amp;&amp;gt;&amp;gt; 追加重定向 COMMAND &amp;gt; /path/to/file.out 2&amp;gt;&amp;amp;1 （顺序很重要） COMMAND &amp;gt;&amp;gt; /path/to/file.out 2&amp;gt;&amp;amp;1 合并多个程序 (CMD1;CMD2&amp;hellip;&amp;hellip;) 或者{ CMD1;CMD2;&amp;hellip;.; }合并多个程序的STDOUT 范例： 分别重定向
-[root@rocky8] -l#ls anaconda-ks.cfg XXX &amp;gt;/data stdout.log 2&amp;gt; /data/stderr.log [rootarocky8] ~#cat /data/stdout.log anaconda-ks.cfg [root@rocky8] ~l#cat …  ]]></content></entry><entry><title>linux学习文件管理3.1</title><url>/post/linux03/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> Linux下的文件类型
-七种文件类型
--普通文件 d 目录文件directory l 符号链接文件link b 块设备block c 字符设备character p 管道文件pipe s 套接字文件socket 文件操作命令
-显示当前工作目录
-pwd命令: printing working directory
--P 显示真实物理路径 *-L 显示链接路径（默认） 范例： [root@centos8 ~]#pwd /root 绝对和相对路径
-绝对路径 以正斜杠/ 即根目录开始 完整的文件的位置路径 可用于任何想指定一个文件名的时候 相对路径名 不以斜线开始 一般情况下，是指相对于当前工作目录的路径，特殊场景下，是相对于某目录的位置 可以作为一个简短的形式指定一个文件
-../ 从上一级开始
-./ 当前路径 工具
-基名：basename，只取文件名而不要路径
-目录名：dirname，只取路径，不要文件名
-范例:
-[root@centos8 bin]#basename /etc/sysconfig/network network [root@centos8 bin]#dirname /etc/sysconfig/network /etc/sysconfig [root@centos8 ~]#dirname /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts [root@centos8 ~]#basename /etc/sysconfig/network-scripts/ifcfg-eth0 ifcfg-eth0 范例:
-[root@ubuntu2004 ~]#basename http://nginx.org/download/nginx-1.18.0.tar.gz nginx-1.18.0.tar.gz [root@ubuntu2004 ~]#basename http://nginx.org/download/nginx-1.18.0.tar.gz .tar.gz nginx-1.18.0 [root@ubuntu2004 ~]#basename -s .tar.gz http://nginx.org/download/nginx- 1.18.0.tar.gz …</content></entry><entry><title>linux学习Linux基础入门2.2</title><url>/post/linux02/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 常见命令
+[root@rocky8] -l#ls anaconda-ks.cfg XXX &amp;gt;/data stdout.log 2&amp;gt; /data/stderr.log [rootarocky8] ~#cat /data/stdout.log anaconda-ks.cfg [root@rocky8] ~l#cat …  ]]></content></entry><entry><title>linux学习文件管理5.1</title><url>/post/linux03/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 常见的文件系统目录功能
+/boot：引导文件存放目录，内核文件(vmlinuz)、引导加载器(bootloader, grub)都存放于此目录 /bin：所有用户使用的基本命令；不能关联至独立分区，OS启动即会用到的程序 /sbin：管理类的基本命令；不能关联至独立分区，OS启动即会用到的程序 /lib：启动时程序依赖的基本共享库文件以及内核模块文件(/lib/modules) /lib64：专用于x86_64系统上的辅助共享库文件存放位置 /etc：配置文件目录 /home/USERNAME：普通用户家目录 /root：管理员的家目录 /media：便携式移动设备挂载点 /mnt：临时文件系统挂载点 /dev：设备文件及特殊文件存储位置 b: block device，随机访问 c: character device，线性访问 /opt：第三方应用程序的安装位置 /srv：系统上运行的服务用到的数据 /tmp：临时文件存储位置 /usr: universal shared, read-only data bin: 保证系统拥有完整功能而提供的应用程序 sbin: lib：32位使用 lib64：只存在64位系统 include: C程序的头文件(header files) share：结构化独立的数据，例如doc, man等 local：第三方应用程序的安装位置 bin, sbin, lib, lib64, etc, share /var: variable data files cache: 应用程序缓存数据目录 lib: 应用程序状态信息数据 local：专用于为/usr/local下的应用程序存储可变数据 lock: 锁文件 log: 日志目录及文件 opt: 专用于为/opt下的应用程序存储可变数据 run: 运行中的进程相关数据,通常用于存储进程pid文件 spool: 应用程序数据池 tmp: 保存系统两次重启之间产生的临时数据 /proc: 用于输出内核与进程信息相关的虚拟文件系统 /sys：用于输出当前系统上硬件设备相关信息虚拟文件系统 /selinux: security enhanced Linux，selinux相关的安全策略等信息的存储位置 应用程序的组成部分
+二进制程序：/bin, /sbin, /usr/bin, /usr/sbin, …</content></entry><entry><title>Linux中的shell和基础命令4.2</title><url>/post/linux02/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 常见命令
 查看硬件信息
 查看 cpu
 lscpu命令可以查看cpu信息 cat /proc/cpuinfo也可看查看到 范例：
 [root@centos8 ~]# lscpu Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CPU(s): 8 On-line CPU(s) list: 0-7 Thread(s) per core: 1 #每个core 有几个线程 Core(s) per socket: 4 #每个槽位有4个core Socket(s): 2 #服务器面板上有2个cpu 槽位 NUMA node(s): 2 #nodes的数量 Vendor ID: GenuineIntel CPU family: 6 Model: 44 Stepping: 2 CPU MHz: 2128.025 BogoMIPS: 4256.03 Virtualization: VT-x L1d cache: 32K L1i cache: 32K L2 cache: 256K L3 cache: 8192K NUMA node0 CPU(s): 0,2,4,6 #对应的core NUMA node1 CPU(s): 1,3,5,7 查看内存大小
 [root@centos8 ~]#free -h (加h显示G) [root@centos8 ~]#cat /proc/meminfo root@ubuntu2004:~# free total used free shared buff/cache available Mem: 3981632 267128 2979480 1540 735024 3466564 Swap: 3994620 0 3994620 查看硬盘和分区情况
-[root@centos8 ~]#lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT sda 8:0 0 200G 0 disk ├─sda1 8:1 0 1G 0 part /boot ├─sda2 8:2 0 100G 0 part / ├─sda3 8:3 0 50G 0 part /data ├─sda4 8:4 0 1K 0 part └─sda5 8:5 0 …</content></entry><entry><title>linux学习Linux基础入门2.1</title><url>/post/linux01/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 2^0=1=1b
+[root@centos8 ~]#lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT sda 8:0 0 200G 0 disk ├─sda1 8:1 0 1G 0 part /boot ├─sda2 8:2 0 100G 0 part / ├─sda3 8:3 0 50G 0 part /data ├─sda4 8:4 0 1K 0 part └─sda5 8:5 0 …</content></entry><entry><title>Linux中的shell和基础命令4.1</title><url>/post/linux01/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 2^0=1=1b
 2^1=2=10b
 2^3=8=1000b
 2^4=16=10000b
@@ -231,7 +229,7 @@ repay v. 偿还 reproduce v. 1.繁殖（表sb） 2.复制、再生(表sth) post 
 Object v. 反对 Oppose v. 反对,相反 Per 1.（表方向）贯穿 2（表性质） 全，都，每一个
 Pertect a. v. 完美的 ，使完美 Person n. 人 前缀（否定）Ab
 Absent a. 缺席 Abnormal a. 反常、异常 abuse v.n. n滥用 ，辱骂，vt虐待 UnIm / in / il /ir 1.表方向：里，内 2.表性质：否
-illegal a.有规则的，有秩序的 irregular a.无规则的，无秩序的 Impossible a. 不可能的 di / dis / dif 1.表方向：散 2.表性质：否display v. n. 展览 disable v. 使不能够，使残疾 mismisunderstand v. 误解 mislead v. 误导 misguide v. 误入歧途 mistreat v.对待，款待，招待 anti = against 反antipoverty n. 扶贫 poor a.   ]]></content></entry><entry><title>单词之间复习方法.</title><url>/post/dregerd/</url><categories><category>英语</category></categories><tags><tag>《单词之间》方法论</tag></tags><content type="html"></content></entry><entry><title>这是一个不让你说真话的</title><url>/post/2532/</url><categories><category>其他</category></categories><tags><tag>谭竹</tag><tag>胖猫</tag></tags><content type="html"></content></entry><entry><title>Hugo next主题博客添加Waline评论系统</title><url>/post/2/</url><categories><category>网络</category></categories><tags><tag>waline评论系统</tag><tag>next主题</tag><tag>Hugo</tag></tags><content type="html"> 博客搭建完成之后，可以添加一个评论系统，方便读者反馈交流。这里选用的是 Waline，因为 Hugo next 主题支持 Waline（同时还支持ivere | utterances | artalk | giscus），所以配置起来也会方便不少。
+illegal a.有规则的，有秩序的 irregular a.无规则的，无秩序的 Impossible a. 不可能的 di / dis / dif 1.表方向：散 2.表性质：否display v. n. 展览 disable v. 使不能够，使残疾 mismisunderstand v. 误解 mislead v. 误导 misguide v. 误入歧途 mistreat v.对待，款待，招待 anti = against 反antipoverty n. 扶贫 poor a.   ]]></content></entry><entry><title>单词之间复习方法.</title><url>/post/dregerd/</url><categories><category>英语</category></categories><tags><tag>《单词之间》方法论</tag></tags><content type="html"></content></entry><entry><title>Hugo next主题博客添加Waline评论系统</title><url>/post/2/</url><categories><category>网络</category></categories><tags><tag>waline评论系统</tag><tag>next主题</tag><tag>Hugo</tag></tags><content type="html"> 博客搭建完成之后，可以添加一个评论系统，方便读者反馈交流。这里选用的是 Waline，因为 Hugo next 主题支持 Waline（同时还支持ivere | utterances | artalk | giscus），所以配置起来也会方便不少。
 LeanCloud 设置(数据库)
 1.
 登录
