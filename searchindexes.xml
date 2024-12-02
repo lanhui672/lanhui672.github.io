@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>文本各种处理工具详解8.3</title><url>/post/linux08/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 文本常见处理工具
-文件内容查看命令
-查看文本文件内容
-cat
-cat 可以查看文本内容
-格式：
-cat [OPTION]... [FILE]... 常见选项
--E：显示行结束符$ -A：显示所有控制符 -n：对显示出的每一行进行编号 -b：非空行编号 -s：压缩连续的空行成一行 nl
-显示行号，相当于cat -b
-[root@centos8 ~]#cat /data/f1.txt a b c d e f g h [root@centos8 ~]#nl /data/f1.txt 1 a 2 b 3 c 4 d 5 e 6 f 7 g 8 h tac
-逆向显示文本内容
-[root@centos8 ~]#cat /data/fa.txt 1 2 3 4 5 [root@centos8 ~]#tac /data/fa.txt 5 4 3 2 1 [root@centos8 ~]#tac a bb ccc 按ctrl+d ccc bb a [root@centos8 ~]#seq 10 | tac 10 9 8 7 6 5 4 3 2 1 rev
-将同一行的内容逆向显示
-[root@centos8 ~]#cat /data/fa.txt 1 2 3 4 5 a b c [root@centos8 ~]#tac /data/fa.txt a b c 1 2 3 4 5 [root@centos8 ~]#rev /data/fa.txt 5 4 3 2 1 c b a [root@centos8 ~]#rev abcdef fedcba [root@centos8 ~]#echo {1..10} |rev 01 9 8 7 6 5 4 3 2 1 查看非文本文件内容
-范例：hexdump
-hexdump -C -n 512 /dev/sda 00000000 eb 63 90 10 8e d0 bc 00 b0 b8 00 00 8e d8 8e c0 |.c..............| echo {a..z} | tr -d &amp;amp;#39; &amp;amp;#39;|hexdump -C 00000000 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 |abcdefghijklmnop| 00000010 71 72 73 74 75 76 …</content></entry><entry><title>文本编译工具VIM详解8.2（文本处理工具）</title><url>/post/linux07/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 命令模式
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>正则表达式和文本处理三剑客之 grep8.3</title><url>/post/linux08/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 正则表达式
+REGEXP： Regular Expressions，由一类特殊字符及文本字符所编写的模式，其中有些字符（元字符） 不表示字符字面意义，而表示控制或通配的功能，类似于增强版的通配符功能，但与通配符不同，通配符功能是用来处理文件名，而正则表达式是处理文本内容中字符。
+正则表达式被很多程序和开发语言所广泛支持：vim, less,grep,sed,awk, nginx,mysql 等
+正则表达式分两类：
+基本正则表达式：BRE Basic Regular Expressions
+扩展正则表达式：ERE Extended Regular Expressions
+正则表达式引擎：
+采用不同算法，检查处理正则表达式的软件模块，如：PCRE（Perl Compatible Regular
+Expressions）
+正则表达式的元字符分类：字符匹配、匹配次数、位置锚定、分组
+帮助：man 7 regex
+基本正则表达式元字符
+字符匹配
+. 匹配任意单个字符(除了\n)，可以是一个汉字或其它国家的文字 [] 匹配指定范围内的任意单个字符，示例：[wang] [0-9] [a-z] [a-zA-Z] [^] 匹配指定范围外的任意单个字符,示例：[^wang] [:alnum:] 字母和数字 [:alpha:] 代表任何英文大小写字符，亦即 A-Z, a-z [:lower:] 小写字母,示例:[[:lower:]],相当于[a-z] [:upper:] 大写字母 [:blank:] 空白字符（空格和制表符） [:space:] 包括空格、制表符(水平和垂直)、换行符、回车符等各种类型的空白,比[:blank:]包含的范围 广 [:cntrl:] 不可打印的控制字符（退格、删除、警铃...） [:digit:] 十进制数字 [:xdigit:]十六进制数字 [:graph:] 可打印的非空白字符 [:print:] 可打印字符 [:punct:] 标点符号 ----------------- \s #匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [\f\r\t\v]。注意 Unicode 正则表达式会匹配全角空格符 \S #匹配任何非空白字符。等价于 [^\f\r\t\v] \w #匹配一个字母,数字,下划线,汉字,其它国家文字的字符，等价 …</content></entry><entry><title>文本编译工具VIM详解8.2（文本处理工具）</title><url>/post/linux07/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 命令模式
 命令模式，又称为Normal模式，功能强大，只是此模式输入指令并在屏幕上显示，所以需要记忆大量 的快捷按键才能更好的使用
 退出VIM
 ZZ 保存退出 ZQ 不保存退出 光标跳转

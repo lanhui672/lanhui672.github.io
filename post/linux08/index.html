@@ -1,671 +1,418 @@
-<!doctype html><html lang=zh-CN data-theme=light><head><meta charset=UTF-8><meta name=viewport content="width=device-width"><meta name=theme-color content="#19b8eb" media="(prefers-color-scheme: light)"><meta name=generator content="Hugo 0.126.1"><link rel="shortcut icon" type=image/x-icon href=/imgs/icons/favicon.ico><link rel=icon type=image/x-icon href=/imgs/icons/favicon.ico><link rel=icon type=image/png sizes=16x16 href=/imgs/icons/favicon_16x16_next.png><link rel=icon type=image/png sizes=32x32 href=/imgs/icons/favicon_32_32_next.png><link rel=apple-touch-icon sizes=180x180 href=/imgs/icons/apple_touch_icon_next.png><meta itemprop=name content="文本各种处理工具详解8.3"><meta itemprop=description content="1208034077#qq.com"><meta itemprop=datePublished zgotmplz><meta itemprop=dateModified zgotmplz><meta itemprop=image content="https://www.lanhui.live/imgs/hugo_next_avatar.png"><meta itemprop=keywords content="linux"><meta property="og:type" content="article"><meta property="og:title" content="文本各种处理工具详解8.3"><meta property="og:description" content="1208034077#qq.com"><meta property="og:image" content="/imgs/hugo_next_avatar.png"><meta property="og:image:width" content="312"><meta property="og:image:height" content="312"><meta property="og:image:type" content="image/jpeg/png/svg/jpg"><meta property="og:url" content="https://www.lanhui.live/post/linux08/"><meta property="og:site_name" content="蓝惠の小窝"><meta property="og:locale" content="zh-CN"><meta property="article:author" content="蓝惠の小窝"><meta property="article:published_time" content="2024-10-28 04:06:00 +0800 CST"><meta property="article:modified_time" content="2024-10-28 04:06:00 +0800 CST"><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/font-awesome/6.1.2/css/all.min.css><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/animate.css/3.1.1/animate.min.css><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/viewerjs/1.11.0/viewer.min.css><link rel=stylesheet href=/css/main.min.89002406547f1cea16a5ae81687e451f88fa6fc9e470d8a2dccb6dbcd0ab6db8.css><script type=text/javascript>(function(){localDB={set:function(e,t,n){if(n===0)return;const s=new Date,o=n*864e5,i={value:t,expiry:s.getTime()+o};localStorage.setItem(e,JSON.stringify(i))},get:function(e){const t=localStorage.getItem(e);if(!t)return void 0;const n=JSON.parse(t),s=new Date;return s.getTime()>n.expiry?(localStorage.removeItem(e),void 0):n.value}},theme={active:function(){const e=localDB.get("theme");if(e==null)return;theme.toggle(e),window.matchMedia("(prefers-color-scheme: dark)").addListener(function(e){theme.toggle(e.matches?"dark":"light")})},toggle:function(e){document.documentElement.setAttribute("data-theme",e),localDB.set("theme",e,2);const t=document.querySelector("iframe.giscus-frame");if(t){const n={setConfig:{theme:e}};t.contentWindow.postMessage({giscus:n},"https://giscus.app")}}},theme.active()})(window)</script><script class=next-config data-name=page type=application/json>{"comments":true,"isHome":false,"isPage":true,"path":"linux08","permalink":"https://www.lanhui.live/post/linux08/","title":"文本各种处理工具详解8.3","waline":{"js":[{"alias":"waline","alias_name":"@waline/client","file":"dist/pageview.js","name":"pageview","version":"2.13.0"},{"alias":"waline","alias_name":"@waline/client","file":"dist/comment.js","name":"comment","version":"2.13.0"}]}}</script><script type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{var e=document.createElement("script");e.charset="UTF-8",e.src="https://hm.baidu.com/hm.js?",e.async="true",document.head.appendChild(e)})</script><script type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{var e=document.createElement("script");e.charset="UTF-8",e.src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js",e.async=!1,e.defer=!0,document.head.appendChild(e),e.onload=function(){NexT.utils.fmtBusuanzi()}})</script><title>文本各种处理工具详解8.3 - 蓝惠の小窝</title><noscript><link rel=stylesheet href=/css/noscript.css></noscript></head><body itemscope itemtype=http://schema.org/WebPage class=use-motion><div class=headband></div><main class=main><header class=header itemscope itemtype=http://schema.org/WPHeader><div class=header-inner><div class=site-brand-container><div class=site-nav-toggle><div class=toggle aria-label role=button><span class=toggle-line></span>
+<!doctype html><html lang=zh-CN data-theme=light><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width"><meta name=theme-color content="#19b8eb" media="(prefers-color-scheme: light)"><meta name=generator content="Hugo 0.126.1"><link rel="shortcut icon" type=image/x-icon href=/imgs/icons/favicon.ico><link rel=icon type=image/x-icon href=/imgs/icons/favicon.ico><link rel=icon type=image/png sizes=16x16 href=/imgs/icons/favicon_16x16_next.png><link rel=icon type=image/png sizes=32x32 href=/imgs/icons/favicon_32_32_next.png><link rel=apple-touch-icon sizes=180x180 href=/imgs/icons/apple_touch_icon_next.png><meta itemprop=name content="正则表达式和文本处理三剑客之 grep8.3"><meta itemprop=description content="1208034077#qq.com"><meta itemprop=datePublished zgotmplz><meta itemprop=dateModified zgotmplz><meta itemprop=image content="http://localhost:1313/imgs/hugo_next_avatar.png"><meta itemprop=keywords content="linux"><meta property="og:type" content="article"><meta property="og:title" content="正则表达式和文本处理三剑客之 grep8.3"><meta property="og:description" content="1208034077#qq.com"><meta property="og:image" content="/imgs/hugo_next_avatar.png"><meta property="og:image:width" content="312"><meta property="og:image:height" content="312"><meta property="og:image:type" content="image/jpeg/png/svg/jpg"><meta property="og:url" content="http://localhost:1313/post/linux08/"><meta property="og:site_name" content="蓝惠の小窝"><meta property="og:locale" content="zh-CN"><meta property="article:author" content="蓝惠の小窝"><meta property="article:published_time" content="2024-11-28 04:06:00 +0800 CST"><meta property="article:modified_time" content="2024-11-28 04:06:00 +0800 CST"><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/font-awesome/6.1.2/css/all.min.css><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/animate.css/3.1.1/animate.min.css><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/viewerjs/1.11.0/viewer.min.css><link rel=stylesheet href=/css/main.css><script type=text/javascript>(function(){localDB={set:function(e,t,n){if(n===0)return;const s=new Date,o=n*864e5,i={value:t,expiry:s.getTime()+o};localStorage.setItem(e,JSON.stringify(i))},get:function(e){const t=localStorage.getItem(e);if(!t)return void 0;const n=JSON.parse(t),s=new Date;return s.getTime()>n.expiry?(localStorage.removeItem(e),void 0):n.value}},theme={active:function(){const e=localDB.get("theme");if(e==null)return;theme.toggle(e),window.matchMedia("(prefers-color-scheme: dark)").addListener(function(e){theme.toggle(e.matches?"dark":"light")})},toggle:function(e){document.documentElement.setAttribute("data-theme",e),localDB.set("theme",e,2);const t=document.querySelector("iframe.giscus-frame");if(t){const n={setConfig:{theme:e}};t.contentWindow.postMessage({giscus:n},"https://giscus.app")}}},theme.active()})(window)</script><script class=next-config data-name=page type=application/json>{"comments":true,"isHome":false,"isPage":true,"path":"linux08","permalink":"http://localhost:1313/post/linux08/","title":"正则表达式和文本处理三剑客之 grep8.3","waline":{"js":[{"alias":"waline","alias_name":"@waline/client","file":"dist/pageview.js","name":"pageview","version":"2.13.0"},{"alias":"waline","alias_name":"@waline/client","file":"dist/comment.js","name":"comment","version":"2.13.0"}]}}</script><script type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{var e=document.createElement("script");e.charset="UTF-8",e.src="https://hm.baidu.com/hm.js?",e.async="true",document.head.appendChild(e)})</script><script type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{var e=document.createElement("script");e.charset="UTF-8",e.src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js",e.async=!1,e.defer=!0,document.head.appendChild(e),e.onload=function(){NexT.utils.fmtBusuanzi()}})</script><title>正则表达式和文本处理三剑客之 grep8.3 - 蓝惠の小窝</title><noscript><link rel=stylesheet href=/css/noscript.css></noscript></head><body itemscope itemtype=http://schema.org/WebPage class=use-motion><div class=headband></div><main class=main><header class=header itemscope itemtype=http://schema.org/WPHeader><div class=header-inner><div class=site-brand-container><div class=site-nav-toggle><div class=toggle aria-label role=button><span class=toggle-line></span>
 <span class=toggle-line></span>
 <span class=toggle-line></span></div></div><div class=site-meta><a href=/ class=brand rel=start><i class=logo-line></i><h1 class=site-title>蓝惠の小窝</h1><i class=logo-line></i></a><p class=site-subtitle itemprop=description>寻找大波斯菊需要的不是金钱，而是一颗去找寻的心♥.</p></div><div class=site-nav-right><div class="toggle popup-trigger"><i class="fa fa-search fa-fw fa-lg"></i></div></div></div><nav class=site-nav><ul class="main-menu menu"><li class="menu-item menu-item-home"><a href=/ class=hvr-icon-pulse rel=section><i class="fa fa-home hvr-icon"></i>首页</a></li><li class="menu-item menu-item-about"><a href=/about.html class=hvr-icon-pulse rel=section><i class="fa fa-user hvr-icon"></i>关于</a></li><li class="menu-item menu-item-flinks"><a href=/flinks.html class=hvr-icon-pulse rel=section><i class="fa fa-thumbs-up hvr-icon"></i>友链</a></li><li class="menu-item menu-item-archives"><a href=/archives/ class=hvr-icon-pulse rel=section><i class="fa fa-archive hvr-icon"></i>归档
 <span class=badge>76</span></a></li><li class="menu-item menu-item-search"><a role=button class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索</a></li></ul></nav><div class=search-pop-overlay><div class="popup search-popup"><div class=search-header><span class=search-icon><i class="fa fa-search"></i></span><div class=search-input-container><input autocomplete=off autocapitalize=off maxlength=80 placeholder=搜索... spellcheck=false type=search class=search-input></div><span class=popup-btn-close role=button><i class="fa fa-times-circle"></i></span></div><div class="search-result-container no-result"><div class=search-result-icon><i class="fa fa-spinner fa-pulse fa-5x"></i></div></div></div></div></div><div class="toggle sidebar-toggle" role=button><span class=toggle-line></span>
 <span class=toggle-line></span>
-<span class=toggle-line></span></div><aside class=sidebar><div class="sidebar-inner sidebar-nav-active sidebar-toc-active"><ul class=sidebar-nav><li class=sidebar-nav-toc>文章目录</li><li class=sidebar-nav-overview>站点概览</li></ul><div class=sidebar-panel-container><div class="post-toc-wrap sidebar-panel"><div class="post-toc animated"><nav id=TableOfContents><ul><li><a href=#文件内容查看命令>文件内容查看命令</a><ul><li><a href=#查看文本文件内容>查看文本文件内容</a><ul><li><a href=#cat>cat</a></li><li><a href=#nl>nl</a></li><li><a href=#tac>tac</a></li><li><a href=#rev>rev</a></li></ul></li><li><a href=#查看非文本文件内容>查看非文本文件内容</a></li></ul></li><li><a href=#分页查看文件内容>分页查看文件内容</a><ul><li><a href=#less>less</a></li></ul></li><li><a href=#显示文本前面或后面的行内容>显示文本前面或后面的行内容</a><ul><li><a href=#head>head</a></li><li><a href=#tail>tail</a></li><li><a href=#head-和-tail-总结>head 和 tail 总结</a></li></ul></li><li><a href=#按列抽取文本-cut>按列抽取文本 cut</a></li><li><a href=#合并多个文件-paste>合并多个文件 paste</a></li><li><a href=#分析文本的工具>分析文本的工具</a><ul><li><a href=#收集文本统计数据-wc-word-count>收集文本统计数据 wc (word count)</a></li><li><a href=#文本排序-sort>文本排序 sort</a></li><li><a href=#去重-uniq>去重 uniq</a></li><li><a href=#比较文件>比较文件</a><ul><li><a href=#diff>diff</a></li><li><a href=#patch>patch</a></li><li><a href=#vimdiff>vimdiff</a></li><li><a href=#cmp>cmp</a></li></ul></li></ul></li></ul></nav></div></div><div class="site-overview-wrap sidebar-panel"><div class="site-author site-overview-item animated" itemprop=author itemscope itemtype=http://schema.org/Person><img class=site-author-image itemprop=image alt=蓝惠の小窝 src=/imgs/img-lazy-loading.gif data-src=/imgs/hugo_next_avatar.png><p class=site-author-name itemprop=name>蓝惠の小窝</p><div class=site-description itemprop=description>1208034077#qq.com</div></div><div class="site-state-wrap site-overview-item animated"><nav class=site-state><div class="site-state-item site-state-posts"><a href=/archives/><span class=site-state-item-count>76</span>
+<span class=toggle-line></span></div><aside class=sidebar><div class="sidebar-inner sidebar-nav-active sidebar-toc-active"><ul class=sidebar-nav><li class=sidebar-nav-toc>文章目录</li><li class=sidebar-nav-overview>站点概览</li></ul><div class=sidebar-panel-container><div class="post-toc-wrap sidebar-panel"><div class="post-toc animated"><nav id=TableOfContents><ul><li><a href=#基本正则表达式元字符>基本正则表达式元字符</a><ul><li><a href=#字符匹配>字符匹配</a></li><li><a href=#匹配次数>匹配次数</a></li><li><a href=#位置锚定>位置锚定</a></li><li><a href=#分组其它>分组其它</a><ul><li><a href=#分组>分组</a></li><li><a href=#或者>或者</a></li></ul></li><li><a href=#正则表达式练习>正则表达式练习</a></li></ul></li><li><a href=#扩展正则表达式元字符>扩展正则表达式元字符</a><ul><li><a href=#字符匹配-1>字符匹配</a></li><li><a href=#次数匹配>次数匹配</a></li><li><a href=#位置锚定-1>位置锚定</a></li><li><a href=#分组其它-1>分组其它</a></li><li><a href=#扩展正则表达式练习>扩展正则表达式练习</a></li></ul></li></ul><ul><li><a href=#文本处理三剑客之-grep>文本处理三剑客之 grep</a></li><li><a href=#文本处理三剑客之-sed><a href><strong>文本处理三剑客之 sed</strong></a></a></li><li><a href=#文本处理三剑客之-awk><a href><strong>文本处理三剑客之 awk</strong></a></a></li></ul></nav></div></div><div class="site-overview-wrap sidebar-panel"><div class="site-author site-overview-item animated" itemprop=author itemscope itemtype=http://schema.org/Person><img class=site-author-image itemprop=image alt=蓝惠の小窝 src=/imgs/img-lazy-loading.gif data-src=/imgs/hugo_next_avatar.png><p class=site-author-name itemprop=name>蓝惠の小窝</p><div class=site-description itemprop=description>1208034077#qq.com</div></div><div class="site-state-wrap site-overview-item animated"><nav class=site-state><div class="site-state-item site-state-posts"><a href=/archives/><span class=site-state-item-count>76</span>
 <span class=site-state-item-name>日志</span></a></div><div class="site-state-item site-state-categories"><a href=/categories/><span class=site-state-item-count>7</span>
 <span class=site-state-item-name>分类</span></a></div><div class="site-state-item site-state-tags"><a href=/tags/><span class=site-state-item-count>51</span>
 <span class=site-state-item-name>标签</span></a></div></nav></div><div class="links-of-social site-overview-item animated"><span class=links-of-social-item><a href=https://github.com/lanhui672 title="Github → https://github.com/lanhui672" rel=noopener class=hvr-icon-pulse target=_blank><i class="fab fa-github fa-fw hvr-icon"></i>
 Github</a></span></div><div class="links-of-blogroll site-overview-item animated"><div class=links-of-blogroll-title></div><ul class=links-of-blogroll-list><li class=links-of-blogroll-item><a href=http://lanhui.live title=http://lanhui.live target=_blank>短域密语</a></li><li class=links-of-blogroll-item><a href=http://lan-hui.com title=http://lan-hui.com target=_blank>引导页</a></li></ul></div></div></div></div><div id=siteinfo-card-widget class=sidebar-card-widget><div class=item-headline><i class="fas fa-chart-line"></i>
-<span>网站资讯</span></div><div class=siteinfo><div class=siteinfo-item><div class=item-name><i class="fa-solid fa-calendar-check"></i>已运行：</div><div class=item-count id=runTimes data-publishdate=0001-01-01T00:00:00+00:00></div></div><div class=siteinfo-item><div class=item-name><i class="fas fa fa-user"></i>总访客数：</div><div class=item-count id=busuanzi_value_site_uv><i class="fa fa-sync fa-spin"></i></div></div><div class=siteinfo-item><div class=item-name><i class="fas fa fa-eye"></i>页面浏览：</div><div class=item-count id=busuanzi_value_site_pv><i class="fa fa-sync fa-spin"></i></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-font"></i>总字数：</div><div class=item-count id=wordsCount data-count=80294></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-mug-hot"></i>阅读约：</div><div class=item-count id=readTimes data-times=205></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-clock-rotate-left"></i>最后更新于：</div><div class=item-count id=last-push-date data-lastpushdate=2024-10-28T04:06:00+08:00></div></div></div></div></aside><div class=sidebar-dimmer></div></header><div class=tool-buttons><div id=goto-comments class="button goto-comments" title=直达评论><i class="fas fa-comments"></i></div><div id=goto-gtranslate class=button title=多语言翻译><i class="fas fa-globe"></i></div><div id=toggle-theme class=button title=深浅模式切换><i class="fas fa-adjust"></i></div><div class=back-to-top role=button title=返回顶部><i class="fa fa-arrow-up"></i>
+<span>网站资讯</span></div><div class=siteinfo><div class=siteinfo-item><div class=item-name><i class="fa-solid fa-calendar-check"></i>已运行：</div><div class=item-count id=runTimes data-publishdate=0001-01-01T00:00:00+00:00></div></div><div class=siteinfo-item><div class=item-name><i class="fas fa fa-user"></i>总访客数：</div><div class=item-count id=busuanzi_value_site_uv><i class="fa fa-sync fa-spin"></i></div></div><div class=siteinfo-item><div class=item-name><i class="fas fa fa-eye"></i>页面浏览：</div><div class=item-count id=busuanzi_value_site_pv><i class="fa fa-sync fa-spin"></i></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-font"></i>总字数：</div><div class=item-count id=wordsCount data-count=80996></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-mug-hot"></i>阅读约：</div><div class=item-count id=readTimes data-times=207></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-clock-rotate-left"></i>最后更新于：</div><div class=item-count id=last-push-date data-lastpushdate=2024-11-28T04:06:00+08:00></div></div></div></div></aside><div class=sidebar-dimmer></div></header><div class=tool-buttons><div id=goto-comments class="button goto-comments" title=直达评论><i class="fas fa-comments"></i></div><div id=goto-gtranslate class=button title=多语言翻译><i class="fas fa-globe"></i></div><div id=toggle-theme class=button title=深浅模式切换><i class="fas fa-adjust"></i></div><div class=back-to-top role=button title=返回顶部><i class="fa fa-arrow-up"></i>
 <span>0%</span></div></div><div class=reading-progress-bar></div><a role=button class="book-mark-link book-mark-link-fixed"></a><a href=https://github.com/lanhui672/lanhui672.github.io/wiki rel="noopener external nofollow noreferrer" target=_blank title="Follow me on GitHub" class="exturl github-corner"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0 0 115 115h15l12 27L250 250V0z"/><path d="M128.3 109C113.8 99.7 119 89.6 119 89.6 122 82.7 120.5 78.6 120.5 78.6 119.2 72 123.4 76.3 123.4 76.3 127.3 80.9 125.5 87.3 125.5 87.3 122.9 97.6 130.6 101.9 134.4 103.2" fill="currentcolor" style="transform-origin:130px 106px" class="octo-arm"/><path d="M115 115C114.9 115.1 118.7 116.5 119.8 115.4l13.9-13.8C136.9 99.2 139.9 98.4 142.2 98.6 133.8 88 127.5 74.4 143.8 58 148.5 53.4 154 51.2 159.7 51 160.3 49.4 163.2 43.6 171.4 40.1 171.4 40.1 176.1 42.5 178.8 56.2 183.1 58.6 187.2 61.8 190.9 65.4 194.5 69 197.7 73.2 200.1 77.6 213.8 80.2 216.3 84.9 216.3 84.9 212.7 93.1 206.9 96 205.4 96.6 205.1 102.4 203 107.8 198.3 112.5 181.9 128.9 168.3 122.5 157.7 114.1 157.9 116.9 156.7 120.9 152.7 124.9L141 136.5C139.8 137.7 141.6 141.9 141.8 141.8z" fill="currentcolor" class="octo-body"/></svg>
-</a><script type=text/javascript src=//sidecar.gitter.im/dist/sidecar.v1.js async></script><script type=text/javascript>((window.gitter={}).chat={}).options={room:"hugo-next/community"}</script><noscript><div class=noscript-warning>Theme NexT works best with JavaScript enabled</div></noscript><div class="main-inner post posts-expand"><div class=post-block><article itemscope itemtype=http://schema.org/Article class=post-content lang><link itemprop=mainEntityOfPage href=https://www.lanhui.live/post/linux08/><span hidden itemprop=author itemscope itemtype=http://schema.org/Person><meta itemprop=image content="/imgs/hugo_next_avatar.png"><meta itemprop=name content="蓝惠の小窝"></span><span hidden itemprop=publisher itemscope itemtype=http://schema.org/Organization><meta itemprop=name content="蓝惠の小窝"><meta itemprop=description content="1208034077#qq.com"></span><span hidden itemprop=post itemscope itemtype=http://schema.org/CreativeWork><meta itemprop=name content="文本各种处理工具详解8.3"><meta itemprop=description content="文本常见处理工具 文件内容查看命令 查看文本文件内容 cat cat 可以查看文本内容 格式： cat [OPTION]... [FILE]... 常见选项 -E：显示行结束符$ -A：显示所有控制符 -n：对显示"></span><header class=post-header><h1 class=post-title itemprop="name headline">文本各种处理工具详解8.3</h1><div class=post-meta-container><div class=post-meta-items><span class=post-meta-item><span class=post-meta-item-icon><i class="far fa-calendar"></i>
+</a><script type=text/javascript src=//sidecar.gitter.im/dist/sidecar.v1.js async></script><script type=text/javascript>((window.gitter={}).chat={}).options={room:"hugo-next/community"}</script><noscript><div class=noscript-warning>Theme NexT works best with JavaScript enabled</div></noscript><div class="main-inner post posts-expand"><div class=post-block><article itemscope itemtype=http://schema.org/Article class=post-content lang><link itemprop=mainEntityOfPage href=http://localhost:1313/post/linux08/><span hidden itemprop=author itemscope itemtype=http://schema.org/Person><meta itemprop=image content="/imgs/hugo_next_avatar.png"><meta itemprop=name content="蓝惠の小窝"></span><span hidden itemprop=publisher itemscope itemtype=http://schema.org/Organization><meta itemprop=name content="蓝惠の小窝"><meta itemprop=description content="1208034077#qq.com"></span><span hidden itemprop=post itemscope itemtype=http://schema.org/CreativeWork><meta itemprop=name content="正则表达式和文本处理三剑客之 grep8.3"><meta itemprop=description content="正则表达式 REGEXP： Regular Expressions，由一类特殊字符及文本字符所编写的模式，其中有些字符（元字符） 不表示字符字面意义，而表示控制"></span><header class=post-header><h1 class=post-title itemprop="name headline">正则表达式和文本处理三剑客之 grep8.3</h1><div class=post-meta-container><div class=post-meta-items><span class=post-meta-item><span class=post-meta-item-icon><i class="far fa-calendar"></i>
 </span><span class=post-meta-item-text title=发表于>发表于：
-</span><time title="创建时间：2024-10-28 04:06:00 +0800 CST" itemprop="dateCreated datePublished" datetime="2024-10-28 04:06:00 +0800 CST">2024-10-28
+</span><time title="创建时间：2024-11-28 04:06:00 +0800 CST" itemprop="dateCreated datePublished" datetime="2024-11-28 04:06:00 +0800 CST">2024-11-28
 </time></span><span class=post-meta-item><span class=post-meta-item-icon><i class="far fa-folder-open"></i>
 </span><span class=post-meta-item-text title=分类于>分类于：
-</span><span itemprop=about itemscope itemtype=http://schema.org/Thing><a href=/categories/linux itemprop=url rel=index><span itemprop=name>linux</span></a></span></span></div><div class=post-meta-items></div></div><meta name=baidu-site-verification content="codeva-CvrLlzui8a"><script>var _hmt=_hmt||[];(function(){var e,t=document.createElement("script");t.src="https://hm.baidu.com/hm.js?289d43bfba112a047eccf686e7551557",e=document.getElementsByTagName("script")[0],e.parentNode.insertBefore(t,e)})()</script></header><div class="post-body autonumber" itemprop=articleBody><h1 id=文本常见处理工具>文本常见处理工具
-<a class=header-anchor href=#%e6%96%87%e6%9c%ac%e5%b8%b8%e8%a7%81%e5%a4%84%e7%90%86%e5%b7%a5%e5%85%b7></a></h1><h2 id=文件内容查看命令>文件内容查看命令
-<a class=header-anchor href=#%e6%96%87%e4%bb%b6%e5%86%85%e5%ae%b9%e6%9f%a5%e7%9c%8b%e5%91%bd%e4%bb%a4></a></h2><h3 id=查看文本文件内容>查看文本文件内容
-<a class=header-anchor href=#%e6%9f%a5%e7%9c%8b%e6%96%87%e6%9c%ac%e6%96%87%e4%bb%b6%e5%86%85%e5%ae%b9></a></h3><h4 id=cat>cat
-<a class=header-anchor href=#cat></a></h4><p>cat 可以查看文本内容<br>格式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>cat [OPTION]... [FILE]...
-</span></span></code></pre></div><p>常见选项</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>-E：显示行结束符$
-</span></span><span style=display:flex><span>-A：显示所有控制符
-</span></span><span style=display:flex><span>-n：对显示出的每一行进行编号
-</span></span><span style=display:flex><span>-b：非空行编号
-</span></span><span style=display:flex><span>-s：压缩连续的空行成一行
-</span></span></code></pre></div><h4 id=nl>nl
-<a class=header-anchor href=#nl></a></h4><p>显示行号，相当于cat -b</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#cat /data/f1.txt
+</span><span itemprop=about itemscope itemtype=http://schema.org/Thing><a href=/categories/linux itemprop=url rel=index><span itemprop=name>linux</span></a></span></span></div><div class=post-meta-items></div></div><meta name=baidu-site-verification content="codeva-CvrLlzui8a"><script>var _hmt=_hmt||[];(function(){var e,t=document.createElement("script");t.src="https://hm.baidu.com/hm.js?289d43bfba112a047eccf686e7551557",e=document.getElementsByTagName("script")[0],e.parentNode.insertBefore(t,e)})()</script></header><div class="post-body autonumber" itemprop=articleBody><h1 id=正则表达式>正则表达式
+<a class=header-anchor href=#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f></a></h1><p>REGEXP： Regular Expressions，由一类特殊字符及文本字符所编写的模式，其中有些字符（元字符）
+不表示字符字面意义，而表示控制或通配的功能，类似于增强版的通配符功能，但与通配符不同，通配符功能是用来处理文件名，而正则表达式是处理文本内容中字符。<br>正则表达式被很多程序和开发语言所广泛支持：vim, less,grep,sed,awk, nginx,mysql 等<br>正则表达式分两类：<br>基本正则表达式：BRE Basic Regular Expressions<br>扩展正则表达式：ERE Extended Regular Expressions<br>正则表达式引擎：<br>采用不同算法，检查处理正则表达式的软件模块，如：PCRE（Perl Compatible Regular<br>Expressions）<br>正则表达式的元字符分类：字符匹配、匹配次数、位置锚定、分组<br>帮助：man 7 regex</p><h2 id=基本正则表达式元字符>基本正则表达式元字符
+<a class=header-anchor href=#%e5%9f%ba%e6%9c%ac%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f%e5%85%83%e5%ad%97%e7%ac%a6></a></h2><h3 id=字符匹配>字符匹配
+<a class=header-anchor href=#%e5%ad%97%e7%ac%a6%e5%8c%b9%e9%85%8d></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>. 匹配任意单个字符(除了\n)，可以是一个汉字或其它国家的文字
+</span></span><span style=display:flex><span>[] 匹配指定范围内的任意单个字符，示例：[wang] [0-9] [a-z] [a-zA-Z]
+</span></span><span style=display:flex><span>[^] 匹配指定范围外的任意单个字符,示例：[^wang]
+</span></span><span style=display:flex><span>[:alnum:] 字母和数字
+</span></span><span style=display:flex><span>[:alpha:] 代表任何英文大小写字符，亦即 A-Z, a-z
+</span></span><span style=display:flex><span>[:lower:] 小写字母,示例:[[:lower:]],相当于[a-z]
+</span></span><span style=display:flex><span>[:upper:] 大写字母
+</span></span><span style=display:flex><span>[:blank:] 空白字符（空格和制表符）
+</span></span><span style=display:flex><span>[:space:] 包括空格、制表符(水平和垂直)、换行符、回车符等各种类型的空白,比[:blank:]包含的范围
+</span></span><span style=display:flex><span>广
+</span></span><span style=display:flex><span>[:cntrl:] 不可打印的控制字符（退格、删除、警铃...）
+</span></span><span style=display:flex><span>[:digit:] 十进制数字
+</span></span><span style=display:flex><span>[:xdigit:]十六进制数字
+</span></span><span style=display:flex><span>[:graph:] 可打印的非空白字符
+</span></span><span style=display:flex><span>[:print:] 可打印字符
+</span></span><span style=display:flex><span>[:punct:] 标点符号
+</span></span><span style=display:flex><span>-----------------
+</span></span><span style=display:flex><span>\s #匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [\f\r\t\v]。注意 Unicode
+</span></span><span style=display:flex><span>正则表达式会匹配全角空格符
+</span></span><span style=display:flex><span>\S #匹配任何非空白字符。等价于 [^\f\r\t\v]
+</span></span><span style=display:flex><span>\w #匹配一个字母,数字,下划线,汉字,其它国家文字的字符，等价于[_[:alnum:]字]
+</span></span><span style=display:flex><span>\W #匹配一个非字母,数字,下划线,汉字,其它国家文字的字符，等价于[^_[:alnum:]字]
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#ls /etc/ | grep &#39;rc[.0-6]&#39;
+</span></span><span style=display:flex><span>rc0.d
+</span></span><span style=display:flex><span>rc1.d
+</span></span><span style=display:flex><span>rc2.d
+</span></span><span style=display:flex><span>rc3.d
+</span></span><span style=display:flex><span>rc4.d
+</span></span><span style=display:flex><span>rc5.d
+</span></span><span style=display:flex><span>rc6.d
+</span></span><span style=display:flex><span>rc.d
+</span></span><span style=display:flex><span>rc.local
+</span></span><span style=display:flex><span>[root@centos8 ~]#ls /etc/ | grep &#39;rc[.0-6].&#39;
+</span></span><span style=display:flex><span>rc0.d
+</span></span><span style=display:flex><span>rc1.d
+</span></span><span style=display:flex><span>rc2.d
+</span></span><span style=display:flex><span>rc3.d
+</span></span><span style=display:flex><span>rc4.d
+</span></span><span style=display:flex><span>rc5.d
+</span></span><span style=display:flex><span>rc6.d
+</span></span><span style=display:flex><span>rc.d
+</span></span><span style=display:flex><span>rc.local
+</span></span><span style=display:flex><span>[root@centos8 ~]#ls /etc/ | grep &#39;rc[.0-6]\.&#39;
+</span></span><span style=display:flex><span>rc0.d
+</span></span><span style=display:flex><span>rc1.d
+</span></span><span style=display:flex><span>rc2.d
+</span></span><span style=display:flex><span>rc3.d
+</span></span><span style=display:flex><span>rc4.d
+</span></span><span style=display:flex><span>rc5.d
+</span></span><span style=display:flex><span>rc6.d
+</span></span></code></pre></div><h3 id=匹配次数>匹配次数
+<a class=header-anchor href=#%e5%8c%b9%e9%85%8d%e6%ac%a1%e6%95%b0></a></h3><p>用在要指定次数的字符后面，用于指定前面的字符要出现的次数</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>* #匹配前面的字符任意次，包括0次，贪婪模式：尽可能长的匹配
+</span></span><span style=display:flex><span>.* #任意长度的任意字符
+</span></span><span style=display:flex><span>\? #匹配其前面的字符出现0次或1次,即:可有可无
+</span></span><span style=display:flex><span>\+ #匹配其前面的字符出现最少1次,即:肯定有且 &gt;=1 次
+</span></span><span style=display:flex><span>\{n\} #匹配前面的字符n次
+</span></span><span style=display:flex><span>\{m,n\} #匹配前面的字符至少m次，至多n次
+</span></span><span style=display:flex><span>\{,n\} #匹配前面的字符至多n次,&lt;=n
+</span></span><span style=display:flex><span>\{n,\} #匹配前面的字符至少n次
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#cat test.txt
+</span></span><span style=display:flex><span>google
+</span></span><span style=display:flex><span>goooooooooooooooooogle
+</span></span><span style=display:flex><span>ggle
+</span></span><span style=display:flex><span>gogle
+</span></span><span style=display:flex><span>gooooOOOOO00000gle
+</span></span><span style=display:flex><span>gooogle
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep &#39;go\{2,\}gle&#39; test.txt
+</span></span><span style=display:flex><span>google
+</span></span><span style=display:flex><span>goooooooooooooooooogle
+</span></span><span style=display:flex><span>gooogle
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep &#39;goo\+gle&#39; test.txt
+</span></span><span style=display:flex><span>google
+</span></span><span style=display:flex><span>goooooooooooooooooogle
+</span></span><span style=display:flex><span>gooogle
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep &#39;goo*gle&#39; test.txt
+</span></span><span style=display:flex><span>google
+</span></span><span style=display:flex><span>goooooooooooooooooogle
+</span></span><span style=display:flex><span>gogle
+</span></span><span style=display:flex><span>gooogle
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep &#39;gooo*gle&#39; test.txt
+</span></span><span style=display:flex><span>google
+</span></span><span style=display:flex><span>goooooooooooooooooogle
+</span></span><span style=display:flex><span>gooogle
+</span></span></code></pre></div><p>范例: 匹配正负数</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#echo -1 -2 123 -123 234 |grep &#39;-\?[0-9]\+&#39;
+</span></span><span style=display:flex><span>grep: invalid option -- &#39;\&#39;
+</span></span><span style=display:flex><span>Usage: grep [OPTION]... PATTERN [FILE]...
+</span></span><span style=display:flex><span>Try &#39;grep --help&#39; for more information.
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo -1 -2 123 -123 234 |grep &#39;\-\?[0-9]\+&#39;
+</span></span><span style=display:flex><span>-1 -2 123 -123 234
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo -1 -2 123 -123 234 |grep -E &#39;-?[0-9]+&#39;
+</span></span><span style=display:flex><span>grep: invalid option -- &#39;?&#39;
+</span></span><span style=display:flex><span>Usage: grep [OPTION]... PATTERN [FILE]...
+</span></span><span style=display:flex><span>Try &#39;grep --help&#39; for more information.
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo -1 -2 123 -123 234 |grep -E &#39;\-?[0-9]+&#39;
+</span></span><span style=display:flex><span>-1 -2 123 -123 234
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo -1 -2 123 -123 234 |grep -E -- &#39;-?[0-9]+&#39;
+</span></span><span style=display:flex><span>-1 -2 123 -123 234
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo -1 -2 123 -123 234 |grep -E &#39;(-)?[0-9]+&#39;
+</span></span><span style=display:flex><span>-1 -2 123 -123 234
+</span></span></code></pre></div><p>范例: 取IP地址</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@rocky9 ~]# ifconfig ens160
+</span></span><span style=display:flex><span>ens160: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
+</span></span><span style=display:flex><span>        inet 10.0.0.131  netmask 255.255.255.0  broadcast 10.0.0.255
+</span></span><span style=display:flex><span>        inet6 fe80::20c:29ff:fe0f:3d9d  prefixlen 64  scopeid 0x20&lt;link&gt;
+</span></span><span style=display:flex><span>        ether 00:0c:29:0f:3d:9d  txqueuelen 1000  (Ethernet)
+</span></span><span style=display:flex><span>        RX packets 1770  bytes 158243 (154.5 KiB)
+</span></span><span style=display:flex><span>        RX errors 0  dropped 0  overruns 0  frame 0
+</span></span><span style=display:flex><span>        TX packets 2849  bytes 335686 (327.8 KiB)
+</span></span><span style=display:flex><span>        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+</span></span></code></pre></div><h3 id=位置锚定>位置锚定
+<a class=header-anchor href=#%e4%bd%8d%e7%bd%ae%e9%94%9a%e5%ae%9a></a></h3><p>位置锚定可以用于定位出现的位置</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>^ #行首锚定, 用于模式的最左侧
+</span></span><span style=display:flex><span>$ #行尾锚定，用于模式的最右侧
+</span></span><span style=display:flex><span>^PATTERN$ #用于模式匹配整行
+</span></span><span style=display:flex><span>^$ #空行
+</span></span><span style=display:flex><span>^[[:space:]]*$ #空白行
+</span></span><span style=display:flex><span>\&lt; 或 \b #词首锚定，用于单词模式的左侧
+</span></span><span style=display:flex><span>\&gt; 或 \b #词尾锚定，用于单词模式的右侧
+</span></span><span style=display:flex><span>\&lt;PATTERN\&gt; #匹配整个单词
+</span></span><span style=display:flex><span>#注意: 单词是由字母,数字,下划线组成
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#grep &#39;^[^#]&#39; /etc/fstab
+</span></span><span style=display:flex><span>UUID=acf9bd1f-caae-4e28-87be-e53afec61347 / xfs
+</span></span><span style=display:flex><span>defaults 0 0
+</span></span><span style=display:flex><span>UUID=1770b87e-db5a-445e-bff1-1653ac64b3d6 /boot ext4
+</span></span><span style=display:flex><span>defaults 1 2
+</span></span><span style=display:flex><span>UUID=ffffd919-d674-44d9-a4e7-402874f0a1f0 /data xfs
+</span></span><span style=display:flex><span>defaults 0 0
+</span></span><span style=display:flex><span>UUID=409e36d2-ac5e-423f-ad78-9b12db4576bd swap swap
+</span></span><span style=display:flex><span>defaults 0 0
+</span></span></code></pre></div><p>范例：排除掉空行和#开头的行</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#grep -v &#39;^$&#39; /etc/profile|grep -v &#39;^#&#39;
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep &#39;^[^#]&#39; /etc/profile
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep -v &#39;^$\|#&#39; /etc/profile
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@rocky9 etc]# echo root | grep &#39;\&lt;root&#39;
+</span></span><span style=display:flex><span>root
+</span></span><span style=display:flex><span>[root@rocky9 etc]# echo rooter | grep &#39;\&lt;root&#39;
+</span></span><span style=display:flex><span>rooter
+</span></span><span style=display:flex><span>[root@rocky9 etc]# echo -rooter | grep &#39;\&lt;root&#39;
+</span></span><span style=display:flex><span>-rooter
+</span></span><span style=display:flex><span>[root@rocky9 etc]# echo aaaroot | grep &#39;root\&gt;&#39;
+</span></span><span style=display:flex><span>aaaroot
+</span></span><span style=display:flex><span>[root@rocky9 etc]# echo -root: | grep &#39;\root\&gt;&#39;
+</span></span><span style=display:flex><span>-root:
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@rocky9 etc]# df |grep &#39;^/dev&#39; |grep -o &#39; *[0-9]\{1,3\}%&#39;
+</span></span><span style=display:flex><span>   3%
+</span></span><span style=display:flex><span>  32%
+</span></span><span style=display:flex><span>   1%
+</span></span></code></pre></div><h3 id=分组其它>分组其它
+<a class=header-anchor href=#%e5%88%86%e7%bb%84%e5%85%b6%e5%ae%83></a></h3><h4 id=分组>分组
+<a class=header-anchor href=#%e5%88%86%e7%bb%84></a></h4><p>分组：() 将多个字符捆绑在一起，当作一个整体处理，如：(root)+
+后向引用：分组括号中的模式匹配到的内容会被正则表达式引擎记录于内部的变量中，这些变量的命名
+方式为: \1, \2, \3, &mldr;
+\1 表示从左侧起第一个左括号以及与之匹配右括号之间的模式所匹配到的字符
+注意: \0 表示正则表达式匹配的所有字符
+示例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@rocky9 etc]# echo ooo | grep &#39;o\{3\}&#39;
+</span></span><span style=display:flex><span>ooo
+</span></span><span style=display:flex><span>[root@rocky9 etc]# echo oooo | grep &#39;o\{3\}&#39;
+</span></span><span style=display:flex><span>oooo
+</span></span><span style=display:flex><span>[root@rocky9 etc]# echo abcabcabc | grep &#39;abc\{3\}&#39;
+</span></span><span style=display:flex><span>[root@rocky9 etc]# echo abcabcabccc | grep &#39;abc\{3\}&#39;
+</span></span><span style=display:flex><span>abcabcabccc
+</span></span><span style=display:flex><span>[root@rocky9 etc]# echo abcabcabc | grep &#39;\(abc\)\{3\}&#39;
+</span></span><span style=display:flex><span>abcabcabc
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>\(string1\(string2\)\)
+</span></span><span style=display:flex><span>\1 ：string1\(string2\)
+</span></span><span style=display:flex><span>\2 ：string2
+</span></span></code></pre></div><p>注意： &lsquo;后向引用&rsquo; <strong>引用前面的分组括号中的模式所匹配字符</strong>，而非模式本身.s</p><h4 id=或者>或者
+<a class=header-anchor href=#%e6%88%96%e8%80%85></a></h4><p>或者：|<br>示例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>a\|b #a或b
+</span></span><span style=display:flex><span>C\|cat #C或cat
+</span></span><span style=display:flex><span>\(C\|c\)at #Cat或cat
+</span></span></code></pre></div><p>范例：排除空行和#开头的行</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos6 ~]#grep -v &#39;^#&#39; /etc/httpd/conf/httpd.conf |grep -v ^$
+</span></span><span style=display:flex><span>[root@centos6 ~]#grep -v &#39;^#\|^$&#39; /etc/httpd/conf/httpd.conf
+</span></span><span style=display:flex><span>[root@centos6 ~]#grep -v &#39;^\(#\|$\)&#39; /etc/httpd/conf/httpd.conf
+</span></span><span style=display:flex><span>[root@centos6 ~]#grep &#34;^[^#]&#34; /etc/httpd/conf/httpd.conf
+</span></span></code></pre></div><h3 id=正则表达式练习>正则表达式练习
+<a class=header-anchor href=#%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f%e7%bb%83%e4%b9%a0></a></h3><p>1、显示/proc/meminfo文件中以大小s开头的行(要求：使用两种方法)
+2、显示/etc/passwd文件中不以/bin/bash结尾的行
+3、显示用户rpc默认的shell程序
+4、找出/etc/passwd中的两位或三位数
+5、显示CentOS7的/etc/grub2.cfg文件中，至少以一个空白字符开头的且后面有非空白字符的行
+6、找出“netstat -tan”命令结果中以LISTEN后跟任意多个空白字符结尾的行
+7、显示CentOS7上所有UID小于1000以内的用户名和UID
+8、添加用户bash、testbash、basher、sh、nologin(其shell为/sbin/nologin),找出/etc/passwd用户
+名和shell同名的行
+9、利用df和grep，取出磁盘各分区利用率，并从大到小排序</p><h2 id=扩展正则表达式元字符>扩展正则表达式元字符
+<a class=header-anchor href=#%e6%89%a9%e5%b1%95%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f%e5%85%83%e5%ad%97%e7%ac%a6></a></h2><h3 id=字符匹配-1>字符匹配
+<a class=header-anchor href=#%e5%ad%97%e7%ac%a6%e5%8c%b9%e9%85%8d-1></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>. 任意单个字符
+</span></span><span style=display:flex><span>[wang] 指定范围的字符
+</span></span><span style=display:flex><span>[^wang] 不在指定范围的字符
+</span></span><span style=display:flex><span>[:alnum:] 字母和数字
+</span></span><span style=display:flex><span>[:alpha:] 代表任何英文大小写字符，亦即 A-Z, a-z
+</span></span><span style=display:flex><span>[:lower:] 小写字母,示例:[[:lower:]],相当于[a-z]
+</span></span><span style=display:flex><span>[:upper:] 大写字母
+</span></span><span style=display:flex><span>[:blank:] 空白字符（空格和制表符）
+</span></span><span style=display:flex><span>[:space:] 水平和垂直的空白字符（比[:blank:]包含的范围广）
+</span></span><span style=display:flex><span>[:cntrl:] 不可打印的控制字符（退格、删除、警铃...）
+</span></span><span style=display:flex><span>[:digit:] 十进制数字
+</span></span><span style=display:flex><span>[:xdigit:]十六进制数字
+</span></span><span style=display:flex><span>[:graph:] 可打印的非空白字符
+</span></span><span style=display:flex><span>[:print:] 可打印字符
+</span></span><span style=display:flex><span>[:punct:] 标点符号
+</span></span></code></pre></div><h3 id=次数匹配>次数匹配
+<a class=header-anchor href=#%e6%ac%a1%e6%95%b0%e5%8c%b9%e9%85%8d></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>* 匹配前面字符任意次
+</span></span><span style=display:flex><span>? 0或1次
+</span></span><span style=display:flex><span>+ 1次或多次
+</span></span><span style=display:flex><span>{n} 匹配n次
+</span></span><span style=display:flex><span>{m,n} 至少m，至多n次
+</span></span></code></pre></div><h3 id=位置锚定-1>位置锚定
+<a class=header-anchor href=#%e4%bd%8d%e7%bd%ae%e9%94%9a%e5%ae%9a-1></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>^ 行首
+</span></span><span style=display:flex><span>$ 行尾
+</span></span><span style=display:flex><span>\&lt;, \b 语首
+</span></span><span style=display:flex><span>\&gt;, \b 语尾
+</span></span></code></pre></div><h3 id=分组其它-1>分组其它
+<a class=header-anchor href=#%e5%88%86%e7%bb%84%e5%85%b6%e5%ae%83-1></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>() 分组
+</span></span><span style=display:flex><span>后向引用：\1, \2, ... 注意: \0 表示正则表达式匹配的所有字符
+</span></span><span style=display:flex><span>| 或者
+</span></span><span style=display:flex><span>a|b #a或b
+</span></span><span style=display:flex><span>C|cat #C或cat
+</span></span><span style=display:flex><span>(C|c)at #Cat或cat
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#ifconfig | grep -Ewo &#34;(([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-
+</span></span><span style=display:flex><span>5])\.){3}([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])&#34;|head -n1
+</span></span><span style=display:flex><span>10.0.0.8
+</span></span></code></pre></div><h3 id=扩展正则表达式练习>扩展正则表达式练习
+<a class=header-anchor href=#%e6%89%a9%e5%b1%95%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f%e7%bb%83%e4%b9%a0></a></h3><p>1、显示三个用户root、mage、wang的UID和默认shell
+2、找出/etc/rc.d/init.d/functions文件中行首为某单词(包括下划线)后面跟一个小括号的行
+3、使用egrep取出/etc/rc.d/init.d/functions中其基名
+4、使用egrep取出上面路径的目录名
+5、统计last命令中以root登录的每个主机IP地址登录次数
+6、利用扩展正则表达式分别表示0-9、10-99、100-199、200-249、250-255
+7、显示ifconfig命令结果中所有IPv4地址
+8、将此字符串：welcome to magedu linux 中的每个字符去重并排序，重复次数多的排到前面</p><h1 id=文本处理三剑客>文本处理三剑客
+<a class=header-anchor href=#%e6%96%87%e6%9c%ac%e5%a4%84%e7%90%86%e4%b8%89%e5%89%91%e5%ae%a2></a></h1><p>grep 命令主要对文本的（正则表达式）行基于模式进行过滤<br>sed：stream editor，文本编辑工具<br>awk：Linux上的实现gawk，文本报告生成器</p><h2 id=文本处理三剑客之-grep>文本处理三剑客之 grep
+<a class=header-anchor href=#%e6%96%87%e6%9c%ac%e5%a4%84%e7%90%86%e4%b8%89%e5%89%91%e5%ae%a2%e4%b9%8b-grep></a></h2><p>grep: Global search REgular expression and Print out the line<br>作用：文本搜索工具，根据用户指定的“模式”对目标文本逐行进行匹配检查；打印匹配到的行<br>模式：由正则表达式字符及文本字符所编写的过滤条件<br>帮助
+<a href=https://man7.org/linux/man-pages/man1/grep.1.html title=https://man7.org/linux/man-pages/man1/grep.1.html rel="noopener external nofollow noreferrer" target=_blank class=exturl>https://man7.org/linux/man-pages/man1/grep.1.html
+<i class="fa fa-external-link-alt"></i></a></p><p>格式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>grep [OPTIONS] PATTERN [FILE...]
+</span></span></code></pre></div><p>常见选项：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>--color=auto 对匹配到的文本着色显示
+</span></span><span style=display:flex><span>-m # 匹配#次后停止
+</span></span><span style=display:flex><span>-v 显示不被pattern匹配到的行,即取反
+</span></span><span style=display:flex><span>-i 忽略字符大小写
+</span></span><span style=display:flex><span>-n 显示匹配的行号
+</span></span><span style=display:flex><span>-c 统计匹配的行数
+</span></span><span style=display:flex><span>-o 仅显示匹配到的字符串
+</span></span><span style=display:flex><span>-q 静默模式，不输出任何信息
+</span></span><span style=display:flex><span>-A # after, 后#行
+</span></span><span style=display:flex><span>-B # before, 前#行
+</span></span><span style=display:flex><span>-C # context, 前后各#行
+</span></span><span style=display:flex><span>-e 实现多个选项间的逻辑or关系,如：grep –e ‘cat &#39; -e ‘dog&#39; file
+</span></span><span style=display:flex><span>-w 匹配整个单词
+</span></span><span style=display:flex><span>-E 使用ERE，相当于egrep
+</span></span><span style=display:flex><span>-F 不支持正则表达式，相当于fgrep
+</span></span><span style=display:flex><span>-P 支持Perl格式的正则表达式
+</span></span><span style=display:flex><span>-f file 根据模式文件处理
+</span></span><span style=display:flex><span>-r 递归目录，但不处理软链接
+</span></span><span style=display:flex><span>-R 递归目录，但处理软链接
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>grep root /etc/passwd
+</span></span><span style=display:flex><span>grep &#34;USER&#34; /etc/passwd
+</span></span><span style=display:flex><span>grep &#39;USER&#39; /etc/passwd
+</span></span><span style=display:flex><span>grep whoami /etc/passwd
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@ubuntu2004 ~]#grep -c processor /proc/cpuinfo
+</span></span><span style=display:flex><span>2
+</span></span></code></pre></div><p>范例：取两个文件的相同行</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#cat /data/f1.txt
 </span></span><span style=display:flex><span>a
 </span></span><span style=display:flex><span>b
+</span></span><span style=display:flex><span>1
 </span></span><span style=display:flex><span>c
-</span></span><span style=display:flex><span>d
+</span></span><span style=display:flex><span>[root@centos8 ~]#cat /data/f2.txt
+</span></span><span style=display:flex><span>b
 </span></span><span style=display:flex><span>e
 </span></span><span style=display:flex><span>f
-</span></span><span style=display:flex><span>g
-</span></span><span style=display:flex><span>h
-</span></span><span style=display:flex><span>[root@centos8 ~]#nl /data/f1.txt
-</span></span><span style=display:flex><span>1 a
-</span></span><span style=display:flex><span>2 b
-</span></span><span style=display:flex><span>3 c
-</span></span><span style=display:flex><span>4 d
-</span></span><span style=display:flex><span>5 e
-</span></span><span style=display:flex><span>6 f
-</span></span><span style=display:flex><span>7 g
-</span></span><span style=display:flex><span>8 h
-</span></span></code></pre></div><h4 id=tac>tac
-<a class=header-anchor href=#tac></a></h4><p>逆向显示文本内容</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#cat /data/fa.txt
+</span></span><span style=display:flex><span>c
 </span></span><span style=display:flex><span>1
 </span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>4
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>[root@centos8 ~]#tac /data/fa.txt
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>4
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>2
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep -f /data/f1.txt /data/f2.txt
+</span></span><span style=display:flex><span>b
+</span></span><span style=display:flex><span>c
 </span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>[root@centos8 ~]#tac
-</span></span><span style=display:flex><span>a
-</span></span><span style=display:flex><span>bb
-</span></span><span style=display:flex><span>ccc 按ctrl+d
-</span></span><span style=display:flex><span>ccc
-</span></span><span style=display:flex><span>bb
-</span></span><span style=display:flex><span>a
-</span></span><span style=display:flex><span>[root@centos8 ~]#seq 10 | tac
-</span></span><span style=display:flex><span>10
-</span></span><span style=display:flex><span>9
-</span></span><span style=display:flex><span>8
-</span></span><span style=display:flex><span>7
-</span></span><span style=display:flex><span>6
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>4
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>1
-</span></span></code></pre></div><h4 id=rev>rev
-<a class=header-anchor href=#rev></a></h4><p>将同一行的内容逆向显示</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#cat /data/fa.txt
-</span></span><span style=display:flex><span>1 2 3 4 5
-</span></span><span style=display:flex><span>a b c
-</span></span><span style=display:flex><span>[root@centos8 ~]#tac /data/fa.txt
-</span></span><span style=display:flex><span>a b c
-</span></span><span style=display:flex><span>1 2 3 4 5
-</span></span><span style=display:flex><span>[root@centos8 ~]#rev /data/fa.txt
-</span></span><span style=display:flex><span>5 4 3 2 1
-</span></span><span style=display:flex><span>c b a
-</span></span><span style=display:flex><span>[root@centos8 ~]#rev
-</span></span><span style=display:flex><span>abcdef
-</span></span><span style=display:flex><span>fedcba
-</span></span><span style=display:flex><span>[root@centos8 ~]#echo {1..10} |rev
-</span></span><span style=display:flex><span>01 9 8 7 6 5 4 3 2 1
-</span></span></code></pre></div><h3 id=查看非文本文件内容>查看非文本文件内容
-<a class=header-anchor href=#%e6%9f%a5%e7%9c%8b%e9%9d%9e%e6%96%87%e6%9c%ac%e6%96%87%e4%bb%b6%e5%86%85%e5%ae%b9></a></h3><p>范例：hexdump</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>hexdump -C -n 512 /dev/sda
-</span></span><span style=display:flex><span>00000000 eb 63 90 10 8e d0 bc 00 b0 b8 00 00 8e d8 8e c0 |.c..............|
-</span></span><span style=display:flex><span>echo {a..z} | tr -d &#39; &#39;|hexdump -C
-</span></span><span style=display:flex><span>00000000 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 |abcdefghijklmnop|
-</span></span><span style=display:flex><span>00000010 71 72 73 74 75 76 77 78 79 7a 0a |qrstuvwxyz.|
-</span></span><span style=display:flex><span>0000001b
-</span></span></code></pre></div><h2 id=分页查看文件内容>分页查看文件内容
-<a class=header-anchor href=#%e5%88%86%e9%a1%b5%e6%9f%a5%e7%9c%8b%e6%96%87%e4%bb%b6%e5%86%85%e5%ae%b9></a></h2><p>可以实现分页查看文件，可以配合管道实现输出信息的分页
-格式</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>more [OPTIONS...] FILE...
-</span></span></code></pre></div><p>选项：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>d: 显示翻页及退出提示
-</span></span><span style=display:flex><span>q:提前退出
-</span></span><span style=display:flex><span>ctrl+d 往回翻页
-</span></span></code></pre></div><h3 id=less>less
-<a class=header-anchor href=#less></a></h3><p>less 也可以实现分页查看文件或STDIN输出，less 命令是man命令使用的分页器<br>比more更好，有less就不用more
-查看时有用的命令包括：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>文本 搜索 文本
-</span></span><span style=display:flex><span>n/N 跳到下一个 或 上一个匹配
-</span></span></code></pre></div><h2 id=显示文本前面或后面的行内容>显示文本前面或后面的行内容
-<a class=header-anchor href=#%e6%98%be%e7%a4%ba%e6%96%87%e6%9c%ac%e5%89%8d%e9%9d%a2%e6%88%96%e5%90%8e%e9%9d%a2%e7%9a%84%e8%a1%8c%e5%86%85%e5%ae%b9></a></h2><h3 id=head>head
-<a class=header-anchor href=#head></a></h3><p>可以显示文件或标准输入的前面行（默认10）
-格式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>head [OPTION]... [FILE]...
-</span></span></code></pre></div><p>选项：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>-c # 指定获取前#字节
-</span></span><span style=display:flex><span>-n # 指定获取前#行,#如果为负数,表示从文件头取到倒数第#前
-</span></span><span style=display:flex><span>-# 同上
-</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#head -n 3 /etc/passwd
-</span></span><span style=display:flex><span>root:x:0:0:root:/root:/bin/bash
-</span></span><span style=display:flex><span>bin:x:1:1:bin:/bin:/sbin/nologin
-</span></span><span style=display:flex><span>daemon:x:2:2:daemon:/sbin:/sbin/nologin
-</span></span><span style=display:flex><span>[root@centos8 ~]#head -3 /etc/passwd
-</span></span><span style=display:flex><span>root:x:0:0:root:/root:/bin/bash
-</span></span><span style=display:flex><span>bin:x:1:1:bin:/bin:/sbin/nologin
-</span></span><span style=display:flex><span>daemon:x:2:2:daemon:/sbin:/sbin/nologin
-</span></span><span style=display:flex><span>[root@centos8 ~]#echo a我b | head -c4
-</span></span><span style=display:flex><span>a我[root@centos8 ~]#
-</span></span><span style=display:flex><span>[root@centos8 ~]#cat /dev/urandom | tr -dc &#39;[:alnum:]&#39;| head -c10
-</span></span><span style=display:flex><span>G755MlZatW[root@centos8 ~]#cat /dev/urandom | tr -dc &#39;[:alnum:]&#39;| head -c10
-</span></span><span style=display:flex><span>ASsax6DeBz[root@centos8 ~]#cat /dev/urandom | tr -dc &#39;[:alnum:]&#39;| head -c10 |
-</span></span><span style=display:flex><span>tee pass.txt | passwd --stdin mage
-</span></span><span style=display:flex><span>Changing password for user mage.
-</span></span><span style=display:flex><span>passwd: all authentication tokens updated successfully.
-</span></span><span style=display:flex><span>[root@centos8 ~]#cat pass.txt
-</span></span><span style=display:flex><span>AGT952Essg[root@centos8 ~]#su - wang
-</span></span><span style=display:flex><span>[wang@centos8 ~]$su - mage
-</span></span><span style=display:flex><span>Password:
-</span></span><span style=display:flex><span>[root@centos8 ~]#cat seq.log
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>4
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>6
-</span></span><span style=display:flex><span>7
-</span></span><span style=display:flex><span>8
-</span></span><span style=display:flex><span>9
-</span></span><span style=display:flex><span>10
-</span></span><span style=display:flex><span>[root@centos8 ~]#head -n 3 seq.log
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>[root@centos8 ~]#head -n -3 seq.log
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>4
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>6
-</span></span><span style=display:flex><span>7
-</span></span><span style=display:flex><span>[root@centos8 ~]#head -n +3 seq.log
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
-</span></span></code></pre></div><h3 id=tail>tail
-<a class=header-anchor href=#tail></a></h3><p>tail 和head 相反，查看文件或标准输入的倒数行(默认后10)<br>格式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>ail [OPTION]... [FILE]...
-</span></span></code></pre></div><p>常用选项</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>-c # 指定获取后#字节
-</span></span><span style=display:flex><span>-n # 指定获取后#行,如果#是负数,表示从第#行开始到文件结束
-</span></span><span style=display:flex><span>-# 同上
-</span></span><span style=display:flex><span>-f 跟踪显示文件fd新追加的内容,常用日志监控，相当于 --follow=descriptor,当文件删除再新
-</span></span><span style=display:flex><span>建同名文件,将无法继续跟踪文件
-</span></span><span style=display:flex><span>-F 跟踪文件名，相当于--follow=name --retry，当文件删除再新建同名文件,将可以继续跟踪文
-</span></span><span style=display:flex><span>件
-</span></span><span style=display:flex><span>tailf 类似 tail –f，当文件不增长时并不访问文件,节约资源,CentOS8已经无此工具
-</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>root@centos8 ~]#cat /data/f1.txt
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>4
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>6
-</span></span><span style=display:flex><span>7
-</span></span><span style=display:flex><span>8
-</span></span><span style=display:flex><span>9
-</span></span><span style=display:flex><span>10
-</span></span><span style=display:flex><span>[root@centos8 ~]#tail -n 3 /data/f1.txt
-</span></span><span style=display:flex><span>8
-</span></span><span style=display:flex><span>9
-</span></span><span style=display:flex><span>10
-</span></span><span style=display:flex><span>[root@centos8 ~]#tail -n +3 /data/f1.txt
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>4
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>6
-</span></span><span style=display:flex><span>7
-</span></span><span style=display:flex><span>8
-</span></span><span style=display:flex><span>9
-</span></span><span style=display:flex><span>10
-</span></span></code></pre></div><p>范例(只显示第二行)：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 <span style=color:#f92672>~</span>]<span style=color:#75715e>#tail -3 /var/log/messages</span>
-</span></span><span style=display:flex><span>Dec <span style=color:#ae81ff>20</span> <span style=color:#ae81ff>09</span>:<span style=color:#ae81ff>49</span>:<span style=color:#ae81ff>01</span> centos8 dbus<span style=color:#f92672>-</span>daemon[<span style=color:#ae81ff>952</span>]: [system] Successfully activated
-</span></span><span style=display:flex><span>service <span style=color:#e6db74>&#39;net.reactivated.Fprint&#39;</span>
-</span></span><span style=display:flex><span>Dec <span style=color:#ae81ff>20</span> <span style=color:#ae81ff>09</span>:<span style=color:#ae81ff>49</span>:<span style=color:#ae81ff>01</span> centos8 systemd[<span style=color:#ae81ff>1</span>]: Started Fingerprint Authentication Daemon<span style=color:#f92672>.</span>
-</span></span><span style=display:flex><span>Dec <span style=color:#ae81ff>20</span> <span style=color:#ae81ff>09</span>:<span style=color:#ae81ff>49</span>:<span style=color:#ae81ff>13</span> centos8 su[<span style=color:#ae81ff>6887</span>]: (to mage) root on pts<span style=color:#f92672>/</span><span style=color:#ae81ff>0</span>
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span><span style=color:#75715e>#实时查看日志</span>
-</span></span><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 <span style=color:#f92672>~</span>]<span style=color:#75715e>#tail -f /var/log/messages</span>
-</span></span><span style=display:flex><span>Dec <span style=color:#ae81ff>20</span> <span style=color:#ae81ff>08</span>:<span style=color:#ae81ff>36</span>:<span style=color:#ae81ff>40</span> centos8 systemd[<span style=color:#ae81ff>1321</span>]: Startup finished <span style=color:#f92672>in</span> <span style=color:#ae81ff>52</span>ms<span style=color:#f92672>.</span>
-</span></span><span style=display:flex><span>Dec <span style=color:#ae81ff>20</span> <span style=color:#ae81ff>08</span>:<span style=color:#ae81ff>36</span>:<span style=color:#ae81ff>40</span> centos8 systemd[<span style=color:#ae81ff>1</span>]: Started User Manager <span style=color:#66d9ef>for</span> UID <span style=color:#ae81ff>0.</span>
-</span></span><span style=display:flex><span>Dec <span style=color:#ae81ff>20</span> <span style=color:#ae81ff>08</span>:<span style=color:#ae81ff>47</span>:<span style=color:#ae81ff>01</span> centos8 systemd[<span style=color:#ae81ff>1</span>]: Starting dnf makecache<span style=color:#f92672>...</span>
-</span></span><span style=display:flex><span>Dec <span style=color:#ae81ff>20</span> <span style=color:#ae81ff>08</span>:<span style=color:#ae81ff>47</span>:<span style=color:#ae81ff>02</span> centos8 dnf[<span style=color:#ae81ff>1465</span>]: AppStream
-</span></span><span style=display:flex><span><span style=color:#ae81ff>213</span> kB<span style=color:#f92672>/</span>s <span style=color:#f92672>|</span> <span style=color:#ae81ff>4.3</span> kB <span style=color:#ae81ff>00</span>:<span style=color:#ae81ff>00</span>
-</span></span><span style=display:flex><span>Dec <span style=color:#ae81ff>20</span> <span style=color:#ae81ff>08</span>:<span style=color:#ae81ff>47</span>:<span style=color:#ae81ff>02</span> centos8 dnf[<span style=color:#ae81ff>1465</span>]: BaseOS
-</span></span><span style=display:flex><span><span style=color:#ae81ff>163</span> kB<span style=color:#f92672>/</span>s <span style=color:#f92672>|</span> <span style=color:#ae81ff>3.9</span> kB <span style=color:#ae81ff>00</span>:<span style=color:#ae81ff>00</span>
-</span></span><span style=display:flex><span>Dec <span style=color:#ae81ff>20</span> <span style=color:#ae81ff>08</span>:<span style=color:#ae81ff>47</span>:<span style=color:#ae81ff>04</span> centos8 dnf[<span style=color:#ae81ff>1465</span>]: EPEL
-</span></span><span style=display:flex><span><span style=color:#ae81ff>2.6</span> kB<span style=color:#f92672>/</span>s <span style=color:#f92672>|</span> <span style=color:#ae81ff>5.3</span> kB <span style=color:#ae81ff>00</span>:<span style=color:#ae81ff>02</span>
-</span></span><span style=display:flex><span>Dec <span style=color:#ae81ff>20</span> <span style=color:#ae81ff>08</span>:<span style=color:#ae81ff>47</span>:<span style=color:#ae81ff>09</span> centos8 dnf[<span style=color:#ae81ff>1465</span>]: EPEL
-</span></span><span style=display:flex><span><span style=color:#ae81ff>884</span> kB<span style=color:#f92672>/</span>s <span style=color:#f92672>|</span> <span style=color:#ae81ff>4.3</span> MB <span style=color:#ae81ff>00</span>:<span style=color:#ae81ff>05</span>
-</span></span><span style=display:flex><span>Dec <span style=color:#ae81ff>20</span> <span style=color:#ae81ff>08</span>:<span style=color:#ae81ff>47</span>:<span style=color:#ae81ff>12</span> centos8 dnf[<span style=color:#ae81ff>1465</span>]: extras
-</span></span><span style=display:flex><span><span style=color:#ae81ff>727</span> B<span style=color:#f92672>/</span>s <span style=color:#f92672>|</span> <span style=color:#ae81ff>1.5</span> kB <span style=color:#ae81ff>00</span>:<span style=color:#ae81ff>02</span>
-</span></span><span style=display:flex><span>Dec <span style=color:#ae81ff>20</span> <span style=color:#ae81ff>08</span>:<span style=color:#ae81ff>47</span>:<span style=color:#ae81ff>12</span> centos8 dnf[<span style=color:#ae81ff>1465</span>]: Metadata cache created<span style=color:#f92672>.</span>
-</span></span><span style=display:flex><span>Dec <span style=color:#ae81ff>20</span> <span style=color:#ae81ff>08</span>:<span style=color:#ae81ff>47</span>:<span style=color:#ae81ff>12</span> centos8 systemd[<span style=color:#ae81ff>1</span>]: Started dnf makecache<span style=color:#f92672>.</span>
-</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span><span style=color:#75715e>#只查看最新发生的日志</span>
-</span></span><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 <span style=color:#f92672>~</span>]<span style=color:#75715e>#tail -fn0 /var/log/messages</span>
-</span></span><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 <span style=color:#f92672>~</span>]<span style=color:#75715e>#tail -0f /var/log/messages</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#取IP行</span>
-</span></span><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 data]<span style=color:#75715e>#ifconfig | head -2 | tail -1</span>
-</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>│</span>
-</span></span><span style=display:flex><span>inet <span style=color:#ae81ff>10.0</span><span style=color:#f92672>.</span><span style=color:#ae81ff>0.8</span> netmask <span style=color:#ae81ff>255.255</span><span style=color:#f92672>.</span><span style=color:#ae81ff>255.0</span> broadcast <span style=color:#ae81ff>10.0</span><span style=color:#f92672>.</span><span style=color:#ae81ff>0.255</span>
-</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>或者</span>
-</span></span><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 data]<span style=color:#75715e>#ifconfig | tall-n -2 | head -n1</span>
-</span></span></code></pre></div><p>范例: 显示第6行</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#seq 20| head -n 6|tail -n1
-</span></span><span style=display:flex><span>6
-</span></span><span style=display:flex><span>[root@centos8 ~]#seq 20| tail -n +6 |head -n1
-</span></span><span style=display:flex><span>6
-</span></span></code></pre></div><h3 id=head-和-tail-总结>head 和 tail 总结
-<a class=header-anchor href=#head-%e5%92%8c-tail-%e6%80%bb%e7%bb%93></a></h3><p><img src=/imgs/img-lazy-loading.gif data-src=/images/url/linux/linux08/1.png alt=1></p><h2 id=按列抽取文本-cut>按列抽取文本 cut
-<a class=header-anchor href=#%e6%8c%89%e5%88%97%e6%8a%bd%e5%8f%96%e6%96%87%e6%9c%ac-cut></a></h2><p>cut 命令可以提取文本文件或STDIN数据的指定列<br>格式</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>cut [OPTION]... [FILE]..
-</span></span></code></pre></div><p>常用选项</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>-d DELIMITER: 指明分隔符，默认tab
-</span></span><span style=display:flex><span>-f FILEDS:
-</span></span><span style=display:flex><span>#: 第#个字段,例如:3
-</span></span><span style=display:flex><span>#,#[,#]：离散的多个字段，例如:1,3,6
-</span></span><span style=display:flex><span>#-#：连续的多个字段, 例如:1-6
-</span></span><span style=display:flex><span>混合使用：1-3,7
-</span></span><span style=display:flex><span>-c 按字符切割
-</span></span><span style=display:flex><span>--output-delimiter=STRING指定输出分隔符
-</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#cut -d: -f1,3-4,7 /etc/passwd
-</span></span><span style=display:flex><span>[root@centos8 ~]#ifconfig |head -n2 |tail -n1|cut -d&#34; &#34; -f10
-</span></span><span style=display:flex><span>10.0.0.8
-</span></span><span style=display:flex><span>[root@centos8 ~]#ifconfig |head -n2 |tail -n1|tr -s &#34; &#34; |cut -d &#34; &#34; -f3
-</span></span><span style=display:flex><span>10.0.0.8
-</span></span><span style=display:flex><span>[root@centos8 ~]#df | tr -s &#39; &#39;|cut -d&#39; &#39; -f5 |tr -dc &#34;[0-9\n]&#34;
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>15
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>[root@centos8 ~]#df | tr -s &#39; &#39; % |cut -d% -f5 |tr -d &#39;[:alpha:]&#39;
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>15
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>[root@centos8 ~]#df | cut -c44-46 |tr -d &#39;[:alpha:]&#39;
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>15
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>[root@centos8 ~]#cut -d: -f1,3,7 --output-delimiter=&#34;---&#34; /etc/passwd
-</span></span><span style=display:flex><span>root---0---/bin/bash
-</span></span><span style=display:flex><span>bin---1---/sbin/nologin
-</span></span><span style=display:flex><span>daemon---2---/sbin/nologin
-</span></span><span style=display:flex><span>cat /etc/passwd | cut -d: -f7
-</span></span><span style=display:flex><span>cut -c2-5 /usr/share/dict/words
-</span></span><span style=display:flex><span>[root@centos8 ~]#echo {1..10}| cut -d &#39; &#39; -f1-10 --output-delimiter=&#34;+&#34; |bc
-</span></span><span style=display:flex><span>55
-</span></span></code></pre></div><p>范例: 取分区利用率</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#df|tr -s &#39; &#39; |cut -d&#39; &#39; -f5 |tr -d %
-</span></span><span style=display:flex><span>[root@centos8 ~]#df|tr -s &#39; &#39; &#39;%&#39;|cut -d% -f5
-</span></span><span style=display:flex><span>Use
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>15
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>100
-</span></span><span style=display:flex><span>[root@centos8 ~]#df |cut -c 44-46|tail -n +2
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>1
+</span></span><span style=display:flex><span>[root@centos8 ~]#cat /data/f1.txt /data/f2.txt| sort | uniq -d
+</span></span></code></pre></div><p>范例: 分区利用率最大的值</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#df | grep &#39;^/dev/sd&#39; |tr -s &#39; &#39; %|cut -d% -f5|sort -n|tail -1
+</span></span><span style=display:flex><span>[root@centos8 ~]#df |grep &#39;^/dev/sd&#39; |grep -oE &#39;\&lt;[0-9]{,3}%&#39;|tr -d &#39;%&#39;|sort -
+</span></span><span style=display:flex><span>nr|head -n1
+</span></span><span style=display:flex><span>[root@centos8 ~]#df |grep &#39;^/dev/sd&#39; |grep -oE &#39;\&lt;[0-9]{,3}%&#39;|grep -Eo &#39;[0-9]+&#39;
+</span></span><span style=display:flex><span>|sort -nr|head -n1
 </span></span><span style=display:flex><span>13
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>[root@centos8 ~]#df | tail -n +2|tr -s &#39; &#39; % |cut -d% -f5
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>19
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>100
-</span></span><span style=display:flex><span>[root@centos8 ~]#df | tail -n +2|tr -s &#39; &#39; |cut -d&#39; &#39; -f5 |tr -d %
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>19
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>100
-</span></span></code></pre></div><h2 id=合并多个文件-paste>合并多个文件 paste
-<a class=header-anchor href=#%e5%90%88%e5%b9%b6%e5%a4%9a%e4%b8%aa%e6%96%87%e4%bb%b6-paste></a></h2><p>paste 合并多个文件同行号的列到一行<br>格式</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>paste [OPTION]... [FILE]...
-</span></span></code></pre></div><p>常用选项：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>-d #分隔符：指定分隔符，默认用TAB
-</span></span><span style=display:flex><span>-s #所有行合成一行显示
-</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#cat alpha.log
-</span></span><span style=display:flex><span>a
-</span></span><span style=display:flex><span>b
-</span></span><span style=display:flex><span>c
-</span></span><span style=display:flex><span>d
-</span></span><span style=display:flex><span>e
-</span></span><span style=display:flex><span>f
-</span></span><span style=display:flex><span>g
-</span></span><span style=display:flex><span>h
-</span></span><span style=display:flex><span>[root@centos8 ~]#cat seq.log
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>4
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>[root@centos8 ~]#cat alpha.log seq.log
-</span></span><span style=display:flex><span>a
-</span></span><span style=display:flex><span>b
-</span></span><span style=display:flex><span>c
-</span></span><span style=display:flex><span>d
-</span></span><span style=display:flex><span>e
-</span></span><span style=display:flex><span>f
-</span></span><span style=display:flex><span>g
-</span></span><span style=display:flex><span>h
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>4
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>[root@centos8 ~]#paste alpha.log seq.log
-</span></span><span style=display:flex><span>a 1
-</span></span><span style=display:flex><span>b 2
-</span></span><span style=display:flex><span>c 3
-</span></span><span style=display:flex><span>d 4
-</span></span><span style=display:flex><span>e 5
-</span></span><span style=display:flex><span>f
-</span></span><span style=display:flex><span>g
-</span></span><span style=display:flex><span>h
-</span></span><span style=display:flex><span>[root@centos8 ~]#paste -d&#34;:&#34; alpha.log seq.log
-</span></span><span style=display:flex><span>a:1
-</span></span><span style=display:flex><span>b:2
-</span></span><span style=display:flex><span>c:3
-</span></span><span style=display:flex><span>d:4
-</span></span><span style=display:flex><span>e:5
-</span></span><span style=display:flex><span>f:
-</span></span><span style=display:flex><span>g:
-</span></span><span style=display:flex><span>h:
-</span></span><span style=display:flex><span>[root@centos8 ~]#paste -s seq.log
-</span></span><span style=display:flex><span>1 2 3 4 5
-</span></span><span style=display:flex><span>[root@centos8 ~]#paste -s alpha.log
-</span></span><span style=display:flex><span>a b c d e f g h
-</span></span><span style=display:flex><span>[root@centos8 ~]#paste -s alpha.log seq.log
-</span></span><span style=display:flex><span>a b c d e f g h
-</span></span><span style=display:flex><span>1 2 3 4 5
-</span></span><span style=display:flex><span>[root@centos8 ~]#cat title.txt
-</span></span><span style=display:flex><span>ceo
-</span></span><span style=display:flex><span>coo
-</span></span><span style=display:flex><span>cto
-</span></span><span style=display:flex><span>[root@centos8 ~]#cat emp.txt
-</span></span><span style=display:flex><span>mage
-</span></span><span style=display:flex><span>zhang
-</span></span><span style=display:flex><span>wang
-</span></span><span style=display:flex><span>xu
-</span></span><span style=display:flex><span>[root@centos8 ~]#paste title.txt emp.txt
-</span></span><span style=display:flex><span>ceo mage
-</span></span><span style=display:flex><span>coo zhang
-</span></span><span style=display:flex><span>cto wang
-</span></span><span style=display:flex><span>xu
-</span></span><span style=display:flex><span>[root@centos8 ~]#paste -s title.txt emp.txt
-</span></span><span style=display:flex><span>ceo coo cto
-</span></span><span style=display:flex><span>mage zhang wang xu
-</span></span><span style=display:flex><span>[root@centos8 ~]#paste -s -d: f1.log f2.log
-</span></span><span style=display:flex><span>1:2:3:4:5:6:7:8:9:10
-</span></span><span style=display:flex><span>a:b:c:d:e:f:g:h:i:j
-</span></span><span style=display:flex><span>[root@centos8 ~]#seq 10
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>3
-</span></span><span style=display:flex><span>4
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>6
-</span></span><span style=display:flex><span>7
-</span></span><span style=display:flex><span>8
-</span></span><span style=display:flex><span>9
-</span></span><span style=display:flex><span>10
-</span></span><span style=display:flex><span>[root@centos8 ~]#seq 10 |paste -s -d+|bc
-</span></span><span style=display:flex><span>55
-</span></span></code></pre></div><p>范例: 批量修改密码</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#cat user.txt
-</span></span><span style=display:flex><span>wang
-</span></span><span style=display:flex><span>mage
-</span></span><span style=display:flex><span>[root@centos8 ~]#cat pass.txt
-</span></span><span style=display:flex><span>123456
-</span></span><span style=display:flex><span>magedu
-</span></span><span style=display:flex><span>[root@centos8 ~]#paste -d: user.txt pass.txt
-</span></span><span style=display:flex><span>wang:123456
-</span></span><span style=display:flex><span>mage:magedu
-</span></span><span style=display:flex><span>[root@centos8 ~]#paste -d: user.txt pass.txt|chpasswd
-</span></span></code></pre></div><h2 id=分析文本的工具>分析文本的工具
-<a class=header-anchor href=#%e5%88%86%e6%9e%90%e6%96%87%e6%9c%ac%e7%9a%84%e5%b7%a5%e5%85%b7></a></h2><p>文本数据统计：wc<br>整理文本：sort<br>比较文件：diff和patch</p><h3 id=收集文本统计数据-wc-word-count>收集文本统计数据 wc (word count)
-<a class=header-anchor href=#%e6%94%b6%e9%9b%86%e6%96%87%e6%9c%ac%e7%bb%9f%e8%ae%a1%e6%95%b0%e6%8d%ae-wc-word-count></a></h3><p>wc 命令可用于统计文件的行总数、单词总数、字节总数和字符总数<br>可以对文件或STDIN中的数据统计</p><p>常用选项</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>-l 只计数行数
-</span></span><span style=display:flex><span>-w 只计数单词总数
-</span></span><span style=display:flex><span>-c 只计数字节总数
-</span></span><span style=display:flex><span>-m 只计数字符总数
-</span></span><span style=display:flex><span>-L 显示文件中最长行的长度
-</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>wc story.txt
-</span></span><span style=display:flex><span>39 237 1901 story.txt
-</span></span><span style=display:flex><span>行数 单词数 字节数
-</span></span><span style=display:flex><span>[root@centos8 ~]#ll title.txt
-</span></span><span style=display:flex><span>-rw-r--r-- 1 root root 30 Dec 20 11:05 title.txt
-</span></span><span style=display:flex><span>[root@centos8 ~]#cat title1.txt
-</span></span><span style=display:flex><span>ceo mage
-</span></span><span style=display:flex><span>coo zhang
-</span></span><span style=display:flex><span>cto wang
-</span></span><span style=display:flex><span>[root@centos8 ~]#wc title.txt
-</span></span><span style=display:flex><span>3 6 30 title.txt
-</span></span><span style=display:flex><span>[root@centos8 ~]#wc -l title.txt        只显示行
-</span></span><span style=display:flex><span>3 title.txt
-</span></span><span style=display:flex><span>[root@centos8 ~]#cat title.txt | wc -l  显示行但不显示文件名
-</span></span><span style=display:flex><span>3
-</span></span></code></pre></div><h3 id=文本排序-sort>文本排序 sort
-<a class=header-anchor href=#%e6%96%87%e6%9c%ac%e6%8e%92%e5%ba%8f-sort></a></h3><p>把整理过的文本显示在STDOUT，不改变原始文件<br>格式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>sort [options] file(s)
-</span></span></code></pre></div><p>常用选项</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>-r 执行反方向（由上至下）整理
-</span></span><span style=display:flex><span>-R 随机排序
-</span></span><span style=display:flex><span>-n 执行按数字大小整理
-</span></span><span style=display:flex><span>-h 人类可读排序,如: 2K 1G
-</span></span><span style=display:flex><span>-f 选项忽略（fold）字符串中的字符大小写
-</span></span><span style=display:flex><span>-u 选项（独特，unique），合并重复项，即去重
-</span></span><span style=display:flex><span>-t c 选项使用c做为字段界定符
-</span></span><span style=display:flex><span>-k # 选项按照使用c字符分隔的 # 列来整理能够使用多次
-</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span>
-</span></span><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 data]<span style=color:#75715e>#cut -d: -f1,3 /etc/passwd|sort -t: -k2 -nr |head -n3</span>
-</span></span><span style=display:flex><span>nobody:<span style=color:#ae81ff>65534</span>
-</span></span><span style=display:flex><span>xiaoming:<span style=color:#ae81ff>1002</span>
-</span></span><span style=display:flex><span>mage:<span style=color:#ae81ff>1001</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#统计日志访问量</span>
-</span></span><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 data]<span style=color:#75715e>#cut -d&#34; &#34; -f1 /var/log/nginx/access_log |sort -u|wc -l</span>
-</span></span><span style=display:flex><span><span style=color:#ae81ff>201</span>
-</span></span></code></pre></div><p>范例：统计分区利用率</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#df
-</span></span><span style=display:flex><span>Filesystem 1K-blocks Used Available Use% Mounted on
-</span></span><span style=display:flex><span>devtmpfs 391676 0 391676 0% /dev
-</span></span><span style=display:flex><span>tmpfs 408092 0 408092 0% /dev/shm
-</span></span><span style=display:flex><span>tmpfs 408092 5816 402276 2% /run
-</span></span><span style=display:flex><span>tmpfs 408092 0 408092 0% /sys/fs/cgroup
-</span></span><span style=display:flex><span>/dev/sda2 104806400 2259416 102546984 3% /
-</span></span><span style=display:flex><span>/dev/sda3 52403200 398608 52004592 1% /data
-</span></span><span style=display:flex><span>/dev/sda1 999320 130848 799660 15% /boot
-</span></span><span style=display:flex><span>tmpfs 81616 0 81616 0% /run/user/0
-</span></span><span style=display:flex><span>/dev/sr0 7377866 7377866 0 100% /misc/cd
-</span></span><span style=display:flex><span>#查看分区利用率最高值
-</span></span><span style=display:flex><span>[root@centos8 ~]#df| tr -s &#39; &#39; &#39;%&#39;|cut -d% -f5|sort -nr|head -1
-</span></span><span style=display:flex><span>100
-</span></span><span style=display:flex><span>[root@centos8 ~]#df | tr -s &#34; &#34; %|cut -d% -f5|tr -d &#39;[:alpha:]&#39; | sort
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>15
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>[root@centos8 ~]#df | tr -s &#34; &#34; %|cut -d% -f5|tr -d &#39;[:alpha:]&#39; | sort -n
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>15
-</span></span><span style=display:flex><span>[root@centos8 ~]#df | tr -s &#34; &#34; %|cut -d% -f5|tr -d &#39;[:alpha:]&#39; | sort -n |tail
-</span></span><span style=display:flex><span>-n1
-</span></span><span style=display:flex><span>15
-</span></span><span style=display:flex><span>[root@centos8 ~]#df | tr -s &#34; &#34; %|cut -d% -f5|tr -d &#39;[:alpha:]&#39; | sort -nr
-</span></span><span style=display:flex><span>15
-</span></span><span style=display:flex><span>5
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>0
-</span></span><span style=display:flex><span>[root@centos8 ~]#df | tr -s &#34; &#34; %|cut -d% -f5|tr -d &#39;[:alpha:]&#39; | sort -nr|head
-</span></span><span style=display:flex><span>-n1
-</span></span><span style=display:flex><span>15
-</span></span></code></pre></div><p><strong>面试题：有两个文件，a.txt与b.txt ，合并两个文件，并输出时确保每个数字也唯一</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#a.txt中的每一个数字在本文件唯一
-</span></span><span style=display:flex><span>200
-</span></span><span style=display:flex><span>100
-</span></span><span style=display:flex><span>34556
-</span></span><span style=display:flex><span>23
-</span></span><span style=display:flex><span>...
-</span></span><span style=display:flex><span>#b.txt中的每一个数字在本文件唯一
-</span></span><span style=display:flex><span>123
-</span></span><span style=display:flex><span>43
-</span></span><span style=display:flex><span>200
-</span></span><span style=display:flex><span>3321
-</span></span><span style=display:flex><span>...
-</span></span><span style=display:flex><span>#就是将两个文件合并后重复的行去除，不保留
-</span></span><span style=display:flex><span>100
-</span></span><span style=display:flex><span>345563
-</span></span><span style=display:flex><span>123
-</span></span><span style=display:flex><span>43
-</span></span><span style=display:flex><span>3321
-</span></span><span style=display:flex><span>...
-</span></span></code></pre></div><h3 id=去重-uniq>去重 uniq
-<a class=header-anchor href=#%e5%8e%bb%e9%87%8d-uniq></a></h3><p>uniq命令从输入中删除前后相接的重复的行<br>格式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>uniq [OPTION]... [FILE]...
-</span></span></code></pre></div><p>常见选项：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>-c: 显示每行重复出现的次数
-</span></span><span style=display:flex><span>-d: 仅显示重复过的行
-</span></span><span style=display:flex><span>-u: 仅显示不曾重复的行
-</span></span></code></pre></div><p>uniq常和sort 命令一起配合使用：<br>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>sort userlist.txt | uniq -c
-</span></span></code></pre></div><p>范例：统计日志访问量最多的请求</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 data]#cut -d&#34; &#34; -f1 access_log |sort |uniq -c|sort -nr |head -3
-</span></span><span style=display:flex><span>4870 172.20.116.228
-</span></span><span style=display:flex><span>3429 172.20.116.208
-</span></span><span style=display:flex><span>2834 172.20.0.222
-</span></span><span style=display:flex><span>[root@centos8 data]#lastb -f btmp-34 | tr -s &#39; &#39; |cut -d &#39; &#39; -f3|sort |uniq -c
-</span></span><span style=display:flex><span>|sort -nr | head -3
-</span></span><span style=display:flex><span>86294 58.218.92.37
-</span></span><span style=display:flex><span>43148 58.218.92.26
-</span></span><span style=display:flex><span>18036 112.85.42.201
-</span></span></code></pre></div><p>范例：并发连接最多的远程主机IP</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#ss -nt|tail -n+2 |tr -s &#39; &#39; : |cut -d: -f6|sort|uniq -c|sort -
-</span></span><span style=display:flex><span>nr |head -n2
-</span></span><span style=display:flex><span>7 10.0.0.1
-</span></span><span style=display:flex><span>2 10.0.0.7
-</span></span></code></pre></div><p>范例：取两个文件的相同和不同的行</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 data]#cat test1.txt
-</span></span><span style=display:flex><span>a
-</span></span><span style=display:flex><span>b
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>c
-</span></span><span style=display:flex><span>[root@centos8 data]#cat test2.txt
-</span></span><span style=display:flex><span>b
-</span></span><span style=display:flex><span>e
-</span></span><span style=display:flex><span>f
-</span></span><span style=display:flex><span>c
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>#取文件的共同行
-</span></span><span style=display:flex><span>[root@centos8 data]#cat test1.txt test2.txt | sort |uniq -d
-</span></span><span style=display:flex><span>1
-</span></span><span style=display:flex><span>b
-</span></span><span style=display:flex><span>c
-</span></span><span style=display:flex><span>#取文件的不同行
-</span></span><span style=display:flex><span>[root@centos8 data]#cat test1.txt test2.txt | sort |uniq -u
-</span></span><span style=display:flex><span>2
-</span></span><span style=display:flex><span>a
-</span></span><span style=display:flex><span>e
-</span></span><span style=display:flex><span>f
-</span></span></code></pre></div><h3 id=比较文件>比较文件
-<a class=header-anchor href=#%e6%af%94%e8%be%83%e6%96%87%e4%bb%b6></a></h3><h4 id=diff>diff
-<a class=header-anchor href=#diff></a></h4><p>diff 命令比较两个文件之间的区别</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>-u 选项来输出“统一的（unified）”diff格式文件，最适用于补丁文件
-</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#cat f1.txt
-</span></span><span style=display:flex><span>mage
-</span></span><span style=display:flex><span>zhang
-</span></span><span style=display:flex><span>wang
-</span></span><span style=display:flex><span>xu
-</span></span><span style=display:flex><span>[root@centos8 ~]#cat f2.txt
-</span></span><span style=display:flex><span>magedu
-</span></span><span style=display:flex><span>zhang sir
-</span></span><span style=display:flex><span>wang
-</span></span><span style=display:flex><span>xu
-</span></span><span style=display:flex><span>shi
-</span></span><span style=display:flex><span>[root@centos8 ~]#diff f1.txt f2.txt
-</span></span><span style=display:flex><span>1,2c1,2
-</span></span><span style=display:flex><span>&lt; mage
-</span></span><span style=display:flex><span>&lt; zhang
-</span></span><span style=display:flex><span>---
-</span></span><span style=display:flex><span>&gt; magedu
-</span></span><span style=display:flex><span>&gt; zhang sir
-</span></span><span style=display:flex><span>4a5
-</span></span><span style=display:flex><span>&gt; shi
-</span></span><span style=display:flex><span>[root@centos8 ~]#diff -u f1.txt f2.txt
-</span></span><span style=display:flex><span>--- f1.txt 2019-12-13 21:31:30.892775671 +0800
-</span></span><span style=display:flex><span>+++ f2.txt 2019-12-13 22:00:14.373677728 +0800
-</span></span><span style=display:flex><span>@@ -1,4 +1,5 @@
-</span></span><span style=display:flex><span>-mage
-</span></span><span style=display:flex><span>-zhang
-</span></span><span style=display:flex><span>+magedu
-</span></span><span style=display:flex><span>+zhang sir
-</span></span><span style=display:flex><span>wang
-</span></span><span style=display:flex><span>xu
-</span></span><span style=display:flex><span>+shi
-</span></span><span style=display:flex><span>[root@centos8 ~]#diff -u f1.txt f2.txt &gt; f.patch
-</span></span><span style=display:flex><span>[root@centos8 ~]#rm -f f2.txt
-</span></span><span style=display:flex><span>[root@centos8 ~]#patch -b f1.txt f.patch
-</span></span><span style=display:flex><span>patching file f1.txt
-</span></span><span style=display:flex><span>[root@centos8 ~]#cat f1.txt
-</span></span><span style=display:flex><span>magedu
-</span></span><span style=display:flex><span>zhang sir
-</span></span><span style=display:flex><span>wang
-</span></span><span style=display:flex><span>xu
-</span></span><span style=display:flex><span>shi
-</span></span><span style=display:flex><span>[root@centos8 ~]#cat f1.txt.orig
-</span></span><span style=display:flex><span>mage
-</span></span><span style=display:flex><span>zhang
-</span></span><span style=display:flex><span>wang
-</span></span><span style=display:flex><span>xu
-</span></span></code></pre></div><h4 id=patch>patch
-<a class=header-anchor href=#patch></a></h4><p>patch 复制在其它文件中进行的改变（要谨慎使用</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>-b 选项来自动备份改变了的文件
-</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>diff -u foo.conf foo2.conf &gt; foo.patch
-</span></span><span style=display:flex><span>patch -b foo.conf foo.patch
-</span></span></code></pre></div><h4 id=vimdiff>vimdiff
-<a class=header-anchor href=#vimdiff></a></h4><p>相当于 vim -d</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#cat f1.txt
-</span></span><span style=display:flex><span>mage
-</span></span><span style=display:flex><span>zhangsir
-</span></span><span style=display:flex><span>wang
-</span></span><span style=display:flex><span>lilaoshi
-</span></span><span style=display:flex><span>zhao
-</span></span><span style=display:flex><span>[root@centos8 ~]#cat f2.txt
-</span></span><span style=display:flex><span>mage
-</span></span><span style=display:flex><span>zhang
-</span></span><span style=display:flex><span>wang
-</span></span><span style=display:flex><span>li
-</span></span><span style=display:flex><span>zhao
-</span></span><span style=display:flex><span>[root@centos8 ~]#which vimdiff
-</span></span><span style=display:flex><span>/usr/bin/vimdiff
-</span></span><span style=display:flex><span>[root@centos8 ~]#ll /usr/bin/vimdiff
-</span></span><span style=display:flex><span>lrwxrwxrwx. 1 root root 3 Nov 12 2019 /usr/bin/vimdiff -&gt; vim
-</span></span><span style=display:flex><span>[root@centos8 ~]#vimdiff f1.txt f2.txt
-</span></span></code></pre></div><p><img src=/imgs/img-lazy-loading.gif data-src=/images/url/linux/linux08/02.png alt=1></p><h4 id=cmp>cmp
-<a class=header-anchor href=#cmp></a></h4><p>范例：查看二进制文件的不同</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 data]#ll /usr/bin/dir /usr/bin/ls
-</span></span><span style=display:flex><span>-rwxr-xr-x. 1 root root 166448 May 12 2019 /usr/bin/dir
-</span></span><span style=display:flex><span>-rwxr-xr-x. 1 root root 166448 May 12 2019 /usr/bin/ls
-</span></span><span style=display:flex><span>[root@centos8 data]#ll /usr/bin/dir /usr/bin/ls -i
-</span></span><span style=display:flex><span>201839444 -rwxr-xr-x. 1 root root 166448 May 12 2019 /usr/bin/dir
-</span></span><span style=display:flex><span>201839465 -rwxr-xr-x. 1 root root 166448 May 12 2019 /usr/bin/ls
-</span></span><span style=display:flex><span>[root@centos8 data]#diff /usr/bin/dir /usr/bin/ls
-</span></span><span style=display:flex><span>Binary files /usr/bin/dir and /usr/bin/ls differ
-</span></span><span style=display:flex><span>[root@centos8 ~]#cmp /bin/dir /bin/ls
-</span></span><span style=display:flex><span>/bin/dir /bin/ls differ: byte 737, line 2
-</span></span><span style=display:flex><span>#跳过前735个字节,观察后面30个字节
-</span></span><span style=display:flex><span>[root@centos8 ~]#hexdump -s 735 -Cn 30 /bin/ls
-</span></span><span style=display:flex><span>000002df 00 05 6d da 3f 1b 77 91 91 63 a7 de 55 63 a2 b9 |..m.?.w..c..Uc..|
-</span></span><span style=display:flex><span>000002ef d9 d2 45 55 4c 00 00 00 00 03 00 00 00 7d |..EUL........}|
-</span></span><span style=display:flex><span>000002fd
-</span></span><span style=display:flex><span>[root@centos8 ~]#hexdump -s 735 -Cn 30 /bin/dir
-</span></span><span style=display:flex><span>000002df 00 f1 21 4e f2 19 7e ef 38 0d 9b 3e d7 54 08 39 |..!N..~.8..&gt;.T.9|
-</span></span><span style=display:flex><span>000002ef e4 74 4d 69 25 00 00 00 00 03 00 00 00 7d |.tMi%........}|
-</span></span><span style=display:flex><span>000002fd
-</span></span></code></pre></div><h1 id=总结>总结
-<a class=header-anchor href=#%e6%80%bb%e7%bb%93></a></h1><p><img src=/imgs/img-lazy-loading.gif data-src=/images/url/linux/linux08/03.png alt=1>
-<strong>练习</strong>
-1、找出ifconfig “网卡名” 命令结果中本机的IPv4地址<br>2、查出分区空间使用率的最大百分比值<br>3、查出用户UID最大值的用户名、UID及shell类型<br>4、查出/tmp的权限，以数字方式显示<br>5、统计当前连接本机的每个远程主机IP的连接数，并按从大到小排序</p></div><footer class=post-footer><div class=post-tags><a href=/tags/linux>linux</a></div><div class=addthis_inline_share_toolbox style=text-align:center></div><hr><div class=reward-container><div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div><button>
+</span></span></code></pre></div><p>范例: 哪个IP和当前主机连接数最多的前三位</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#ss -nt | grep &#34;^ESTAB&#34; |tr -s &#39; &#39; : |cut -d: -f6|sort |uniq -
+</span></span><span style=display:flex><span>c|sort -nr|head -n3
+</span></span><span style=display:flex><span>3 10.0.0.1
+</span></span><span style=display:flex><span>1 172.16.4.100
+</span></span><span style=display:flex><span>1 172.16.31.188
+</span></span></code></pre></div><p>范例: 连接状态的统计</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@wang-liyun-pc ~]# ss -nta | grep -v &#39;^State&#39; |cut -d&#34; &#34; -f1|sort |uniq -c
+</span></span><span style=display:flex><span>7 ESTAB
+</span></span><span style=display:flex><span>4 LISTEN
+</span></span><span style=display:flex><span>7 TIME-WAIT
+</span></span><span style=display:flex><span>[root@wang-liyun-pc ~]# ss -nta | tail -n +2 |cut -d&#34; &#34; -f1|sort |uniq -c
+</span></span><span style=display:flex><span>3 ESTAB
+</span></span><span style=display:flex><span>4 LISTEN
+</span></span><span style=display:flex><span>12 TIME-WAIT
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#grep -v &#34;^#&#34; /etc/profile | grep -v &#39;^$&#39;
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep -v &#34;^#\|^$&#34; /etc/profile
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep -v &#34;^\(#\|$\)&#34; /etc/profile
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep -Ev &#34;^(#|$)&#34; /etc/profile
+</span></span><span style=display:flex><span>[root@centos8 ~]#egrep -v &#34;^(#|$)&#34; /etc/profile
+</span></span><span style=display:flex><span>[root@centos6 ~]#egrep -v &#39;^(#|$)&#39; /etc/httpd/conf/httpd.conf
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#grep -o &#39;r..t&#39; /etc/passwd
+</span></span><span style=display:flex><span>root
+</span></span><span style=display:flex><span>root
+</span></span><span style=display:flex><span>root
+</span></span><span style=display:flex><span>root
+</span></span><span style=display:flex><span>r/ft
+</span></span><span style=display:flex><span>rypt
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#ifconfig | grep -E &#39;[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]
+</span></span><span style=display:flex><span>{1,3}&#39;
+</span></span><span style=display:flex><span>inet 10.0.0.8 netmask 255.255.255.0 broadcast 10.0.0.255
+</span></span><span style=display:flex><span>inet 172.16.0.123 netmask 255.255.0.0 broadcast 172.16.255.255
+</span></span><span style=display:flex><span>inet6 fe80::c11e:4792:7e77:12a4 prefixlen 64 scopeid 0x20&lt;link&gt;
+</span></span><span style=display:flex><span>inet 127.0.0.1 netmask 255.0.0.0
+</span></span><span style=display:flex><span>[root@centos8 ~]#ifconfig | grep -E &#39;([0-9]{1,3}.){3}[0-9]{1,3}&#39;
+</span></span><span style=display:flex><span>inet 10.0.0.8 netmask 255.255.255.0 broadcast 10.0.0.255
+</span></span><span style=display:flex><span>inet 172.16.0.123 netmask 255.255.0.0 broadcast 172.16.255.255
+</span></span><span style=display:flex><span>inet6 fe80::c11e:4792:7e77:12a4 prefixlen 64 scopeid 0x20&lt;link&gt;
+</span></span><span style=display:flex><span>inet 127.0.0.1 netmask 255.0.0.0
+</span></span><span style=display:flex><span>[root@centos8 ~]#ifconfig eth0 | grep -Eo &#39;([0-9]{1,3}\.){3}[0-9]{1,3}&#39;|head -1
+</span></span><span style=display:flex><span>10.0.0.8
+</span></span><span style=display:flex><span>[root@centos8 ~]#cat regex.txt
+</span></span><span style=display:flex><span>([0-9]{1,3}\.){3}[0-9]{1,3}
+</span></span><span style=display:flex><span>[root@centos8 ~]#ifconfig | grep -oEf regex.txt
+</span></span><span style=display:flex><span>10.0.0.8
+</span></span><span style=display:flex><span>255.255.255.0
+</span></span><span style=display:flex><span>10.0.0.255
+</span></span><span style=display:flex><span>127.0.0.1
+</span></span><span style=display:flex><span>255.0.0.0
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#grep -E &#39;root|bash&#39; /etc/passwd
+</span></span><span style=display:flex><span>root:x:0:0:root:/root:/bin/bash
+</span></span><span style=display:flex><span>operator:x:11:0:operator:/root:/sbin/nologin
+</span></span><span style=display:flex><span>wang:x:1000:1000:wang:/home/wang:/bin/bash
+</span></span><span style=display:flex><span>mage:x:1001:1001::/home/mage:/bin/bash
+</span></span><span style=display:flex><span>xiaoming:x:1002:1002::/home/xiaoming:/bin/bash
+</span></span><span style=display:flex><span>roob:x:1003:1003::/home/roob:/bin/bash
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep -e &#39;root&#39; -e &#39;bash&#39; /etc/passwd
+</span></span><span style=display:flex><span>root:x:0:0:root:/root:/bin/bash
+</span></span><span style=display:flex><span>operator:x:11:0:operator:/root:/sbin/nologin
+</span></span><span style=display:flex><span>wang:x:1000:1000:wang:/home/wang:/bin/bash
+</span></span><span style=display:flex><span>mage:x:1001:1001::/home/mage:/bin/bash
+</span></span><span style=display:flex><span>xiaoming:x:1002:1002::/home/xiaoming:/b
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#grep -w root /etc/passwd
+</span></span><span style=display:flex><span>root:x:0:0:root:/root:/bin/bash
+</span></span><span style=display:flex><span>operator:x:11:0:operator:/root:/sbin/nologin
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep &#39;\&lt;root\&gt;&#39; /etc/passwd
+</span></span><span style=display:flex><span>root:x:0:0:root:/root:/bin/bash
+</span></span><span style=display:flex><span>operator:x:11:0:operator:/root:/sbin/nologin
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#grep &#34;^\(.*\)\&gt;.*\&lt;\1$&#34; /etc/passwd
+</span></span><span style=display:flex><span>sync:x:5:0:sync:/sbin:/bin/sync
+</span></span><span style=display:flex><span>shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+</span></span><span style=display:flex><span>halt:x:7:0:halt:/sbin:/sbin/halt
+</span></span><span style=display:flex><span>bash:x:1008:1008::/home/bash:/bin/bash
+</span></span><span style=display:flex><span>nologin:x:1011:1011::/home/nologin:/sbin/nologin
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep -E &#34;^(.*)\&gt;.*\&lt;\1$&#34; /etc/passwd
+</span></span><span style=display:flex><span>sync:x:5:0:sync:/sbin:/bin/sync
+</span></span><span style=display:flex><span>shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+</span></span><span style=display:flex><span>halt:x:7:0:halt:/sbin:/sbin/halt
+</span></span><span style=display:flex><span>bash:x:1008:1008::/home/bash:/bin/bash
+</span></span><span style=display:flex><span>nologin:x:1011:1011::/home/nologin:/sbin/nologin
+</span></span><span style=display:flex><span>[root@centos8 ~]#egrep &#34;^(.*)\&gt;.*\&lt;\1$&#34; /etc/passwd
+</span></span><span style=display:flex><span>sync:x:5:0:sync:/sbin:/bin/sync
+</span></span><span style=display:flex><span>shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+</span></span><span style=display:flex><span>halt:x:7:0:halt:/sbin:/sbin/halt
+</span></span><span style=display:flex><span>bash:x:1008:1008::/home/bash:/bin/bash
+</span></span><span style=display:flex><span>nologin:x:1011:1011::/home/nologin:/sbin/nologin
+</span></span></code></pre></div><p>范例: 过滤掉文件的注释(包括#号的行)和空行</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#grep -Ev &#39;^$|#&#39; /etc/fstab
+</span></span><span style=display:flex><span>UUID=01f1068e-6937-4fb2-b64b-0d7d6b85ad08 / xfs
+</span></span><span style=display:flex><span>defaults 0 0
+</span></span><span style=display:flex><span>UUID=cb21e5ce-edf6-4ed1-8df9-ba98520a68dc /boot xfs
+</span></span><span style=display:flex><span>defaults 0 0
+</span></span><span style=display:flex><span>UUID=9ea3524a-7cff-49a0-951e-8429a30bd0a0 /data xfs
+</span></span><span style=display:flex><span>defaults 0 0
+</span></span><span style=display:flex><span>UUID=42174d44-41aa-448b-88bc-fd36d6a49e39 swap swap
+</span></span><span style=display:flex><span>defaults 0 0
+</span></span></code></pre></div><p>范例：面试题，算出所有人的年龄总和</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#cat /data/age.txt
+</span></span><span style=display:flex><span>xiaoming=20
+</span></span><span style=display:flex><span>xiaohong=18
+</span></span><span style=display:flex><span>xiaoqiang=22
+</span></span><span style=display:flex><span>[root@centos8 ~]#cut -d&#34;=&#34; -f2 /data/age.txt|tr &#39;\n&#39; + | grep -Eo &#34;.*[0-9]&#34;|bc
+</span></span><span style=display:flex><span>60
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep -Eo &#34;[0-9]+&#34; /data/age.txt | tr &#39;\n&#39; + | grep -Eo &#34;.*[0-
+</span></span><span style=display:flex><span>9]&#34;|bc
+</span></span><span style=display:flex><span>60
+</span></span><span style=display:flex><span>[root@centos8 ~]#grep -oE &#39;[0-9]+&#39; /data/age.txt| paste -s -d+|bc
+</span></span><span style=display:flex><span>60
+</span></span></code></pre></div><h2 id=文本处理三剑客之-sed><a href title="<strong>文本处理三剑客之 sed</strong>"><strong>文本处理三剑客之 sed</strong>
+</a><a class=header-anchor href=#%e6%96%87%e6%9c%ac%e5%a4%84%e7%90%86%e4%b8%89%e5%89%91%e5%ae%a2%e4%b9%8b-sed></a></h2><p>Sed是从文件或管道中读取一行，处理一行，输出一行；再读取一行，再处理一行，再输出一行，直到
+最后一行。每当处理一行时，把当前处理的行存储在临时缓冲区中，称为模式空间（Pattern
+Space），接着用sed命令处理缓冲区中的内容，处理完成后，把缓冲区的内容送往屏幕。接着处理下
+一行，这样不断重复，直到文件末尾。一次处理一行的设计模式使得sed性能很高，sed在读取大文件时
+不会出现卡顿的现象。如果使用vi命令打开几十M上百M的文件，明显会出现有卡顿的现象，这是因为
+vi命令打开文件是一次性将文件加载到内存，然后再打开。Sed就避免了这种情况，一行一行的处理，
+打开速度非常快，执行速度也很快。</p><h2 id=文本处理三剑客之-awk><a href title="<strong>文本处理三剑客之 awk</strong>"><strong>文本处理三剑客之 awk</strong>
+</a><a class=header-anchor href=#%e6%96%87%e6%9c%ac%e5%a4%84%e7%90%86%e4%b8%89%e5%89%91%e5%ae%a2%e4%b9%8b-awk></a></h2><p>awk：Aho, Weinberger, Kernighan，报告生成器，格式化文本输出，GNU/Linux发布的AWK目前由自
+由软件基金会（FSF）进行开发和维护，通常也称它为 GNU AWK</p></div><footer class=post-footer><div class=post-tags><a href=/tags/linux>linux</a></div><div class=addthis_inline_share_toolbox style=text-align:center></div><hr><div class=reward-container><div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div><button>
 赞赏</button><div class=post-reward><div class=post-reward-item><img src=/imgs/img-lazy-loading.gif data-src=/imgs/_ali-pay.png alt="蓝惠の小窝 - 支付宝">
 <span>支付宝</span></div><div class=post-reward-item><img src=/imgs/img-lazy-loading.gif data-src=/imgs/_wechat-pay.png alt="蓝惠の小窝 - 微信">
 <span>微信</span></div></div></div><div class=followme><span>欢迎关注我的其它发布渠道</span><div class=social-list><div class=social-item><a target=_blank class=social-link href=/images/wechat_channel.jpg><span class=icon><i class="fab fa-weixin"></i>
@@ -679,4 +426,4 @@ Github</a></span></div><div class="links-of-blogroll site-overview-item animated
 <img src=/imgs/gongan.png alt=湘公网安备>
 <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011402019770" target=_blank>湘公网安备 31011402019770 号</a></div><div class=vendors-list><a target=_blank href title><img src=/imgs/img-lazy-loading.gif data-src alt>
 </a><a target=_blank href title><img src=/imgs/img-lazy-loading.gif data-src alt>
-</a><a target=_blank href title></a><span></span></div></div></footer><script type=text/javascript src=https://cdn.staticfile.org/animejs/3.2.1/anime.min.js defer></script><script type=text/javascript src=https://cdn.staticfile.org/viewerjs/1.11.0/viewer.min.js defer></script><script class=next-config data-name=main type=application/json>{"bookmark":{"color":"#0cd2f8","enable":true,"save":"manual"},"copybtn":true,"darkmode":false,"giscus":{"cfg":{"category":"Announcements","categoryid":"DIC_kwDOL_1gUs4Cfkpa","emit":"url","inputposition":"top","mapping":"top","reactions":true,"repo":"lanhui672/lanhui672.Giscus","repoid":"R_kgDOL_1gUg","theme":"cobalt\n\nlang=\"zh-CN\""},"js":"https://giscus.app/client.js"},"hostname":"https://www.lanhui.live/","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小时前","ds_hours":" 小时 ","ds_just":"刚刚","ds_min":" 分钟前","ds_mins":" 分钟","ds_month":" 个月前","ds_years":" 年 ","empty":"没有找到任何搜索结果：${query}","hits":"找到 ${hits} 个搜索结果","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","placeholder":"搜索..."},"lang":"zh-CN","lazyload":false,"localSearch":{"enable":true,"limit":1e3,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"postmeta":{"comments":{"enable":false,"plugin":"waline"},"views":{"enable":false,"plugin":"busuanzi"}},"root":"/","scheme":"Gemini","sidebar":{"display":"post","offset":12,"padding":18,"position":"right","width":256},"vendor":{"plugins":"qiniu","router":"https://cdn.staticfile.org"},"version":"4.5.3"}</script><script type=text/javascript src=/js/main.min.78a19d71f814f465713a5053077de10bda06a8790a23f2b3c5ac2241d0c135d3.js defer></script></body></html>
+</a><a target=_blank href title></a><span></span></div></div></footer><script type=text/javascript src=https://cdn.staticfile.org/animejs/3.2.1/anime.min.js defer></script><script type=text/javascript src=https://cdn.staticfile.org/viewerjs/1.11.0/viewer.min.js defer></script><script class=next-config data-name=main type=application/json>{"bookmark":{"color":"#0cd2f8","enable":true,"save":"manual"},"copybtn":true,"darkmode":false,"giscus":{"cfg":{"category":"Announcements","categoryid":"DIC_kwDOL_1gUs4Cfkpa","emit":"url","inputposition":"top","mapping":"top","reactions":true,"repo":"lanhui672/lanhui672.Giscus","repoid":"R_kgDOL_1gUg","theme":"cobalt\n\nlang=\"zh-CN\""},"js":"https://giscus.app/client.js"},"hostname":"http://localhost:1313/","i18n":{"ds_day":" 天前","ds_days":" 天 ","ds_hour":" 小时前","ds_hours":" 小时 ","ds_just":"刚刚","ds_min":" 分钟前","ds_mins":" 分钟","ds_month":" 个月前","ds_years":" 年 ","empty":"没有找到任何搜索结果：${query}","hits":"找到 ${hits} 个搜索结果","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","placeholder":"搜索..."},"lang":"zh-CN","lazyload":false,"localSearch":{"enable":true,"limit":1e3,"path":"/searchindexes.xml","preload":false,"topnperarticle":-1,"trigger":"auto","unescape":false},"motion":{"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},"postmeta":{"comments":{"enable":false,"plugin":"waline"},"views":{"enable":false,"plugin":"busuanzi"}},"root":"/","scheme":"Gemini","sidebar":{"display":"post","offset":12,"padding":18,"position":"right","width":256},"vendor":{"plugins":"qiniu","router":"https://cdn.staticfile.org"},"version":"4.5.3"}</script><script type=text/javascript src=/js/main.js defer></script></body></html>
