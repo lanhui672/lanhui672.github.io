@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>shell脚本编程基础9.2</title><url>/post/linux10/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 编程基础
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>shell脚本编程基础10.1</title><url>/post/linux11/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  编程基础短路运算短路与 &amp;amp;&amp;amp; CMD1 &amp;amp;&amp;amp; CMD2 第一个CMD1结果为真(1)，第二个CMD2必须要参与运算，才能得到最终的结果 第一个CMD1结果为假(0)，总的结果必定为0，因此不需要执行CMD2 短路或 || CMD1 || CMD2 第一个CMD1结果为真(1)，总的结果必定为1，因此不需要执行CMD2 第一个CMD1结果为假(0)，第二个CMD2 必须要参与运算,才能得到最终的结果 短路与和或组合 CMD1 &amp;amp;&amp;amp; CMD2 || CMD3 当CMD1执行成功时,会执行CMD2 当CMD1执行失败时,会执行CMD3 注意： CMD1 || CMD2 &amp;amp;&amp;amp; CMD3 逻辑不通,不使用 条件测试命令条件测试：判断某需求是否满足，需要由测试机制来实现，专用的测试表达式需要由测试命令辅助完成
+测试过程，实现评估布尔声明，以便用在条件性环境下进行执行
+若真，则状态码变量 $? 返回0
+若假，则状态码变量 $? 返回1
+条件测试命令
+test EXPRESSION [ EXPRESSION ] #和test 等价，建议使用 [ ] [[ EXPRESSION ]] 相关于增强版的 [ ], 支持[]的用法,且支持扩展正则表达式和通配符 注意：EXPRESSION前后必须有空白字符 帮助： [root@ocky9 ~]#type [ [ is a shell builtin [root@centos8 ~]#help [ [: [ arg... ] Evaluate conditional expression. This is a synonym for the &amp;#34;test&amp;#34; builtin, but the last argument must be a literal `]&amp;#39;, to match the opening `[&amp;#39;. [root@rocky9 ~]# help test test: test [expr] Evaluate conditional expression. Exits with a status of 0 (true) or 1 (false) depending on the evaluation of EXPR. …  ]]></content></entry><entry><title>shell脚本编程基础9.2</title><url>/post/linux10/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 编程基础
 只读变量
 只读变量：只能声明定义，但后续不能修改和删除，即常量
 声明只读变量：
