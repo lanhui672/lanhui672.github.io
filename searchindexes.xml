@@ -91,12 +91,14 @@ chmod [OPTION]... MODE[,MODE]... FILE... chmod [OPTION]... OCTAL-MODE FILE... #�
 标准输出和错误重新定向STDOUT和STDERR可以被重定向到指定文件,而非默认的当前终端
 格式：
 命令 操作符号 文件名 支持的操作符号包括：
-1&amp;gt; 或 &amp;gt; 把STDOUT重定向到文件 2&amp;gt; 把STDERR重定向到文件 &amp;amp;&amp;gt; 把标准输出和错误都重定向 &amp;gt;&amp;amp; 和上面功能一样，建议使用上面方式```` 以上如果文件已存在，文件内容会被覆盖
+1&amp;gt; 或 &amp;gt; 把STDOUT重定向到文件 2&amp;gt; 把STDERR重定向到文件 &amp;gt;| 强制覆盖，即使设置禁止覆盖。 &amp;amp;&amp;gt; 把标准输出和错误都重定向 &amp;gt;&amp;amp; 和上面功能一样，建议使用上面方式```` 以上如果文件已存在，文件内容会被覆盖
 追加
-&amp;gt;&amp;gt; 可以在原有内容基础上，追加内容 把输出和错误重新定向追加到文件 &amp;gt;&amp;gt; 追加标准输出重定向至文件 2&amp;gt;&amp;gt; 追加标准错误重定向至文件 标准输出和错误输出各自定向至不同位置
+&amp;gt;&amp;gt; 可以在原有内容基础上，追加内容把输出和错误重新定向追加到文件&amp;gt;&amp;gt; 追加标准输出重定向至文件 2&amp;gt;&amp;gt; 追加标准错误重定向至文件 标准输出和错误输出各自定向至不同位置
 COMMAND &amp;gt; /path/to/file.out 2&amp;gt; /path/to/error.out 合并标准输出和错误输出为同一个数据流进行重定向
-&amp;amp;&amp;gt; 覆盖重定向 &amp;amp;&amp;gt;&amp;gt; 追加重定向 COMMAND &amp;gt; /path/to/file.out 2&amp;gt;&amp;amp;1 （顺序很重要） COMMAND &amp;gt;&amp;gt; /path/to/file.out 2&amp;gt;&amp;amp;1 合并多个程序 (CMD1;CMD2&amp;hellip;&amp;hellip;) 或者{ CMD1;CMD2;&amp;hellip;.; }合并多个程序的STDOUT 范例： 分别重定向
-[root@rocky8] -l#ls anaconda-ks.cfg XXX &amp;gt;/data stdout.log 2&amp;gt; /data/stderr.log [rootarocky8] ~#cat /data/stdout.log anaconda-ks.cfg [root@rocky8] ~l#cat …  ]]></content></entry><entry><title>linux学习文件管理5.1</title><url>/post/linux03/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 常见的文件系统目录功能
+&amp;amp;&amp;gt; 覆盖重定向 &amp;amp;&amp;gt;&amp;gt; 追加重定向 COMMAND &amp;gt; /path/to/file.out 2&amp;gt;&amp;amp;1 （顺序很重要） COMMAND &amp;gt;&amp;gt; /path/to/file.out 2&amp;gt;&amp;amp;1 合并多个程序 (CMD1;CMD2&amp;hellip;&amp;hellip;) 或者{ CMD1;CMD2;&amp;hellip;.; }合并多个程序的STDOUT
+范例：合并多个命令的结果至一个文件中
+[root@centos8 ~]#( cal 2019 ; cal 2020 ) &amp;gt; all.txt [root@centos8 ~]#{ ls;hostname;} &amp;gt; /data/all.log 分别重定向
+[root@rocky8] -l#ls …  ]]></content></entry><entry><title>linux学习文件管理5.1</title><url>/post/linux03/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 常见的文件系统目录功能
 /boot：引导文件存放目录，内核文件(vmlinuz)、引导加载器(bootloader, grub)都存放于此目录 /bin：所有用户使用的基本命令；不能关联至独立分区，OS启动即会用到的程序 /sbin：管理类的基本命令；不能关联至独立分区，OS启动即会用到的程序 /lib：启动时程序依赖的基本共享库文件以及内核模块文件(/lib/modules) /lib64：专用于x86_64系统上的辅助共享库文件存放位置 /etc：配置文件目录 /home/USERNAME：普通用户家目录 /root：管理员的家目录 /media：便携式移动设备挂载点 /mnt：临时文件系统挂载点 /dev：设备文件及特殊文件存储位置 b: block device，随机访问 c: character device，线性访问 /opt：第三方应用程序的安装位置 /srv：系统上运行的服务用到的数据 /tmp：临时文件存储位置 /usr: universal shared, read-only data bin: 保证系统拥有完整功能而提供的应用程序 sbin: lib：32位使用 lib64：只存在64位系统 include: C程序的头文件(header files) share：结构化独立的数据，例如doc, man等 local：第三方应用程序的安装位置 bin, sbin, lib, lib64, etc, share /var: variable data files cache: 应用程序缓存数据目录 lib: 应用程序状态信息数据 local：专用于为/usr/local下的应用程序存储可变数据 lock: 锁文件 log: 日志目录及文件 opt: 专用于为/opt下的应用程序存储可变数据 run: 运行中的进程相关数据,通常用于存储进程pid文件 spool: 应用程序数据池 tmp: 保存系统两次重启之间产生的临时数据 /proc: 用于输出内核与进程信息相关的虚拟文件系统 /sys：用于输出当前系统上硬件设备相关信息虚拟文件系统 /selinux: security enhanced Linux，selinux相关的安全策略等信息的存储位置 应用程序的组成部分
 二进制程序：/bin, /sbin, /usr/bin, /usr/sbin, …</content></entry><entry><title>Linux中的shell和基础命令4.2</title><url>/post/linux02/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 常见命令
 查看硬件信息
@@ -104,29 +106,7 @@ COMMAND &amp;gt; /path/to/file.out 2&amp;gt; /path/to/error.out 合并标准输�
 lscpu命令可以查看cpu信息 cat /proc/cpuinfo也可看查看到 范例：
 [root@centos8 ~]# lscpu Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CPU(s): 8 On-line CPU(s) list: 0-7 Thread(s) per core: 1 #每个core 有几个线程 Core(s) per socket: 4 #每个槽位有4个core Socket(s): 2 #服务器面板上有2个cpu 槽位 NUMA node(s): 2 #nodes的数量 Vendor ID: GenuineIntel CPU family: 6 Model: 44 Stepping: 2 CPU MHz: 2128.025 BogoMIPS: 4256.03 Virtualization: VT-x L1d cache: 32K L1i cache: 32K L2 cache: 256K L3 cache: 8192K NUMA node0 CPU(s): 0,2,4,6 #对应的core NUMA node1 CPU(s): 1,3,5,7 查看内存大小
 [root@centos8 ~]#free -h (加h显示G) [root@centos8 ~]#cat /proc/meminfo root@ubuntu2004:~# free total used free shared buff/cache available Mem: 3981632 267128 2979480 1540 735024 3466564 Swap: 3994620 0 3994620 查看硬盘和分区情况
-[root@centos8 ~]#lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT sda 8:0 0 200G 0 disk ├─sda1 8:1 0 1G 0 part /boot ├─sda2 8:2 0 100G 0 part / ├─sda3 8:3 0 50G 0 part /data ├─sda4 8:4 0 1K 0 part └─sda5 8:5 0 …</content></entry><entry><title>Linux中的shell和基础命令4.1</title><url>/post/linux01/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 2^0=1=1b
-2^1=2=10b
-2^3=8=1000b
-2^4=16=10000b
-2^5=32=100000b
-2^6=64=1000000b
-2^7=128=10000000b
-2^8=256=100000000b
-2^9=512=1000000000b
-2^10=1024=10000000000b
-2^11=2048=100000000000b
-2^12=4096=1000000000000b
-常用命令
-passwd 修改密码
-sudo -i 切换管理员
-ip a 查看Ip
-halt poweroff 关机
-reboot重启
--f: 强制，不调用shutdown
--p: 切断电源
-ctrl+alt+delete 三个键
-关机或重启：shutdown
-shutdown [OPTION]... [TIME] [MESSAGE] -r: reboot -h: halt -c：cancel TIME：无指定，默认相当于+1（CentOS7） now: 立刻,相当于+0 +#: 相对时间表示法，几分钟之后；例如 +3 hh:mm: 绝对时间表示，指明具体时间 关机命令
+[root@centos8 ~]#lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT sda 8:0 0 200G 0 disk ├─sda1 8:1 0 1G 0 part /boot ├─sda2 8:2 0 100G 0 part / ├─sda3 8:3 0 50G 0 part /data ├─sda4 8:4 0 1K 0 part └─sda5 8:5 0 …</content></entry><entry><title>Linux中的shell和基础命令4.1</title><url>/post/linux01/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 关机命令
 shutdown -h now：立即关机。这个命令会立即将系统关闭，所有的运行中的程序和服务都会被停止。 shutdown -r now：立即重启系统。这个命令会立即将系统重启，所有的运行中的程序和服务都会被停止然后重新启动。 shutdown -h +10：在10分钟后关机。这个命令会在当前时间的10分钟后将系统关闭。 shutdown -r +1 “系统将在1分钟后重启，请保存正在进行的工作”：在1分钟后重启系统，并显示一条自定义的关机提示。这个命令会在1分钟后将系统重启，并在关机之前显示一个自定义的提示信息。
 除了上述常用的参数外，shutdown命令还支持其他一些参数，例如：
 -: 关闭所有用户的终端登录
@@ -134,7 +114,7 @@ shutdown -h now：立即关机。这个命令会立即将系统关闭，所有�
 -F: 强制关机，不执行服务的停止
 -c: 取消已经创建的关机任务
 总结一下，关机命令shutdown是Linux系统中非常常用的命令，可以使用不同的参数来实现不同的关机操作，如立即关机、定时关机和重启等。在使用shutdwon命令时，需要注意使用root权限执行，并根据实际需求选择适当的参数。
-Linux的shutdown命令是一个用来关闭系统的命令，它可 …</content></entry><entry><title>宝塔面板独角数卡发卡网站搭建</title><url>/post/241010/</url><categories><category>网络</category></categories><tags><tag>发卡系统</tag><tag>自动发卡</tag></tags><content type="html"><![CDATA[  之前一种用彩虹发卡，但是已经停更了。刚好需要重新搭建一个自动打卡系统，经过比对后，觉得独角数码非常不错。故再次更新我打搭建过程以及遇到的问题。
+Linux的shutdown命令是一个用来关闭系统的命令，它可以通过命令行界面或者终端来执行。下面是关机命令的五个常用选项： -h选项：这个选项用来将系统关机。它可以和后面的时间参数一起使用，例如：shutdown -h now 表示立即关机，shutdown -h 10 表示在10分钟后关机。 -r选项：这个选项用来重新启动系统。使用类似于关机选项的方式，例如：shutdown -r now 表示立即重启，shutdown -r 10 表示在10分钟后重启。 -k选项：这个选项用来发送关机警告通知给所有登录用户。它的作用是让用户知道系统即将关闭，但实际上并不执行关机操作。这对于管理员想要提醒用户保存工作而不影响他们的当前活动很有用。使用方式：shutdown -k now 表示立即发送通知。 -c选项：这个选项用来取消之前计划的关机或重启操作。如果之前使用了关机或重启命令，可以使用该选项来取消。使用方式：shutdown -c。 -f选项：这个选项用来强制执行关机或重启操作。它会绕过系统中正在运行的进程和服务的检查，直接关闭或重启系统。使用的方式和其他选项类似。例如：shutdown -r -f now 表示立即强制重 …</content></entry><entry><title>宝塔面板独角数卡发卡网站搭建</title><url>/post/241010/</url><categories><category>网络</category></categories><tags><tag>发卡系统</tag><tag>自动发卡</tag></tags><content type="html"><![CDATA[  之前一种用彩虹发卡，但是已经停更了。刚好需要重新搭建一个自动打卡系统，经过比对后，觉得独角数码非常不错。故再次更新我打搭建过程以及遇到的问题。
 我是通过内网搭建的发卡网站测试，在测试过程中，出现了支付成功，不发卡问题。后台显示待付款，点击已完成也不会发送卡密。
 一、搭建项目地址：点击传送官方教程地址：点击传送二、宝塔安装必装环境个人推荐Apache，不需要调试即可支持ipv6
 最好是编译安装哦，性能更好。但是时间很久，可以睡一觉了。
