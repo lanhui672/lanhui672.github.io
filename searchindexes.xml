@@ -23,8 +23,7 @@ $1, $2, ... 对应第1个、第2个等参数，shift [n]换位置 $0 命令本�
 汇编语言稍微好理解，即机器指令对应的助记符，助记符更接近自然语言 高级编程语言：
 编译：高级语言&amp;ndash;&amp;gt;编译器&amp;ndash;&amp;gt;机器代码文件&amp;ndash;&amp;gt;执行，如：C，C++ (编译转化成新的二进制文件)
 解释：高级语言&amp;ndash;&amp;gt;执行&amp;ndash;&amp;gt;解释器&amp;ndash;&amp;gt;机器代码，如：shell，python，php，JavaScript，perl
-编译和解释型语言 （边运行边解释） 编程逻辑处理方式脚本语言的基本用法shell 脚本的用途将简单的命令组合完成复杂的工作,自动化执行命令,提高工作效率 减少手工命令的输入，一定程度上避免人为错误 将软件或应用的安装及配置实现标准化 用于实现日常性的,重复性的,非交互式的运维工作,如:文件打包压缩备份,监控系统运行状态并实现 告警等 shell 脚本基本结构shell脚本编程：是基于过程式、解释执 …  ]]></content></entry><entry><title>正则表达式和文本处理三剑客之 grep8.3</title><url>/post/linux08/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 正则表达式
-REGEXP： Regular Expressions，由一类特殊字符及文本字符所编写的模式，其中有些字符（元字符） 不表示字符字面意义，而表示控制或通配的功能，类似于增强版的通配符功能，但与通配符不同，通配符功能是用来处理文件名，而正则表达式是处理文本内容中字符。
+编译和解释型语言 （边运行边解释） 编程逻辑处理方式脚本语言的基本用法shell 脚本的用途将简单的命令组合完成复杂的工作,自动化执行命令,提高工作效率 减少手工命令的输入，一定程度上避免人为错误 将软件或应用的安装及配置实现标准化 用于实现日常性的,重复性的,非交互式的运维工作,如:文件打包压缩备份,监控系统运行状态并实现 告警等 shell 脚本基本结构shell脚本编程：是基于过程式、解释执 …  ]]></content></entry><entry><title>正则表达式和文本处理三剑客之 grep</title><url>/post/linux08/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  正则表达式REGEXP： Regular Expressions，由一类特殊字符及文本字符所编写的模式，其中有些字符（元字符） 不表示字符字面意义，而表示控制或通配的功能，类似于增强版的通配符功能，但与通配符不同，通配符功能是用来处理文件名，而正则表达式是处理文本内容中字符。
 正则表达式被很多程序和开发语言所广泛支持：vim, less,grep,sed,awk, nginx,mysql 等
 正则表达式分两类：
 基本正则表达式：BRE Basic Regular Expressions
@@ -34,9 +33,7 @@ REGEXP： Regular Expressions，由一类特殊字符及文本字符所编写的
 Expressions）
 正则表达式的元字符分类：字符匹配、匹配次数、位置锚定、分组
 帮助：man 7 regex
-基本正则表达式元字符
-字符匹配
-. 匹配任意单个字符(除了\n)，可以是一个汉字或其它国家的文字 [] 匹配指定范围内的任意单个字符，示例：[wang] [0-9] [a-z] [a-zA-Z] [^] 匹配指定范围外的任意单个字符,示例：[^wang] [:alnum:] 字母和数字 [:alpha:] 代表任何英文大小写字符，亦即 A-Z, a-z [:lower:] 小写字母,示例:[[:lower:]],相当于[a-z] [:upper:] 大写字母 [:blank:] 空白字符（空格和制表符） [:space:] 包括空格、制表符(水平和垂直)、换行符、回车符等各种类型的空白,比[:blank:]包含的范围 广 [:cntrl:] 不可打印的控制字符（退格、删除、警铃...） [:digit:] 十进制数字 [:xdigit:]十六进制数字 [:graph:] 可打印的非空白字符 [:print:] 可打印字符 [:punct:] 标点符号 ----------------- \s #匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [\f\r\t\v]。注意 Unicode 正则表达式会匹配全角空格符 \S #匹配任何非空白字符。等价于 [^\f\r\t\v] \w #匹配一个字母,数字,下划线,汉字,其它国家文字的字符，等价 …</content></entry><entry><title>文本编译工具VIM详解8.2（文本处理工具）</title><url>/post/linux07/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 命令模式
+常用选项-i：忽略大小写。例如，grep -i &amp;#34;pattern&amp;#34; file.txt 将匹配 “pattern”、“Pattern”、“PATTERN” 等。 -v：反转匹配，只显示不匹配指定模式的行。例如，grep -v &amp;#34;pattern&amp;#34; file.txt 将显示不包含 “pattern” 的所有行。 -c：计数，只输出匹配行的数量，不显示匹配的内容。例如，grep -c &amp;#34;pattern&amp;#34; file.txt 将输出匹配 “pattern” 的行数。 -n：显示匹配行及其行号。例如，grep -n &amp;#34;pattern&amp;#34; file.txt 将输出匹配 “pattern” 的行及其在文件中的行号。 -r 或 -R：递归搜索。在目录中递归地搜索包含指定模式的文件。例如，grep -r &amp;#34;pattern&amp;#34; /path/to/directory/。 -l：只输出包含匹配字符串的文件名，不输出匹配行的内容。例如，grep -l &amp;#34;pattern&amp;#34; *.txt。 -L：与 -l 相反，只输出不包含匹配字符串的文件名。 -E：使用扩展正则表达式。例如，grep -E &amp;#34;pattern1|pattern2&amp;#34; file.txt 将匹配包含 “pattern1” …  ]]></content></entry><entry><title>文本编译工具VIM详解8.2（文本处理工具）</title><url>/post/linux07/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 命令模式
 命令模式，又称为Normal模式，功能强大，只是此模式输入指令并在屏幕上显示，所以需要记忆大量 的快捷按键才能更好的使用
 退出VIM
 ZZ 保存退出 ZQ 不保存退出 光标跳转
