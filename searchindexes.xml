@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>shell脚本编程基础10.1</title><url>/post/linux11/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  编程基础短路运算短路与 &amp;amp;&amp;amp; CMD1 &amp;amp;&amp;amp; CMD2 第一个CMD1结果为真(1)，第二个CMD2必须要参与运算，才能得到最终的结果 第一个CMD1结果为假(0)，总的结果必定为0，因此不需要执行CMD2 短路或 || CMD1 || CMD2 第一个CMD1结果为真(1)，总的结果必定为1，因此不需要执行CMD2 第一个CMD1结果为假(0)，第二个CMD2 必须要参与运算,才能得到最终的结果 短路与和或组合 CMD1 &amp;amp;&amp;amp; CMD2 || CMD3 当CMD1执行成功时,会执行CMD2 当CMD1执行失败时,会执行CMD3 注意： CMD1 || CMD2 &amp;amp;&amp;amp; CMD3 逻辑不通,不使用 条件测试命令条件测试：判断某需求是否满足，需要由测试机制来实现，专用的测试表达式需要由测试命令辅助完成
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>shell脚本编程基础3</title><url>/post/linux12/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  编程基础短路运算短路与 &amp;amp;&amp;amp; CMD1 &amp;amp;&amp;amp; CMD2 第一个CMD1结果为真(1)，第二个CMD2必须要参与运算，才能得到最终的结果 第一个CMD1结果为假(0)，总的结果必定为0，因此不需要执行CMD2 短路或 || CMD1 || CMD2 第一个CMD1结果为真(1)，总的结果必定为1，因此不需要执行CMD2 第一个CMD1结果为假(0)，第二个CMD2 必须要参与运算,才能得到最终的结果 短路与和或组合 CMD1 &amp;amp;&amp;amp; CMD2 || CMD3 当CMD1执行成功时,会执行CMD2 当CMD1执行失败时,会执行CMD3 注意： CMD1 || CMD2 &amp;amp;&amp;amp; CMD3 逻辑不通,不使用 条件测试命令条件测试：判断某需求是否满足，需要由测试机制来实现，专用的测试表达式需要由测试命令辅助完成
 测试过程，实现评估布尔声明，以便用在条件性环境下进行执行
 若真，则状态码变量 $? 返回0
 若假，则状态码变量 $? 返回1
 条件测试命令
-test EXPRESSION [ EXPRESSION ] #和test 等价，建议使用 [ ] [[ EXPRESSION ]] 相关于增强版的 [ ], 支持[]的用法,且支持扩展正则表达式和通配符 注意：EXPRESSION前后必须有空白字符 帮助： [root@ocky9 ~]#type [ [ is a shell builtin [root@centos8 ~]#help [ [: [ arg... ] Evaluate conditional expression. This is a synonym for the &amp;#34;test&amp;#34; builtin, but the last argument must be a literal `]&amp;#39;, to match the opening `[&amp;#39;. [root@rocky9 ~]# help test test: test [expr] Evaluate conditional expression. Exits with a status of 0 (true) or 1 (false) depending on the evaluation of EXPR. …  ]]></content></entry><entry><title>shell脚本编程基础9.2</title><url>/post/linux10/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 编程基础
+test EXPRESSION [ EXPRESSION ] #和test 等价，建议使用 [ ] [[ EXPRESSION ]] 相关于增强版的 [ ], 支持[]的用法,且支持扩展正则表达式和通配符 注意：EXPRESSION前后必须有空白字符 帮助： [root@ocky9 ~]#type [ [ is a shell builtin [root@centos8 ~]#help [ [: [ arg... ] Evaluate conditional expression. This is a synonym for the &amp;#34;test&amp;#34; builtin, but the last argument must be a literal `]&amp;#39;, to match the opening `[&amp;#39;. [root@rocky9 ~]# help test 测试：test [表达式] 评估条件表达式。 根据EXPR的评估结果，退出状态为0（真）或1（假）。表达式可以是单目或双目的。单目表达式常用于检查文件的状态。还包括字符串操作符和数值比较操作符。 test的行为取决于参数的数量。阅读bash手册页以获取完整规范。 文件操作符： -a …  ]]></content></entry><entry><title>shell脚本编程基础2</title><url>/post/linux11/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 编程基础
 只读变量
 只读变量：只能声明定义，但后续不能修改和删除，即常量
 声明只读变量：
@@ -11,8 +11,8 @@ readonly name declare -r name 查看只读变量：
 readonly [-p] declare -r 范例：
 [root@centos8 ~]#readonly PI=3.14159 [root@centos8 ~]#echo $PI 3.14159 [root@centos8 ~]#PI=3.14 -bash: PI: readonly variable [root@centos8 ~]#unset PI -bash: unset: PI: cannot unset: readonly variable [root@centos8 ~]#echo $PI 3.14159 [root@centos8 ~]#exit logout Connection closed by foreign host. Disconnected from remote host(10.0.0.8) at 14:27:04. Type `help&amp;amp;#39; to learn how to use Xshell prompt. [c:\~]$ Reconnecting in 1 seconds. Press any key to exit local shell. . Connecting to 10.0.0.8:22... Connection established. To escape to local shell, press &amp;amp;#39;Ctrl+Alt+]&amp;amp;#39;. WARNING! The remote SSH server rejected X11 forwarding request. Last login: Wed Apr 1 13:51:28 2020 from 10.0.0.1 [root@centos8 ~]#echo $PI 位置变量
 位置变量：在bash shell中内置的变量, 在脚本代码中调用通过命令行传递给脚本的参数
-$1, $2, ... 对应第1个、第2个等参数，shift [n]换位置 $0 命令本身,包括路径 $* 传递给脚本的所有参数，全部参数合为一个字符串 $@ 传递给脚本的所有参数，每个参数为独立字符串 $# 传递给脚本的参数的个 …</content></entry><entry><title>shell脚本编程基础9.1</title><url>/post/linux09/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  编程基础linus：Talk is cheap, show me the code
-程序组成程序：算法+数据结构 算法：处理数据的方式 数据结构：数据在计算机中的类型和组织方式 数据：是程序的核心,程序为数据提供服务 ##程序编程风格 面向过程语言
+$1, $2, ... 对应第1个、第2个等参数，shift [n]换位置 $0 命令本身,包括路径 $* 传递给脚本的所有参数，全部参数合为一个字符串 $@ 传递给脚本的所有参数，每个参数为独立字符串 $# 传递给脚本的参数的个 …</content></entry><entry><title>shell脚本编程基础1</title><url>/post/linux10/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  编程基础linus：Talk is cheap, show me the code
+程序组成程序：算法+数据结构 算法：处理数据的方式 数据结构：数据在计算机中的类型和组织方式 数据：是程序的核心,程序为数据提供服务 程序编程风格面向过程语言
 做一件事情，排出个步骤，第一步干什么，第二步干什么，如果出现情况 A，做什么处理，如果出现了情况 B，做什么处理 问题规模小，可以步骤化，按部就班处理 以指令为中心，数据服务于指令 C, shell 面向对象语言
 将编程看成是一个事物，对外界来说，事物是直接使用的,不用关心事物内部的情况。而编程 就是设置事物能够完成功能。 一种认识世界、分析世界的方法论。将万事万物抽象为各种对象 类是抽象的概念，是万事万物的抽象，是一类事物的共同特征的集合 对象是类的具体实现，是一个实体 问题规模大，复杂系统 以数据为中心，指令服务于数据 java，C#，python，golang等 编程语言计算机：运行二进制指令
 编程语言：人与计算机之间交互的语言。分为两种：低级语言和高级语言
@@ -23,7 +23,8 @@ $1, $2, ... 对应第1个、第2个等参数，shift [n]换位置 $0 命令本�
 汇编语言稍微好理解，即机器指令对应的助记符，助记符更接近自然语言 高级编程语言：
 编译：高级语言&amp;ndash;&amp;gt;编译器&amp;ndash;&amp;gt;机器代码文件&amp;ndash;&amp;gt;执行，如：C，C++ (编译转化成新的二进制文件)
 解释：高级语言&amp;ndash;&amp;gt;执行&amp;ndash;&amp;gt;解释器&amp;ndash;&amp;gt;机器代码，如：shell，python，php，JavaScript，perl
-编译和解释型语言 （边运行边解释） 编程逻辑处理方式脚本语言的基本用法shell 脚本的用途将简单的命令组合完成复杂的工作,自动化执行命令,提高工作效率 减少手工命令的输入，一定程度上避免人为错误 将软件或应用的安装及配置实现标准化 用于实现日常性的,重复性的,非交互式的运维工作,如:文件打包压缩备份,监控系统运行状态并实现 告警等 shell 脚本基本结构shell脚本编程：是基于过程式、解释执 …  ]]></content></entry><entry><title>正则表达式和文本处理三剑客之 grep</title><url>/post/linux08/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  正则表达式REGEXP： Regular Expressions，由一类特殊字符及文本字符所编写的模式，其中有些字符（元字符） 不表示字符字面意义，而表示控制或通配的功能，类似于增强版的通配符功能，但与通配符不同，通配符功能是用来处理文件名，而正则表达式是处理文本内容中字符。
+编译和解释型语言 （边运行边解释） 编程逻辑处理方式脚本语言的基本用法shell 脚本的用途将简单的命令组合完成复杂的工作,自动化执行命令,提高工作效率 减少手工命令的输入，一定程度上避免人为错误 将软件或应用的安装及配置实现标准化 用于实现日常性的,重复性的,非交互式的运维工作,如:文件打包压缩备份,监控系统运行状态并实现 告警等 shell 脚本基本结构shell脚本编程：是基于过程式、解释执行的 …  ]]></content></entry><entry><title>正则表达式和相关工具及文件查找压缩</title><url>/post/linux09/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 正则表达式
+REGEXP： Regular Expressions，由一类特殊字符及文本字符所编写的模式，其中有些字符（元字符） 不表示字符字面意义，而表示控制或通配的功能，类似于增强版的通配符功能，但与通配符不同，通配符功能是用来处理文件名，而正则表达式是处理文本内容中字符。
 正则表达式被很多程序和开发语言所广泛支持：vim, less,grep,sed,awk, nginx,mysql 等
 正则表达式分两类：
 基本正则表达式：BRE Basic Regular Expressions
@@ -33,7 +34,17 @@ $1, $2, ... 对应第1个、第2个等参数，shift [n]换位置 $0 命令本�
 Expressions）
 正则表达式的元字符分类：字符匹配、匹配次数、位置锚定、分组
 帮助：man 7 regex
-常用选项-i：忽略大小写。例如，grep -i &amp;#34;pattern&amp;#34; file.txt 将匹配 “pattern”、“Pattern”、“PATTERN” 等。 -v：反转匹配，只显示不匹配指定模式的行。例如，grep -v &amp;#34;pattern&amp;#34; file.txt 将显示不包含 “pattern” 的所有行。 -c：计数，只输出匹配行的数量，不显示匹配的内容。例如，grep -c &amp;#34;pattern&amp;#34; file.txt 将输出匹配 “pattern” 的行数。 -n：显示匹配行及其行号。例如，grep -n &amp;#34;pattern&amp;#34; file.txt 将输出匹配 “pattern” 的行及其在文件中的行号。 -r 或 -R：递归搜索。在目录中递归地搜索包含指定模式的文件。例如，grep -r &amp;#34;pattern&amp;#34; /path/to/directory/。 -l：只输出包含匹配字符串的文件名，不输出匹配行的内容。例如，grep -l &amp;#34;pattern&amp;#34; *.txt。 -L：与 -l 相反，只输出不包含匹配字符串的文件名。 -E：使用扩展正则表达式。例如，grep -E &amp;#34;pattern1|pattern2&amp;#34; file.txt 将匹配包含 “pattern1” …  ]]></content></entry><entry><title>文本编译工具VIM详解8.2（文本处理工具）</title><url>/post/linux07/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 命令模式
+基本正则表达式元字符
+字符匹配
+. 匹配任意单个字符(除了\n)，可以是一个汉字或其它国家的文字 [] 匹配指定范围内的任意单个字符，示例：[wang] [0-9] [a-z] [a-zA-Z] [^] 匹配指定范围外的任意单个字符,示例：[^wang] [:alnum:] 字母和数字 [:alpha:] 代表任何英文大小写字符，亦即 A-Z, a-z [:lower:] 小写字母,示例:[[:lower:]],相当于[a-z] [:upper:] 大写字母 [:blank:] 空白字符（空格和制表符） [:space:] 包括空格、制表符(水平和垂直)、换行符、回车符等各种类型的空白,比[:blank:]包含的范围 广 [:cntrl:] 不可打印的控制字符（退格、删除、警铃...） [:digit:] 十进制数字 [:xdigit:]十六进制数字 [:graph:] 可打印的非空白字符 [:print:] 可打印字符 [:punct:] 标点符号 ----------------- \s #匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [\f\r\t\v]。注意 Unicode 正则表达式会匹配全角空格符 \S #匹配任何非空白字符。等价于 [^\f\r\t\v] \w #匹配一个字母,数字,下划线,汉字,其它国家文字的字符，等价 …</content></entry><entry><title>文本处理三剑客</title><url>/post/linux08/</url><categories><category>linux</category></categories><tags><tag>linux</tag><tag>文本处理三剑客</tag><tag>grep</tag><tag>sed</tag><tag>awk</tag></tags><content type="html"><![CDATA[  文本处理三剑客grep 命令主要对文本的（正则表达式）行基于模式进行过滤
+sed：stream editor，文本编辑工具
+awk：Linux上的实现gawk，文本报告生成器
+文本处理三剑客之 grepgrep: Global search REgular expression and Print out the line
+作用：文本搜索工具，根据用户指定的“模式”对目标文本逐行进行匹配检查；打印匹配到的行
+模式：由正则表达式字符及文本字符所编写的过滤条件
+帮助 https://man7.org/linux/man-pages/man1/grep.1.html格式：
+grep [OPTIONS] PATTERN [FILE...] 常见选项：
+--color：将匹配的文本高亮显示。 -m # 匹配#次后停止 -i：忽略大小写。例如，grep -i &amp;#34;pattern&amp;#34; file.txt 将匹配 “pattern”、“Pattern”、“PATTERN” 等。 -v：反转匹配，只显示不匹配指定模式的行。例如，grep -v &amp;#34;pattern&amp;#34; file.txt 将显示不包含 “pattern” 的所有行。 -c：计数，只输出匹配行的数量，不显示匹配的内容。例如，grep -c &amp;#34;pattern&amp;#34; file.txt 将输出匹配 “pattern” 的行数。 -q 静默模式，不输出任何信息 -n：显示匹配行及其行号。例如，grep -n &amp;#34;pattern&amp;#34; file.txt 将输出匹配 “pattern” 的行及其在文件中的行号。 -r 或 -R：递归搜索，但不处理软链接。在目录中递归地搜索包含指定模式的文件。例如，grep -r &amp;#34;pattern&amp;#34; /path/to/directory/。 -R 递归目录，但处理软链接 -l：只输出包含匹配字符串的文件名，不输出匹配行的内容。例如，grep -l &amp;#34;pattern&amp;#34; *.txt。 -L：与 -l 相反，只输出不包含匹配字符串的文件名。 -E：使用扩展正则表达式。例如，grep -E &amp;#34;pattern1|pattern2&amp;#34; file.txt 将匹配包含 “pattern1” 或 “pattern2” 的行。 …  ]]></content></entry><entry><title>文本编译工具VIM详解8.2（文本处理工具）</title><url>/post/linux07/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 命令模式
 命令模式，又称为Normal模式，功能强大，只是此模式输入指令并在屏幕上显示，所以需要记忆大量 的快捷按键才能更好的使用
 退出VIM
 ZZ 保存退出 ZQ 不保存退出 光标跳转
