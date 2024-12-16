@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>shell脚本编程基础</title><url>/post/linux10/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  编程基础linus：Talk is cheap, show me the code
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>磁盘存储和文件系统</title><url>/post/linux11/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 磁盘结构
+设备文件
+设备文件：关联至一个设备驱动程序，进而能够跟与之对应硬件设备进行通信 设备号码： * 主设备号：major number, 标识设备类型 * 次设备号：minor number, 标识同一类型下的不同设备 设备类型： * 块设备：block，存取单位“块”，磁盘 * 字符设备：char，存取单位“字符”，键盘 磁盘设备的设备文件命名： dev/DEV_FILE /dev/sdX # SAS,SATA,SCSI,IDE,USB /dev/nvme0n# #nvme协议硬盘，如：第一个硬盘：nvme0n1，第二个硬盘：nvme0n2 虚拟磁盘：
+/dev/vd /dev/xvd 不同磁盘标识：a-z,aa,ab… 示例：/dev/sda，/dev/sdb, &amp;amp;hellip; 同一设备上的不同分区：1,2, &amp;amp;hellip;
+/dev/sda1 /dev/sda5 范例：创建设备文件
+[root@centos8 ~]#df /boot Filesystem 1K-blocks Used Available Use% Mounted on /dev/sda1 999320 130848 799660 15% /boot [root@centos8 ~]#ls /boot config-4.18.0-147.el8.x86_64 loader efi lost+found grub2 System.map-4.18.0- 147.el8.x86_64 initramfs-0-rescue-5b85fc7444b240a992c42ce2a9f65db5.img vmlinuz-0-rescue- 5b85fc7444b240a992c42ce2a9f65db5 initramfs-4.18.0-147.el8.x86_64.img vmlinuz-4.18.0- 147.el8.x86_64 initramfs-4.18.0-147.el8.x86_64kdump.img [root@centos8 ~]#mknod /data/partition-sda1 b 8 1 [root@centos8 ~]#ll /data/partition-sda1 brw-r--r-- 1 root root 8, 1 Apr 13 09:15 …</content></entry><entry><title>shell脚本编程基础</title><url>/post/linux10/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  编程基础linus：Talk is cheap, show me the code
 程序组成程序：算法+数据结构 算法：处理数据的方式 数据结构：数据在计算机中的类型和组织方式 数据：是程序的核心,程序为数据提供服务 程序编程风格面向过程语言
 做一件事情，排出个步骤，第一步干什么，第二步干什么，如果出现情况 A，做什么处理，如果出现了情况 B，做什么处理 问题规模小，可以步骤化，按部就班处理 以指令为中心，数据服务于指令 C, shell 面向对象语言
 将编程看成是一个事物，对外界来说，事物是直接使用的,不用关心事物内部的情况。而编程 就是设置事物能够完成功能。 一种认识世界、分析世界的方法论。将万事万物抽象为各种对象 类是抽象的概念，是万事万物的抽象，是一类事物的共同特征的集合 对象是类的具体实现，是一个实体 问题规模大，复杂系统 以数据为中心，指令服务于数据 java，C#，python，golang等 编程语言计算机：运行二进制指令
