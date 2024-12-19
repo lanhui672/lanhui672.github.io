@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>磁盘存储和文件系统</title><url>/post/linux11/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 磁盘结构
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>软件管理</title><url>/post/linux12/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  软件相关概念ABIABI : Application Binary Interface
+Windows与Linux不兼容
+ELF(Executable and Linkable Format) Linux PE（Portable Executable）Windows
+APIAPI即Application Programming Interface，API可以在各种不同的操作系统上实现给应用程序提供完全 相同的接口，而它们本身在这些系统上的实现却可能迥异，主流的操作系统有两种，一种是Windows系 统，另一种是Linux系统。由于操作系统的不同，API又分为Windows API和Linux API。在Windows平 台开发出来的软件在Linux上无法运行，在Linux上开发的软件在Windows上又无法运行，这就导致了软 件移植困难，POSIX 标准的出现就是为了解决这个问题
+POSIX：Portable Operating System Interface 可移植操作系统接口，定义了操作系统应该为应用程序 提供的接口标准，是IEEE为要在各种UNIX操作系统上运行的软件而定义的一系列API标准的总称。 Linux和windows都要实现基本的posix标准，程序就在源代码级别可移植了
+开发语言系统级开发 汇编语言 C C++ 应用级开发 java Python go php perl delphi basic ruby bash
+语言程序的实现过程C 程序源代码 &amp;ndash;&amp;gt; 预处理 &amp;ndash;&amp;gt; 编译 &amp;ndash;&amp;gt; 汇编 &amp;ndash;&amp;gt; 链接
+C语言的程序编译主要经过四个过程：
+预处理（Pre-Processing） 1）将所有的#define删除，并且展开所有的宏定义
+2）处理所有的条件预编译指令，比如#if #ifdef #elif #else #endif等
+3）处理#include 预编译指令，将被包含的文件插入到该预编译指令的位置。
+4）删除所有注释 &amp;ldquo;//&amp;ldquo;和&amp;rdquo;/* */&amp;rdquo;.
+5）添加行号和文件标识，以便编译时产生调试用的行号及编译错误警告行号。
+6）保留所有的#pragma编译器指令，因为编译器需要使用它们 编译 （Compiling） 编译过程就是 …  ]]></content></entry><entry><title>磁盘存储和文件系统</title><url>/post/linux11/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 磁盘结构
 设备文件
 设备文件：关联至一个设备驱动程序，进而能够跟与之对应硬件设备进行通信 设备号码： * 主设备号：major number, 标识设备类型 * 次设备号：minor number, 标识同一类型下的不同设备 设备类型： * 块设备：block，存取单位“块”，磁盘 * 字符设备：char，存取单位“字符”，键盘 磁盘设备的设备文件命名： dev/DEV_FILE /dev/sdX # SAS,SATA,SCSI,IDE,USB /dev/nvme0n# #nvme协议硬盘，如：第一个硬盘：nvme0n1，第二个硬盘：nvme0n2 虚拟磁盘：
 /dev/vd /dev/xvd 不同磁盘标识：a-z,aa,ab… 示例：/dev/sda，/dev/sdb, &amp;amp;hellip; 同一设备上的不同分区：1,2, &amp;amp;hellip;
