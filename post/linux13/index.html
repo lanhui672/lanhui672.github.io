@@ -1,14 +1,14 @@
-<!doctype html><html lang=zh-CN data-theme=light><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width"><meta name=theme-color content="#19b8eb" media="(prefers-color-scheme: light)"><meta name=generator content="Hugo 0.126.1"><link rel="shortcut icon" type=image/x-icon href=/imgs/icons/favicon.ico><link rel=icon type=image/x-icon href=/imgs/icons/favicon.ico><link rel=icon type=image/png sizes=16x16 href=/imgs/icons/favicon_16x16_next.png><link rel=icon type=image/png sizes=32x32 href=/imgs/icons/favicon_32_32_next.png><link rel=apple-touch-icon sizes=180x180 href=/imgs/icons/apple_touch_icon_next.png><meta itemprop=name content="网络基础 "><meta itemprop=description content="1208034077#qq.com"><meta itemprop=datePublished zgotmplz><meta itemprop=dateModified zgotmplz><meta itemprop=image content="http://localhost:1313/imgs/hugo_next_avatar.png"><meta itemprop=keywords content="linux"><meta property="og:type" content="article"><meta property="og:title" content="网络基础 "><meta property="og:description" content="1208034077#qq.com"><meta property="og:image" content="/imgs/hugo_next_avatar.png"><meta property="og:image:width" content="312"><meta property="og:image:height" content="312"><meta property="og:image:type" content="image/jpeg/png/svg/jpg"><meta property="og:url" content="http://localhost:1313/post/linux13/"><meta property="og:site_name" content="蓝惠の小窝"><meta property="og:locale" content="zh-CN"><meta property="article:author" content="蓝惠の小窝"><meta property="article:published_time" content="2024-12-21 04:06:00 +0800 CST"><meta property="article:modified_time" content="2024-12-21 04:06:00 +0800 CST"><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/font-awesome/6.1.2/css/all.min.css><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/animate.css/3.1.1/animate.min.css><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/viewerjs/1.11.0/viewer.min.css><link rel=stylesheet href=/css/main.css><style type=text/css>.post-footer,.flinks-list-footer hr:after{content:"~ 我可是有底线的哟 ~"}</style><script type=text/javascript>(function(){localDB={set:function(e,t,n){if(n===0)return;const s=new Date,o=n*864e5,i={value:t,expiry:s.getTime()+o};localStorage.setItem(e,JSON.stringify(i))},get:function(e){const t=localStorage.getItem(e);if(!t)return void 0;const n=JSON.parse(t),s=new Date;return s.getTime()>n.expiry?(localStorage.removeItem(e),void 0):n.value}},theme={active:function(){const e=localDB.get("theme");if(e==null)return;theme.toggle(e),window.matchMedia("(prefers-color-scheme: dark)").addListener(function(e){theme.toggle(e.matches?"dark":"light")})},toggle:function(e){document.documentElement.setAttribute("data-theme",e),localDB.set("theme",e,2);const t=document.querySelector("iframe.giscus-frame");if(t){const n={setConfig:{theme:e}};t.contentWindow.postMessage({giscus:n},"https://giscus.app")}}},theme.active()})(window)</script><script class=next-config data-name=page type=application/json>{"comments":true,"isHome":false,"isPage":true,"path":"linux13","permalink":"http://localhost:1313/post/linux13/","title":"网络基础 ","waline":{"js":[{"alias":"waline","alias_name":"@waline/client","file":"dist/pageview.js","name":"pageview","version":"2.13.0"},{"alias":"waline","alias_name":"@waline/client","file":"dist/comment.js","name":"comment","version":"2.13.0"}]}}</script><script type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{var e=document.createElement("script");e.charset="UTF-8",e.src="https://hm.baidu.com/hm.js?",e.async="true",document.head.appendChild(e)})</script><script type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{var e=document.createElement("script");e.charset="UTF-8",e.src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js",e.async=!1,e.defer=!0,document.head.appendChild(e),e.onload=function(){NexT.utils.fmtBusuanzi()}})</script><title>网络基础 - 蓝惠の小窝</title><noscript><link rel=stylesheet href=/css/noscript.css></noscript></head><body itemscope itemtype=http://schema.org/WebPage class=use-motion><div class=headband></div><main class=main><header class=header itemscope itemtype=http://schema.org/WPHeader><div class=header-inner><div class=site-brand-container><div class=site-nav-toggle><div class=toggle aria-label role=button><span class=toggle-line></span>
+<!doctype html><html lang=zh-CN data-theme=light><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width"><meta name=theme-color content="#19b8eb" media="(prefers-color-scheme: light)"><meta name=generator content="Hugo 0.126.1"><link rel="shortcut icon" type=image/x-icon href=/imgs/icons/favicon.ico><link rel=icon type=image/x-icon href=/imgs/icons/favicon.ico><link rel=icon type=image/png sizes=16x16 href=/imgs/icons/favicon_16x16_next.png><link rel=icon type=image/png sizes=32x32 href=/imgs/icons/favicon_32_32_next.png><link rel=apple-touch-icon sizes=180x180 href=/imgs/icons/apple_touch_icon_next.png><meta itemprop=name content="网络基础 "><meta itemprop=description content="1208034077#qq.com"><meta itemprop=datePublished zgotmplz><meta itemprop=dateModified zgotmplz><meta itemprop=image content="http://localhost:1313/imgs/hugo_next_avatar.png"><meta itemprop=keywords content="linux"><meta property="og:type" content="article"><meta property="og:title" content="网络基础 "><meta property="og:description" content="1208034077#qq.com"><meta property="og:image" content="/imgs/hugo_next_avatar.png"><meta property="og:image:width" content="312"><meta property="og:image:height" content="312"><meta property="og:image:type" content="image/jpeg/png/svg/jpg"><meta property="og:url" content="http://localhost:1313/post/linux13/"><meta property="og:site_name" content="蓝惠の小窝"><meta property="og:locale" content="zh-CN"><meta property="article:author" content="蓝惠の小窝"><meta property="article:published_time" content="2024-12-21 04:06:00 +0800 CST"><meta property="article:modified_time" content="2024-12-21 04:06:00 +0800 CST"><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/font-awesome/6.1.2/css/all.min.css><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/animate.css/3.1.1/animate.min.css><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/viewerjs/1.11.0/viewer.min.css><link rel=stylesheet href=/css/main.css><script type=text/javascript>(function(){localDB={set:function(e,t,n){if(n===0)return;const s=new Date,o=n*864e5,i={value:t,expiry:s.getTime()+o};localStorage.setItem(e,JSON.stringify(i))},get:function(e){const t=localStorage.getItem(e);if(!t)return void 0;const n=JSON.parse(t),s=new Date;return s.getTime()>n.expiry?(localStorage.removeItem(e),void 0):n.value}},theme={active:function(){const e=localDB.get("theme");if(e==null)return;theme.toggle(e),window.matchMedia("(prefers-color-scheme: dark)").addListener(function(e){theme.toggle(e.matches?"dark":"light")})},toggle:function(e){document.documentElement.setAttribute("data-theme",e),localDB.set("theme",e,2);const t=document.querySelector("iframe.giscus-frame");if(t){const n={setConfig:{theme:e}};t.contentWindow.postMessage({giscus:n},"https://giscus.app")}}},theme.active()})(window)</script><script class=next-config data-name=page type=application/json>{"comments":true,"isHome":false,"isPage":true,"path":"linux13","permalink":"http://localhost:1313/post/linux13/","title":"网络基础 ","waline":{"js":[{"alias":"waline","alias_name":"@waline/client","file":"dist/pageview.js","name":"pageview","version":"2.13.0"},{"alias":"waline","alias_name":"@waline/client","file":"dist/comment.js","name":"comment","version":"2.13.0"}]}}</script><script type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{var e=document.createElement("script");e.charset="UTF-8",e.src="https://hm.baidu.com/hm.js?",e.async="true",document.head.appendChild(e)})</script><script type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{var e=document.createElement("script");e.charset="UTF-8",e.src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js",e.async=!1,e.defer=!0,document.head.appendChild(e),e.onload=function(){NexT.utils.fmtBusuanzi()}})</script><title>网络基础 - 蓝惠の小窝</title><noscript><link rel=stylesheet href=/css/noscript.css></noscript></head><body itemscope itemtype=http://schema.org/WebPage class=use-motion><div class=headband></div><main class=main><header class=header itemscope itemtype=http://schema.org/WPHeader><div class=header-inner><div class=site-brand-container><div class=site-nav-toggle><div class=toggle aria-label role=button><span class=toggle-line></span>
 <span class=toggle-line></span>
 <span class=toggle-line></span></div></div><div class=site-meta><a href=/ class=brand rel=start><i class=logo-line></i><h1 class=site-title>蓝惠の小窝</h1><i class=logo-line></i></a><p class=site-subtitle itemprop=description>寻找大波斯菊需要的不是金钱，而是一颗去找寻的心♥.</p></div><div class=site-nav-right><div class="toggle popup-trigger"><i class="fa fa-search fa-fw fa-lg"></i></div></div></div><nav class=site-nav><ul class="main-menu menu"><li class="menu-item menu-item-home"><a href=/ class=hvr-icon-pulse rel=section><i class="fa fa-home hvr-icon"></i>首页</a></li><li class="menu-item menu-item-about"><a href=/about.html class=hvr-icon-pulse rel=section><i class="fa fa-user hvr-icon"></i>关于</a></li><li class="menu-item menu-item-flinks"><a href=/flinks.html class=hvr-icon-pulse rel=section><i class="fa fa-thumbs-up hvr-icon"></i>友链</a></li><li class="menu-item menu-item-archives"><a href=/archives/ class=hvr-icon-pulse rel=section><i class="fa fa-archive hvr-icon"></i>归档
-<span class=badge>81</span></a></li><li class="menu-item menu-item-search"><a role=button class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索</a></li></ul></nav><div class=search-pop-overlay><div class="popup search-popup"><div class=search-header><span class=search-icon><i class="fa fa-search"></i></span><div class=search-input-container><input autocomplete=off autocapitalize=off maxlength=80 placeholder=搜索... spellcheck=false type=search class=search-input></div><span class=popup-btn-close role=button><i class="fa fa-times-circle"></i></span></div><div class="search-result-container no-result"><div class=search-result-icon><i class="fa fa-spinner fa-pulse fa-5x"></i></div></div></div></div></div><div class="toggle sidebar-toggle" role=button><span class=toggle-line></span>
+<span class=badge>82</span></a></li><li class="menu-item menu-item-search"><a role=button class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索</a></li></ul></nav><div class=search-pop-overlay><div class="popup search-popup"><div class=search-header><span class=search-icon><i class="fa fa-search"></i></span><div class=search-input-container><input autocomplete=off autocapitalize=off maxlength=80 placeholder=搜索... spellcheck=false type=search class=search-input></div><span class=popup-btn-close role=button><i class="fa fa-times-circle"></i></span></div><div class="search-result-container no-result"><div class=search-result-icon><i class="fa fa-spinner fa-pulse fa-5x"></i></div></div></div></div></div><div class="toggle sidebar-toggle" role=button><span class=toggle-line></span>
 <span class=toggle-line></span>
-<span class=toggle-line></span></div><aside class=sidebar><div class="sidebar-inner sidebar-nav-active sidebar-toc-active"><ul class=sidebar-nav><li class=sidebar-nav-toc>文章目录</li><li class=sidebar-nav-overview>站点概览</li></ul><div class=sidebar-panel-container><div class="post-toc-wrap sidebar-panel"><div class="post-toc animated"><nav id=TableOfContents><ul><li><a href=#查看双工和速度>查看双工和速度</a></li><li><a href=#如何判断网线断开>如何判断网线断开</a></li><li><a href=#tcp协议port>TCP协议PORT</a></li><li><a href=#最大发包>最大发包</a></li><li><a href=#arp>ARP</a><ul><li><a href=#范例arp-表>范例：ARP 表</a></li><li><a href=#arp静态绑定可以防止arp欺骗>ARP静态绑定可以防止ARP欺骗</a></li><li><a href=#kali-系统实现-arp-欺骗上网流量劫持>kali 系统实现 arp 欺骗上网流量劫持</a></li><li><a href=#检测mac地址是否冲突>检测mac地址是否冲突</a></li></ul></li><li><a href=#ss-命令>ss 命令</a></li><li><a href=#主机名称>主机名称</a><ul><li><a href=#centos-6>CentOS 6</a></li><li><a href=#centos-7>CentOS 7</a></li></ul></li><li><a href=#网卡名称>网卡名称</a><ul><li><a href=#centos-6-之前版本网卡名称>CentOS 6 之前版本网卡名称</a></li><li><a href=#centos-7-以上版网络配置>CentOS 7 以上版网络配置</a></li></ul></li></ul></nav></div></div><div class="site-overview-wrap sidebar-panel"><div class="site-author site-overview-item animated" itemprop=author itemscope itemtype=http://schema.org/Person><img class=site-author-image itemprop=image alt=蓝惠の小窝 src=/imgs/img-lazy-loading.gif data-src=/imgs/hugo_next_avatar.png><p class=site-author-name itemprop=name>蓝惠の小窝</p><div class=site-description itemprop=description>1208034077#qq.com</div></div><div class="site-state-wrap site-overview-item animated"><nav class=site-state><div class="site-state-item site-state-posts"><a href=/archives/><span class=site-state-item-count>81</span>
+<span class=toggle-line></span></div><aside class=sidebar><div class="sidebar-inner sidebar-nav-active sidebar-toc-active"><ul class=sidebar-nav><li class=sidebar-nav-toc>文章目录</li><li class=sidebar-nav-overview>站点概览</li></ul><div class=sidebar-panel-container><div class="post-toc-wrap sidebar-panel"><div class="post-toc animated"><nav id=TableOfContents><ul><li><a href=#查看双工和速度>查看双工和速度</a></li><li><a href=#如何判断网线断开>如何判断网线断开</a></li><li><a href=#tcp协议port>TCP协议PORT</a></li><li><a href=#最大发包>最大发包</a></li><li><a href=#arp>ARP</a><ul><li><a href=#范例arp-表>范例：ARP 表</a></li><li><a href=#arp静态绑定可以防止arp欺骗>ARP静态绑定可以防止ARP欺骗</a></li><li><a href=#kali-系统实现-arp-欺骗上网流量劫持>kali 系统实现 arp 欺骗上网流量劫持</a></li><li><a href=#检测mac地址是否冲突>检测mac地址是否冲突</a></li></ul></li><li><a href=#ss-命令>ss 命令</a></li><li><a href=#主机名称>主机名称</a><ul><li><a href=#centos-6>CentOS 6</a></li><li><a href=#centos-7>CentOS 7</a></li></ul></li><li><a href=#网卡名称>网卡名称</a><ul><li><a href=#centos-6-之前版本网卡名称>CentOS 6 之前版本网卡名称</a></li><li><a href=#centos-7-以上版网络配置>CentOS 7 以上版网络配置</a></li></ul></li><li><a href=#获取ip地址>获取IP地址</a><ul><li><a href=#动态获取>动态获取</a></li><li><a href=#静态获取>静态获取</a></li><li><a href=#路由相关的配置文件>路由相关的配置文件</a></li></ul></li><li><a href=#网卡别名>网卡别名</a><ul><li><a href=#方法一-永久添加网卡别名>方法一 永久添加网卡别名</a></li><li><a href=#方法二只改一个配置文件>方法二只改一个配置文件</a></li></ul></li><li><a href=#多网卡-bonding>多网卡 bonding</a><ul><li><a href=#bonding-聚合链路工作模式>Bonding 聚合链路工作模式</a></li></ul></li><li><a href=#bonding-配置>Bonding 配置</a><ul><li><a href=#nmcli实现-bonding>nmcli实现 bonding</a></li><li><a href=#网络组-network-teaming>网络组 Network Teaming</a></li></ul></li><li><a href=#网桥交换机>网桥(交换机)</a><ul><li><a href=#桥接原理>桥接原理</a></li><li><a href=#配置实现网桥>配置实现网桥</a></li></ul></li><li><a href=#网络测试诊断工具>网络测试诊断工具</a></li><li><a href=#ubuntu-网络配置>Ubuntu 网络配置</a><ul><li><a href=#主机名>主机名</a></li><li><a href=#网卡名称-1>网卡名称</a></li></ul></li><li><a href=#ubuntu网卡配置>Ubuntu网卡配置</a><ul><li><a href=#配置自动获取ip>配置自动获取IP</a></li></ul></li></ul><ul><li><ul><li><a href=#配置多卡静态ip和静态路由>配置多⽹卡静态IP和静态路由</a></li></ul></li><li><a href=#常见面试题>常见面试题</a></li><li><a href=#总结>总结</a></li></ul></nav></div></div><div class="site-overview-wrap sidebar-panel"><div class="site-author site-overview-item animated" itemprop=author itemscope itemtype=http://schema.org/Person><img class=site-author-image itemprop=image alt=蓝惠の小窝 src=/imgs/img-lazy-loading.gif data-src=/imgs/hugo_next_avatar.png><p class=site-author-name itemprop=name>蓝惠の小窝</p><div class=site-description itemprop=description>1208034077#qq.com</div></div><div class="site-state-wrap site-overview-item animated"><nav class=site-state><div class="site-state-item site-state-posts"><a href=/archives/><span class=site-state-item-count>82</span>
 <span class=site-state-item-name>日志</span></a></div><div class="site-state-item site-state-categories"><a href=/categories/><span class=site-state-item-count>7</span>
 <span class=site-state-item-name>分类</span></a></div><div class="site-state-item site-state-tags"><a href=/tags/><span class=site-state-item-count>55</span>
 <span class=site-state-item-name>标签</span></a></div></nav></div><div class="links-of-social site-overview-item animated"><span class=links-of-social-item><a href=https://github.com/lanhui672 title="Github → https://github.com/lanhui672" rel=noopener class=hvr-icon-pulse target=_blank><i class="fab fa-github fa-fw hvr-icon"></i>
 Github</a></span></div><div class="links-of-blogroll site-overview-item animated"><div class=links-of-blogroll-title></div><ul class=links-of-blogroll-list><li class=links-of-blogroll-item><a href=http://lanhui.live title=http://lanhui.live target=_blank>短域密语</a></li><li class=links-of-blogroll-item><a href=http://lan-hui.com title=http://lan-hui.com target=_blank>引导页</a></li></ul></div></div></div></div><div id=siteinfo-card-widget class=sidebar-card-widget><div class=item-headline><i class="fas fa-chart-line"></i>
-<span>网站资讯</span></div><div class=siteinfo><div class=siteinfo-item><div class=item-name><i class="fa-solid fa-calendar-check"></i>已运行：</div><div class=item-count id=runTimes data-publishdate=0001-01-01T00:00:00+00:00></div></div><div class=siteinfo-item><div class=item-name><i class="fas fa fa-user"></i>总访客数：</div><div class=item-count id=busuanzi_value_site_uv><i class="fa fa-sync fa-spin"></i></div></div><div class=siteinfo-item><div class=item-name><i class="fas fa fa-eye"></i>页面浏览：</div><div class=item-count id=busuanzi_value_site_pv><i class="fa fa-sync fa-spin"></i></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-font"></i>总字数：</div><div class=item-count id=wordsCount data-count=163627></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-mug-hot"></i>阅读约：</div><div class=item-count id=readTimes data-times=373></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-clock-rotate-left"></i>最后更新于：</div><div class=item-count id=last-push-date data-lastpushdate=2024-12-21T04:06:00+08:00></div></div></div></div></aside><div class=sidebar-dimmer></div></header><div class=tool-buttons><div id=goto-comments class="button goto-comments" title=直达评论><i class="fas fa-comments"></i></div><div id=goto-gtranslate class=button title=多语言翻译><i class="fas fa-globe"></i></div><div id=toggle-theme class=button title=深浅模式切换><i class="fas fa-adjust"></i></div><div class=back-to-top role=button title=返回顶部><i class="fa fa-arrow-up"></i>
+<span>网站资讯</span></div><div class=siteinfo><div class=siteinfo-item><div class=item-name><i class="fa-solid fa-calendar-check"></i>已运行：</div><div class=item-count id=runTimes data-publishdate=0001-01-01T00:00:00+00:00></div></div><div class=siteinfo-item><div class=item-name><i class="fas fa fa-user"></i>总访客数：</div><div class=item-count id=busuanzi_value_site_uv><i class="fa fa-sync fa-spin"></i></div></div><div class=siteinfo-item><div class=item-name><i class="fas fa fa-eye"></i>页面浏览：</div><div class=item-count id=busuanzi_value_site_pv><i class="fa fa-sync fa-spin"></i></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-font"></i>总字数：</div><div class=item-count id=wordsCount data-count=171030></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-mug-hot"></i>阅读约：</div><div class=item-count id=readTimes data-times=388></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-clock-rotate-left"></i>最后更新于：</div><div class=item-count id=last-push-date data-lastpushdate=2024-12-23T20:06:00+08:00></div></div></div></div></aside><div class=sidebar-dimmer></div></header><div class=tool-buttons><div id=goto-comments class="button goto-comments" title=直达评论><i class="fas fa-comments"></i></div><div id=goto-gtranslate class=button title=多语言翻译><i class="fas fa-globe"></i></div><div id=toggle-theme class=button title=深浅模式切换><i class="fas fa-adjust"></i></div><div class=back-to-top role=button title=返回顶部><i class="fa fa-arrow-up"></i>
 <span>0%</span></div></div><div class=reading-progress-bar></div><a role=button class="book-mark-link book-mark-link-fixed"></a><a href=https://github.com/lanhui672/lanhui672.github.io/wiki rel="noopener external nofollow noreferrer" target=_blank title="Follow me on GitHub" class="exturl github-corner"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0 0 115 115h15l12 27L250 250V0z"/><path d="M128.3 109C113.8 99.7 119 89.6 119 89.6 122 82.7 120.5 78.6 120.5 78.6 119.2 72 123.4 76.3 123.4 76.3 127.3 80.9 125.5 87.3 125.5 87.3 122.9 97.6 130.6 101.9 134.4 103.2" fill="currentcolor" style="transform-origin:130px 106px" class="octo-arm"/><path d="M115 115C114.9 115.1 118.7 116.5 119.8 115.4l13.9-13.8C136.9 99.2 139.9 98.4 142.2 98.6 133.8 88 127.5 74.4 143.8 58 148.5 53.4 154 51.2 159.7 51 160.3 49.4 163.2 43.6 171.4 40.1 171.4 40.1 176.1 42.5 178.8 56.2 183.1 58.6 187.2 61.8 190.9 65.4 194.5 69 197.7 73.2 200.1 77.6 213.8 80.2 216.3 84.9 216.3 84.9 212.7 93.1 206.9 96 205.4 96.6 205.1 102.4 203 107.8 198.3 112.5 181.9 128.9 168.3 122.5 157.7 114.1 157.9 116.9 156.7 120.9 152.7 124.9L141 136.5C139.8 137.7 141.6 141.9 141.8 141.8z" fill="currentcolor" class="octo-body"/></svg>
 </a><script type=text/javascript src=//sidecar.gitter.im/dist/sidecar.v1.js async></script><script type=text/javascript>((window.gitter={}).chat={}).options={room:"hugo-next/community"}</script><noscript><div class=noscript-warning>Theme NexT works best with JavaScript enabled</div></noscript><div class="main-inner post posts-expand"><div class=post-block><article itemscope itemtype=http://schema.org/Article class=post-content lang><link itemprop=mainEntityOfPage href=http://localhost:1313/post/linux13/><span hidden itemprop=author itemscope itemtype=http://schema.org/Person><meta itemprop=image content="/imgs/hugo_next_avatar.png"><meta itemprop=name content="蓝惠の小窝"></span><span hidden itemprop=publisher itemscope itemtype=http://schema.org/Organization><meta itemprop=name content="蓝惠の小窝"><meta itemprop=description content="1208034077#qq.com"></span><span hidden itemprop=post itemscope itemtype=http://schema.org/CreativeWork><meta itemprop=name content="网络基础 "><meta itemprop=description content="查看双工和速度 [root@localhost ~]# mii-tool eth0 eth0: negotiated 100baseTx-FD, link ok [root@localhost ~]# mii-tool -v eth0 eth0: negotiated 100baseTx-FD, link ok product info: vendor 00:07:32, model 17 rev 5 basic mode: autonegotiation enabled basic status: autonegotiation complete, link ok capabilities: 100baseTx-FD 100baseTx-HD 10baseT-FD 10baseT-HD advertising: 100baseTx-FD 100baseTx-HD 10baseT-FD 10baseT-HD flow-control link partner: 100baseTx-FD 100baseTx-HD 10baseT-FD 10baseT-HD [root@centos8 ~]#ethtool -i eth0 driver: vmxnet3 version: 1.4.16.0-k-NAPI firmware-version:"></span><header class=post-header><h1 class=post-title itemprop="name headline">网络基础</h1><div class=post-meta-container><div class=post-meta-items><span class=post-meta-item><span class=post-meta-item-icon><i class="far fa-calendar"></i>
 </span><span class=post-meta-item-text title=发表于>发表于：
@@ -331,70 +331,542 @@ network.service管理网络。<br>systemd对网络设备的命名方式</p><p>sy
 </span></span><span style=display:flex><span>s&lt;slot&gt;: 扩展槽的索引号
 </span></span><span style=display:flex><span>x&lt;MAC&gt;: 基于MAC地址的命名
 </span></span><span style=display:flex><span>p&lt;bus&gt;s&lt;slot&gt;: enp2s1
-</span></span></code></pre></div><p>使用传统命名方式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>(1) 编辑/etc/default/grub配置文件
-</span></span></code></pre></div><p>GRUB_CMDLINE_LINUX=&ldquo;net.ifnames=0 biosdevname=0&rdquo;</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>(2) 为grub2生成其配置文件
-</span></span></code></pre></div><p>On a system with UEFI boot mode:</p><h1 id=grub2-mkconfig--o-bootefiefiredhatgrubcfg>grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg
-<a class=header-anchor href=#grub2-mkconfig--o-bootefiefiredhatgrubcfg></a></h1><p>On a system with legacy boot mode:</p><h1 id=grub2-mkconfig--o-bootgrub2grubcfg>grub2-mkconfig -o /boot/grub2/grub.cfg
-<a class=header-anchor href=#grub2-mkconfig--o-bootgrub2grubcfg></a></h1><h1 id=grub2-mkconfig--o-etcgrub2cfg>grub2-mkconfig -o /etc/grub2.cfg
-<a class=header-anchor href=#grub2-mkconfig--o-etcgrub2cfg></a></h1><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback></code></pre></div><p>#修改网卡名称
-[root@rocky8 ~]#sed -ri &lsquo;/GRUB_CMDLINE_LINUX=/s#(.*)"$#\1 net.ifnames=0"#&rsquo; /etc/default/grub
-[root@rocky8 ~]#grub2-mkconfig -o /boot/grub2/grub.cfg
-[root@rocky8 ~]#reboot</p><p>ubuntu grub-mkconfig -o /boot/grub/grub.cfg</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>
-</span></span><span style=display:flex><span>(3) 重启系统
-</span></span></code></pre></div><p>reboot</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>自定义网卡名
-</span></span></code></pre></div><p>GRUB_CMDLINE_LINUX="&mldr; net.ifnames.prefix=<required prefix>"</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>范例: 自定义网卡名
-</span></span></code></pre></div><p>root@centos8 ~]# vi /etc/default/grub
-GRUB_CMDLINE_LINUX=&ldquo;net.ifnames.prefix=wang&rdquo;
-[root@centos8 ~]# grub2-mkconfig -o /boot/grub2/grub.cfg
-[root@centos8 ~]# reboot
-[root@centos8 ~]# ip link
-1: lo: &lt;LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT
-group default qlen 1000
-link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-2: wang0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP
-mode DEFAULT group default qlen 1000
-link/ether 00:0c:29:15:9b:83 brd ff:ff:ff:ff:ff:ff
-3: wang1: &lt;BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP
-mode DEFAULT group default qlen 1000
-link/ether 00:0c:29:15:9b:8d brd ff:ff:ff:ff:ff:ff</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>不重启办法
-</span></span><span style=display:flex><span>范例：
-</span></span></code></pre></div><p>#禁用网卡
-ip link set eth1 down
-#网卡改名
-ip link set eth1 name wangnet
-#启用网卡
-ip link set wangnet up
-#网卡别名
-ip addr add 172.16.100.100/16 dev eth0 label eth0:0
-ip addr del 172.16.100.100/16 dev eth0 label eth0:0
-#清除网络地址
-ip addr flush dev eth0</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>## 获取IP地址
-</span></span><span style=display:flex><span>### 动态获取
-</span></span></code></pre></div><p>[root@centos8 network-scripts]# vim ifcfg-eth0
-写入以下三行即可
-DEVICE=eht0
-NAME=eth0
-BOOTPROTO=dhcp</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>### 静态获取
-</span></span></code></pre></div><p>DEVICE=eht0
-NAME=eth0
-BOOTPROTO=static 或none
-IPADDR=10.0.0.88
-NETMASK=255.255.255.0
-或
-PREFIX=24
-GATEWAT=10.0.0.1
-DNS1=114.114.114.114
-DNS2=8.8.8.8</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>然后执行
-</span></span></code></pre></div><p>[rooterocku8network-scriptsl]# nmcli connection reload
-[rooterocku8network-scriptsl]# nmcli connection up eth0</p><p>如果是centos7则
-systemctl restart network</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>网关验证
-</span></span></code></pre></div><p>route -n</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>![image](https://github.com/user-attachments/assets/34d40cce-d8a3-49ab-8886-054f06be6556)
-</span></span></code></pre></div></div><footer class=post-footer><div class=post-tags><a href=/tags/linux>linux</a></div><div class=addthis_inline_share_toolbox style=text-align:center></div><hr><div class=reward-container><div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div><button>
+</span></span></code></pre></div><p>使用传统命名方式：</p><p>(1) 编辑/etc/default/grub配置文件</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>GRUB_CMDLINE_LINUX=&#34;net.ifnames=0 biosdevname=0&#34;
+</span></span></code></pre></div><p>(2) 为grub2生成其配置文件</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>On a system with UEFI boot mode:
+</span></span><span style=display:flex><span># grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg
+</span></span><span style=display:flex><span>On a system with legacy boot mode:
+</span></span><span style=display:flex><span># grub2-mkconfig -o /boot/grub2/grub.cfg
+</span></span><span style=display:flex><span># grub2-mkconfig -o /etc/grub2.cfg
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#修改网卡名称
+</span></span><span style=display:flex><span>[root@rocky8 ~]#sed -ri &#39;/GRUB_CMDLINE_LINUX=/s#(.*)&#34;$#\1 net.ifnames=0&#34;#&#39; /etc/default/grub
+</span></span><span style=display:flex><span>[root@rocky8 ~]#grub2-mkconfig -o /boot/grub2/grub.cfg 
+</span></span><span style=display:flex><span>[root@rocky8 ~]#reboot
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>ubuntu grub-mkconfig -o /boot/grub/grub.cfg 
+</span></span></code></pre></div><p>(3) 重启系统</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>reboot
+</span></span></code></pre></div><p>自定义网卡名</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>GRUB_CMDLINE_LINUX=&#34;... net.ifnames.prefix=&lt;required prefix&gt;&#34;
+</span></span></code></pre></div><p>范例: 自定义网卡名</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>root@centos8 ~]# vi /etc/default/grub
+</span></span><span style=display:flex><span>GRUB_CMDLINE_LINUX=&#34;net.ifnames.prefix=wang&#34;
+</span></span><span style=display:flex><span>[root@centos8 ~]# grub2-mkconfig -o /boot/grub2/grub.cfg
+</span></span><span style=display:flex><span>[root@centos8 ~]# reboot
+</span></span><span style=display:flex><span>[root@centos8 ~]# ip link
+</span></span><span style=display:flex><span>1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT
+</span></span><span style=display:flex><span>group default qlen 1000
+</span></span><span style=display:flex><span>link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+</span></span><span style=display:flex><span>2: wang0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel state UP
+</span></span><span style=display:flex><span>mode DEFAULT group default qlen 1000
+</span></span><span style=display:flex><span>link/ether 00:0c:29:15:9b:83 brd ff:ff:ff:ff:ff:ff
+</span></span><span style=display:flex><span>3: wang1: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel state UP
+</span></span><span style=display:flex><span>mode DEFAULT group default qlen 1000
+</span></span><span style=display:flex><span>link/ether 00:0c:29:15:9b:8d brd ff:ff:ff:ff:ff:ff
+</span></span></code></pre></div><p>不重启办法
+范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#禁用网卡
+</span></span><span style=display:flex><span>ip link set eth1 down
+</span></span><span style=display:flex><span>#网卡改名
+</span></span><span style=display:flex><span>ip link set eth1 name wangnet
+</span></span><span style=display:flex><span>#启用网卡
+</span></span><span style=display:flex><span>ip link set wangnet up
+</span></span><span style=display:flex><span>#网卡别名
+</span></span><span style=display:flex><span>ip addr add 172.16.100.100/16 dev eth0 label eth0:0
+</span></span><span style=display:flex><span>ip addr del 172.16.100.100/16 dev eth0 label eth0:0
+</span></span><span style=display:flex><span>#清除网络地址
+</span></span><span style=display:flex><span>ip addr flush dev eth0
+</span></span></code></pre></div><h2 id=获取ip地址>获取IP地址
+<a class=header-anchor href=#%e8%8e%b7%e5%8f%96ip%e5%9c%b0%e5%9d%80></a></h2><h3 id=动态获取>动态获取
+<a class=header-anchor href=#%e5%8a%a8%e6%80%81%e8%8e%b7%e5%8f%96></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 network-scripts]# vim ifcfg-eth0
+</span></span><span style=display:flex><span>写入以下三行即可
+</span></span><span style=display:flex><span>DEVICE=eht0
+</span></span><span style=display:flex><span>NAME=eth0
+</span></span><span style=display:flex><span>BOOTPROTO=dhcp
+</span></span></code></pre></div><h3 id=静态获取>静态获取
+<a class=header-anchor href=#%e9%9d%99%e6%80%81%e8%8e%b7%e5%8f%96></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>DEVICE=eht0
+</span></span><span style=display:flex><span>NAME=eth0
+</span></span><span style=display:flex><span>BOOTPROTO=static 或none
+</span></span><span style=display:flex><span>IPADDR=10.0.0.88
+</span></span><span style=display:flex><span>NETMASK=255.255.255.0
+</span></span><span style=display:flex><span>或
+</span></span><span style=display:flex><span>PREFIX=24
+</span></span><span style=display:flex><span>GATEWAT=10.0.0.1
+</span></span><span style=display:flex><span>DNS1=114.114.114.114
+</span></span><span style=display:flex><span>DNS2=8.8.8.8
+</span></span></code></pre></div><p>然后执行</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span>[rooterocku8network<span style=color:#f92672>-</span>scriptsl]<span style=color:#75715e># nmcli connection reload</span>
+</span></span><span style=display:flex><span>[rooterocku8network<span style=color:#f92672>-</span>scriptsl]<span style=color:#75715e># nmcli connection up eth0</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>如果是</span>centos7则
+</span></span><span style=display:flex><span>systemctl restart network
+</span></span></code></pre></div><p>网关验证</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>route -n
+</span></span></code></pre></div><p><img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/34d40cce-d8a3-49ab-8886-054f06be6556 alt=image></p><h3 id=路由相关的配置文件>路由相关的配置文件
+<a class=header-anchor href=#%e8%b7%af%e7%94%b1%e7%9b%b8%e5%85%b3%e7%9a%84%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>etc/sysconfig/network-scripts/route-IFACE
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>两种风格：
+</span></span><span style=display:flex><span>(1) TARGET via GW
+</span></span><span style=display:flex><span>如：10.0.0.0/8 via 172.16.0.1
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>(2) 每三行定义一条路由
+</span></span><span style=display:flex><span>ADDRESS#=TARGET
+</span></span><span style=display:flex><span>NETMASK#=mask
+</span></span><span style=display:flex><span>GATEWAY#=GW
+</span></span></code></pre></div><p>范例: CentOS7 创建/etc/sysconfig/static-routes文件添加持久静态路由
+<img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/4caececc-96a1-4962-b6c5-5aec78a9325f alt=image></p><h2 id=网卡别名>网卡别名
+<a class=header-anchor href=#%e7%bd%91%e5%8d%a1%e5%88%ab%e5%90%8d></a></h2><p>将多个IP地址绑定到一个NIC上<br>每个IP绑定到独立逻辑网卡，即网络别名，命名格式： ethX:Y，如：eth0:1 、eth0:2、eth0:3<br>范例：ifconfig 命令</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>ifconfig eth0:0 192.168.1.100/24 up
+</span></span><span style=display:flex><span>ifconfig eth0:0 down
+</span></span></code></pre></div><p>范例：ip 命令</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>ip addr add 172.16.1.1/16 dev eth0
+</span></span><span style=display:flex><span>ip addr add 172.16.1.2/16 dev eth0 label eth0:0
+</span></span><span style=display:flex><span>ip addr del 172.16.1.2/16 dev eth0 label eth0:0
+</span></span><span style=display:flex><span>ip addr flush dev eth0 label eth0:0
+</span></span></code></pre></div><p>为每个设备别名生成独立的接口配置文件，格式为：ifcfg-ethX:xxx<br>范例： 给 lo 网卡加别名(此方式不适用于CentOS8)</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos7 network-scripts]#pwd
+</span></span><span style=display:flex><span>/etc/sysconfig/network-scripts
+</span></span><span style=display:flex><span>[root@centos7 network-scripts]#cat ifcfg-lo:1
+</span></span><span style=display:flex><span>DEVICE=lo:1
+</span></span><span style=display:flex><span>IPADDR=137.0.0.1
+</span></span><span style=display:flex><span>NETMASK=255.0.0.0
+</span></span><span style=display:flex><span>NETWORK=137.0.0.0
+</span></span><span style=display:flex><span># If you&#39;re having problems with gated making 127.0.0.0/8 a martian,
+</span></span><span style=display:flex><span># you can change this to something else (255.255.255.255, for example)
+</span></span><span style=display:flex><span>BROADCAST=137.255.255.255
+</span></span><span style=display:flex><span>ONBOOT=yes
+</span></span><span style=display:flex><span>NAME=loopback1
+</span></span><span style=display:flex><span>[root@centos7 network-scripts]#ip addr show lo
+</span></span><span style=display:flex><span>1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group
+</span></span><span style=display:flex><span>default qlen 1000
+</span></span><span style=display:flex><span>link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+</span></span><span style=display:flex><span>inet 127.0.0.1/8 scope host lo
+</span></span><span style=display:flex><span>valid_lft forever preferred_lft forever
+</span></span><span style=display:flex><span>inet 137.0.0.1/8 brd 137.255.255.255 scope global lo:1
+</span></span><span style=display:flex><span>valid_lft forever preferred_lft forever
+</span></span><span style=display:flex><span>inet6 ::1/128 scope host
+</span></span><span style=display:flex><span>valid_lft forever preferred_lft forever
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#cat /etc/sysconfig/network-scripts/ifcfg-eth0:1
+</span></span><span style=display:flex><span>DEVICE=eth0:1
+</span></span><span style=display:flex><span>IPADDR=10.0.0.100
+</span></span><span style=display:flex><span>PREFIX=8
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@centos8 ~]#ifconfig
+</span></span><span style=display:flex><span>eth0: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt; mtu 1500
+</span></span><span style=display:flex><span>inet 10.0.0.8 netmask 255.255.255.0 broadcast 10.0.0.255
+</span></span><span style=display:flex><span>inet6 fe80::20c:29ff:fe09:f5b prefixlen 64 scopeid 0x20&lt;link&gt;
+</span></span><span style=display:flex><span>ether 00:0c:29:09:0f:5b txqueuelen 1000 (Ethernet)
+</span></span><span style=display:flex><span>RX packets 2320 bytes 200266 (195.5 KiB)
+</span></span><span style=display:flex><span>RX errors 0 dropped 0 overruns 0 frame 0
+</span></span><span style=display:flex><span>TX packets 1891 bytes 279736 (273.1 KiB)
+</span></span><span style=display:flex><span>TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>eth0:1: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt; mtu 1500
+</span></span><span style=display:flex><span>inet 10.0.0.100 netmask 255.0.0.0 broadcast 10.255.255.255
+</span></span><span style=display:flex><span>ether 00:0c:29:09:0f:5b txqueuelen 1000 (Ethernet)
+</span></span></code></pre></div><h3 id=方法一-永久添加网卡别名>方法一 永久添加网卡别名
+<a class=header-anchor href=#%e6%96%b9%e6%b3%95%e4%b8%80-%e6%b0%b8%e4%b9%85%e6%b7%bb%e5%8a%a0%e7%bd%91%e5%8d%a1%e5%88%ab%e5%90%8d></a></h3><p>修改配置文件
+<img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/8a381031-2cc7-433d-8287-ae61008690f7 alt=image>
+<img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/d41aea37-efe6-41e8-8ada-1af06be18624 alt=image>
+<img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/012f9e58-ce00-4a77-ba34-99c62d5a64e3 alt=image></p><h3 id=方法二只改一个配置文件>方法二只改一个配置文件
+<a class=header-anchor href=#%e6%96%b9%e6%b3%95%e4%ba%8c%e5%8f%aa%e6%94%b9%e4%b8%80%e4%b8%aa%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6></a></h3><p><img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/9b5ac72e-f463-4e9c-91a9-e5debd491f7a alt=image>
+<img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/010a369a-9b07-4d88-ac8c-7d9c1b7bb7b5 alt=image>
+<img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/1bde4831-a7f8-49b3-888b-cb8a4268c490 alt=image>
+<img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/9c6ed20c-9787-4cd2-baf1-5ed733579239 alt=image>
+CentOS网卡配置文件生效方法</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span>CentOS6
+</span></span><span style=display:flex><span>service network restart
+</span></span><span style=display:flex><span>CentOS7
+</span></span><span style=display:flex><span>systemctl restart network
+</span></span><span style=display:flex><span>CentOS8和rocky
+</span></span><span style=display:flex><span>nmcli connnection reload
+</span></span><span style=display:flex><span>nmcli connnettion up eth0
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#通用</span>
+</span></span><span style=display:flex><span>reboot
+</span></span></code></pre></div><h2 id=多网卡-bonding>多网卡 bonding
+<a class=header-anchor href=#%e5%a4%9a%e7%bd%91%e5%8d%a1-bonding></a></h2><p>将多块网卡绑定同一IP地址对外提供服务，可以实现高可用或者负载均衡。直接给两块网卡设置同一IP
+地址是不可以的。通过 bonding，虚拟一块网卡对外提供连接，物理网卡的被修改为相同的MAC地址</p><h3 id=bonding-聚合链路工作模式>Bonding 聚合链路工作模式
+<a class=header-anchor href=#bonding-%e8%81%9a%e5%90%88%e9%93%be%e8%b7%af%e5%b7%a5%e4%bd%9c%e6%a8%a1%e5%bc%8f></a></h3><p>bond聚合链路模式共7种模式：0-6 Mode</p><ul><li>mod=0 ，即：(balance-rr) Round-robin policy（轮询）聚合口数据报文按包轮询从物理接口转
+发。
+负载均衡—所有链路处于负载均衡状态，轮询方式往每条链路发送报文这模式的特点增加了带宽，
+同时支持容错能力，当有链路出问题，会把流量切换到正常的链路上。
+性能问题—一个连接或者会话的数据包如果从不同的接口发出的话，中途再经过不同的链路，在客
+户端很有可能会出现数据包无序到达的问题，而无序到达的数据包需要重新要求被发送，这样网络
+的吞吐量就会下降。Bond0在大压力的网络传输下，性能增长的并不是很理想。
+需要交换机进行端口绑定</li><li>mod=1，即： (active-backup) Active-backup policy（主-备份策略）只有Active状态的物理接口
+才转发数据报文。
+容错能力—只有一个slave是激活的(active)。也就是说同一时刻只有一个网卡处于工作状态，其他
+的slave都处于备份状态，只有在当前激活的slave故障后才有可能会变为激活的(active)。
+无负载均衡—此算法的优点是可以提供高网络连接的可用性，但是它的资源利用率较低，只有一个
+接口处于工作状态，在有 N 个网络接口的情况下，资源利用率为1/N。</li><li>mod=2，即：(balance-xor) XOR policy（平衡策略）聚合口数据报文按源目MAC、源目IP、源目
+端口进行异或HASH运算得到一个值，根据该值查找接口转发数据报文
+负载均衡—基于指定的传输HASH策略传输数据包。
+容错能力—这模式的特点增加了带宽，同时支持容错能力，当有链路出问题，会把流量切换到正常
+的链路上。
+性能问题—该模式将限定流量，以保证到达特定对端的流量总是从同一个接口上发出。既然目的地
+是通过MAC地址来决定的，因此该模式在“本地”网络配置下可以工作得很好。如果所有流量是通过
+单个路由器，由于只有一个网关，源和目标mac都固定了，那么这个算法算出的线路就一直是同一
+条，那么这种模式就没有多少意义了。
+需要交换机配置为port channel</li><li>mod=3，即：broadcast（广播策略）这种模式的特点是一个报文会复制两份往bond下的两个接
+口分别发送出去，
+当有对端交换机失效，感觉不到任何downtime，但此法过于浪费资源；不过这种模式有很好的容
+错机制。此模式适用于金融行业，因为他们需要高可靠性的网络，不允许出现任何问题。</li><li>mod=4，即：(802.3ad) IEEE 802.3ad Dynamic link aggregation（IEEE 802.3ad 动态链接聚合）
+在动态聚合模式下，聚合组内的成员端口上均启用LACP（链路汇聚控制协议）协议，其端口状态
+通过该协议自动进行维护。
+负载均衡—基于指定的传输HASH策略传输数据包。默认算法与blance-xor一样。
+容错能力—这模式的特点增加了带宽，同时支持容错能力，当有链路出问题，会把流量切换到正常
+的链路上。对比blance-xor，这种模式定期发送LACPDU报文维护链路聚合状态，保证链路质量。
+需要交换机支持LACP协议</li><li>mod=5，即：(balance-tlb) Adaptive transmit load balancing（适配器传输负载均衡）
+在每个物理接口上根据当前的负载（根据速度计算）分配外出流量。如果正在接收数据的物理接口
+口出故障了，另一个物理接口接管该故障物理口的MAC地址。
+需要ethtool支持获取每个slave的速率</li><li>mod=6，即：(balance-alb) Adaptive load balancing（适配器适应性负载均衡）
+该模式包含了balance-tlb模式，同时加上针对IPV4流量的接收负载均衡，而且不需要任何
+switch(交换机)的支持。接收负载均衡是通过ARP协商实现的。bonding驱动截获本机发送的ARP应
+答，并把源硬件地址改写为bond中某个物理接口的唯一硬件地址，从而使得不同的对端使用不同
+的硬件地址进行通信。</li><li>mod=6与mod=0的区别：mod=6，先把eth0流量占满，再占eth1，….ethX；而mod=0的话，会
+发现2个口的流量都很稳定，基本一样的带宽。而mod=6，会发现第一个口流量很高，第2个口只
+占了小部分流量
+说明：</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>常用的模式为 0,1,3,6
+</span></span><span style=display:flex><span>mode 1、5、6 不需要交换机设置
+</span></span><span style=display:flex><span>mode 0、2、3、4需要交换机设置
+</span></span><span style=display:flex><span>active-backup、balance-tlb 和 balance-alb 模式不需要交换机的任何特殊配置。其他绑定模式需
+</span></span><span style=display:flex><span>要配置交换机以便整合链接。如：Cisco 交换机需要在模式 0、2 和 3 中使用 EtherChannel，但在模式
+</span></span><span style=display:flex><span>4中需要 LACP和 EtherChannel
+</span></span></code></pre></div><h2 id=bonding-配置>Bonding 配置
+<a class=header-anchor href=#bonding-%e9%85%8d%e7%bd%ae></a></h2><p>详细帮助：
+/usr/share/doc/kernel-doc-version/Documentation/networking/bonding.txt<br><a href=https://www.kernel.org/doc/Documentation/networking/bonding.txt title=https://www.kernel.org/doc/Documentation/networking/bonding.txt rel="noopener external nofollow noreferrer" target=_blank class=exturl>https://www.kernel.org/doc/Documentation/networking/bonding.txt
+<i class="fa fa-external-link-alt"></i></a><br>创建bonding设备的配置文件</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>etc/sysconfig/network-scripts/ifcfg-bond0
+</span></span><span style=display:flex><span>NAME=bond0
+</span></span><span style=display:flex><span>TYPE=bond
+</span></span><span style=display:flex><span>DEVICE=bond0
+</span></span><span style=display:flex><span>BOOTPROTO=none
+</span></span><span style=display:flex><span>IPADDR=10.0.0.100
+</span></span><span style=display:flex><span>PREFIX=8
+</span></span><span style=display:flex><span>#miimon指定链路监测时间间隔。如果miimon=100，那么系统每100ms 监测一次链路连接状态，如果有一
+</span></span><span style=display:flex><span>条线路不通就转入另一条线路
+</span></span><span style=display:flex><span>BONDING_OPTS=&#34;mode=1 miimon=100 fail_over_mac=1&#34;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>/etc/sysconfig/network-scripts/ifcfg-eth0
+</span></span><span style=display:flex><span>NAME=eth0
+</span></span><span style=display:flex><span>DEVICE=eth0
+</span></span><span style=display:flex><span>BOOTPROTO=none
+</span></span><span style=display:flex><span>MASTER=bond0
+</span></span><span style=display:flex><span>SLAVE=yes
+</span></span><span style=display:flex><span>ONBOOT=yes
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>/etc/sysconfig/network-scripts/ifcfg-eth1
+</span></span><span style=display:flex><span>NAME=eth1
+</span></span><span style=display:flex><span>DEVICE=eth1
+</span></span><span style=display:flex><span>BOOTPROTO=none
+</span></span><span style=display:flex><span>MASTER=bond0
+</span></span><span style=display:flex><span>SLAVE=yes
+</span></span><span style=display:flex><span>ONBOOT=yes
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span>nmcli connnection reload
+</span></span><span style=display:flex><span>nmcli connnettion up bond0
+</span></span><span style=display:flex><span>nmcli connnettion up eth0
+</span></span></code></pre></div><p>查看bond0状态：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>/proc/net/bonding/bond0
+</span></span></code></pre></div><p>删除bond0</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>ifconfig bond0 down
+</span></span><span style=display:flex><span>rmmod bonding
+</span></span></code></pre></div><h3 id=nmcli实现-bonding>nmcli实现 bonding
+<a class=header-anchor href=#nmcli%e5%ae%9e%e7%8e%b0-bonding></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#添加bonding接口
+</span></span><span style=display:flex><span>nmcli con add type bond con-name mybond0 ifname bond0 mode active-backup
+</span></span><span style=display:flex><span>ipv4.method manual ipv4.addresses 10.0.0.100/24
+</span></span><span style=display:flex><span>#添加从属接口
+</span></span><span style=display:flex><span>nmcli con add type bond-slave ifname ens7 master bond0
+</span></span><span style=display:flex><span>nmcli con add type bond-slave ifname ens3 master bond0
+</span></span><span style=display:flex><span>#注：如无为从属接口提供连接名，则该名称是接口名称加类型构成
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#要启动绑定，则必须首先启动从属接口
+</span></span><span style=display:flex><span>nmcli con up bond-slave-eth0
+</span></span><span style=display:flex><span>nmcli con up bond-slave-eth1
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#启动绑定
+</span></span><span style=display:flex><span>nmcli con up mybond0
+</span></span></code></pre></div><h3 id=网络组-network-teaming>网络组 Network Teaming
+<a class=header-anchor href=#%e7%bd%91%e7%bb%9c%e7%bb%84-network-teaming></a></h3><p>网络组：是将多个网卡聚合在一起方法，从而实现冗错和提高吞吐量<br>网络组不同于旧版中bonding技术，提供更好的性能和扩展性<br>网络组由内核驱动和teamd守护进程实现<br>多种方式 runner</p><ul><li>broadcast</li><li>roundrobin</li><li>activebackup</li><li>loadbalance</li><li>lacp (implements the 802.3ad Link Aggregation Control Protocol)
+网络组特点</li><li>启动网络组接口不会自动启动网络组中的port接口</li><li>启动网络组接口中的port接口总会自动启动网络组接口</li><li>禁用网络组接口会自动禁用网络组中的port接口</li><li>没有port接口的网络组接口可以启动静态IP连接</li><li>启用DHCP连接时，没有port接口的网络组会等待port接口的加入</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span><span style=color:#75715e>#创建网络组接口</span>
+</span></span><span style=display:flex><span>nmcli con add type team con<span style=color:#f92672>-</span>name CNAME ifname INAME [config JSON]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>CNAME <span style=color:#960050;background-color:#1e0010>连接名</span>
+</span></span><span style=display:flex><span>INAME <span style=color:#960050;background-color:#1e0010>接口名</span>
+</span></span><span style=display:flex><span>JSON <span style=color:#960050;background-color:#1e0010>指定</span>runner方式,<span style=color:#960050;background-color:#1e0010>格式：</span><span style=color:#e6db74>&#39;{&#34;runner&#34;: {&#34;name&#34;: &#34;METHOD&#34;}}&#39;</span>
+</span></span><span style=display:flex><span>METHOD <span style=color:#960050;background-color:#1e0010>可以是</span>broadcast, roundrobin, activebackup, loadbalance, lacp
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#创建port接口</span>
+</span></span><span style=display:flex><span>nmcli con add type team<span style=color:#f92672>-</span>slave con<span style=color:#f92672>-</span>name CNAME ifname INAME master TEAM
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>CNAME <span style=color:#960050;background-color:#1e0010>连接名</span>,<span style=color:#960050;background-color:#1e0010>连接名若不指定，默认为</span>team<span style=color:#f92672>-</span>slave<span style=color:#f92672>-</span>IFACE
+</span></span><span style=display:flex><span>INAME <span style=color:#960050;background-color:#1e0010>网络接口名</span>
+</span></span><span style=display:flex><span>TEAM <span style=color:#960050;background-color:#1e0010>网络组接口名</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#断开和启动</span>
+</span></span><span style=display:flex><span>nmcli dev dis INAME
+</span></span><span style=display:flex><span>nmcli con up CNAME
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>INAME <span style=color:#960050;background-color:#1e0010>设备名</span> CNAME <span style=color:#960050;background-color:#1e0010>网络组接口名或</span>port接口
+</span></span></code></pre></div><p>网络组示例</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span>nmcli con add type team con<span style=color:#f92672>-</span>name myteam0 ifname team0 config <span style=color:#e6db74>&#39;{&#34;runner&#34;: {&#34;name&#34;:</span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>&#34;loadbalance&#34;</span>}}<span style=color:#e6db74>&#39; ipv4.addresses 192.168.1.100/24 ipv4.method manual</span>
+</span></span><span style=display:flex><span>nmcli con add con<span style=color:#f92672>-</span>name team0<span style=color:#f92672>-</span>eth1 type team<span style=color:#f92672>-</span>slave ifname eth1 master team0
+</span></span><span style=display:flex><span>nmcli con add con<span style=color:#f92672>-</span>name team0<span style=color:#f92672>-</span>eth2 type team<span style=color:#f92672>-</span>slave ifname eth2 master team0
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>nmcli con up myteam0
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>nmcli con up team0<span style=color:#f92672>-</span>eth1
+</span></span><span style=display:flex><span>nmcli con up team0<span style=color:#f92672>-</span>eth2
+</span></span><span style=display:flex><span>teamdctl team0 state
+</span></span><span style=display:flex><span>ping <span style=color:#f92672>-</span>I team0 <span style=color:#ae81ff>192.168</span><span style=color:#f92672>.</span><span style=color:#ae81ff>0.254</span>
+</span></span><span style=display:flex><span>nmcli dev dis eth1
+</span></span><span style=display:flex><span>teamdctl team0 state
+</span></span><span style=display:flex><span>nmcli con up team0<span style=color:#f92672>-</span>port1
+</span></span><span style=display:flex><span>nmcli dev dis eth2
+</span></span><span style=display:flex><span>teamdctl team0 state
+</span></span><span style=display:flex><span>nmcli con up team0<span style=color:#f92672>-</span>port2
+</span></span><span style=display:flex><span>teamdctl team0 state
+</span></span></code></pre></div><p>管理网络组配置文件</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>/etc/sysconfig/network-scripts/ifcfg-team0
+</span></span><span style=display:flex><span>DEVICE=team0
+</span></span><span style=display:flex><span>DEVICETYPE=Team
+</span></span><span style=display:flex><span>TEAM_CONFIG=&#34;{\&#34;runner\&#34;: {\&#34;name\&#34;: \&#34;broadcast\&#34;}}&#34;
+</span></span><span style=display:flex><span>BOOTPROTO=none
+</span></span><span style=display:flex><span>IPADDR0=172.16.0.100
+</span></span><span style=display:flex><span>PREFIX0=24
+</span></span><span style=display:flex><span>NAME=team0
+</span></span><span style=display:flex><span>ONBOOT=yes
+</span></span></code></pre></div><p>管理网络组配置文件</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>/etc/sysconfig/network-scripts/ifcfg-team0-eth1
+</span></span><span style=display:flex><span>DEVICE=eth1
+</span></span><span style=display:flex><span>DEVICETYPE=TeamPort
+</span></span><span style=display:flex><span>TEAM_MASTER=team0
+</span></span><span style=display:flex><span>NAME=team0-eth1
+</span></span><span style=display:flex><span>ONBOOT=yes
+</span></span></code></pre></div><p>删除网络组</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>nmcli connection down team0
+</span></span><span style=display:flex><span>teamdctl team0 state
+</span></span><span style=display:flex><span>nmcli connection show
+</span></span><span style=display:flex><span>nmcli connectioni delete team0-eth0
+</span></span><span style=display:flex><span>nmcli connectioni delete team0-eth1
+</span></span><span style=display:flex><span>nmcli connection show
+</span></span></code></pre></div><h2 id=网桥交换机>网桥(交换机)
+<a class=header-anchor href=#%e7%bd%91%e6%a1%a5%e4%ba%a4%e6%8d%a2%e6%9c%ba></a></h2><h3 id=桥接原理>桥接原理
+<a class=header-anchor href=#%e6%a1%a5%e6%8e%a5%e5%8e%9f%e7%90%86></a></h3><p>桥接：把一台机器上的若干个网络接口“连接”起来。其结果是，其中一个网口收到的报文会被复制给其
+他网口并发送出去。以使得网口之间的报文能够互相转发。网桥就是这样一个设备，它有若干个网口，
+并且这些网口是桥接起来的。与网桥相连的主机就能通过交换机的报文转发而互相通信。
+主机A发送的报文被送到交换机S1的eth0口，由于eth0与eth1、eth2桥接在一起，故而报文被复制到
+eth1和eth2，并且发送出去，然后被主机B和交换机S2接收到。而S2又会将报文转发给主机C、D<br>CentOS 8 取消brctl 工具,可以用下面方法查看网桥</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#查看桥接情况
+</span></span><span style=display:flex><span>[root@centos8 ~]#ip link show master virbr0
+</span></span><span style=display:flex><span>4: virbr0-nic: &lt;BROADCAST,MULTICAST&gt; mtu 1500 qdisc fq_codel master virbr0 state
+</span></span><span style=display:flex><span>DOWN mode DEFAULT group default qlen 1000
+</span></span><span style=display:flex><span>    link/ether 52:54:00:52:f2:5c brd ff:ff:ff:ff:ff:ff
+</span></span><span style=display:flex><span>8: vnet0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel master
+</span></span><span style=display:flex><span>virbr0 state UNKNOWN mode DEFAULT group default qlen 1000
+</span></span><span style=display:flex><span>    link/ether fe:54:00:95:25:fb brd ff:ff:ff:ff:ff:ff
+</span></span><span style=display:flex><span>9: vnet1: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel master
+</span></span><span style=display:flex><span>virbr0 state UNKNOWN mode DEFAULT group default qlen 1000
+</span></span><span style=display:flex><span>    link/ether fe:54:00:83:9d:51 brd ff:ff:ff:ff:ff:ff
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@centos8 ~]#bridge link show
+</span></span><span style=display:flex><span>4: virbr0-nic: &lt;BROADCAST,MULTICAST&gt; mtu 1500 master virbr0 state disabled
+</span></span><span style=display:flex><span>priority 32 cost 100
+</span></span><span style=display:flex><span>8: vnet0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 master virbr0 state
+</span></span><span style=display:flex><span>forwarding priority 32 cost 100
+</span></span><span style=display:flex><span>9: vnet1: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 master virbr0 state
+</span></span><span style=display:flex><span>forwarding priority 32 cost 100
+</span></span></code></pre></div><h3 id=配置实现网桥>配置实现网桥
+<a class=header-anchor href=#%e9%85%8d%e7%bd%ae%e5%ae%9e%e7%8e%b0%e7%bd%91%e6%a1%a5></a></h3><p>工具包：bridge-utils,目前 CentOS 8 系统光盘里无此包,EPEL源有此包</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>yum install bridge-utils
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#查看网桥
+</span></span><span style=display:flex><span>brctl show
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#查看CAM(content addressable memory内容可寻址存储器)表
+</span></span><span style=display:flex><span>brctl showmacs br0
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#添加和删除网桥
+</span></span><span style=display:flex><span>brctl addbr | delbr br0
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#添加和删除网桥中网卡
+</span></span><span style=display:flex><span>brctl addif | delif br0 eth0
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#默认br0 是down,必须启用
+</span></span><span style=display:flex><span>ifconfig br0 up
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#启用STP
+</span></span><span style=display:flex><span>[root@centos7 ~]#brctl show
+</span></span><span style=display:flex><span>bridge name bridge id       STP enabled interfaces
+</span></span><span style=display:flex><span>br0     8000.000c297e67a3   no  eth1
+</span></span><span style=display:flex><span>                            eth2
+</span></span><span style=display:flex><span>[root@centos7 ~]#brctl stp br0 on
+</span></span><span style=display:flex><span>[root@centos7 ~]#brctl show
+</span></span><span style=display:flex><span>bridge name bridge id STP enabled interfaces
+</span></span><span style=display:flex><span>br0         8000.000c297e67a3       yes      eth1
+</span></span><span style=display:flex><span>                                    eth2
+</span></span></code></pre></div><p>注意：NetworkManager只支持以太网接口连接到网桥，不支持聚合接口</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>nmcli con add con-name mybr0 type bridge ifname br0
+</span></span><span style=display:flex><span>nmcli con modify mybr0 ipv4.addresses 10.0.0.100/24 ipv4.method manual
+</span></span><span style=display:flex><span>nmcli con add con-name br0-port0 type bridge-slave ifname eth0 master br0
+</span></span></code></pre></div><p>查看配置文件</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>cat /etc/sysconfig/network-scripts/ifcfg-br0
+</span></span><span style=display:flex><span>cat /etc/sysconfig/network-scripts/ifcfg-br0-port0
+</span></span></code></pre></div><p>范例：nmcli实现网桥</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span><span style=color:#75715e>#1创建网桥</span>
+</span></span><span style=display:flex><span>nmcli con add type bridge con<span style=color:#f92672>-</span>name br0 ifname br0
+</span></span><span style=display:flex><span>nmcli connection modify br0 ipv4<span style=color:#f92672>.</span>addresses <span style=color:#ae81ff>10.0</span><span style=color:#f92672>.</span><span style=color:#ae81ff>0.100</span><span style=color:#f92672>/</span><span style=color:#ae81ff>24</span> ipv4<span style=color:#f92672>.</span>method manual
+</span></span><span style=display:flex><span>nmcli con up br0
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#2加入物理网卡</span>
+</span></span><span style=display:flex><span>nmcli con add type bridge<span style=color:#f92672>-</span>slave con<span style=color:#f92672>-</span>name br0<span style=color:#f92672>-</span>port0 ifname eth0 master br0
+</span></span><span style=display:flex><span>nmcli con add type bridge<span style=color:#f92672>-</span>slave con<span style=color:#f92672>-</span>name br0<span style=color:#f92672>-</span>port1 ifname eth1 master br0
+</span></span><span style=display:flex><span>nmcli con up br0<span style=color:#f92672>-</span>port0
+</span></span><span style=display:flex><span>nmcli con up br0<span style=color:#f92672>-</span>port1
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#3查看网桥配置文件(写入文件)</span>
+</span></span><span style=display:flex><span>cat <span style=color:#f92672>/</span>etc<span style=color:#f92672>/</span>sysconfig<span style=color:#f92672>/</span>network<span style=color:#f92672>-</span>scripts<span style=color:#f92672>/</span>ifcfg<span style=color:#f92672>-</span>br0
+</span></span><span style=display:flex><span>DEVICE<span style=color:#f92672>=</span>br0
+</span></span><span style=display:flex><span>STP<span style=color:#f92672>=</span>yes
+</span></span><span style=display:flex><span>TYPE<span style=color:#f92672>=</span>Bridge
+</span></span><span style=display:flex><span>BOOTPROTO<span style=color:#f92672>=</span><span style=color:#66d9ef>static</span>
+</span></span><span style=display:flex><span>IPADDR<span style=color:#f92672>=</span><span style=color:#ae81ff>10.0</span><span style=color:#f92672>.</span><span style=color:#ae81ff>0.100</span>
+</span></span><span style=display:flex><span>PREFIX<span style=color:#f92672>=</span><span style=color:#ae81ff>24</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>cat <span style=color:#f92672>/</span>etc<span style=color:#f92672>/</span>sysconfig<span style=color:#f92672>/</span>network<span style=color:#f92672>-</span>scripts<span style=color:#f92672>/</span>ifcfg<span style=color:#f92672>-</span>br0<span style=color:#f92672>-</span>port0
+</span></span><span style=display:flex><span>TYPE<span style=color:#f92672>=</span>Ethernet
+</span></span><span style=display:flex><span>NAME<span style=color:#f92672>=</span>br0<span style=color:#f92672>-</span>port0
+</span></span><span style=display:flex><span>DEVICE<span style=color:#f92672>=</span>eth0
+</span></span><span style=display:flex><span>ONBOOT<span style=color:#f92672>=</span>yes
+</span></span><span style=display:flex><span>BRIDGE<span style=color:#f92672>=</span>br0
+</span></span><span style=display:flex><span>UUID<span style=color:#f92672>=</span><span style=color:#ae81ff>23</span>f41d3b<span style=color:#f92672>-</span>b57c<span style=color:#f92672>-</span><span style=color:#ae81ff>4e26</span><span style=color:#f92672>-</span><span style=color:#ae81ff>9</span>b17<span style=color:#f92672>-</span>d5f02dafd12d
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#4安装管理软件包：</span>
+</span></span><span style=display:flex><span>yum install bridge<span style=color:#f92672>-</span>utils
+</span></span><span style=display:flex><span>brctl show
+</span></span><span style=display:flex><span>nmcli con reload
+</span></span></code></pre></div><h2 id=网络测试诊断工具>网络测试诊断工具
+<a class=header-anchor href=#%e7%bd%91%e7%bb%9c%e6%b5%8b%e8%af%95%e8%af%8a%e6%96%ad%e5%b7%a5%e5%85%b7></a></h2><ul><li>测试网络连通性
+ping</li><li>显示正确的路由表
+ip route
+route</li><li>跟踪路由
+traceroute
+tracepath
+mtr</li><li>确定名称服务器使用
+nslookup
+host
+dig</li><li>抓包工具
+tcpdump
+wireshark</li><li>安全扫描工具
+nmap
+netcat ：网络界的瑞士军刀，即nc</li><li>流量控制工具
+tc
+范例：</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>tc qdisc add dev eth0 root netem loss 50%
+</span></span><span style=display:flex><span>tc qdisc add dev eth0 root netem delay 1000ms
+</span></span><span style=display:flex><span>tc qdisc show dev eth0
+</span></span><span style=display:flex><span>tc qdisc del
+</span></span></code></pre></div><h2 id=ubuntu-网络配置>Ubuntu 网络配置
+<a class=header-anchor href=#ubuntu-%e7%bd%91%e7%bb%9c%e9%85%8d%e7%bd%ae></a></h2><h3 id=主机名>主机名
+<a class=header-anchor href=#%e4%b8%bb%e6%9c%ba%e5%90%8d></a></h3><p>修改主机名</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>root@ubuntu1804:~# hostnamectl set-hostname ubuntu1804.magedu.org
+</span></span><span style=display:flex><span>root@ubuntu1804:~# cat /etc/hostname
+</span></span><span style=display:flex><span>ubuntu1804.magedu.org
+</span></span><span style=display:flex><span>root@ubuntu1804:~# hostname
+</span></span><span style=display:flex><span>ubuntu1804.magedu.org
+</span></span><span style=display:flex><span>root@ubuntu1804:~# echo $HOSTNAME
+</span></span><span style=display:flex><span>ubuntu1804
+</span></span><span style=display:flex><span>root@ubuntu1804:~# exit
+</span></span><span style=display:flex><span>logout
+</span></span><span style=display:flex><span>wang@ubuntu1804:~$ sudo -i
+</span></span><span style=display:flex><span>root@ubuntu1804:~# echo $HOSTNAME
+</span></span><span style=display:flex><span>ubuntu1804.magedu.org
+</span></span></code></pre></div><h3 id=网卡名称-1>网卡名称
+<a class=header-anchor href=#%e7%bd%91%e5%8d%a1%e5%90%8d%e7%a7%b0-1></a></h3><p>默认ubuntu的网卡名称和 CentOS 7 类似，如：ens33，ens38等
+修改网卡名称为传统命名方式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#修改配置文件为下面形式
+</span></span><span style=display:flex><span>root@ubuntu1804:~#vi /etc/default/grub
+</span></span><span style=display:flex><span>GRUB_CMDLINE_LINUX=&#34;net.ifnames=0&#34;
+</span></span><span style=display:flex><span>#或者sed修改
+</span></span><span style=display:flex><span>root@ubuntu1804:~# sed -i.bak &#39;/^GRUB_CMDLINE_LINUX=/s#&#34;$#net.ifnames=0&#34;#&#39;
+</span></span><span style=display:flex><span>/etc/default/grub
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#生效新的grub.cfg文件
+</span></span><span style=display:flex><span>root@ubuntu1804:~# grub-mkconfig -o /boot/grub/grub.cfg
+</span></span><span style=display:flex><span>#或者
+</span></span><span style=display:flex><span>root@ubuntu1804:~# update-grub
+</span></span><span style=display:flex><span>root@ubuntu1804:~# grep net.ifnames /boot/grub/grub.cfg
+</span></span><span style=display:flex><span>            linux /vmlinuz-4.15.0-96-generic root=UUID=51517b88-7e2b-4d4a-8c14-
+</span></span><span style=display:flex><span>fe1a48ba153c ro net.ifnames=0
+</span></span><span style=display:flex><span>            linux /vmlinuz-4.15.0-96-generic root=UUID=51517b88-7e2b-4d4a-
+</span></span><span style=display:flex><span>8c14-fe1a48ba153c ro net.ifnames=0
+</span></span><span style=display:flex><span>            linux /vmlinuz-4.15.0-96-generic root=UUID=51517b88-7e2b-4d4a-
+</span></span><span style=display:flex><span>8c14-fe1a48ba153c ro recovery nomodeset net.ifnames=0
+</span></span><span style=display:flex><span>            linux /vmlinuz-4.15.0-76-generic root=UUID=51517b88-7e2b-4d4a-
+</span></span><span style=display:flex><span>8c14-fe1a48ba153c ro net.ifnames=0
+</span></span><span style=display:flex><span>            linux /vmlinuz-4.15.0-76-generic root=UUID=51517b88-7e2b-4d4a-
+</span></span><span style=display:flex><span>8c14-fe1a48ba153c ro recovery nomodeset net.ifnames=0
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#重启生效
+</span></span><span style=display:flex><span>root@ubuntu1804:~# reboot
+</span></span></code></pre></div><h2 id=ubuntu网卡配置>Ubuntu网卡配置
+<a class=header-anchor href=#ubuntu%e7%bd%91%e5%8d%a1%e9%85%8d%e7%bd%ae></a></h2><p><strong>对缩进很严格</strong>
+官网文档：
+<a href=https://help.ubuntu.com/ title=https://help.ubuntu.com/ rel="noopener external nofollow noreferrer" target=_blank class=exturl>https://help.ubuntu.com/
+<i class="fa fa-external-link-alt"></i></a><br><a href=https://ubuntu.com/server/docs/configuring-networks title=https://ubuntu.com/server/docs/configuring-networks rel="noopener external nofollow noreferrer" target=_blank class=exturl>https://ubuntu.com/server/docs/configuring-networks
+<i class="fa fa-external-link-alt"></i></a></p><h3 id=配置自动获取ip>配置自动获取IP
+<a class=header-anchor href=#%e9%85%8d%e7%bd%ae%e8%87%aa%e5%8a%a8%e8%8e%b7%e5%8f%96ip></a></h3><p>网卡配置文件采用YAML格式,必须以 /etc/netplan/XXX.yaml 文件命名方式存放
+可以每个网卡对应一个单独的配置文件,也可以将所有网卡都放在一个配置文件里
+范例：
+root@ubuntu1804:~# cat /etc/netplan/01-netcfg.yaml</p><h1 id=this-file-describes-the-network-interfaces-available-on-your-system>This file describes the network interfaces available on your system
+<a class=header-anchor href=#this-file-describes-the-network-interfaces-available-on-your-system></a></h1><h1 id=for-more-information-see-netplan5>For more information, see netplan(5).
+<a class=header-anchor href=#for-more-information-see-netplan5></a></h1><p>network:
+version: 2
+renderer: networkd
+ethernets:
+eth0:
+dhcp4: yes</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>
+</span></span><span style=display:flex><span>修改网卡配置文件后需执行命令生效：
+</span></span></code></pre></div><p>root@ubuntu1804:~#netplan apply</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>### 配置静态IP
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>root@ubuntu1804:~#vim /etc/netplan/01-netcfg.yaml
+</span></span><span style=display:flex><span>network:
+</span></span><span style=display:flex><span>  version: 2
+</span></span><span style=display:flex><span>  renderer: networkd
+</span></span><span style=display:flex><span>  ethernets:
+</span></span><span style=display:flex><span>    eth0:
+</span></span><span style=display:flex><span>      addresses: [192.168.8.10/24,10.0.0.10/8] #或者用下面两行,两种格式不能混用
+</span></span><span style=display:flex><span>      - 192.168.8.10/24
+</span></span><span style=display:flex><span>      - 10.0.0.10/8
+</span></span><span style=display:flex><span>      gateway4: 10.0.0.2
+</span></span><span style=display:flex><span>      nameservers:
+</span></span><span style=display:flex><span>        search: [magedu.com, magedu.org]
+</span></span><span style=display:flex><span>        addresses: [180.76.76.76, 8.8.8.8, 1.1.1.1]
+</span></span></code></pre></div><p>查看ip和gateway</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>root@ubuntu1804:~#ip addr
+</span></span><span style=display:flex><span>root@ubuntu1804:~#route -n
+</span></span></code></pre></div><p>查看DNS</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>root@ubuntu1804:~#ls -l /etc/resolv.conf
+</span></span><span style=display:flex><span>lrwxrwxrwx 1 root root 39 Dec 12 11:36 /etc/resolv.conf -&gt;
+</span></span><span style=display:flex><span>../run/systemd/resolve/stub-resolv.conf
+</span></span><span style=display:flex><span>root@ubuntu2004:~# resolvectl status #Ubuntu 20.04新命令
+</span></span><span style=display:flex><span>root@ubuntu1804:~# systemd-resolve --status
+</span></span><span style=display:flex><span>Global
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>.......
+</span></span></code></pre></div><h3 id=配置多卡静态ip和静态路由>配置多⽹卡静态IP和静态路由
+<a class=header-anchor href=#%e9%85%8d%e7%bd%ae%e5%a4%9a%e5%8d%a1%e9%9d%99%e6%80%81ip%e5%92%8c%e9%9d%99%e6%80%81%e8%b7%af%e7%94%b1></a></h3><p><img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/057371bc-3a11-4472-957d-cfdd393d26af alt=image>
+<img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/a36650a3-c51f-4ea9-8c03-10607ea669ed alt=image>
+<img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/493e44c0-714b-4ce3-a5ab-af1014120cbb alt=image></p><h2 id=常见面试题>常见面试题
+<a class=header-anchor href=#%e5%b8%b8%e8%a7%81%e9%9d%a2%e8%af%95%e9%a2%98></a></h2><ul><li>简述 TCP/IP三次握手和四次挥手的工作原理?</li><li>Centos7,8 Linux操作系统如何临时和永久配置IP地址?请写出操作步骤</li><li>用一行命令找出ifconfig命令结果中的IP地址?</li><li>使用tcpdump 监听主机为192.168.1.1,tcp端口为80的数据,同时将输出结果保存成文件?</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>NET=192.168.5
+</span></span><span style=display:flex><span>cat /dev/null &gt; hosts.txt
+</span></span><span style=display:flex><span>for i in {1..254}; do
+</span></span><span style=display:flex><span>	if ping -c1 -W8 $NET.$i &amp;&gt; /dev/null ; then
+</span></span><span style=display:flex><span>		echo $NET.$i is up |tee -a hosts.txt
+</span></span><span style=display:flex><span>	fi
+</span></span><span style=display:flex><span>done
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>NET=192.168.5
+</span></span><span style=display:flex><span>cat /dev/null &gt; hosts.txt
+</span></span><span style=display:flex><span>for ((i=1; i&lt;=254; i++)); do
+</span></span><span style=display:flex><span>	if ping -c1 -W8 $NET.$i &amp;&gt; /dev/null ; then
+</span></span><span style=display:flex><span>		echo $NET.$i is up |tee -a hosts.txt
+</span></span><span style=display:flex><span>	fi
+</span></span><span style=display:flex><span>done
+</span></span></code></pre></div><ul><li>写一个扫描某个主机端口的状态的脚本</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>i=1
+</span></span><span style=display:flex><span>host=10.0.0.7
+</span></span><span style=display:flex><span>while [ $i -le 65535 ]; do
+</span></span><span style=display:flex><span> if nc -z $host$i &amp;&gt; /dev/null ; then
+</span></span><span style=display:flex><span> echo $i | tee -a port.txt
+</span></span><span style=display:flex><span> fi
+</span></span><span style=display:flex><span> let i++
+</span></span><span style=display:flex><span>done
+</span></span></code></pre></div><p><img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/764e6ebd-98a0-41f6-9cc6-cf6862d9ea70 alt=image>
+<img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/6d477979-d55b-4a0f-8217-1b0712a8ba7c alt=image>
+<img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/dff88261-685c-40c7-8d2b-459f9b7241aa alt=image></p><h2 id=总结>总结
+<a class=header-anchor href=#%e6%80%bb%e7%bb%93></a></h2><p><img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/db78aaed-4048-4c37-8e84-c16330ec602d alt=image>
+<img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/5ae902e0-edd4-43e8-ad21-6c6ed1d313ea alt=image>
+<img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/729dfb93-1192-4c5a-92ae-9bda3ee1859d alt=image></p></div><footer class=post-footer><div class=post-tags><a href=/tags/linux>linux</a></div><div class=addthis_inline_share_toolbox style=text-align:center></div><hr><div class=reward-container><div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div><button>
 赞赏</button><div class=post-reward><div class=post-reward-item><img src=/imgs/img-lazy-loading.gif data-src=/imgs/_ali-pay.png alt="蓝惠の小窝 - 支付宝">
 <span>支付宝</span></div><div class=post-reward-item><img src=/imgs/img-lazy-loading.gif data-src=/imgs/_wechat-pay.png alt="蓝惠の小窝 - 微信">
 <span>微信</span></div></div></div><div class=followme><span>欢迎关注我的其它发布渠道</span><div class=social-list><div class=social-item><a target=_blank class=social-link href=/images/wechat_channel.jpg><span class=icon><i class="fab fa-weixin"></i>
 </span><span class=label>WeChat</span></a></div><div class=social-item><a target=_blank class=social-link href=/rss.xml><span class=icon><i class="fa fa-rss"></i>
-</span><span class=label>RSS</span></a></div></div></div><div class=post-nav><div class="post-nav-next post-nav-item"></div><div class="post-nav-prev post-nav-item"><a href=/post/linux12/ rel=prev title="软件管理 ">软件管理
+</span><span class=label>RSS</span></a></div></div></div><div class=post-nav><div class="post-nav-next post-nav-item"><a href=/post/linux14/ rel=next title="shell编程进阶 "><i class="fa fa-chevron-left"></i> shell编程进阶</a></div><div class="post-nav-prev post-nav-item"><a href=/post/linux12/ rel=prev title="软件管理 ">软件管理
 <i class="fa fa-chevron-right"></i></a></div></div></footer></article></div><div id=comments class=post-comments><div class=comment-head><div class=comment-headline><i class="fas fa-comments fa-fw"></i>
 <span>评论交流</span></div></div><div class=comment-wrap><div><div class=comment-loading><i class="fa fa-sync fa-spin"></i></div><div class=giscus-container></div></div></div></div></div></main><footer class=footer><div class=footer-inner><div id=gtranslate class=google-translate><i class="fa fa-language"></i><div id=google_translate_element></div></div><div class=copyright>&copy;
 <span itemprop=copyrightYear>2019 - 2024
