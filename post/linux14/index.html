@@ -1,14 +1,14 @@
-<!doctype html><html lang=zh-CN data-theme=light><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width"><meta name=theme-color content="#19b8eb" media="(prefers-color-scheme: light)"><meta name=generator content="Hugo 0.126.1"><link rel="shortcut icon" type=image/x-icon href=/imgs/icons/favicon.ico><link rel=icon type=image/x-icon href=/imgs/icons/favicon.ico><link rel=icon type=image/png sizes=16x16 href=/imgs/icons/favicon_16x16_next.png><link rel=icon type=image/png sizes=32x32 href=/imgs/icons/favicon_32_32_next.png><link rel=apple-touch-icon sizes=180x180 href=/imgs/icons/apple_touch_icon_next.png><meta itemprop=name content="shell编程进阶 "><meta itemprop=description content="1208034077#qq.com"><meta itemprop=datePublished zgotmplz><meta itemprop=dateModified zgotmplz><meta itemprop=image content="http://localhost:1313/imgs/hugo_next_avatar.png"><meta itemprop=keywords content="linux"><meta property="og:type" content="article"><meta property="og:title" content="shell编程进阶 "><meta property="og:description" content="1208034077#qq.com"><meta property="og:image" content="/imgs/hugo_next_avatar.png"><meta property="og:image:width" content="312"><meta property="og:image:height" content="312"><meta property="og:image:type" content="image/jpeg/png/svg/jpg"><meta property="og:url" content="http://localhost:1313/post/linux14/"><meta property="og:site_name" content="蓝惠の小窝"><meta property="og:locale" content="zh-CN"><meta property="article:author" content="蓝惠の小窝"><meta property="article:published_time" content="2024-12-23 20:06:00 +0800 CST"><meta property="article:modified_time" content="2024-12-23 20:06:00 +0800 CST"><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/font-awesome/6.1.2/css/all.min.css><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/animate.css/3.1.1/animate.min.css><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/viewerjs/1.11.0/viewer.min.css><link rel=stylesheet href=/css/main.css><script type=text/javascript>(function(){localDB={set:function(e,t,n){if(n===0)return;const s=new Date,o=n*864e5,i={value:t,expiry:s.getTime()+o};localStorage.setItem(e,JSON.stringify(i))},get:function(e){const t=localStorage.getItem(e);if(!t)return void 0;const n=JSON.parse(t),s=new Date;return s.getTime()>n.expiry?(localStorage.removeItem(e),void 0):n.value}},theme={active:function(){const e=localDB.get("theme");if(e==null)return;theme.toggle(e),window.matchMedia("(prefers-color-scheme: dark)").addListener(function(e){theme.toggle(e.matches?"dark":"light")})},toggle:function(e){document.documentElement.setAttribute("data-theme",e),localDB.set("theme",e,2);const t=document.querySelector("iframe.giscus-frame");if(t){const n={setConfig:{theme:e}};t.contentWindow.postMessage({giscus:n},"https://giscus.app")}}},theme.active()})(window)</script><script class=next-config data-name=page type=application/json>{"comments":true,"isHome":false,"isPage":true,"path":"linux14","permalink":"http://localhost:1313/post/linux14/","title":"shell编程进阶 ","waline":{"js":[{"alias":"waline","alias_name":"@waline/client","file":"dist/pageview.js","name":"pageview","version":"2.13.0"},{"alias":"waline","alias_name":"@waline/client","file":"dist/comment.js","name":"comment","version":"2.13.0"}]}}</script><script type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{var e=document.createElement("script");e.charset="UTF-8",e.src="https://hm.baidu.com/hm.js?",e.async="true",document.head.appendChild(e)})</script><script type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{var e=document.createElement("script");e.charset="UTF-8",e.src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js",e.async=!1,e.defer=!0,document.head.appendChild(e),e.onload=function(){NexT.utils.fmtBusuanzi()}})</script><title>shell编程进阶 - 蓝惠の小窝</title><noscript><link rel=stylesheet href=/css/noscript.css></noscript></head><body itemscope itemtype=http://schema.org/WebPage class=use-motion><div class=headband></div><main class=main><header class=header itemscope itemtype=http://schema.org/WPHeader><div class=header-inner><div class=site-brand-container><div class=site-nav-toggle><div class=toggle aria-label role=button><span class=toggle-line></span>
+<!doctype html><html lang=zh-CN data-theme=light><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width"><meta name=theme-color content="#19b8eb" media="(prefers-color-scheme: light)"><meta name=generator content="Hugo 0.126.1"><link rel="shortcut icon" type=image/x-icon href=/imgs/icons/favicon.ico><link rel=icon type=image/x-icon href=/imgs/icons/favicon.ico><link rel=icon type=image/png sizes=16x16 href=/imgs/icons/favicon_16x16_next.png><link rel=icon type=image/png sizes=32x32 href=/imgs/icons/favicon_32_32_next.png><link rel=apple-touch-icon sizes=180x180 href=/imgs/icons/apple_touch_icon_next.png><meta itemprop=name content="shell编程进阶 "><meta itemprop=description content="1208034077#qq.com"><meta itemprop=datePublished zgotmplz><meta itemprop=dateModified zgotmplz><meta itemprop=image content="http://localhost:1313/imgs/hugo_next_avatar.png"><meta itemprop=keywords content="linux"><meta property="og:type" content="article"><meta property="og:title" content="shell编程进阶 "><meta property="og:description" content="1208034077#qq.com"><meta property="og:image" content="/imgs/hugo_next_avatar.png"><meta property="og:image:width" content="312"><meta property="og:image:height" content="312"><meta property="og:image:type" content="image/jpeg/png/svg/jpg"><meta property="og:url" content="http://localhost:1313/post/linux14/"><meta property="og:site_name" content="蓝惠の小窝"><meta property="og:locale" content="zh-CN"><meta property="article:author" content="蓝惠の小窝"><meta property="article:published_time" content="2024-12-23 20:06:00 +0800 CST"><meta property="article:modified_time" content="2024-12-23 20:06:00 +0800 CST"><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/font-awesome/6.1.2/css/all.min.css><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/animate.css/3.1.1/animate.min.css><link type=text/css rel=stylesheet href=https://cdn.staticfile.org/viewerjs/1.11.0/viewer.min.css><link rel=stylesheet href=/css/main.css><style type=text/css>.post-footer,.flinks-list-footer hr:after{content:"~ 我可是有底线的哟 ~"}</style><script type=text/javascript>(function(){localDB={set:function(e,t,n){if(n===0)return;const s=new Date,o=n*864e5,i={value:t,expiry:s.getTime()+o};localStorage.setItem(e,JSON.stringify(i))},get:function(e){const t=localStorage.getItem(e);if(!t)return void 0;const n=JSON.parse(t),s=new Date;return s.getTime()>n.expiry?(localStorage.removeItem(e),void 0):n.value}},theme={active:function(){const e=localDB.get("theme");if(e==null)return;theme.toggle(e),window.matchMedia("(prefers-color-scheme: dark)").addListener(function(e){theme.toggle(e.matches?"dark":"light")})},toggle:function(e){document.documentElement.setAttribute("data-theme",e),localDB.set("theme",e,2);const t=document.querySelector("iframe.giscus-frame");if(t){const n={setConfig:{theme:e}};t.contentWindow.postMessage({giscus:n},"https://giscus.app")}}},theme.active()})(window)</script><script class=next-config data-name=page type=application/json>{"comments":true,"isHome":false,"isPage":true,"path":"linux14","permalink":"http://localhost:1313/post/linux14/","title":"shell编程进阶 ","waline":{"js":[{"alias":"waline","alias_name":"@waline/client","file":"dist/pageview.js","name":"pageview","version":"2.13.0"},{"alias":"waline","alias_name":"@waline/client","file":"dist/comment.js","name":"comment","version":"2.13.0"}]}}</script><script type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{var e=document.createElement("script");e.charset="UTF-8",e.src="https://hm.baidu.com/hm.js?",e.async="true",document.head.appendChild(e)})</script><script type=text/javascript>document.addEventListener("DOMContentLoaded",()=>{var e=document.createElement("script");e.charset="UTF-8",e.src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js",e.async=!1,e.defer=!0,document.head.appendChild(e),e.onload=function(){NexT.utils.fmtBusuanzi()}})</script><title>shell编程进阶 - 蓝惠の小窝</title><noscript><link rel=stylesheet href=/css/noscript.css></noscript></head><body itemscope itemtype=http://schema.org/WebPage class=use-motion><div class=headband></div><main class=main><header class=header itemscope itemtype=http://schema.org/WPHeader><div class=header-inner><div class=site-brand-container><div class=site-nav-toggle><div class=toggle aria-label role=button><span class=toggle-line></span>
 <span class=toggle-line></span>
 <span class=toggle-line></span></div></div><div class=site-meta><a href=/ class=brand rel=start><i class=logo-line></i><h1 class=site-title>蓝惠の小窝</h1><i class=logo-line></i></a><p class=site-subtitle itemprop=description>寻找大波斯菊需要的不是金钱，而是一颗去找寻的心♥.</p></div><div class=site-nav-right><div class="toggle popup-trigger"><i class="fa fa-search fa-fw fa-lg"></i></div></div></div><nav class=site-nav><ul class="main-menu menu"><li class="menu-item menu-item-home"><a href=/ class=hvr-icon-pulse rel=section><i class="fa fa-home hvr-icon"></i>首页</a></li><li class="menu-item menu-item-about"><a href=/about.html class=hvr-icon-pulse rel=section><i class="fa fa-user hvr-icon"></i>关于</a></li><li class="menu-item menu-item-flinks"><a href=/flinks.html class=hvr-icon-pulse rel=section><i class="fa fa-thumbs-up hvr-icon"></i>友链</a></li><li class="menu-item menu-item-archives"><a href=/archives/ class=hvr-icon-pulse rel=section><i class="fa fa-archive hvr-icon"></i>归档
-<span class=badge>82</span></a></li><li class="menu-item menu-item-search"><a role=button class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索</a></li></ul></nav><div class=search-pop-overlay><div class="popup search-popup"><div class=search-header><span class=search-icon><i class="fa fa-search"></i></span><div class=search-input-container><input autocomplete=off autocapitalize=off maxlength=80 placeholder=搜索... spellcheck=false type=search class=search-input></div><span class=popup-btn-close role=button><i class="fa fa-times-circle"></i></span></div><div class="search-result-container no-result"><div class=search-result-icon><i class="fa fa-spinner fa-pulse fa-5x"></i></div></div></div></div></div><div class="toggle sidebar-toggle" role=button><span class=toggle-line></span>
+<span class=badge>84</span></a></li><li class="menu-item menu-item-search"><a role=button class="popup-trigger hvr-icon-pulse"><i class="fa fa-search fa-fw hvr-icon"></i>搜索</a></li></ul></nav><div class=search-pop-overlay><div class="popup search-popup"><div class=search-header><span class=search-icon><i class="fa fa-search"></i></span><div class=search-input-container><input autocomplete=off autocapitalize=off maxlength=80 placeholder=搜索... spellcheck=false type=search class=search-input></div><span class=popup-btn-close role=button><i class="fa fa-times-circle"></i></span></div><div class="search-result-container no-result"><div class=search-result-icon><i class="fa fa-spinner fa-pulse fa-5x"></i></div></div></div></div></div><div class="toggle sidebar-toggle" role=button><span class=toggle-line></span>
 <span class=toggle-line></span>
-<span class=toggle-line></span></div><aside class=sidebar><div class="sidebar-inner sidebar-nav-active sidebar-toc-active"><ul class=sidebar-nav><li class=sidebar-nav-toc>文章目录</li><li class=sidebar-nav-overview>站点概览</li></ul><div class=sidebar-panel-container><div class="post-toc-wrap sidebar-panel"><div class="post-toc animated"><nav id=TableOfContents><ul><li><a href=#循环执行介绍>循环执行介绍</a><ul><li><a href=#循环-for>循环 for</a><ul><li><a href=#格式1>格式1：</a></li><li><a href=#格式2>格式2</a></li><li><a href=#练习用-for-实现>练习：用 for 实现</a></li></ul></li><li><a href=#循环-while>循环 while</a><ul><li><a href=#练习用while实现>练习：用while实现</a></li></ul></li><li><a href=#while-特殊用法-while-read>while 特殊用法 while read</a></li></ul></li></ul></nav></div></div><div class="site-overview-wrap sidebar-panel"><div class="site-author site-overview-item animated" itemprop=author itemscope itemtype=http://schema.org/Person><img class=site-author-image itemprop=image alt=蓝惠の小窝 src=/imgs/img-lazy-loading.gif data-src=/imgs/hugo_next_avatar.png><p class=site-author-name itemprop=name>蓝惠の小窝</p><div class=site-description itemprop=description>1208034077#qq.com</div></div><div class="site-state-wrap site-overview-item animated"><nav class=site-state><div class="site-state-item site-state-posts"><a href=/archives/><span class=site-state-item-count>82</span>
+<span class=toggle-line></span></div><aside class=sidebar><div class="sidebar-inner sidebar-nav-active sidebar-toc-active"><ul class=sidebar-nav><li class=sidebar-nav-toc>文章目录</li><li class=sidebar-nav-overview>站点概览</li></ul><div class=sidebar-panel-container><div class="post-toc-wrap sidebar-panel"><div class="post-toc animated"><nav id=TableOfContents><ul><li><a href=#循环执行介绍>循环执行介绍</a><ul><li><a href=#循环-for>循环 for</a><ul><li><a href=#格式1>格式1：</a></li><li><a href=#格式2>格式2</a></li><li><a href=#练习用-for-实现>练习：用 for 实现</a></li></ul></li><li><a href=#循环-while>循环 while</a><ul><li><a href=#练习用while实现>练习：用while实现</a></li></ul></li><li><a href=#while-特殊用法-while-read>while 特殊用法 while read</a></li><li><a href=#循环-until>循环 until</a></li><li><a href=#循环控制语句-continue>循环控制语句 continue</a></li><li><a href=#循环控制-shift-命令>循环控制 shift 命令</a><ul><li><a href=#练习>练习</a></li></ul></li><li><a href=#循环与菜单-select>循环与菜单 select</a></li></ul></li><li><a href=#函数-function>函数 function</a><ul><li><a href=#函数介绍>函数介绍</a></li><li><a href=#管理函数>管理函数</a></li><li><a href=#定义函数>定义函数</a></li><li><a href=#查看函数>查看函数</a></li><li><a href=#删除函数>删除函数</a></li></ul></li><li><a href=#函数调用>函数调用</a><ul><li><a href=#交互式环境调用函数>交互式环境调用函数</a></li><li><a href=#在脚本中定义及使用函数>在脚本中定义及使用函数</a></li><li><a href=#使用函数文件>使用函数文件</a></li></ul></li><li><a href=#函数返回值>函数返回值</a></li><li><a href=#环境函数>环境函数</a></li><li><a href=#函数参数>函数参数</a></li><li><a href=#函数变量>函数变量</a></li><li><a href=#函数递归>函数递归</a><ul><li><ul><li><a href=#练习-1>练习</a></li></ul></li></ul></li><li><a href=#信号捕捉-trap>信号捕捉 trap</a></li><li><a href=#创建临时文件-mktemp>创建临时文件 mktemp</a></li><li><a href=#安装复制文件-install>安装复制文件 install</a></li><li><a href=#交互式转化批处理工具-expect>交互式转化批处理工具 expect</a></li><li><a href=#数组-array>数组 array</a><ul><li><a href=#声明数组>声明数组</a></li><li><a href=#数组赋值>数组赋值</a></li><li><a href=#显示所有数组>显示所有数组</a></li><li><a href=#删除数组>删除数组</a></li><li><a href=#数组数据处理>数组数据处理</a></li><li><a href=#关联数组>关联数组</a></li><li><a href=#范例>范例</a><ul><li><a href=#练习-2>练习</a></li></ul></li></ul></li><li><a href=#字符串处理>字符串处理</a><ul><li><a href=#基于偏移量取字符串>基于偏移量取字符串</a></li><li><a href=#基于模式取子串>基于模式取子串</a></li></ul></li><li><a href=#查找替换>查找替换</a></li><li><a href=#查找并删除>查找并删除</a></li><li><a href=#字符大小写转换>字符大小写转换</a></li><li><a href=#变量扩展>变量扩展</a></li><li><a href=#高级变量>高级变量</a><ul><li><a href=#高级变量赋值>高级变量赋值</a></li></ul></li><li><a href=#高级变量用法-有类型变量>高级变量用法-有类型变量</a></li><li><a href=#变量间接引用>变量间接引用</a><ul><li><a href=#eval命令>eval命令</a></li><li><a href=#间接变量引用>间接变量引用</a></li></ul></li></ul></nav></div></div><div class="site-overview-wrap sidebar-panel"><div class="site-author site-overview-item animated" itemprop=author itemscope itemtype=http://schema.org/Person><img class=site-author-image itemprop=image alt=蓝惠の小窝 src=/imgs/img-lazy-loading.gif data-src=/imgs/hugo_next_avatar.png><p class=site-author-name itemprop=name>蓝惠の小窝</p><div class=site-description itemprop=description>1208034077#qq.com</div></div><div class="site-state-wrap site-overview-item animated"><nav class=site-state><div class="site-state-item site-state-posts"><a href=/archives/><span class=site-state-item-count>84</span>
 <span class=site-state-item-name>日志</span></a></div><div class="site-state-item site-state-categories"><a href=/categories/><span class=site-state-item-count>7</span>
 <span class=site-state-item-name>分类</span></a></div><div class="site-state-item site-state-tags"><a href=/tags/><span class=site-state-item-count>55</span>
 <span class=site-state-item-name>标签</span></a></div></nav></div><div class="links-of-social site-overview-item animated"><span class=links-of-social-item><a href=https://github.com/lanhui672 title="Github → https://github.com/lanhui672" rel=noopener class=hvr-icon-pulse target=_blank><i class="fab fa-github fa-fw hvr-icon"></i>
 Github</a></span></div><div class="links-of-blogroll site-overview-item animated"><div class=links-of-blogroll-title></div><ul class=links-of-blogroll-list><li class=links-of-blogroll-item><a href=http://lanhui.live title=http://lanhui.live target=_blank>短域密语</a></li><li class=links-of-blogroll-item><a href=http://lan-hui.com title=http://lan-hui.com target=_blank>引导页</a></li></ul></div></div></div></div><div id=siteinfo-card-widget class=sidebar-card-widget><div class=item-headline><i class="fas fa-chart-line"></i>
-<span>网站资讯</span></div><div class=siteinfo><div class=siteinfo-item><div class=item-name><i class="fa-solid fa-calendar-check"></i>已运行：</div><div class=item-count id=runTimes data-publishdate=0001-01-01T00:00:00+00:00></div></div><div class=siteinfo-item><div class=item-name><i class="fas fa fa-user"></i>总访客数：</div><div class=item-count id=busuanzi_value_site_uv><i class="fa fa-sync fa-spin"></i></div></div><div class=siteinfo-item><div class=item-name><i class="fas fa fa-eye"></i>页面浏览：</div><div class=item-count id=busuanzi_value_site_pv><i class="fa fa-sync fa-spin"></i></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-font"></i>总字数：</div><div class=item-count id=wordsCount data-count=171030></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-mug-hot"></i>阅读约：</div><div class=item-count id=readTimes data-times=388></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-clock-rotate-left"></i>最后更新于：</div><div class=item-count id=last-push-date data-lastpushdate=2024-12-23T20:06:00+08:00></div></div></div></div></aside><div class=sidebar-dimmer></div></header><div class=tool-buttons><div id=goto-comments class="button goto-comments" title=直达评论><i class="fas fa-comments"></i></div><div id=goto-gtranslate class=button title=多语言翻译><i class="fas fa-globe"></i></div><div id=toggle-theme class=button title=深浅模式切换><i class="fas fa-adjust"></i></div><div class=back-to-top role=button title=返回顶部><i class="fa fa-arrow-up"></i>
+<span>网站资讯</span></div><div class=siteinfo><div class=siteinfo-item><div class=item-name><i class="fa-solid fa-calendar-check"></i>已运行：</div><div class=item-count id=runTimes data-publishdate=0001-01-01T00:00:00+00:00></div></div><div class=siteinfo-item><div class=item-name><i class="fas fa fa-user"></i>总访客数：</div><div class=item-count id=busuanzi_value_site_uv><i class="fa fa-sync fa-spin"></i></div></div><div class=siteinfo-item><div class=item-name><i class="fas fa fa-eye"></i>页面浏览：</div><div class=item-count id=busuanzi_value_site_pv><i class="fa fa-sync fa-spin"></i></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-font"></i>总字数：</div><div class=item-count id=wordsCount data-count=186475></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-mug-hot"></i>阅读约：</div><div class=item-count id=readTimes data-times=420></div></div><div class=siteinfo-item><div class=item-name><i class="fa fa-clock-rotate-left"></i>最后更新于：</div><div class=item-count id=last-push-date data-lastpushdate=2026-07-22T00:15:00+08:00></div></div></div></div></aside><div class=sidebar-dimmer></div></header><div class=tool-buttons><div id=goto-comments class="button goto-comments" title=直达评论><i class="fas fa-comments"></i></div><div id=goto-gtranslate class=button title=多语言翻译><i class="fas fa-globe"></i></div><div id=toggle-theme class=button title=深浅模式切换><i class="fas fa-adjust"></i></div><div class=back-to-top role=button title=返回顶部><i class="fa fa-arrow-up"></i>
 <span>0%</span></div></div><div class=reading-progress-bar></div><a role=button class="book-mark-link book-mark-link-fixed"></a><a href=https://github.com/lanhui672/lanhui672.github.io/wiki rel="noopener external nofollow noreferrer" target=_blank title="Follow me on GitHub" class="exturl github-corner"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0 0 115 115h15l12 27L250 250V0z"/><path d="M128.3 109C113.8 99.7 119 89.6 119 89.6 122 82.7 120.5 78.6 120.5 78.6 119.2 72 123.4 76.3 123.4 76.3 127.3 80.9 125.5 87.3 125.5 87.3 122.9 97.6 130.6 101.9 134.4 103.2" fill="currentcolor" style="transform-origin:130px 106px" class="octo-arm"/><path d="M115 115C114.9 115.1 118.7 116.5 119.8 115.4l13.9-13.8C136.9 99.2 139.9 98.4 142.2 98.6 133.8 88 127.5 74.4 143.8 58 148.5 53.4 154 51.2 159.7 51 160.3 49.4 163.2 43.6 171.4 40.1 171.4 40.1 176.1 42.5 178.8 56.2 183.1 58.6 187.2 61.8 190.9 65.4 194.5 69 197.7 73.2 200.1 77.6 213.8 80.2 216.3 84.9 216.3 84.9 212.7 93.1 206.9 96 205.4 96.6 205.1 102.4 203 107.8 198.3 112.5 181.9 128.9 168.3 122.5 157.7 114.1 157.9 116.9 156.7 120.9 152.7 124.9L141 136.5C139.8 137.7 141.6 141.9 141.8 141.8z" fill="currentcolor" class="octo-body"/></svg>
 </a><script type=text/javascript src=//sidecar.gitter.im/dist/sidecar.v1.js async></script><script type=text/javascript>((window.gitter={}).chat={}).options={room:"hugo-next/community"}</script><noscript><div class=noscript-warning>Theme NexT works best with JavaScript enabled</div></noscript><div class="main-inner post posts-expand"><div class=post-block><article itemscope itemtype=http://schema.org/Article class=post-content lang><link itemprop=mainEntityOfPage href=http://localhost:1313/post/linux14/><span hidden itemprop=author itemscope itemtype=http://schema.org/Person><meta itemprop=image content="/imgs/hugo_next_avatar.png"><meta itemprop=name content="蓝惠の小窝"></span><span hidden itemprop=publisher itemscope itemtype=http://schema.org/Organization><meta itemprop=name content="蓝惠の小窝"><meta itemprop=description content="1208034077#qq.com"></span><span hidden itemprop=post itemscope itemtype=http://schema.org/CreativeWork><meta itemprop=name content="shell编程进阶 "><meta itemprop=description content="循环执行介绍 将某代码段重复运行多次，通常有进入循环的条件和退出循环的条件 重复运行次数 循环次数事先已知 循环次数事先未知 常见的循环的命令：for"></span><header class=post-header><h1 class=post-title itemprop="name headline">shell编程进阶</h1><div class=post-meta-container><div class=post-meta-items><span class=post-meta-item><span class=post-meta-item-icon><i class="far fa-calendar"></i>
 </span><span class=post-meta-item-text title=发表于>发表于：
@@ -210,7 +210,8 @@ I=10;((I++))
 1AbCdeFgH.html<br>9、打印等腰三角形<br>10、猴子第一天摘下若干个桃子，当即吃了一半，还不瘾，又多吃了一个。第二天早上又将剩下的桃子
 吃掉一半，又多吃了一个。以后每天早上都吃了前一天剩下的一半零一个。到第10天早上想再吃时，只
 剩下一个桃子了。求第一天共摘了多少？</p><h3 id=循环-while>循环 while
-<a class=header-anchor href=#%e5%be%aa%e7%8e%af-while></a></h3><p>格式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>while COMMANDS; do COMMANDS; done
+<a class=header-anchor href=#%e5%be%aa%e7%8e%af-while></a></h3><p><img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/7f9f8452-427d-40df-87bb-c674fdc4d771 alt=1-241205154214b2>
+格式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>while COMMANDS; do COMMANDS; done
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>while CONDITION; do
 </span></span><span style=display:flex><span>    循环体
@@ -270,15 +271,1307 @@ ad865d2f63是通过对随机数变量RANDOM随机执行命令： echo $RANDOM|md
 </span></span><span style=display:flex><span>                echo $line | cut -d: -f1,3
 </span></span><span style=display:flex><span>        <span style=color:#66d9ef>fi</span>
 </span></span><span style=display:flex><span><span style=color:#66d9ef>done</span> &lt; /etc/passwd
+</span></span></code></pre></div><h3 id=循环-until>循环 until
+<a class=header-anchor href=#%e5%be%aa%e7%8e%af-until></a></h3><p>格式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>until COMMANDS; do COMMANDS; done
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>until CONDITION; do
+</span></span><span style=display:flex><span>循环体
+</span></span><span style=display:flex><span>done
+</span></span></code></pre></div><p>说明：<br>进入条件： CONDITION 为false<br>退出条件： CONDITION 为true<br>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#sum=0;i=1;until ((i&gt;100));do let sum+=i;let i++;done;echo $sum
+</span></span><span style=display:flex><span>5050
+</span></span></code></pre></div><p><strong>无限循环</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>until false; do
+</span></span><span style=display:flex><span>循环体
+</span></span><span style=display:flex><span>Done
+</span></span></code></pre></div><h3 id=循环控制语句-continue>循环控制语句 continue
+<a class=header-anchor href=#%e5%be%aa%e7%8e%af%e6%8e%a7%e5%88%b6%e8%af%ad%e5%8f%a5-continue></a></h3><p>continue [N]：提前结束第N层的本轮循环，而直接进入下一轮判断；最内层为第1层<br>格式：<br>while CONDITION1; do
+CMD1
+&mldr;
+if CONDITION2; then
+continue
+fi
+CMDn
+&mldr;
+done</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>范例:
+</span></span></code></pre></div><p>[root@centos8 script40]#cat continue_for.sh
+#!/bin/bash
+for ((i=0;i&lt;10;i++));do
+for((j=0;j&lt;10;j++));do
+[ $j -eq 5 ] && continue 2
+echo $j
+done
+echo &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+[root@centos8 script40]#bash continue_for.sh
+0
+1
+2
+3
+4
+0
+1
+2
+3
+4
+0
+1
+2
+3
+4
+0
+1
+2
+3
+4
+0
+1
+2
+3
+4
+0
+1
+2
+3
+4
+0
+1
+2
+3
+4
+0
+1
+2
+3
+4
+0
+1
+2
+3
+4
+0
+1
+2
+3
+4</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>### 循环控制语句 break
+</span></span><span style=display:flex><span>break [N]：提前结束第N层整个循环，最内层为第1层  
+</span></span><span style=display:flex><span>格式：  
+</span></span></code></pre></div><p>while CONDITION1; do
+CMD1
+&mldr;
+if CONDITION2; then
+break
+fi
+CMDn
+&mldr;
+done</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>范例:
+</span></span></code></pre></div><p>[root@centos8 script40]#cat break_for.sh
+#!/bin/bash
+for ((i=0;i&lt;10;i++));do
+for((j=0;j&lt;10;j++));do
+[ $j -eq 5 ] && break
+echo $j
+done
+echo &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+done</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>范例:
+</span></span></code></pre></div><p>[root@centos8 script40]#cat break_for.sh
+#!/bin/bash
+for ((i=0;i&lt;10;i++));do
+for((j=0;j&lt;10;j++));do
+[ $j -eq 5 ] && break 2
+echo $j
+done
+echo &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+done</p><p>[root@centos8 script40]#bash break_for.sh
+0
+1
+2
+3
+4</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>范例:
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 script40<span style=color:#f92672>]</span><span style=color:#75715e>#cat menu.sh</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#!/bin/bash</span>
+</span></span><span style=display:flex><span>sum<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>COLOR<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;echo -e \033[1;31m&#39;</span>
+</span></span><span style=display:flex><span>COLOR2<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;echo -e \033[1;32m&#39;</span>
+</span></span><span style=display:flex><span>END<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;\033[0m&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>while</span> true;<span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>    echo -e <span style=color:#e6db74>&#34;\033[33;1m\c&#34;</span>
+</span></span><span style=display:flex><span>    cat <span style=color:#e6db74>&lt;&lt;-EOF
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>1) 鲍鱼
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>2) 满汉全席
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>3) 龙虾
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>4) 燕窝
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>5) 帝王蟹
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>6) 点菜结束,结帐
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    EOF</span>
+</span></span><span style=display:flex><span>    echo -e <span style=color:#e6db74>&#34;\033[0m&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    read -p <span style=color:#e6db74>&#34;请点菜(1-6): &#34;</span> MENU
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>case</span> $MENU in
+</span></span><span style=display:flex><span>    1|4<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>        $COLOR<span style=color:#e6db74>&#39;菜价: $10&#39;</span>$END
+</span></span><span style=display:flex><span>        let sum<span style=color:#f92672>+=</span><span style=color:#ae81ff>10</span>
+</span></span><span style=display:flex><span>        ;;
+</span></span><span style=display:flex><span>    3|5<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>        $COLOR<span style=color:#e6db74>&#39;菜价: $20&#39;</span>$END
+</span></span><span style=display:flex><span>        let sum<span style=color:#f92672>+=</span><span style=color:#ae81ff>20</span>
+</span></span><span style=display:flex><span>        ;;
+</span></span><span style=display:flex><span>    2<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>        $COLOR<span style=color:#e6db74>&#39;菜价: $200000&#39;</span>$END
+</span></span><span style=display:flex><span>        let sum<span style=color:#f92672>+=</span><span style=color:#ae81ff>200000</span>
+</span></span><span style=display:flex><span>        ;;
+</span></span><span style=display:flex><span>    6<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>        $COLOR2<span style=color:#e6db74>&#34;你点的菜总价格是 \$</span>$sum<span style=color:#e6db74>&#34;</span>$END
+</span></span><span style=display:flex><span>        break
+</span></span><span style=display:flex><span>        ;;
+</span></span><span style=display:flex><span>    *<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>        echo <span style=color:#e6db74>&#34;点错了,没有这道菜&#34;</span>
+</span></span><span style=display:flex><span>        ;;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>esac</span>
+</span></span><span style=display:flex><span>    $COLOR2<span style=color:#e6db74>&#34;你点的菜总价格是 \$</span>$sum<span style=color:#e6db74>&#34;</span>$END
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span></code></pre></div><h3 id=循环控制-shift-命令>循环控制 shift 命令
+<a class=header-anchor href=#%e5%be%aa%e7%8e%af%e6%8e%a7%e5%88%b6-shift-%e5%91%bd%e4%bb%a4></a></h3><p>shift [n] 用于将参量列表 list 左移指定次数，缺省为左移一次。<br>参量列表 list 一旦被移动，最左端的那个参数就从列表中删除。while 循环遍历位置参量列表时，常用
+到 shift<br>范例：doit.sh</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#75715e>#step through all the positional parameters</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>until</span> <span style=color:#f92672>[</span> -z <span style=color:#e6db74>&#34;</span>$1<span style=color:#e6db74>&#34;</span> <span style=color:#f92672>]</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>        echo <span style=color:#e6db74>&#34;</span>$1<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>        shift
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span>echo
+</span></span><span style=display:flex><span>./shfit.sh a b c d e f g h
+</span></span></code></pre></div><h4 id=练习>练习
+<a class=header-anchor href=#%e7%bb%83%e4%b9%a0></a></h4><p>1、每隔3秒钟到系统上获取已经登录的用户的信息；如果发现用户hacker登录，则将登录时间和主机记<br>录于日志/var/log/login.log中,并退出脚本<br>2、随机生成10以内的数字，实现猜字游戏，提示比较大或小，相等则退出<br>3、用文件名做为参数，统计所有参数文件的总行数<br>4、用二个以上的数字为参数，显示其中的最大值和最小值</p><h3 id=循环与菜单-select>循环与菜单 select
+<a class=header-anchor href=#%e5%be%aa%e7%8e%af%e4%b8%8e%e8%8f%9c%e5%8d%95-select></a></h3><p>格式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>select NAME [in WORDS ... ;] do COMMANDS; done
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>select NAME in list ;do
+</span></span><span style=display:flex><span>    循环体命令
+</span></span><span style=display:flex><span>done
+</span></span></code></pre></div><p>说明：</p><ul><li>select 循环主要用于创建菜单，按数字顺序排列的菜单项显示在标准错误上，并显示 PS3 提示
+符，等待用户输入</li><li>用户输入菜单列表中的某个数字，执行相应的命令</li><li>用户输入菜单列表中的某个数字，会将对应的WORD值赋值给NAME变量</li><li>用户输入被保存在内置变量 REPLY 中</li><li>select 是个无限循环，因此要用 break 命令退出循环，或用 exit 命令终止脚本。也可以按 ctrl+c
+退出循环</li><li>select 经常和 case 联合使用</li><li>与 for 循环类似，可以省略 in list，此时使用位置参量
+范例：</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>cat <span style=color:#66d9ef>select</span>.sh
+</span></span><span style=display:flex><span><span style=color:#75715e>#!/bin/bash</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span>sum<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>PS3<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;请点菜(1-6): &#34;</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>select</span> MENU in 北京烤鸭 佛跳墙 小龙虾 羊蝎子 火锅 点菜结束; <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>case</span> $REPLY in
+</span></span><span style=display:flex><span>        1<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            echo $MENU 价格是 <span style=color:#ae81ff>100</span>
+</span></span><span style=display:flex><span>            let sum<span style=color:#f92672>+=</span><span style=color:#ae81ff>100</span>
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        2<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            echo $MENU 价格是 <span style=color:#ae81ff>88</span>
+</span></span><span style=display:flex><span>            let sum<span style=color:#f92672>+=</span><span style=color:#ae81ff>88</span>
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        3<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            echo $MENU价格是 <span style=color:#ae81ff>66</span>
+</span></span><span style=display:flex><span>            let sum<span style=color:#f92672>+=</span><span style=color:#ae81ff>66</span>
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        4<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            echo $MENU 价格是 <span style=color:#ae81ff>166</span>
+</span></span><span style=display:flex><span>            let sum<span style=color:#f92672>+=</span><span style=color:#ae81ff>166</span>
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        5<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            echo $MENU 价格是 <span style=color:#ae81ff>200</span>
+</span></span><span style=display:flex><span>            let sum<span style=color:#f92672>+=</span><span style=color:#ae81ff>200</span>
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        6<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            echo <span style=color:#e6db74>&#34;点菜结束,退出&#34;</span>
+</span></span><span style=display:flex><span>            break
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        *<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            echo <span style=color:#e6db74>&#34;点菜错误，重新选择&#34;</span>
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>esac</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;总价格是: </span>$sum<span style=color:#e6db74>&#34;</span>
+</span></span></code></pre></div><h2 id=函数-function>函数 function
+<a class=header-anchor href=#%e5%87%bd%e6%95%b0-function></a></h2><h3 id=函数介绍>函数介绍
+<a class=header-anchor href=#%e5%87%bd%e6%95%b0%e4%bb%8b%e7%bb%8d></a></h3><p>函数function是由若干条shell命令组成的语句块，实现代码重用和模块化编程
+它与shell程序形式上是相似的，不同的是它不是一个单独的进程，不能独立运行，而是shell程序的一
+部分
+<strong>函数和shell程序区别</strong></p><ul><li>Shell程序在子Shell中运行</li><li>函数在当前Shell中运行。因此在当前Shell中，函数可对shell中变量进行修改</li></ul><h3 id=管理函数>管理函数
+<a class=header-anchor href=#%e7%ae%a1%e7%90%86%e5%87%bd%e6%95%b0></a></h3><p>函数由两部分组成：函数名和函数体<br>帮助参看：help function</p><h3 id=定义函数>定义函数
+<a class=header-anchor href=#%e5%ae%9a%e4%b9%89%e5%87%bd%e6%95%b0></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#语法一：
+</span></span><span style=display:flex><span>func_name（）{
+</span></span><span style=display:flex><span>    ...函数体...
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#语法二：
+</span></span><span style=display:flex><span>function func_name {
+</span></span><span style=display:flex><span>    ...函数体...
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#语法三：
+</span></span><span style=display:flex><span>function func_name（）{
+</span></span><span style=display:flex><span>    ...函数体...
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 使用语法一来定义函数</span>
+</span></span><span style=display:flex><span>func_name <span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#34;Hello from func_name defined with syntax 1.&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 使用语法二来定义函数</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>function</span> func_name_2 <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#34;Hello from func_name_2 defined with syntax 2.&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 使用语法三来定义函数</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>function</span> func_name_3 <span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#34;Hello from func_name_3 defined with syntax 3.&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 调用所有函数</span>
+</span></span><span style=display:flex><span>func_name
+</span></span><span style=display:flex><span>func_name_2
+</span></span><span style=display:flex><span>func_name_3
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>root@rocky9 ~<span style=color:#f92672>]</span><span style=color:#75715e># vim test.sh</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>root@rocky9 ~<span style=color:#f92672>]</span><span style=color:#75715e># bash test.sh</span>
+</span></span><span style=display:flex><span>Hello from func_name defined with syntax 1.
+</span></span><span style=display:flex><span>Hello from func_name_2 defined with syntax 2.
+</span></span><span style=display:flex><span>Hello from func_name_3 defined with syntax 3.
+</span></span></code></pre></div><h3 id=查看函数>查看函数
+<a class=header-anchor href=#%e6%9f%a5%e7%9c%8b%e5%87%bd%e6%95%b0></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#查看当前已定义的函数名
+</span></span><span style=display:flex><span>declare -F
+</span></span><span style=display:flex><span>#查看当前已定义的函数定义
+</span></span><span style=display:flex><span>declare -f
+</span></span><span style=display:flex><span>#查看指定当前已定义的函数名
+</span></span><span style=display:flex><span>declare -f func_name
+</span></span><span style=display:flex><span>#查看当前已定义的函数名定义
+</span></span><span style=display:flex><span>declare -F func_name
+</span></span></code></pre></div><h3 id=删除函数>删除函数
+<a class=header-anchor href=#%e5%88%a0%e9%99%a4%e5%87%bd%e6%95%b0></a></h3><p>格式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>unset func_name
+</span></span></code></pre></div><h2 id=函数调用>函数调用
+<a class=header-anchor href=#%e5%87%bd%e6%95%b0%e8%b0%83%e7%94%a8></a></h2><p>函数的调用方式</p><ul><li>可在交互式环境下定义函数</li><li>可将函数放在脚本文件中作为它的一部分</li><li>可放在只包含函数的单独文件中
+调用：函数只有被调用才会执行，通过给定函数名调用函数，函数名出现的地方，会被自动替换为函数
+代码<br>函数的生命周期：被调用时创建，返回时终止</li></ul><h3 id=交互式环境调用函数>交互式环境调用函数
+<a class=header-anchor href=#%e4%ba%a4%e4%ba%92%e5%bc%8f%e7%8e%af%e5%a2%83%e8%b0%83%e7%94%a8%e5%87%bd%e6%95%b0></a></h3><p>交互式环境下定义和使用函数
+范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#dir() {
+</span></span><span style=display:flex><span>&gt; ls -l
+</span></span><span style=display:flex><span>&gt; }
+</span></span><span style=display:flex><span>[root@centos8 ~]#dir
+</span></span><span style=display:flex><span>total 4
+</span></span><span style=display:flex><span>-rw-------. 1 root root 1559 Nov 7 19:33 anaconda-ks.cfg
+</span></span></code></pre></div><p>范例:实现判断CentOS的主版本</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#centos_version() {
+</span></span><span style=display:flex><span>&gt; sed -rn &#39;s#^.* +([0-9]+)\..*#\1#p&#39; /etc/redhat-release
+</span></span><span style=display:flex><span>&gt; }
+</span></span><span style=display:flex><span>[root@centos8 ~]#centos_version
+</span></span><span style=display:flex><span>8
+</span></span></code></pre></div><h3 id=在脚本中定义及使用函数>在脚本中定义及使用函数
+<a class=header-anchor href=#%e5%9c%a8%e8%84%9a%e6%9c%ac%e4%b8%ad%e5%ae%9a%e4%b9%89%e5%8f%8a%e4%bd%bf%e7%94%a8%e5%87%bd%e6%95%b0></a></h3><p>函数在使用前必须定义，因此应将函数定义放在脚本开始部分，直至shell首次发现它后才能使用，调用
+函数仅使用其函数名即可</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 ~<span style=color:#f92672>]</span><span style=color:#75715e>#cat func1.sh</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#!/bin/bash</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#name:func1</span>
+</span></span><span style=display:flex><span>hello<span style=color:#f92672>(){</span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;Hello there today&#39;s date is `date +%F`&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;now going to the function hello&#34;</span>
+</span></span><span style=display:flex><span>hello
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;back from the function&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 ~<span style=color:#f92672>]</span><span style=color:#75715e>#./func1.sh</span>
+</span></span><span style=display:flex><span>now going to the <span style=color:#66d9ef>function</span> hello
+</span></span><span style=display:flex><span>Hello there today<span style=color:#960050;background-color:#1e0010>&#39;</span>s date is 2019-12-18
+</span></span><span style=display:flex><span>back from the <span style=color:#66d9ef>function</span>
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>disable_selinux<span style=color:#f92672>(){</span>
+</span></span><span style=display:flex><span>    sed -i.bak <span style=color:#e6db74>&#39;s/SELINUX=enforcing/SELINUX=disabled/&#39;</span> /etc/selinux/config
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#34;SElinux已禁用,重新启动后才可生效&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>disable_firewall<span style=color:#f92672>(){</span>
+</span></span><span style=display:flex><span>    systemctl disable --now firewalld &amp;&gt; /dev/null
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#34;防火墙已禁用&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>set_ps1<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#34;PS1=&#39;\[\e[1;35m\][\u@\h \W]\\</span>$<span style=color:#e6db74>\[\e[0m\]&#39;&#34;</span> &gt; /etc/profile.d/reset.sh
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#34;提示符已修改成功,请重新登录生效&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>set_eth<span style=color:#f92672>(){</span>
+</span></span><span style=display:flex><span>    sed -i.bak <span style=color:#e6db74>&#39;/GRUB_CMDLINE_LINUX=/s#&#34;$# net.ifnames=0&#34;#&#39;</span> /etc/default/grub
+</span></span><span style=display:flex><span>    grub2-mkconfig -o /boot/grub2/grub.cfg &amp;&gt; /dev/null
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#34;网络名称已修改成功,请重新启动才能生效&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>PS3<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;请选择相应的编号(1-6): &#34;</span>
+</span></span><span style=display:flex><span>MENU<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>禁用SELinux
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>关防火墙
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>修改提示符
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>修改网卡名
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>以上全实现
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>退出
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>select</span> M in $MENU ;<span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>case</span> $REPLY in
+</span></span><span style=display:flex><span>        1<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            disable_selinux
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        2<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            disable_firewall
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        3<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            set_ps1
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        4<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            set_eth
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        5<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            disable_selinux
+</span></span><span style=display:flex><span>            disable_firewall
+</span></span><span style=display:flex><span>            set_ps1
+</span></span><span style=display:flex><span>            set_eth
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        6<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            break
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        *<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            echo <span style=color:#e6db74>&#34;请输入正确的数字&#34;</span>
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>esac</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span></code></pre></div><h3 id=使用函数文件>使用函数文件
+<a class=header-anchor href=#%e4%bd%bf%e7%94%a8%e5%87%bd%e6%95%b0%e6%96%87%e4%bb%b6></a></h3><p>可以将经常使用的函数存入一个单独的函数文件，然后将函数文件载入shell，再进行调用函数<br>函数文件名可任意选取，但最好与相关任务有某种联系，例如：functions<br>一旦函数文件载入shell，就可以在命令行或脚本中调用函数。可以使用delcare -f 或set 命令查看所有<br>定义的函数，其输出列表包括已经载入shell的所有函数<br>若要改动函数，首先用unset命令从shell中删除函数。改动完毕后，再重新载入此文件<br>实现函数文件的过程：</p><ol><li>创建函数文件，只存放函数的定义</li><li>在shell脚本或交互式shell中调用函数文件，格式如下：</li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>. filename
+</span></span><span style=display:flex><span>source filename
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 ~<span style=color:#f92672>]</span><span style=color:#75715e># cat functions</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#!/bin/bash</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#functions</span>
+</span></span><span style=display:flex><span>hello<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    echo Run hello Function
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>hello2<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    echo Run hello2 Function
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 ~<span style=color:#f92672>]</span><span style=color:#75715e># . functions</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 ~<span style=color:#f92672>]</span><span style=color:#75715e># hello</span>
+</span></span><span style=display:flex><span>Run hello Function
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 ~<span style=color:#f92672>]</span><span style=color:#75715e># hello2</span>
+</span></span><span style=display:flex><span>Run hello2 Function
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 ~<span style=color:#f92672>]</span><span style=color:#75715e># declare -f hello hello2</span>
+</span></span><span style=display:flex><span>hello <span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    echo Run hello Function
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>hello2 <span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    echo Run hello2 Function
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Disable SELinux</span>
+</span></span><span style=display:flex><span>disable_selinux<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    sed -i.bak <span style=color:#e6db74>&#39;s/SELINUX=enforcing/SELINUX=disabled/&#39;</span> /etc/selinux/config
+</span></span><span style=display:flex><span>    action <span style=color:#e6db74>&#34;SELinux已禁用,重新启动后才可生效&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Disable firewall</span>
+</span></span><span style=display:flex><span>disable_firewall<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    systemctl disable --now firewalld &amp;&gt; /dev/null
+</span></span><span style=display:flex><span>    action <span style=color:#e6db74>&#34;防火墙已禁用&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Set PS1 prompt</span>
+</span></span><span style=display:flex><span>set_ps1<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#34;PS1=&#39;\[\e[1;35m\][\u@\h \W]\\</span>$<span style=color:#e6db74>\[\e[0m\]&#39;&#34;</span> &gt; /etc/profile.d/reset.sh
+</span></span><span style=display:flex><span>    action <span style=color:#e6db74>&#34;提示符已修改成功,请重新登录生效&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Set network interface name</span>
+</span></span><span style=display:flex><span>set_eth<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    sed -i.bak <span style=color:#e6db74>&#39;/GRUB_CMDLINE_LINUX=/s#&#34;$# net.ifnames=0#&#34; /etc/default/grub
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    grub2-mkconfig -o /boot/grub2/grub.cfg &amp;&gt; /dev/null
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    action &#34;网络名称已修改成功,请重新启动才能生效&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>}
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>PS3=&#34;请选择相应的编号(1-6): &#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>MENU=&#39;</span>
+</span></span><span style=display:flex><span>禁用SELinux
+</span></span><span style=display:flex><span>关闭防火墙
+</span></span><span style=display:flex><span>修改提示符
+</span></span><span style=display:flex><span>修改网卡名
+</span></span><span style=display:flex><span>以上全实现
+</span></span><span style=display:flex><span>退出
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>select</span> M in $MENU ; <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>case</span> $REPLY in
+</span></span><span style=display:flex><span>        1<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            disable_selinux
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        2<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            disable_firewall
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        3<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            set_ps1
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        4<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            set_eth
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        5<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            disable_selinux
+</span></span><span style=display:flex><span>            disable_firewall
+</span></span><span style=display:flex><span>            set_ps1
+</span></span><span style=display:flex><span>            set_eth
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        6<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            break
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>        *<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>            echo <span style=color:#e6db74>&#34;请输入正确的数字&#34;</span>
+</span></span><span style=display:flex><span>            ;;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>esac</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span></code></pre></div><h2 id=函数返回值>函数返回值
+<a class=header-anchor href=#%e5%87%bd%e6%95%b0%e8%bf%94%e5%9b%9e%e5%80%bc></a></h2><p>函数的执行结果返回值:</p><ul><li>使用echo等命令进行输出</li><li>函数体中调用命令的输出结果
+函数的退出状态码:</li><li>默认取决于函数中执行的最后一条命令的退出状态码</li><li>自定义退出状态码，其格式为:<br>return 从函数中返回，用最后状态命令决定返回值<br>return 0 无错误返回<br>return 1-255 有错误返回</li></ul><h2 id=环境函数>环境函数
+<a class=header-anchor href=#%e7%8e%af%e5%a2%83%e5%87%bd%e6%95%b0></a></h2><p>类拟于环境变量，也可以定义环境函数，使子进程也可使用父进程定义的函数<br>定义环境函数：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span><span style=color:#66d9ef>export</span> <span style=color:#f92672>-</span>f function_name
+</span></span><span style=display:flex><span>declare <span style=color:#f92672>-</span>xf function_name
+</span></span></code></pre></div><p>查看环境函数：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span><span style=color:#66d9ef>export</span> <span style=color:#f92672>-</span>f
+</span></span><span style=display:flex><span>declare <span style=color:#f92672>-</span>xf
+</span></span></code></pre></div><h2 id=函数参数>函数参数
+<a class=header-anchor href=#%e5%87%bd%e6%95%b0%e5%8f%82%e6%95%b0></a></h2><p>函数可以接受参数：</p><ul><li>传递参数给函数：在函数名后面以空白分隔给定参数列表即可，如：testfunc arg1 arg2 &mldr;</li><li>在函数体中当中，可使用$1, $2, &mldr;调用这些参数；还可以使用$@, $*, $#等特殊变量
+范例：实现进度条功能</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 ~<span style=color:#f92672>]</span><span style=color:#75715e>#cat progress_chart.sh</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#!/bin/bash</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>function</span> print_chars<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># 传入的第一个参数指定要打印的字符串</span>
+</span></span><span style=display:flex><span>    local char<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$1<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># 传入的第二个参数指定要打印多少次指定的字符串</span>
+</span></span><span style=display:flex><span>    local number<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;</span>$2<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    local c
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> <span style=color:#f92672>((</span>c <span style=color:#f92672>=</span> 0; c &lt; number; ++c<span style=color:#f92672>))</span>; <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>        printf <span style=color:#e6db74>&#34;%s&#34;</span> <span style=color:#e6db74>&#34;</span>$char<span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>COLOR<span style=color:#f92672>=</span><span style=color:#ae81ff>32</span>
+</span></span><span style=display:flex><span>declare -i end<span style=color:#f92672>=</span><span style=color:#ae81ff>50</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> <span style=color:#f92672>((</span>i <span style=color:#f92672>=</span> 1; i &lt;<span style=color:#f92672>=</span> end; ++i<span style=color:#f92672>))</span>; <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>    printf <span style=color:#e6db74>&#34;\e[1;%sm\e[80D[&#34;</span> <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${</span>COLOR<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    print_chars <span style=color:#e6db74>&#34;#&#34;</span> $i
+</span></span><span style=display:flex><span>    print_chars <span style=color:#e6db74>&#34; &#34;</span> <span style=color:#66d9ef>$((</span>end <span style=color:#f92672>-</span> i<span style=color:#66d9ef>))</span>
+</span></span><span style=display:flex><span>    printf <span style=color:#e6db74>&#34;] %3d%%\e[0m\n&#34;</span> <span style=color:#66d9ef>$((</span>i <span style=color:#f92672>*</span> <span style=color:#ae81ff>2</span><span style=color:#66d9ef>))</span>
+</span></span><span style=display:flex><span>    sleep 0.1s
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span>echo
+</span></span></code></pre></div><p><img src=/imgs/img-lazy-loading.gif data-src=https://github.com/user-attachments/assets/c5ec5259-f006-4ff7-a161-47b402155c27 alt=image></p><h2 id=函数变量>函数变量
+<a class=header-anchor href=#%e5%87%bd%e6%95%b0%e5%8f%98%e9%87%8f></a></h2><p>变量作用域：</p><ul><li>普通变量：只在当前shell进程有效，为执行脚本会启动专用子shell进程；因此，本地变量的作用
+范围是当前shell脚本程序文件，包括脚本中的函数</li><li>环境变量：当前shell和子shell有效</li><li>本地变量：函数的生命周期；函数结束时变量被自动销毁
+注意：</li><li>如果函数中定义了普通变量，且名称和局部变量相同，则使用本地变量</li><li>由于普通变量和局部变量会冲突，建议在函数中只使用本地变量
+在函数中定义本地变量的方法</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>local NAME=VALUE
+</span></span></code></pre></div><h2 id=函数递归>函数递归
+<a class=header-anchor href=#%e5%87%bd%e6%95%b0%e9%80%92%e5%bd%92></a></h2><p>函数递归：函数直接或间接调用自身，注意递归层数，可能会陷入死循环<br>递归特点:</p><ul><li>函数内部自已调用自已</li><li>必须有结束函数的出口语句,防止死循环
+范例: 无出口的递归函数调用</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 <span style=color:#f92672>~</span>]<span style=color:#75715e>#func () { echo $i;echo &#34;run func&#34;;let i++; func; }</span>
+</span></span><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 <span style=color:#f92672>~</span>]<span style=color:#75715e>#func</span>
+</span></span></code></pre></div><p><strong>递归示例：</strong><br>阶乘是基斯顿·卡曼于 1808 年发明的运算符号，是数学术语<br>一个正整数的阶乘（factorial）是所有小于及等于该数的正整数的积，并且0和1的阶乘为1，自然数n的
+阶乘写作n!<br>n!=1×2×3×&mldr;×n<br>阶乘亦可以递归方式定义：0!=1，n!=(n-1)!×n<br>n!=n(n-1)(n-2)&mldr;1<br>n(n-1)! = n(n-1)(n-2)!<br>范例：fact.sh</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span>fact<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#f92672>[</span> $1 -eq <span style=color:#ae81ff>0</span> -o $1 -eq <span style=color:#ae81ff>1</span> <span style=color:#f92672>]</span>; <span style=color:#66d9ef>then</span>
+</span></span><span style=display:flex><span>        echo <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>else</span>
+</span></span><span style=display:flex><span>        echo $<span style=color:#f92672>[</span>$1*<span style=color:#66d9ef>$(</span>fact $<span style=color:#f92672>[</span>$1-1<span style=color:#f92672>]</span><span style=color:#66d9ef>)</span><span style=color:#f92672>]</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>fi</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>fact $1
+</span></span></code></pre></div><p>范例: 测试递归的嵌套深度</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#test(){
+</span></span><span style=display:flex><span>    let i++
+</span></span><span style=display:flex><span>    echo i=$i
+</span></span><span style=display:flex><span>    test
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>[root@centos8 ~]#test
+</span></span></code></pre></div><p>ork 炸弹是一种恶意程序，它的内部是一个不断在 fork 进程的无限循环，实质是一个简单的递归程
+序。由于程序是递归的，如果没有任何限制，这会导致这个简单的程序迅速耗尽系统里面的所有资源<br>参考：https://en.wikipedia.org/wiki/Fork_bomb<br>函数实现</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>:(){ :|:&amp; };:
+</span></span><span style=display:flex><span>bomb() { bomb | bomb &amp; }; bomb
+</span></span></code></pre></div><p>脚本实现</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>cat Bomb.sh
+</span></span><span style=display:flex><span><span style=color:#75715e>#!/bin/bash</span>
+</span></span><span style=display:flex><span>./$0|./$0&amp;
+</span></span></code></pre></div><h4 id=练习-1>练习
+<a class=header-anchor href=#%e7%bb%83%e4%b9%a0-1></a></h4><ol><li>编写函数，实现OS的版本判断</li><li>编写函数，实现取出当前系统eth0的IP地址</li><li>编写函数，实现打印绿色OK和红色FAILED</li><li>编写函数，实现判断是否无位置参数，如无参数，提示错误</li><li>编写函数，实现两个数字做为参数，返回最大值</li><li>编写服务脚本/root/bin/testsrv.sh，完成如下要求<br>(1) 脚本可接受参数：start, stop, restart, status<br>(2) 如果参数非此四者之一，提示使用格式后报错退出<br>(3) 如是start:则创建/var/lock/subsys/SCRIPT_NAME, 并显示“启动成功”<br>考虑：如果事先已经启动过一次，该如何处理？<br>(4) 如是stop:则删除/var/lock/subsys/SCRIPT_NAME, 并显示“停止完成”<br>考虑：如果事先已然停止过了，该如何处理？<br>(5) 如是restart，则先stop, 再start<br>考虑：如果本来没有start，如何处理？<br>(6) 如是status, 则如果/var/lock/subsys/SCRIPT_NAME文件存在，则显示“SCRIPT_NAME is
+running&mldr;”，如果/var/lock/subsys/SCRIPT_NAME文件不存在，则显示“SCRIPT_NAME is
+stopped&mldr;”<br>(7)在所有模式下禁止启动该服务，可用chkconfig 和 service命令管理
+说明：SCRIPT_NAME为当前脚本名</li><li>编写脚本/root/bin/copycmd.sh<br>(1) 提示用户输入一个可执行命令名称<br>(2) 获取此命令所依赖到的所有库文件列表<br>(3) 复制命令至某目标目录(例如/mnt/sysroot)下的对应路径下<br>如：/bin/bash ==> /mnt/sysroot/bin/bash<br>/usr/bin/passwd ==> /mnt/sysroot/usr/bin/passwd<br>(4) 复制此命令依赖到的所有库文件至目标目录下的对应路径下： 如：/lib64/ld-linux-x86-
+64.so.2 ==> /mnt/sysroot/lib64/ld-linux-x86-64.so.2<br>(5)每次复制完成一个命令后，不要退出，而是提示用户键入新的要复制的命令，并重复完成上述
+功能；直到用户输入quit退出</li><li>斐波那契数列又称黄金分割数列，因数学家列昂纳多·斐波那契以兔子繁殖为例子而引入，故又称
+为“兔子数列”，指的是这样一个数列：0、1、1、2、3、5、8、13、21、34、……，斐波纳契数列
+以如下被以递归的方法定义：F（0）=0，F（1）=1，F（n）=F(n-1)+F(n-2)（n≥2），利用函数，
+求n阶斐波那契数列<br>cat Bomb.sh<br>#!/bin/bash<br>./$0|./$0&</li><li>汉诺塔（又称河内塔）问题是源于印度一个古老传说。大梵天创造世界的时候做了三根金刚石柱
+子，在一根柱子上从下往上按照大小顺序摞着64片黄金圆盘。大梵天命令婆罗门把圆盘从下面开
+始按大小顺序重新摆放在另一根柱子上。并且规定，在小圆盘上不能放大圆盘，在三根柱子之间一
+次只能移动一个圆盘，利用函数，实现N片盘的汉诺塔的移动步骤</li></ol><h2 id=信号捕捉-trap>信号捕捉 trap
+<a class=header-anchor href=#%e4%bf%a1%e5%8f%b7%e6%8d%95%e6%8d%89-trap></a></h2><p>trap 命令可以捕捉信号,修改信号原来的功能,实现自定义功能</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#进程收到系统发出的指定信号后，将执行自定义指令，而不会执行原操作
+</span></span><span style=display:flex><span>trap &#39;触发指令&#39; 信号
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#忽略信号的操作
+</span></span><span style=display:flex><span>trap &#39;&#39; 信号
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#恢复原信号的操作
+</span></span><span style=display:flex><span>trap &#39;-&#39; 信号
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#列出自定义信号操作
+</span></span><span style=display:flex><span>trap -p
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#当脚本退出时，执行finish函数
+</span></span><span style=display:flex><span>trap finish EXIT
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>trap <span style=color:#e6db74>&#34;echo &#39;Press ctrl+c or ctrl+\&#39;&#34;</span> int quit
+</span></span><span style=display:flex><span>trap -p
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span><span style=color:#f92672>((</span>i<span style=color:#f92672>=</span>0;i&lt;<span style=color:#f92672>=</span>10;i++<span style=color:#f92672>))</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>    sleep <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    echo $i
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>trap <span style=color:#e6db74>&#39;&#39;</span> int
+</span></span><span style=display:flex><span>trap -p
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span><span style=color:#f92672>((</span>i<span style=color:#f92672>=</span>11;i&lt;<span style=color:#f92672>=</span>20;i++<span style=color:#f92672>))</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>    sleep <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    echo $i
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>trap <span style=color:#e6db74>&#39;-&#39;</span> int
+</span></span><span style=display:flex><span>trap -p
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span><span style=color:#f92672>((</span>i<span style=color:#f92672>=</span>21;i&lt;<span style=color:#f92672>=</span>30;i++<span style=color:#f92672>))</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>    sleep <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    echo $i
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span></code></pre></div><p>范例: 当脚本正常或异常退出时,也会执行finish函数</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 ~<span style=color:#f92672>]</span><span style=color:#75715e>#cat trap_exit.sh</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#!/bin/bash</span>
+</span></span><span style=display:flex><span>finish<span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#34;finish&#34;</span> | tee -a /root/finish.log
+</span></span><span style=display:flex><span><span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>trap finish exit
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>while</span> true; <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>&#34;running&#34;</span>
+</span></span><span style=display:flex><span>    sleep <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span></code></pre></div><h2 id=创建临时文件-mktemp>创建临时文件 mktemp
+<a class=header-anchor href=#%e5%88%9b%e5%bb%ba%e4%b8%b4%e6%97%b6%e6%96%87%e4%bb%b6-mktemp></a></h2><p>mktemp 命令用于创建并显示临时文件，可避免冲突<br>格式</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>
+</span></span><span style=display:flex><span>说明：TEMPLATE: filenameXXX，X至少要出现三个
+</span></span></code></pre></div><p>常见选项：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>-d #创建临时目录
+</span></span><span style=display:flex><span>-p DIR或--tmpdir=DIR #指明临时文件所存放目录位置
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#mktemp
+</span></span><span style=display:flex><span>/tmp/tmp.UogGCumh8C
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@centos8 ~]#mktemp /tmp/testXXX
+</span></span><span style=display:flex><span>[root@centos8 ~]#tmpdir=`mktemp -d /tmp/testdirXXX`
+</span></span><span style=display:flex><span>[root@centos8 ~]#mktemp --tmpdir=/testdir testXXXXXX
+</span></span></code></pre></div><p>范例：实现文件垃圾箱</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#方法1:脚本实现</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 ~<span style=color:#f92672>]</span><span style=color:#75715e>#cat /data/scripts/rm.sh</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#!/bin/bash</span>
+</span></span><span style=display:flex><span>DIR<span style=color:#f92672>=</span><span style=color:#e6db74>`</span>mktemp -d /tmp/trash-<span style=color:#66d9ef>$(</span>date +%F_%H-%M-%S<span style=color:#66d9ef>)</span>XXXXXX<span style=color:#e6db74>`</span>
+</span></span><span style=display:flex><span>mv $* $DIR
+</span></span><span style=display:flex><span>echo $* is move to $DIR
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 ~<span style=color:#f92672>]</span><span style=color:#75715e>#alias rm=/data/scripts/rm.sh</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#方法2:函数实现</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 ~<span style=color:#f92672>]</span><span style=color:#75715e>#function rm () { local trash=`mktemp -d /tmp/trashXXXX`;mv $*</span>
+</span></span><span style=display:flex><span>$trash; <span style=color:#f92672>}</span>
+</span></span></code></pre></div><h2 id=安装复制文件-install>安装复制文件 install
+<a class=header-anchor href=#%e5%ae%89%e8%a3%85%e5%a4%8d%e5%88%b6%e6%96%87%e4%bb%b6-install></a></h2><p>install 功能相当于cp，chmod，chown，chgrp ,mkdir 等相关工具的集合<br>install命令格式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>install [OPTION]... [-T] SOURCE DEST 单文件
+</span></span><span style=display:flex><span>install [OPTION]... SOURCE... DIRECTORY
+</span></span><span style=display:flex><span>install [OPTION]... -t DIRECTORY SOURCE...
+</span></span><span style=display:flex><span>install [OPTION]... -d DIRECTORY... #创建空目录
+</span></span></code></pre></div><p>选项：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>-m MODE，默认755
+</span></span><span style=display:flex><span>-o OWNER
+</span></span><span style=display:flex><span>-g GROUP
+</span></span><span style=display:flex><span>-d DIRNAME 目录
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#install -m 700 -o wang -g admins srcfile desfile
+</span></span><span style=display:flex><span>[root@centos8 ~]#install -m 770 -d /testdir/installdir
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@centos8 ~]#install -m 600 -o wang -g bin anaconda-ks.cfg /data/a.cfg
+</span></span><span style=display:flex><span>[root@centos8 ~]#ll /data/a.cfg
+</span></span><span style=display:flex><span>-rw------- 1 wang bin 1550 Jun 23 20:28 /data/a.cfg
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@centos8 ~]#install -m 700 -o mage -g daemon -d /data/testdir
+</span></span><span style=display:flex><span>[root@centos8 ~]#ll -d /data/testdir
+</span></span><span style=display:flex><span>drwx------ 2 mage daemon 6 Apr 29 15:09 /data/testdir
+</span></span></code></pre></div><h2 id=交互式转化批处理工具-expect>交互式转化批处理工具 expect
+<a class=header-anchor href=#%e4%ba%a4%e4%ba%92%e5%bc%8f%e8%bd%ac%e5%8c%96%e6%89%b9%e5%a4%84%e7%90%86%e5%b7%a5%e5%85%b7-expect></a></h2><p>expect 是由Don Libes基于 Tcl（ Tool Command Language ）语言开发的，主要应用于自动化交互式
+操作的场景，借助 expect 处理交互的命令，可以将交互过程如：ssh登录，ftp登录等写在一个脚本
+上，使之自动化完成。尤其适用于需要对多台服务器执行相同操作的环境中，可以大大提高系统管理人
+员的工作效率</p><p>范例: 安装expect 及mkpasswd 工具</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#yum -y install expect
+</span></span><span style=display:flex><span>[root@centos8 ~]#rpm -ql expect|head
+</span></span><span style=display:flex><span>/usr/bin/autoexpect
+</span></span><span style=display:flex><span>/usr/bin/dislocate
+</span></span><span style=display:flex><span>/usr/bin/expect
+</span></span><span style=display:flex><span>/usr/bin/ftp-rfc
+</span></span><span style=display:flex><span>/usr/bin/kibitz
+</span></span><span style=display:flex><span>/usr/bin/lpunlock
+</span></span><span style=display:flex><span>/usr/bin/mkpasswd
+</span></span><span style=display:flex><span>/usr/bin/passmass
+</span></span><span style=display:flex><span>/usr/bin/rftp
+</span></span><span style=display:flex><span>/usr/bin/rlogin-cwd
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@centos8 ~]#mkpasswd
+</span></span><span style=display:flex><span>mghe5J&amp;9A
+</span></span><span style=display:flex><span>[root@centos8 ~]#mkpasswd
+</span></span><span style=display:flex><span>XhyQ67uo=
+</span></span><span style=display:flex><span>[root@centos8 ~]#mkpasswd -l 15 -d 3 -C 5
+</span></span><span style=display:flex><span>9T{htJmcA7pgCJ2
+</span></span></code></pre></div><p>expect 语法：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>expect [选项] [ -c cmds ] [ [ -[f|b] ] cmdfile ] [ args ]
+</span></span></code></pre></div><p>常见选项：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>-c：从命令行执行expect脚本，默认expect是交互地执行的
+</span></span><span style=display:flex><span>-d：可以调试信息
+</span></span></code></pre></div><p>示例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>expect -c &#39;expect &#34;\n&#34; {send &#34;pressed enter\n&#34;}&#39;
+</span></span><span style=display:flex><span>expect -d ssh.exp
+</span></span></code></pre></div><p>expect中相关命令</p><ul><li>spawn 启动新的进程</li><li>expect 从进程接收字符串</li><li>send 用于向进程发送字符串</li><li>interact 允许用户交互</li><li>exp_continue 匹配多个字符串在执行动作后加此命令
+expect最常用的语法(tcl语言:模式-动作)<br>单一分支模式语法：</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 test]#expect
+</span></span><span style=display:flex><span>expect1.1&gt; expect &#34;hi&#34; {send &#34;You said hi\n&#34;}
+</span></span><span style=display:flex><span>hahahixixi
+</span></span><span style=display:flex><span>You said hi
+</span></span></code></pre></div><p>匹配到hi后，会输出“you said hi”，并换行<br>多分支模式语法：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#expect
+</span></span><span style=display:flex><span>expect1.1&gt; expect &#34;hi&#34; { send &#34;You said hi\n&#34; } &#34;hehe&#34; { send &#34;Hehe yourself\n&#34;
+</span></span><span style=display:flex><span>} &#34;bye&#34; { send &#34;Good bye\n&#34; }
+</span></span><span style=display:flex><span>hehe
+</span></span><span style=display:flex><span>Hehe yourself
+</span></span><span style=display:flex><span>expect1.2&gt; expect &#34;hi&#34; { send &#34;You said hi\n&#34; } &#34;hehe&#34; { send &#34;Hehe yourself\n&#34;
+</span></span><span style=display:flex><span>} &#34;bye&#34; { send &#34;Good bye\n&#34; }
+</span></span><span style=display:flex><span>bye
+</span></span><span style=display:flex><span>Good bye
+</span></span><span style=display:flex><span>expect1.3&gt; expect &#34;hi&#34; { send &#34;You said hi\n&#34; } &#34;hehe&#34; { send &#34;Hehe yourself\n&#34;
+</span></span><span style=display:flex><span>} &#34;bye&#34; { send &#34;Good bye\n&#34; }
+</span></span><span style=display:flex><span>hi
+</span></span><span style=display:flex><span>You said hi
+</span></span><span style=display:flex><span>expect1.4&gt;
+</span></span></code></pre></div><p>匹配hi,hello,bye任意字符串时，执行相应输出。等同如下：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>expect {
+</span></span><span style=display:flex><span>    &#34;hi&#34; { send &#34;You said hi\n&#34; }
+</span></span><span style=display:flex><span>    &#34;hehe&#34; { send &#34;Hehe yourself\n&#34; }
+</span></span><span style=display:flex><span>    &#34;bye&#34; { send &#34; Good bye\n&#34; }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@centos8 ~]# expect
+</span></span><span style=display:flex><span>expect1.1&gt; expect {
+</span></span><span style=display:flex><span>+&gt; &#34;hi&#34; { send &#34;You said hi\n&#34; }
+</span></span><span style=display:flex><span>+&gt; &#34;hehe&#34; { send &#34;Hehe yourself\n&#34; }
+</span></span><span style=display:flex><span>+2&gt; &#34;bye&#34; { send &#34; Good bye\n&#34; }
+</span></span><span style=display:flex><span>+&gt; }
+</span></span><span style=display:flex><span>bye
+</span></span><span style=display:flex><span>Good bye
+</span></span><span style=display:flex><span>expect1.2&gt;
+</span></span></code></pre></div><p>范例1：非交互式复制文件</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#!/usr/bin/expect  # 指定使用 Expect 脚本解释器
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># 启动 scp 命令，将本地的 /etc/redhat-release 文件复制到远程服务器的 /data 目录
+</span></span><span style=display:flex><span>spawn scp /etc/redhat-release 10.0.0.7:/data
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># 监听并处理可能出现的提示
+</span></span><span style=display:flex><span>expect {
+</span></span><span style=display:flex><span>    &#34;yes/no&#34; {  # 如果出现 &#34;yes/no&#34; 提示，则发送 &#34;yes&#34; 并继续监听
+</span></span><span style=display:flex><span>        send &#34;yes\r&#34;  # 发送 &#34;yes&#34; 并加上回车符，以确认连接
+</span></span><span style=display:flex><span>        exp_continue  # 继续执行后续的 expect 命令
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    &#34;password&#34; {  # 如果出现 &#34;password&#34; 提示，则发送密码
+</span></span><span style=display:flex><span>        send &#34;magedu\r&#34;  # 发送密码 &#34;magedu&#34; 并加上回车符
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># 等待 expect 脚本结束，即文件传输完成
+</span></span><span style=display:flex><span>expect eof
+</span></span></code></pre></div><p>范例2：自动登录</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#!/usr/bin/expect
+</span></span><span style=display:flex><span>spawn ssh 10.0.0.7
+</span></span><span style=display:flex><span>expect {
+</span></span><span style=display:flex><span>  &#34;yes/no&#34; { send &#34;yes\n&#34;; exp_continue }
+</span></span><span style=display:flex><span>  &#34;password&#34; { send &#34;magedu\n&#34; }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>interact
+</span></span></code></pre></div><p>范例3：expect 变量</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#!/usr/bin/expect
+</span></span><span style=display:flex><span>set ip 10.0.0.7
+</span></span><span style=display:flex><span>set user root
+</span></span><span style=display:flex><span>set password magedu
+</span></span><span style=display:flex><span>set timeout 10
+</span></span><span style=display:flex><span>spawn ssh $user@$ip
+</span></span><span style=display:flex><span>expect {
+</span></span><span style=display:flex><span>        &#34;yes/no&#34; { send &#34;yes\n&#34;;exp_continue }
+</span></span><span style=display:flex><span>        &#34;password&#34; { send &#34;$password\n&#34; }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>interact
+</span></span></code></pre></div><p>范例4：expect 位置参数</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#cat expect4
+</span></span><span style=display:flex><span>#!/usr/bin/expect
+</span></span><span style=display:flex><span>set ip [lindex $argv 0]
+</span></span><span style=display:flex><span>set user [lindex $argv 1]
+</span></span><span style=display:flex><span>set password [lindex $argv 2]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>spawn ssh $user@$ip
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>expect {
+</span></span><span style=display:flex><span>    &#34;yes/no&#34; { send &#34;yes\r&#34;; exp_continue }
+</span></span><span style=display:flex><span>    &#34;password:&#34; { send &#34;$password\r&#34; }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>interact
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@centos8 ~]#./expect4 10.0.0.7 root magedu
+</span></span><span style=display:flex><span>spawn ssh root@10.0.0.7
+</span></span><span style=display:flex><span>root@10.0.0.7&#39;s password:
+</span></span><span style=display:flex><span>Last login: Wed Apr 29 15:34:14 2020 from 10.0.0.8
+</span></span><span style=display:flex><span>[root@centos7 ~]#exit
+</span></span><span style=display:flex><span>logout
+</span></span><span style=display:flex><span>Connection to 10.0.0.7 closed.
+</span></span></code></pre></div><p>范例5：expect 执行多个命令</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#!/usr/bin/expect
+</span></span><span style=display:flex><span>set ip [lindex $argv 0]
+</span></span><span style=display:flex><span>set user [lindex $argv 1]
+</span></span><span style=display:flex><span>set password [lindex $argv 2]
+</span></span><span style=display:flex><span>set timeout 10
+</span></span><span style=display:flex><span>spawn ssh $user@$ip
+</span></span><span style=display:flex><span>expect {
+</span></span><span style=display:flex><span>    &#34;yes/no&#34; { send &#34;yes\n&#34;; exp_continue }
+</span></span><span style=display:flex><span>    &#34;password&#34; { send &#34;$password\n&#34; }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>expect &#34;]#&#34; { send &#34;useradd haha\n&#34; }
+</span></span><span style=display:flex><span>expect &#34;]#&#34; { send &#34;echo magedu |passwd --stdin haha\n&#34; }
+</span></span><span style=display:flex><span>send &#34;exit\n&#34;
+</span></span><span style=display:flex><span>expect eof
+</span></span><span style=display:flex><span>#./ssh4.exp 10.0.0.7 root magedu
+</span></span></code></pre></div><p>范例6：shell脚本调用 expect</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>ip<span style=color:#f92672>=</span>$1
+</span></span><span style=display:flex><span>user<span style=color:#f92672>=</span>$2
+</span></span><span style=display:flex><span>password<span style=color:#f92672>=</span>$3
+</span></span><span style=display:flex><span>expect <span style=color:#e6db74>&lt;&lt;EOF
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>set timeout 20
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>spawn ssh $user@$ip
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>expect {
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#34;yes/no&#34; { send &#34;yes\r&#34;; exp_continue }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#34;password&#34; { send &#34;$password\r&#34; }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>}
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>expect &#34;]#&#34; { send &#34;useradd hehe\r&#34; }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>expect &#34;]#&#34; { send &#34;echo magedu |passwd --stdin hehe\r&#34; }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>expect &#34;]#&#34; { send &#34;exit\r&#34; }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>expect eof
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>EOF</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#./ssh5.sh 192.168.8.10 root magedu</span>
+</span></span></code></pre></div><p>范例7: shell脚本利用循环调用expect在CentOS和Ubuntu上批量创建用户</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>NET<span style=color:#f92672>=</span>10.0.0
+</span></span><span style=display:flex><span>user<span style=color:#f92672>=</span>root
+</span></span><span style=display:flex><span>password<span style=color:#f92672>=</span>magedu
+</span></span><span style=display:flex><span>IPLIST<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>7
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>18
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>101
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> ID in $IPLIST;<span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>ip<span style=color:#f92672>=</span>$NET.$ID
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>expect <span style=color:#e6db74>&lt;&lt;EOF
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>set timeout 20
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>spawn ssh $user@$ip
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>expect {
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        &#34;yes/no&#34; { send &#34;yes\n&#34;;exp_continue }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        &#34;password&#34; { send &#34;$password\n&#34; }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>}
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>expect &#34;#&#34; { send &#34;useradd test\n&#34; }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>expect &#34;#&#34; { send &#34;exit\n&#34; }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>expect eof
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>EOF</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 scripts<span style=color:#f92672>]</span><span style=color:#75715e>#cat expect8.sh</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#!/bin/bash</span>
+</span></span><span style=display:flex><span>NET<span style=color:#f92672>=</span>10.0.0
+</span></span><span style=display:flex><span>user<span style=color:#f92672>=</span>root
+</span></span><span style=display:flex><span>password<span style=color:#f92672>=</span>magedu
+</span></span><span style=display:flex><span>IPLIST<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>7
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>18
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> ID in $IPLIST ;<span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>ip<span style=color:#f92672>=</span>$NET.$ID
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>expect <span style=color:#e6db74>&lt;&lt;EOF
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>set timeout 20
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>spawn ssh $user@$ip
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>expect {
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        &#34;yes/no&#34; { send &#34;yes\n&#34;;exp_continue }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        &#34;password&#34; { send &#34;$password\n&#34; }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>}
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>expect &#34;#&#34; { send &#34;sed -i &#39;s/^SELINUX=enforcing/SELINUX=disabled/&#39;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>/etc/selinux/config\n&#34; }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>expect &#34;#&#34; { send &#34;setenforce 0\n&#34; }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>expect &#34;#&#34; { send &#34;exit\n&#34; }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>expect eof
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>EOF</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span></code></pre></div><h2 id=数组-array>数组 array
+<a class=header-anchor href=#%e6%95%b0%e7%bb%84-array></a></h2><p>数组介绍<br>变量：存储单个元素的内存空间<br>数组：存储多个元素的连续的内存空间，相当于多个变量的集合<br>数组名和索引</p><ul><li>索引的编号从0开始，属于数值索引</li><li>索引可支持使用自定义的格式，而不仅是数值格式，即为关联索引，bash 4.0版本之后开始支持</li><li>bash的数组支持稀疏格式（索引不连续）</li></ul><h3 id=声明数组>声明数组
+<a class=header-anchor href=#%e5%a3%b0%e6%98%8e%e6%95%b0%e7%bb%84></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#普通数组可以不事先声明,直接使用
+</span></span><span style=display:flex><span>declare -a ARRAY_NAME
+</span></span><span style=display:flex><span>#关联数组必须先声明,再使用
+</span></span><span style=display:flex><span>declare -A ARRAY_NAME
+</span></span></code></pre></div><p>注意：两者不可相互转换</p><h3 id=数组赋值>数组赋值
+<a class=header-anchor href=#%e6%95%b0%e7%bb%84%e8%b5%8b%e5%80%bc></a></h3><p>数组元素的赋值
+(1) 一次只赋值一个元素</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>ARRAY_NAME[INDEX]=VALUE
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>weekdays[0]=&#34;Sunday&#34;
+</span></span><span style=display:flex><span>weekdays[4]=&#34;Thursday&#34;
+</span></span></code></pre></div><p>(2) 一次赋值全部元素</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>ARRAY_NAME=(&#34;VAL1&#34; &#34;VAL2&#34; &#34;VAL3&#34; ...)
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>title=(&#34;ceo&#34; &#34;coo&#34; &#34;cto&#34;)
+</span></span><span style=display:flex><span>num=({0..10})
+</span></span><span style=display:flex><span>alpha=({a..g})
+</span></span><span style=display:flex><span>file=( *.sh )
+</span></span></code></pre></div><p>(3) 只赋值特定元素</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>ARRAY_NAME=([0]=&#34;VAL1&#34; [3]=&#34;VAL2&#34; ...)
+</span></span></code></pre></div><p>(4) 交互式数组值对赋值</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>read -a ARRAY
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#declare -A course
+</span></span><span style=display:flex><span>[root@centos8 ~]#declare -a course
+</span></span><span style=display:flex><span>-bash: declare: course: cannot convert associative to indexed array
+</span></span><span style=display:flex><span>[root@centos8 ~]#file=( *.sh )
+</span></span><span style=display:flex><span>[root@centos8 ~]#declare -A file
+</span></span><span style=display:flex><span>-bash: declare: file: cannot convert indexed to associative array
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@ubuntu1804 ~]#i=a
+</span></span><span style=display:flex><span>[root@ubuntu1804 ~]#j=1
+</span></span><span style=display:flex><span>[root@ubuntu1804 ~]#declare -A arr
+</span></span><span style=display:flex><span>[root@ubuntu1804 ~]#arr[$i$j]=mage
+</span></span><span style=display:flex><span>[root@ubuntu1804 ~]#j=2
+</span></span><span style=display:flex><span>[root@ubuntu1804 ~]#arr[$i$j]=wang
+</span></span><span style=display:flex><span>[root@ubuntu1804 ~]#echo ${arr[*]}
+</span></span><span style=display:flex><span>wang mage
+</span></span><span style=display:flex><span>[root@ubuntu1804 ~]#echo ${arr[a1]}
+</span></span><span style=display:flex><span>mage
+</span></span><span style=display:flex><span>[root@ubuntu1804 ~]#echo ${arr[a2]}
+</span></span><span style=display:flex><span>wang
+</span></span></code></pre></div><h3 id=显示所有数组>显示所有数组
+<a class=header-anchor href=#%e6%98%be%e7%a4%ba%e6%89%80%e6%9c%89%e6%95%b0%e7%bb%84></a></h3><p>显示所有数组：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>declare -a
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#declare -a
+</span></span><span style=display:flex><span>declare -a BASH_ARGC=()
+</span></span><span style=display:flex><span>declare -a BASH_ARGV=()
+</span></span><span style=display:flex><span>declare -a BASH_COMPLETION_VERSINFO=([0]=&#34;2&#34; [1]=&#34;7&#34;)
+</span></span><span style=display:flex><span>declare -a BASH_LINENO=()
+</span></span><span style=display:flex><span>declare -ar BASH_REMATCH=()
+</span></span><span style=display:flex><span>declare -a BASH_SOURCE=()
+</span></span><span style=display:flex><span>declare -ar BASH_VERSINFO=([0]=&#34;4&#34; [1]=&#34;4&#34; [2]=&#34;19&#34; [3]=&#34;1&#34; [4]=&#34;release&#34;
+</span></span><span style=display:flex><span>[5]=&#34;x86_64-redhat-linux-gnu&#34;)
+</span></span><span style=display:flex><span>declare -a DIRSTACK=()
+</span></span><span style=display:flex><span>declare -a FUNCNAME
+</span></span><span style=display:flex><span>declare -a GROUPS=()
+</span></span><span style=display:flex><span>declare -a PIPESTATUS=([0]=&#34;0&#34;)
+</span></span></code></pre></div><p>引用数组<br>引用特定的数组元素</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>${ARRAY_NAME[INDEX]}
+</span></span><span style=display:flex><span>#如果省略[INDEX]表示引用下标为0的元素
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#declare -a title=([0]=&#34;ceo&#34; [1]=&#34;coo&#34; [2]=&#34;cto&#34;)
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${title[1]}
+</span></span><span style=display:flex><span>coo
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${title}
+</span></span><span style=display:flex><span>ceo
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${title[2]}
+</span></span><span style=display:flex><span>cto
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${title[3]}
+</span></span></code></pre></div><p>引用数组所有元素</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>${ARRAY_NAME[*]}
+</span></span><span style=display:flex><span>${ARRAY_NAME[@]}
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#echo ${title[@]}
+</span></span><span style=display:flex><span>ceo coo cto
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${title[*]}
+</span></span><span style=display:flex><span>ceo coo cto
+</span></span></code></pre></div><p>数组的长度，即数组中元素的个数</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>${#ARRAY_NAME[*]}
+</span></span><span style=display:flex><span>${#ARRAY_NAME[@]}
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#echo ${#title[*]}
+</span></span><span style=display:flex><span>3
+</span></span></code></pre></div><p>数组的所有下标</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>${!ARRAY_NAME[*]}
+</span></span><span style=display:flex><span>${!ARRAY_NAME[@]}
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#declare -a title=([0]=&#34;ceo&#34; [1]=&#34;coo&#34; [2]=&#34;cto&#34;)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${!title[@]}
+</span></span><span style=display:flex><span>0 1 2
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${!title[*]}
+</span></span><span style=display:flex><span>0 1 2
+</span></span></code></pre></div><h3 id=删除数组>删除数组
+<a class=header-anchor href=#%e5%88%a0%e9%99%a4%e6%95%b0%e7%bb%84></a></h3><p>删除数组中的某元素，会导致稀疏格式</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>unset ARRAY[INDEX]
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${title[*]}
+</span></span><span style=display:flex><span>ceo coo cto
+</span></span><span style=display:flex><span>[root@centos8 ~]#unset title[1]
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${title[*]}
+</span></span><span style=display:flex><span>ceo cto
+</span></span></code></pre></div><p>删除整个数组</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>unset ARRAY
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#unset title
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${title[*]}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@centos8 ~]#
+</span></span></code></pre></div><h3 id=数组数据处理>数组数据处理
+<a class=header-anchor href=#%e6%95%b0%e7%bb%84%e6%95%b0%e6%8d%ae%e5%a4%84%e7%90%86></a></h3><p>数组切片：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>${ARRAY[@]:offset:number}
+</span></span><span style=display:flex><span>${ARRAY[*]:offset:number}
+</span></span><span style=display:flex><span>offset #要跳过的元素个数
+</span></span><span style=display:flex><span>number #要取出的元素个数
+</span></span><span style=display:flex><span>#取偏移量之后的所有元素
+</span></span><span style=display:flex><span>{ARRAY[@]:offset}
+</span></span><span style=display:flex><span>{ARRAY[*]:offset}
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#num=({0..10})
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${num[*]:2:3}
+</span></span><span style=display:flex><span>2 3 4
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${num[*]:6}
+</span></span><span style=display:flex><span>6 7 8 9 10
+</span></span></code></pre></div><p>向数组中追加元素：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>ARRAY[${#ARRAY[*]}]=value
+</span></span><span style=display:flex><span>ARRAY[${#ARRAY[@]}]=value
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#num[${#num[@]}]=11
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${#num[@]}
+</span></span><span style=display:flex><span>12
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${num[@]}
+</span></span><span style=display:flex><span>0 1 2 3 4 5 6 7 8 9 10 11
+</span></span></code></pre></div><h3 id=关联数组>关联数组
+<a class=header-anchor href=#%e5%85%b3%e8%81%94%e6%95%b0%e7%bb%84></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>declare -A ARRAY_NAME
+</span></span><span style=display:flex><span>ARRAY_NAME=([idx_name1]=&#39;val1&#39; [idx_name2]=&#39;val2‘...)
+</span></span></code></pre></div><p>注意：关联数组必须先声明再调用<br>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#name[ceo]=mage
+</span></span><span style=display:flex><span>[root@centos8 ~]#name[cto]=wang
+</span></span><span style=display:flex><span>[root@centos8 ~]#name[coo]=zhang
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${name[ceo]}
+</span></span><span style=display:flex><span>zhang
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${name[cto]}
+</span></span><span style=display:flex><span>zhang
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${name[coo]}
+</span></span><span style=display:flex><span>zhang
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${name}
+</span></span><span style=display:flex><span>zhang
+</span></span><span style=display:flex><span>[root@centos8 ~]#declare -A name
+</span></span><span style=display:flex><span>-bash: declare: name: cannot convert indexed to associative array
+</span></span><span style=display:flex><span>[root@centos8 ~]#unset name
+</span></span><span style=display:flex><span>[root@centos8 ~]#declare -A name
+</span></span><span style=display:flex><span>[root@centos8 ~]#name[ceo]=mage
+</span></span><span style=display:flex><span>[root@centos8 ~]#name[cto]=wang
+</span></span><span style=display:flex><span>[root@centos8 ~]#name[coo]=zhang
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${name[coo]}
+</span></span><span style=display:flex><span>zhang
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${name[ceo]}
+</span></span><span style=display:flex><span>mage
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${name[cto]}
+</span></span><span style=display:flex><span>wang
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${name[*]}
+</span></span><span style=display:flex><span>mage wang zhang
+</span></span></code></pre></div><p>范例：关联数组</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#declare -A student
+</span></span><span style=display:flex><span>[root@centos8 ~]#student[name1]=lijun
+</span></span><span style=display:flex><span>[root@centos8 ~]#student[name2]=ziqing
+</span></span><span style=display:flex><span>[root@centos8 ~]#student[age1]=18
+</span></span><span style=display:flex><span>[root@centos8 ~]#student[age2]=16
+</span></span><span style=display:flex><span>[root@centos8 ~]#student[gender1]=m
+</span></span><span style=display:flex><span>[root@centos8 ~]#student[city1]=nanjing
+</span></span><span style=display:flex><span>[root@centos8 ~]#student[gender2]=f
+</span></span><span style=display:flex><span>[root@centos8 ~]#student[city2]=anhui
+</span></span><span style=display:flex><span>[root@centos8 ~]#student[gender2]=m
+</span></span><span style=display:flex><span>[root@centos8 ~]#student[name50]=alice
+</span></span><span style=display:flex><span>[root@centos8 ~]#student[name3]=tom
+</span></span><span style=display:flex><span>[root@centos8 ~]#for i in {1..50};do echo student[name$i]=${student[name$i]};
+</span></span><span style=display:flex><span>done
+</span></span></code></pre></div><p>范例: 显示关联数组的所有下标</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#declare -A title=([ceo]=mage [coo]=zhang [cto]=wang)
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${!title[@]}
+</span></span><span style=display:flex><span>ceo cto coo
+</span></span></code></pre></div><h3 id=范例>范例
+<a class=header-anchor href=#%e8%8c%83%e4%be%8b></a></h3><p>范例：生成10个随机数保存于数组中，并找出其最大值和最小值</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>declare -i min max
+</span></span><span style=display:flex><span>declare -a nums
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> <span style=color:#f92672>((</span>i<span style=color:#f92672>=</span>0;i&lt;10;i++<span style=color:#f92672>))</span>;<span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>    nums<span style=color:#f92672>[</span>$i<span style=color:#f92672>]=</span>$RANDOM
+</span></span><span style=display:flex><span>    <span style=color:#f92672>[</span> $i -eq <span style=color:#ae81ff>0</span> <span style=color:#f92672>]</span> <span style=color:#f92672>&amp;&amp;</span> min<span style=color:#f92672>=</span><span style=color:#e6db74>${</span>nums[0]<span style=color:#e6db74>}</span> <span style=color:#f92672>&amp;&amp;</span> max<span style=color:#f92672>=</span><span style=color:#e6db74>${</span>nums[0]<span style=color:#e6db74>}</span><span style=color:#f92672>&amp;&amp;</span> <span style=color:#66d9ef>continue</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>[</span> <span style=color:#e6db74>${</span>nums[$i]<span style=color:#e6db74>}</span> -gt $max <span style=color:#f92672>]</span> <span style=color:#f92672>&amp;&amp;</span> max<span style=color:#f92672>=</span><span style=color:#e6db74>${</span>nums[$i]<span style=color:#e6db74>}</span> <span style=color:#f92672>&amp;&amp;</span> <span style=color:#66d9ef>continue</span>
+</span></span><span style=display:flex><span>    <span style=color:#f92672>[</span> <span style=color:#e6db74>${</span>nums[$i]<span style=color:#e6db74>}</span> -lt $min <span style=color:#f92672>]</span> <span style=color:#f92672>&amp;&amp;</span> min<span style=color:#f92672>=</span><span style=color:#e6db74>${</span>nums[$i]<span style=color:#e6db74>}</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;All numbers are </span><span style=color:#e6db74>${</span>nums[*]<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>echo Max is $max
+</span></span><span style=display:flex><span>echo Min is $min
+</span></span></code></pre></div><p>范例：编写脚本，定义一个数组，数组中的元素对应的值是/var/log目录下所有以.log结尾的文件；统计
+出其下标为偶数的文件中的行数之和</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#75715e>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#75715e>#</span>
+</span></span><span style=display:flex><span>declare -a files
+</span></span><span style=display:flex><span>files<span style=color:#f92672>=(</span>/var/log/*.log<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>declare -i lines<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> i in <span style=color:#66d9ef>$(</span>seq <span style=color:#ae81ff>0</span> $<span style=color:#f92672>[</span><span style=color:#e6db74>${#</span>files[*]<span style=color:#e6db74>}</span>-1<span style=color:#f92672>]</span><span style=color:#66d9ef>)</span>; <span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#f92672>[</span> $<span style=color:#f92672>[</span>$i%2<span style=color:#f92672>]</span> -eq <span style=color:#ae81ff>0</span> <span style=color:#f92672>]</span>;<span style=color:#66d9ef>then</span>
+</span></span><span style=display:flex><span>        let lines<span style=color:#f92672>+=</span><span style=color:#66d9ef>$(</span>wc -l <span style=color:#e6db74>${</span>files[$i]<span style=color:#e6db74>}</span> | cut -d<span style=color:#e6db74>&#39; &#39;</span> -f1<span style=color:#66d9ef>)</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>fi</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span>echo <span style=color:#e6db74>&#34;Lines: </span>$lines<span style=color:#e6db74>&#34;</span>
+</span></span></code></pre></div><h4 id=练习-2>练习
+<a class=header-anchor href=#%e7%bb%83%e4%b9%a0-2></a></h4><ol><li>输入若干个数值存入数组中，采用冒泡算法进行升序或降序排序</li><li>将下图所示，实现转置矩阵 matrix.sh</li></ol><table border=1><tr><td>1</td><td>2</td><td>3</td><td rowspan=3 align=center>==></td><td>2</td><td>5</td><td>8</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>7</td><td>8</td><td>9</td><td>3</td><td>6</td><td>9</td></tr></table><ol start=3><li>打印杨辉三角形</li></ol><h2 id=字符串处理>字符串处理
+<a class=header-anchor href=#%e5%ad%97%e7%ac%a6%e4%b8%b2%e5%a4%84%e7%90%86></a></h2><p>字符串切片</p><h3 id=基于偏移量取字符串>基于偏移量取字符串
+<a class=header-anchor href=#%e5%9f%ba%e4%ba%8e%e5%81%8f%e7%a7%bb%e9%87%8f%e5%8f%96%e5%ad%97%e7%ac%a6%e4%b8%b2></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span><span style=color:#75715e>#返回字符串变量var的字符的长度,一个汉字算一个字符</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#75715e>#var}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#返回字符串变量var中从第offset个字符后（不包括第offset个字符）的字符开始，到最后的部分，</span>
+</span></span><span style=display:flex><span>offset的取值在0 <span style=color:#960050;background-color:#1e0010>到</span> <span style=color:#f92672>$</span>{<span style=color:#75715e>#var}-1 之间(bash4.2后，允许为负值)</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span>:offset}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#返回字符串变量var中从第offset个字符后（不包括第offset个字符）的字符开始，长度为number的部分</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span>:offset:number}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#取字符串的最右侧几个字符,取字符串的最右侧几个字符, 注意：冒号后必须有一空白字符</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span>: <span style=color:#f92672>-</span>length}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#从最左侧跳过offset字符，一直向右取到距离最右侧lengh个字符之前的内容,即:掐头去尾</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span>:offset:<span style=color:#f92672>-</span>length}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#先从最右侧向左取到length个字符开始，再向右取到距离最右侧offset个字符之间的内容,注意：-</span>
+</span></span><span style=display:flex><span>length前空格,<span style=color:#960050;background-color:#1e0010>并且</span>length必须大于offset
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span>: <span style=color:#f92672>-</span>length:<span style=color:#f92672>-</span>offset}
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 script40]#str=abcdef我你他
+</span></span><span style=display:flex><span>[root@centos8 script40]#echo ${#str}
+</span></span><span style=display:flex><span>9
+</span></span><span style=display:flex><span>[root@centos8 script40]#echo ${str:2}
+</span></span><span style=display:flex><span>cdef我你他
+</span></span><span style=display:flex><span>[root@centos8 script40]#echo ${str:2:3}
+</span></span><span style=display:flex><span>cde
+</span></span><span style=display:flex><span>[root@centos8 script40]#echo ${str:-3}
+</span></span><span style=display:flex><span>abcdef我你他
+</span></span><span style=display:flex><span>[root@centos8 script40]#echo ${str: -3}
+</span></span><span style=display:flex><span>我你他
+</span></span><span style=display:flex><span>[root@centos8 script40]#echo ${str:2:-3}
+</span></span><span style=display:flex><span>cdef
+</span></span><span style=display:flex><span>[root@centos8 script40]#echo ${str: -2:-3}
+</span></span><span style=display:flex><span>-bash: -3: substring expression &lt; 0
+</span></span><span style=display:flex><span>[root@centos8 script40]#echo ${str: -3:-2}
+</span></span><span style=display:flex><span>我
+</span></span><span style=display:flex><span>[root@centos8 script40]#echo ${str:-3:-2}
+</span></span><span style=display:flex><span>abcdef我你他
+</span></span><span style=display:flex><span>[root@centos8 script40]#echo ${str: -3:-2}
+</span></span><span style=display:flex><span>我
+</span></span><span style=display:flex><span>[root@centos8 script40]#echo ${str: -5:-2}
+</span></span><span style=display:flex><span>ef我
+</span></span></code></pre></div><h3 id=基于模式取子串>基于模式取子串
+<a class=header-anchor href=#%e5%9f%ba%e4%ba%8e%e6%a8%a1%e5%bc%8f%e5%8f%96%e5%ad%90%e4%b8%b2></a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span><span style=color:#75715e>#其中word可以是指定的任意字符,自左而右，查找var变量所存储的字符串中，第一次出现的word, 删除字</span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>符串开头至第一次出现</span>word字符串<span style=color:#960050;background-color:#1e0010>（含）之间的所有字符</span>,<span style=color:#960050;background-color:#1e0010>即懒惰模式</span>,<span style=color:#960050;background-color:#1e0010>以第一个</span>word为界删左留右
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#75715e>#*word}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#其中word可以是指定的任意字符,自左而右，查找var变量所存储的字符串中，第一次出现的word, 删除字</span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>符串开头至第一次出现</span>word字符串<span style=color:#960050;background-color:#1e0010>（含）之间的所有字符</span>,<span style=color:#960050;background-color:#1e0010>即懒惰模式</span>,<span style=color:#960050;background-color:#1e0010>以第一个</span>word为界删左留右
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#75715e>#*word}</span>
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 <span style=color:#f92672>~</span>]<span style=color:#75715e>#file=&#34;var/log/messages&#34;</span>
+</span></span><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 <span style=color:#f92672>~</span>]<span style=color:#75715e>#echo ${file#*/}</span>
+</span></span><span style=display:flex><span>log<span style=color:#f92672>/</span>messages
+</span></span><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 <span style=color:#f92672>~</span>]<span style=color:#75715e>#echo ${file##*/}</span>
+</span></span><span style=display:flex><span>messages
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span><span style=color:#75715e>#其中word可以是指定的任意字符,功能：自右而左，查找var变量所存储的字符串中，第一次出现的word,</span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>删除字符串最后一个字符向左至第一次出现</span>word字符串<span style=color:#960050;background-color:#1e0010>（含）之间的所有字符</span>,<span style=color:#960050;background-color:#1e0010>即懒惰模式</span>,<span style=color:#960050;background-color:#1e0010>以从右向左的第</span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>一个</span>word为界删右留左
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#f92672>%</span>word<span style=color:#f92672>*</span>}
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#f92672>%</span>word}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#同上，只不过删除字符串最右侧的字符向左至最后一次出现word字符之间的所有字符,即贪婪模式,以从右向</span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>左的最后一个</span>word为界删右留左
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#f92672>%%</span>word<span style=color:#f92672>*</span>}
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#f92672>%%</span>word}
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 <span style=color:#f92672>~</span>]<span style=color:#75715e>#file=&#34;var/log/messages&#34;</span>
+</span></span><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 <span style=color:#f92672>~</span>]<span style=color:#75715e>#echo ${file%/*}</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span><span style=color:#f92672>/</span>log
+</span></span><span style=display:flex><span>[root<span style=color:#960050;background-color:#1e0010>@</span>centos8 <span style=color:#f92672>~</span>]<span style=color:#75715e>#echo ${file%%/*}</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span>
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#url=http://www.magedu.com:8080
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${url##*:}
+</span></span><span style=display:flex><span>8080
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${url%%:*}
+</span></span><span style=display:flex><span>http
+</span></span></code></pre></div><h2 id=查找替换>查找替换
+<a class=header-anchor href=#%e6%9f%a5%e6%89%be%e6%9b%bf%e6%8d%a2></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span><span style=color:#75715e>#查找var所表示的字符串中，第一次被pattern所匹配到的字符串，以substr替换之</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#f92672>/</span>pattern<span style=color:#f92672>/</span>substr}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#查找var所表示的字符串中，所有能被pattern所匹配到的字符串，以substr替换之</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#f92672>//</span>pattern<span style=color:#f92672>/</span>substr}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#查找var所表示的字符串中，行首被pattern所匹配到的字符串，以substr替换之</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#f92672>/</span><span style=color:#75715e>#pattern/substr}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#查找var所表示的字符串中，行尾被pattern所匹配到的字符串，以substr替换之</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#f92672>/%</span>pattern<span style=color:#f92672>/</span>substr}
+</span></span></code></pre></div><h2 id=查找并删除>查找并删除
+<a class=header-anchor href=#%e6%9f%a5%e6%89%be%e5%b9%b6%e5%88%a0%e9%99%a4></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span><span style=color:#75715e>#删除var表示的字符串中第一次被pattern匹配到的字符串</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#f92672>/</span>pattern}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#删除var表示的字符串中所有被pattern匹配到的字符串</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#f92672>//</span>pattern}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#删除var表示的字符串中所有以pattern为行首匹配到的字符串</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#f92672>/</span><span style=color:#75715e>#pattern}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#删除var所表示的字符串中所有以pattern为行尾所匹配到的字符串</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#f92672>/%</span>pattern}
+</span></span></code></pre></div><h2 id=字符大小写转换>字符大小写转换
+<a class=header-anchor href=#%e5%ad%97%e7%ac%a6%e5%a4%a7%e5%b0%8f%e5%86%99%e8%bd%ac%e6%8d%a2></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span><span style=color:#75715e>#把var中的所有小写字母转换为大写</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span><span style=color:#f92672>^^</span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#把var中的所有大写字母转换为小写</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span>{<span style=color:#66d9ef>var</span>,,}
+</span></span></code></pre></div><h2 id=变量扩展>变量扩展
+<a class=header-anchor href=#%e5%8f%98%e9%87%8f%e6%89%a9%e5%b1%95></a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>#扩展以所有prefix开头的变量
+</span></span><span style=display:flex><span>${!prefix*}
+</span></span><span style=display:flex><span>${!prefix@}
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#file1=a.txt
+</span></span><span style=display:flex><span>[root@centos8 ~]#file2=b.txt
+</span></span><span style=display:flex><span>[root@centos8 ~]#file3=c.txt
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${!file*}
+</span></span><span style=display:flex><span>file1 file2 file3
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${!file@}
+</span></span><span style=display:flex><span>file1 file2 file3
+</span></span></code></pre></div><h2 id=高级变量>高级变量
+<a class=header-anchor href=#%e9%ab%98%e7%ba%a7%e5%8f%98%e9%87%8f></a></h2><h3 id=高级变量赋值>高级变量赋值
+<a class=header-anchor href=#%e9%ab%98%e7%ba%a7%e5%8f%98%e9%87%8f%e8%b5%8b%e5%80%bc></a></h3><table><thead><tr><th>变量配置方式</th><th>str 没有配置</th><th>str 为空字符串</th><th>str 已配置非空字符串</th></tr></thead><tbody><tr><td>var=${str-expr}</td><td>var=expr</td><td>var=</td><td>var=$str</td></tr><tr><td>var=${str:-expr}</td><td>var=expr</td><td>var=expr</td><td>var=$str</td></tr><tr><td>var=${str+expr}</td><td>var=</td><td>var=expr</td><td>var=expr</td></tr><tr><td>var=${str:+expr}</td><td>var=</td><td>var=</td><td>var=expr</td></tr><tr><td>var=${str=expr}</td><td>str=expr<br>var=expr</td><td>str 不变<br>var=</td><td>str 不变<br>var=$str</td></tr><tr><td>var=${str:=expr}</td><td>str=expr<br>var=expr</td><td>str=expr<br>var=expr</td><td>str 不变<br>var=$str</td></tr><tr><td>var=${str?expr}</td><td>expr 输出至 stderr</td><td>var=</td><td>var=$str</td></tr><tr><td>var=${str:?expr}</td><td>expr 输出至 stderr</td><td>expr 输出至 stderr</td><td>var=$str</td></tr></tbody></table><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#title=ceo
+</span></span><span style=display:flex><span>[root@centos8 ~]#name=${title-mage}
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo $name
+</span></span><span style=display:flex><span>ceo
+</span></span><span style=display:flex><span>[root@centos8 ~]#title=
+</span></span><span style=display:flex><span>[root@centos8 ~]#name=${title-mage}
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo $name
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@centos8 ~]#unset title
+</span></span><span style=display:flex><span>[root@centos8 ~]#name=${title-mage}
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo $name
+</span></span><span style=display:flex><span>mage
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#title=ceo
+</span></span><span style=display:flex><span>[root@centos8 ~]#name=${title:-mage}
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo $name
+</span></span><span style=display:flex><span>ceo
+</span></span><span style=display:flex><span>[root@centos8 ~]#title=
+</span></span><span style=display:flex><span>[root@centos8 ~]#name=${title:-mage}
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo $name
+</span></span><span style=display:flex><span>mage
+</span></span><span style=display:flex><span>[root@centos8 ~]#unset title
+</span></span><span style=display:flex><span>[root@centos8 ~]#name=${title:-mage}
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo $name
+</span></span><span style=display:flex><span>mage
+</span></span></code></pre></div><h2 id=高级变量用法-有类型变量>高级变量用法-有类型变量
+<a class=header-anchor href=#%e9%ab%98%e7%ba%a7%e5%8f%98%e9%87%8f%e7%94%a8%e6%b3%95-%e6%9c%89%e7%b1%bb%e5%9e%8b%e5%8f%98%e9%87%8f></a></h2><p>Shell变量一般是无类型的，但是bash Shell提供了declare和typeset两个命令用于指定变量的类型，两
+个命令是等价的</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span>declare [<span style=color:#960050;background-color:#1e0010>选项</span>] <span style=color:#960050;background-color:#1e0010>变量名</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>选项：</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>-</span>r <span style=color:#960050;background-color:#1e0010>声明或显示只读变量</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>-</span>i <span style=color:#960050;background-color:#1e0010>将变量定义为整型数</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>-</span>a <span style=color:#960050;background-color:#1e0010>将变量定义为数组</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>-</span>A <span style=color:#960050;background-color:#1e0010>将变量定义为关联数组</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>-</span>f <span style=color:#960050;background-color:#1e0010>显示已定义的所有函数名及其内容</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>-</span>F <span style=color:#960050;background-color:#1e0010>仅显示已定义的所有函数名</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>-</span>x <span style=color:#960050;background-color:#1e0010>声明或显示环境变量和函数</span>,<span style=color:#960050;background-color:#1e0010>相当于</span><span style=color:#66d9ef>export</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>-</span>l <span style=color:#960050;background-color:#1e0010>声明变量为小写字母</span> declare <span style=color:#f92672>-</span>l <span style=color:#66d9ef>var</span><span style=color:#f92672>=</span>UPPER
+</span></span><span style=display:flex><span><span style=color:#f92672>-</span>u <span style=color:#960050;background-color:#1e0010>声明变量为大写字母</span> declare <span style=color:#f92672>-</span>u <span style=color:#66d9ef>var</span><span style=color:#f92672>=</span>lower
+</span></span><span style=display:flex><span><span style=color:#f92672>-</span>n make NAME a reference to the variable named by its value
+</span></span></code></pre></div><h2 id=变量间接引用>变量间接引用
+<a class=header-anchor href=#%e5%8f%98%e9%87%8f%e9%97%b4%e6%8e%a5%e5%bc%95%e7%94%a8></a></h2><h3 id=eval命令>eval命令
+<a class=header-anchor href=#eval%e5%91%bd%e4%bb%a4></a></h3><p>eval命令将会首先扫描命令行进行所有的置换，然后再执行该命令。该命令适用于那些一次扫描无法实
+现其功能的变量,该命令对变量进行两次扫描</p><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]# CMD=whoami
+</span></span><span style=display:flex><span>[root@centos8 ~]# echo $CMD
+</span></span><span style=display:flex><span>whoami
+</span></span><span style=display:flex><span>[root@centos8 ~]# eval $CMD
+</span></span><span style=display:flex><span>root
+</span></span><span style=display:flex><span>[root@centos8 ~]# n=10
+</span></span><span style=display:flex><span>[root@centos8 ~]# echo {0..$n}
+</span></span><span style=display:flex><span>{0..10}
+</span></span><span style=display:flex><span>[root@centos8 ~]# eval echo {0..$n}
+</span></span><span style=display:flex><span>0 1 2 3 4 5 6 7 8 9 10
+</span></span><span style=display:flex><span>[root@centos8 ~]#for i in `eval echo {1..$n}` ;do echo i=$i ;done
+</span></span><span style=display:flex><span>i=1
+</span></span><span style=display:flex><span>i=2
+</span></span><span style=display:flex><span>i=3
+</span></span><span style=display:flex><span>i=4
+</span></span><span style=display:flex><span>i=5
+</span></span><span style=display:flex><span>i=6
+</span></span><span style=display:flex><span>i=7
+</span></span><span style=display:flex><span>i=8
+</span></span><span style=display:flex><span>i=9
+</span></span><span style=display:flex><span>i=10
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@centos8 ~]#i=a
+</span></span><span style=display:flex><span>[root@centos8 ~]#j=1
+</span></span><span style=display:flex><span>[root@centos8 ~]#$i$j=hello
+</span></span><span style=display:flex><span>-bash: a1=hello: command not found
+</span></span><span style=display:flex><span>[root@centos8 ~]#eval $i$j=hello
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo $i$j
+</span></span><span style=display:flex><span>a1
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo $a1
+</span></span><span style=display:flex><span>hello
+</span></span></code></pre></div><h3 id=间接变量引用>间接变量引用
+<a class=header-anchor href=#%e9%97%b4%e6%8e%a5%e5%8f%98%e9%87%8f%e5%bc%95%e7%94%a8></a></h3><p>9.3.2 间接变量引用
+如果第一个变量的值是第二个变量的名字，从第一个变量引用第二个变量的值就称为间接变量引用
+variable1的值是variable2，而variable2又是变量名，variable2的值为value，间接变量引用是指通过
+variable1获得变量值value的行为</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span>variable1<span style=color:#f92672>=</span>variable2
+</span></span><span style=display:flex><span>variable2<span style=color:#f92672>=</span>value
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#示例:</span>
+</span></span><span style=display:flex><span>i<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>$</span><span style=color:#ae81ff>1</span><span style=color:#f92672>=</span>wang
+</span></span></code></pre></div><p>bash Shell提供了两种格式实现间接变量引用</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span><span style=color:#75715e>#方法1</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#变量赋值</span>
+</span></span><span style=display:flex><span>eval tempvar<span style=color:#f92672>=</span>\<span style=color:#f92672>$$</span>variable1
+</span></span><span style=display:flex><span><span style=color:#75715e>#显示值</span>
+</span></span><span style=display:flex><span>eval echo \<span style=color:#f92672>$$</span>variable1
+</span></span><span style=display:flex><span>eval echo <span style=color:#e6db74>&#39;$&#39;</span><span style=color:#f92672>$</span>variable1
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#方法2</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#变量赋值</span>
+</span></span><span style=display:flex><span>tempvar<span style=color:#f92672>=$</span>{<span style=color:#f92672>!</span>variable1}
+</span></span><span style=display:flex><span><span style=color:#75715e>#显示值</span>
+</span></span><span style=display:flex><span>echo <span style=color:#f92672>$</span>{<span style=color:#f92672>!</span>variable1}
+</span></span></code></pre></div><p>范例：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@centos8 ~]#ceo=name
+</span></span><span style=display:flex><span>[root@centos8 ~]#name=mage
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo $ceo
+</span></span><span style=display:flex><span>name
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo $$ceo
+</span></span><span style=display:flex><span>33722ceo
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo $$
+</span></span><span style=display:flex><span>33722
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo \$$ceo
+</span></span><span style=display:flex><span>$name
+</span></span><span style=display:flex><span>[root@centos8 ~]#eval echo \$$ceo
+</span></span><span style=display:flex><span>mage
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@centos8 ~]#eval tmp=\$$ceo
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo $tmp
+</span></span><span style=display:flex><span>mage
+</span></span><span style=display:flex><span>[root@centos8 ~]#echo ${!ceo}
+</span></span><span style=display:flex><span>mage
+</span></span></code></pre></div><p>范例:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>[root@server ~]# N1=N2
+</span></span><span style=display:flex><span>[root@server ~]# N2=wangxiaochun
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@server ~]# eval NAME=\$$N1
+</span></span><span style=display:flex><span>[root@server ~]# echo $NAME
+</span></span><span style=display:flex><span>wangxiaochun
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[root@server ~]# NAME=${!N1}
+</span></span><span style=display:flex><span>[root@server ~]# echo $NAME
+</span></span><span style=display:flex><span>wangxiaochun
+</span></span></code></pre></div><p>范例: 生成位置变量</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>[</span>root@centos7 ~<span style=color:#f92672>]</span><span style=color:#75715e>#cat test.sh</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#!/bin/bash</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> i in <span style=color:#f92672>{</span>1..3<span style=color:#f92672>}</span>;<span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>    echo <span style=color:#e6db74>${</span>!i<span style=color:#e6db74>}</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>#eval echo \$$i</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>root@centos7 ~<span style=color:#f92672>]</span><span style=color:#75715e>#bash test.sh a b c</span>
+</span></span><span style=display:flex><span>a
+</span></span><span style=display:flex><span>b
+</span></span><span style=display:flex><span>c
+</span></span></code></pre></div><p>范例: 批量创建用户</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 ~<span style=color:#f92672>]</span><span style=color:#75715e>#cat create_user.sh</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#!/bin/bash</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>n<span style=color:#f92672>=</span>$#
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span> $n -eq <span style=color:#ae81ff>0</span> <span style=color:#f92672>]</span> <span style=color:#f92672>&amp;&amp;</span> <span style=color:#f92672>{</span> echo <span style=color:#e6db74>&#34;Usage: `basename </span>$0<span style=color:#e6db74>` username...&#34;</span> ; exit 2; <span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> i in <span style=color:#e6db74>`</span>eval echo <span style=color:#f92672>{</span>1..$n<span style=color:#f92672>}</span><span style=color:#e6db74>`</span>;<span style=color:#66d9ef>do</span>
+</span></span><span style=display:flex><span>    user<span style=color:#f92672>=</span><span style=color:#e6db74>${</span>!i<span style=color:#e6db74>}</span>
+</span></span><span style=display:flex><span>    id $user &amp;&gt; /dev/null <span style=color:#f92672>&amp;&amp;</span> echo $user is exist <span style=color:#f92672>||</span> <span style=color:#f92672>{</span> useradd $user; echo $user
+</span></span><span style=display:flex><span>is created; <span style=color:#f92672>}</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>done</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>[</span>root@centos8 ~<span style=color:#f92672>]</span><span style=color:#75715e>#bash create_user.sh hehe xixi haha</span>
+</span></span><span style=display:flex><span>hehe is created
+</span></span><span style=display:flex><span>xixi is created
+</span></span><span style=display:flex><span>haha is created
 </span></span></code></pre></div></div><footer class=post-footer><div class=post-tags><a href=/tags/linux>linux</a></div><div class=addthis_inline_share_toolbox style=text-align:center></div><hr><div class=reward-container><div><i class="fa-solid fa-mug-hot"></i>请我喝杯咖啡吧 ヾ(^▽^*)))</div><button>
 赞赏</button><div class=post-reward><div class=post-reward-item><img src=/imgs/img-lazy-loading.gif data-src=/imgs/_ali-pay.png alt="蓝惠の小窝 - 支付宝">
 <span>支付宝</span></div><div class=post-reward-item><img src=/imgs/img-lazy-loading.gif data-src=/imgs/_wechat-pay.png alt="蓝惠の小窝 - 微信">
 <span>微信</span></div></div></div><div class=followme><span>欢迎关注我的其它发布渠道</span><div class=social-list><div class=social-item><a target=_blank class=social-link href=/images/wechat_channel.jpg><span class=icon><i class="fab fa-weixin"></i>
 </span><span class=label>WeChat</span></a></div><div class=social-item><a target=_blank class=social-link href=/rss.xml><span class=icon><i class="fa fa-rss"></i>
-</span><span class=label>RSS</span></a></div></div></div><div class=post-nav><div class="post-nav-next post-nav-item"></div><div class="post-nav-prev post-nav-item"><a href=/post/linux13/ rel=prev title="网络基础 ">网络基础
+</span><span class=label>RSS</span></a></div></div></div><div class=post-nav><div class="post-nav-next post-nav-item"><a href=/post/linux15/ rel=next title="Linux启动和内核管理. "><i class="fa fa-chevron-left"></i> Linux启动和内核管理.</a></div><div class="post-nav-prev post-nav-item"><a href=/post/linux13/ rel=prev title="网络基础 ">网络基础
 <i class="fa fa-chevron-right"></i></a></div></div></footer></article></div><div id=comments class=post-comments><div class=comment-head><div class=comment-headline><i class="fas fa-comments fa-fw"></i>
 <span>评论交流</span></div></div><div class=comment-wrap><div><div class=comment-loading><i class="fa fa-sync fa-spin"></i></div><div class=giscus-container></div></div></div></div></div></main><footer class=footer><div class=footer-inner><div id=gtranslate class=google-translate><i class="fa fa-language"></i><div id=google_translate_element></div></div><div class=copyright>&copy;
-<span itemprop=copyrightYear>2019 - 2024
+<span itemprop=copyrightYear>2019 - 2026
 </span><span class=with-love><i class="fa fa-heart"></i>
 </span><span class=author itemprop=copyrightHolder>蓝惠の小窝</span></div><div class=powered-by>由 <a href=https://gohugo.io title=0.126.1 target=_blank>Hugo</a> & <a href=https://github.com/hugo-next/hugo-theme-next title=4.5.3 target=_blank>Hugo NexT.Gemini</a> 强力驱动</div><div class=beian><a href=https://beian.miit.gov.cn target=_blank>湘ICP备20000440号</a>
 <img src=/imgs/gongan.png alt=湘公网安备>

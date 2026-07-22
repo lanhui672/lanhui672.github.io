@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>shell编程进阶</title><url>/post/linux14/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  循环执行介绍将某代码段重复运行多次，通常有进入循环的条件和退出循环的条件
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>Win11 家庭版连接 Win10 专业版共享打印机——踩坑记录与最终解决方案</title><url>/post/3508/</url><categories><category>网络</category></categories><tags/><content type="html"> Win11 家庭版连接 Win10 专业版共享打印机——从错误 1208 到 0x00000709 的完整修复过程
+新装的 Win11 家庭版，连公司 Win10 专业版（192.168.8.8）上的共享打印机，一路踩了 1208→网络名不可用→0x520→不弹窗→0x709 五个坑，最终解决，记录完整过程。
+环境
+项目 配置 打印机共享主机 Windows 10 专业版（192.168.8.8），USB 直连打印机，已开启共享 访问端 Windows 11 家庭版 网络 同一局域网，可 ping 通 访问方式 \\192.168.8.8 初始登录方式 Guest 来宾账户 第一轮：错误 1208（Guest 来宾访问共享失败）
+同样网络 ip 访问共享的打印机，登录使用 guest，报错 1208。
+核心原因分析： Windows 默认安全策略阻止无密码 Guest 来宾访问局域网共享，同时多伴随 SMB 签名、凭据冲突、共享权限未开放问题。需要分共享主机（192.168.8.8 打印机服务器）和本机（访问端）两套操作，按顺序执行。
+一、先操作：打印机共享主机（192.168.8.8 电脑，管理员权限）
+1. 开启 Guest 来宾账户
+Win+R → 输入 compmgmt.msc 打开计算机管理
+左侧：本地用户和组 → 用户 → 双击 Guest → 取消勾选【账户已禁用】，确定保存
+2. 本地安全策略放行来宾访问（Win 专业版 / 企业版）
+Win+R → 输入 secpol.msc
+本地策略 → 安全选项，修改 3 项：
+策略项 设置 启用不安全的来宾登录 已启用 网络访问：本地账户的共享和安全模型 仅对来宾进行身份验证 账户：使用空密码的本地账户只允许控制台登录 已禁用（Guest 无密码必关此项） 3. 共享打印机权限放开 Guest
+主机设置 → 蓝牙和其他设备 → 打印机和扫描仪
+找到共享打印机 → 打印机属性 → 共享 → 勾选【共享这台打印机】
+切换【安全】选项卡 → 添加 Guest 用户，赋予【打印、读取权限】
+4. 高级共享设置放行
+控制面板 → 网络和共享中心 → 更改高级共享设置
+专用网络：启用网络发现、启用文件和打印机共享 所有网络：启用公用文件夹共享、关闭密码保护共享（Guest 访问必须关） 二、操作你自己的电脑（访问端， …</content></entry><entry><title>Linux启动和内核管理.</title><url>/post/linux15/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html">
+https://github.com/user-attachments/files/18287381/12Linux.pdf</content></entry><entry><title>shell编程进阶</title><url>/post/linux14/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"><![CDATA[  循环执行介绍将某代码段重复运行多次，通常有进入循环的条件和退出循环的条件
 重复运行次数
 循环次数事先已知 循环次数事先未知 常见的循环的命令：for, while, until 循环 for#CentOS7的for帮助比CentOS8全面 [root@centos7 ~]#help for for: for NAME [in WORDS ... ] ; do COMMANDS; done Execute commands for each member in a list. The `for&amp;#39; loop executes a sequence of commands for each member in a list of items. If `in WORDS ...;&amp;#39; is not present, then `in &amp;#34;$@&amp;#34;&amp;#39; is assumed. For each element in WORDS, NAME is set to that element, and the COMMANDS are executed. Exit Status: Returns the status of the last command executed. for ((: for (( exp1; exp2; exp3 )); do COMMANDS; done Arithmetic for loop. Equivalent to (( EXP1 )) while (( EXP2 )); do COMMANDS (( EXP3 )) done EXP1, EXP2, and EXP3 are arithmetic expressions. If any expression is omitted, it behaves as if it evaluates to 1. Exit Status: Returns the status of the last command executed. 格式1：for NAME [in WORDS ... ] ; do COMMANDS; done #方式1 for 变量名 in 列表;do 循环体 done #方式2 for 变量名 in 列表 do 循环体 done 执行机制：
 依次将 …  ]]></content></entry><entry><title>网络基础</title><url>/post/linux13/</url><categories><category>linux</category></categories><tags><tag>linux</tag></tags><content type="html"> 查看双工和速度
